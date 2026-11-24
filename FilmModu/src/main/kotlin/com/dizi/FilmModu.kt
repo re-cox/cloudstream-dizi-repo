@@ -92,14 +92,15 @@ class FilmModu : BaseTurkishProvider() {
                 Regex(""""src"\s*:\s*"([^"]+)"""").findAll(srcText).forEach { m ->
                     val streamUrl = m.groupValues[1].replace("\\/", "/")
                     callback.invoke(
-                        ExtractorLink(
+                        newExtractorLink(
                             source = name,
                             name = "$name ($videoType)",
                             url = streamUrl,
-                            referer = "${mainUrl}/",
-                            quality = Qualities.Unknown.value,
-                            isM3u8 = streamUrl.contains(".m3u8")
-                        )
+                            type = if (streamUrl.contains(".m3u8")) ExtractorLinkType.M3U8 else ExtractorLinkType.VIDEO
+                        ) {
+                            this.referer = "${mainUrl}/"
+                            this.quality = Qualities.Unknown.value
+                        }
                     )
                     found = true
                 }

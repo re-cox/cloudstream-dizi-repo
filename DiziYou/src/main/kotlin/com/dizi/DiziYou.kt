@@ -93,14 +93,15 @@ class DiziYou : BaseTurkishProvider() {
         if (!itemId.isNullOrBlank()) {
             val storageUrl = "https://storage.diziyou.one"
             callback.invoke(
-                ExtractorLink(
+                newExtractorLink(
                     source = name,
                     name = "$name (Altyazılı)",
                     url = "$storageUrl/episodes/$itemId/play.m3u8",
-                    referer = "${mainUrl}/",
-                    quality = Qualities.Unknown.value,
-                    isM3u8 = true
-                )
+                    type = ExtractorLinkType.M3U8
+                ) {
+                    this.referer = "${mainUrl}/"
+                    this.quality = Qualities.Unknown.value
+                }
             )
             subtitleCallback.invoke(SubtitleFile("Türkçe", "$storageUrl/subtitles/$itemId/tr.vtt"))
             subtitleCallback.invoke(SubtitleFile("English", "$storageUrl/subtitles/$itemId/en.vtt"))
