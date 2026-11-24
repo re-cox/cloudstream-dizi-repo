@@ -1,0 +1,158 @@
+{
+  "id": "re-cox-dizi-repo",
+  "name": "Özel Dizi & Film Repo (TR)",
+  "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
+  "version": "1.0.0",
+  "author": "re-cox",
+  "repository": "https://github.com/re-cox/cloudstream-dizi-repo",
+  "scrapers": [
+    {
+      "id": "dizipal",
+      "name": "DiziPal",
+      "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv",
+        "movie"
+      ],
+      "filename": "providers/dizipal.js",
+      "enabled": true
+    },
+    {
+      "id": "hdfilmcehennemi",
+      "name": "HDFilmCehennemi",
+      "description": "HDFilmCehennemi - Otomatik domain takipli Türkçe film ve dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/hdfilmcehennemi.js",
+      "enabled": true
+    },
+    {
+      "id": "dizibox",
+      "name": "DiziBox",
+      "description": "DiziBox - Otomatik domain takipli yabancı dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/dizibox.js",
+      "enabled": true
+    },
+    {
+      "id": "dizilla",
+      "name": "Dizilla",
+      "description": "Dizilla - Otomatik domain takipli yabancı dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/dizilla.js",
+      "enabled": true
+    },
+    {
+      "id": "diziyou",
+      "name": "DiziYou",
+      "description": "DiziYou - Otomatik domain takipli Türkçe altyazılı ve dublajlı dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/diziyou.js",
+      "enabled": true
+    },
+    {
+      "id": "sezonlukdizi",
+      "name": "SezonlukDizi",
+      "description": "SezonlukDizi - Otomatik domain takipli yabancı dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv"
+      ],
+      "filename": "providers/sezonlukdizi.js",
+      "enabled": true
+    },
+    {
+      "id": "filmmodu",
+      "name": "FilmModu",
+      "description": "FilmModu - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/filmmodu.js",
+      "enabled": true
+    },
+    {
+      "id": "dizimom",
+      "name": "DiziMom",
+      "description": "DiziMom - Otomatik domain takipli Türkçe dizi ve film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv",
+        "movie"
+      ],
+      "filename": "providers/dizimom.js",
+      "enabled": true
+    },
+    {
+      "id": "fullhdfilmizlesene",
+      "name": "FullHDFilmizlesene",
+      "description": "FullHDFilmizlesene - Otomatik domain takipli Türkçe film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/fullhdfilmizlesene.js",
+      "enabled": true
+    },
+    {
+      "id": "filmmakinesi",
+      "name": "FilmMakinesi",
+      "description": "FilmMakinesi - Otomatik domain takipli HD film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/filmmakinesi.js",
+      "enabled": true
+    },
+    {
+      "id": "webteizle",
+      "name": "WebteIzle",
+      "description": "WebteIzle - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie"
+      ],
+      "filename": "providers/webteizle.js",
+      "enabled": true
+    },
+    {
+      "id": "selcukflix",
+      "name": "SelcukFlix",
+      "description": "SelcukFlix - Otomatik domain takipli Türkçe dizi ve film kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "tv",
+        "movie"
+      ],
+      "filename": "providers/selcukflix.js",
+      "enabled": true
+    },
+    {
+      "id": "setfilmizle",
+      "name": "SetFilmIzle",
+      "description": "SetFilmIzle - Otomatik domain takipli Türkçe film ve dizi kaynağı",
+      "version": "1.0.0",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/setfilmizle.js",
+      "enabled": true
+    }
+  ]
+}

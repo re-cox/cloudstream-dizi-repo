@@ -1,0 +1,94 @@
+import com.android.build.gradle.BaseExtension
+import com.lagradost.cloudstream3.gradle.CloudstreamExtension
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.2.2")
+        classpath("com.github.recloudstream:gradle:master-SNAPSHOT")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+}
+
+fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) =
+    extensions.getByName<CloudstreamExtension>("cloudstream").configuration()
+
+fun Project.android(configuration: BaseExtension.() -> Unit) =
+    extensions.getByName<BaseExtension>("android").configuration()
+
+subprojects {
+    apply(plugin = "com.android.library")
+    apply(plugin = "kotlin-android")
+    apply(plugin = "com.lagradost.cloudstream3.gradle")
+
+    cloudstream {
+        // GitHub Actions automatically provides GITHUB_REPOSITORY (owner/repo).
+        // Replace the fallback below with your own GitHub username/repo.
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "re-cox/cloudstream-dizi-repo")
+        authors = listOf("re-cox")
+    }
+
+    android {
+        namespace = "com.dizi"
+
+        sourceSets {
+            getByName("main") {
+                java.srcDirs(
+                    "src/main/kotlin",
+                    "${rootProject.projectDir}/common/src/main/kotlin"
+                )
+            }
+        }
+
+        defaultConfig {
+            minSdk = 21
+            compileSdkVersion(34)
+            targetSdk = 34
+        }
+
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
+
+        tasks.withType<KotlinCompile> {
+            kotlinOptions {
+                jvmTarget = "1.8"
+                freeCompilerArgs = freeCompilerArgs +
+                    "-Xno-call-assertions" +
+                    "-Xno-param-assertions" +
+                    "-Xno-receiver-assertions"
+            }
+        }
+    }
+
+    dependencies {
+        val apk by configurations
+        val implementation by configurations
+
+        apk("com.lagradost:cloudstream3:pre-release")
+
+        implementation(kotlin("stdlib"))
+        implementation("com.github.Blatzar:NiceHttp:0.4.11")
+        implementation("org.jsoup:jsoup:1.17.2")
+        implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.1")
+    }
+}
+
+task<Delete>("clean") {
+    delete(rootProject.layout.buildDirectory)
+}
