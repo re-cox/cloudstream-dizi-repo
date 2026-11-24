@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T19:30:00Z",
+  "updatedAt": "2026-11-24T19:40:09Z",
   "sites": {
     "DiziPal": {
       "currentUrl": "https://dizipal2150.com",
@@ -55,10 +55,11 @@
       "healthCheckText": "dizilla"
     },
     "DiziYou": {
-      "currentUrl": "https://www.diziyou.one",
+      "currentUrl": "https://diziyou.net",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
+        "https://diziyou.net",
         "https://www.diziyou.one",
         "https://www.diziyou.love",
         "https://www.diziyou.co",
@@ -83,7 +84,7 @@
       "healthCheckText": "sezonlukdizi"
     },
     "FilmModu": {
-      "currentUrl": "https://filmmodu.news",
+      "currentUrl": "https://filmmodu.icu",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
@@ -97,7 +98,7 @@
       "healthCheckText": "filmmodu"
     },
     "DiziMom": {
-      "currentUrl": "https://ddizimom.net",
+      "currentUrl": "https://ddizimom.icu",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
@@ -125,7 +126,7 @@
       "healthCheckText": "fullhdfilmizlesene"
     },
     "FilmMakinesi": {
-      "currentUrl": "https://filmmakinesi.to",
+      "currentUrl": "https://filmmakinesi.co",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
