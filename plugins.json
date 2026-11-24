@@ -1,10 +1,10 @@
 [
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=dizibox.live&sz=%size%",
-        "fileHash": "sha256-f377be06abdf02e3a95d6e06cb35e972316befa07c6caf4c1df70787cc0169b7",
+        "fileHash": "sha256-9dcea734c3d63a9307f35899b0f6405f7b20728973213e0bc025017a7fa744df",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 23166,
+        "fileSize": 21325,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -13,7 +13,7 @@
         "tvTypes": [
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "DiziBox",
         "description": "DiziBox - Otomatik domain takipli yabanc\u0131 dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/DiziBox.cs3",
@@ -21,10 +21,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=dizilla.now&sz=%size%",
-        "fileHash": "sha256-96eb197f7f90e68fa0386b11871e584f3b31e07451ffa2e063cc00943bc65bdd",
+        "fileHash": "sha256-6fe6989dc8a10bdd2e10f566da6aeefa72d7c1bdd5549a831f17e1e190b23628",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22098,
+        "fileSize": 20128,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -33,7 +33,7 @@
         "tvTypes": [
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "Dizilla",
         "description": "Dizilla - Otomatik domain takipli yabanc\u0131 dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/Dizilla.cs3",
@@ -41,10 +41,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=ddizimom.net&sz=%size%",
-        "fileHash": "sha256-2ca32016fa3f5d2ff63db6bde9fc26410f552d4f1b73a005f3abc035ecb21ca5",
+        "fileHash": "sha256-783f752c1ee2ca4de14a156eece78a2d17a150ec2d702d2376def871539b0dc4",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22348,
+        "fileSize": 20468,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -54,7 +54,7 @@
             "TvSeries",
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "DiziMom",
         "description": "DiziMom - Otomatik domain takipli T\u00fcrk\u00e7e dizi ve film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/DiziMom.cs3",
@@ -62,10 +62,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=dizipal2150.com&sz=%size%",
-        "fileHash": "sha256-1b0ca001f4c5f083cd2ececb5ace993dcecb41496ca984d60df35ac35c903769",
+        "fileHash": "sha256-7fc5085e7e8798238130452505c985b6ab5607ab25f39ed32faf71fa6ce87edf",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 27269,
+        "fileSize": 27791,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -75,7 +75,7 @@
             "TvSeries",
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "DiziPal",
         "description": "DiziPal - Otomatik domain takipli T\u00fcrk\u00e7e dizi ve film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/DiziPal.cs3",
@@ -83,10 +83,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=diziyou.one&sz=%size%",
-        "fileHash": "sha256-d2a58eb010fd581d137ef9da08131f279069aaff782265b2fdde6afc11210e86",
+        "fileHash": "sha256-28960065c2d3b45d80b3a9ee559b3704e74ed43a2c2f2b8a46c0f04a32e26fe0",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22449,
+        "fileSize": 20564,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -95,7 +95,7 @@
         "tvTypes": [
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "DiziYou",
         "description": "DiziYou - Otomatik domain takipli T\u00fcrk\u00e7e altyaz\u0131l\u0131 ve dublajl\u0131 dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/DiziYou.cs3",
@@ -103,10 +103,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=filmmakinesi.to&sz=%size%",
-        "fileHash": "sha256-bd40935575d1fec8062fa8b87be9bf8b1807ee82bd5bf2543739a6fd72b0a788",
+        "fileHash": "sha256-5ad5a91635bcac988b7015b2b76bace958290ef13c50d04b04ca5cadbd85a2e3",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 20498,
+        "fileSize": 18519,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -115,7 +115,7 @@
         "tvTypes": [
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "FilmMakinesi",
         "description": "FilmMakinesi - Otomatik domain takipli HD film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/FilmMakinesi.cs3",
@@ -123,10 +123,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=filmmodu.news&sz=%size%",
-        "fileHash": "sha256-7cf98dc99fe6743933e7be794f44df40f4cac14c2ca280f91ff6678dd64ac2a7",
+        "fileHash": "sha256-6078507f1634b9f2278246a7a40bdc22e28c667ac305ac61d5a97c462eadaa81",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 23842,
+        "fileSize": 22018,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -135,7 +135,7 @@
         "tvTypes": [
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "FilmModu",
         "description": "FilmModu - Otomatik domain takipli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/FilmModu.cs3",
@@ -143,10 +143,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=fullhdfilmizlesene.now&sz=%size%",
-        "fileHash": "sha256-77871043d0b9258491496b23e15f0b860a6366fa36f3aa53659daa5404d116d2",
+        "fileHash": "sha256-07c709bb84875b18e75495fe162518c61df8c56db6c184d8bb9dc0d0c3a6725a",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 20599,
+        "fileSize": 18673,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -155,7 +155,7 @@
         "tvTypes": [
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "FullHDFilmizlesene",
         "description": "FullHDFilmizlesene - Otomatik domain takipli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/FullHDFilmizlesene.cs3",
@@ -163,10 +163,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=hdfilmcehennemi.nl&sz=%size%",
-        "fileHash": "sha256-3b86e626b67bb250497a5038c82439f1f209c285ab44b4483f591c4e5014f41c",
+        "fileHash": "sha256-8953e4787bf9155979344a3012f317891f8f8905aa9019a456e13e7f0d7a6a0b",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 26172,
+        "fileSize": 24677,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -176,7 +176,7 @@
             "Movie",
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "HDFilmCehennemi",
         "description": "HDFilmCehennemi - Otomatik domain takipli T\u00fcrk\u00e7e film ve dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/HDFilmCehennemi.cs3",
@@ -184,10 +184,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=selcukflix.app&sz=%size%",
-        "fileHash": "sha256-85943a44c0d3938d4824dca248f3d9b9ab1644a904904975ebd0309109c4320c",
+        "fileHash": "sha256-54bad8823eb296d467d341f4c9b9c876cc99db2c7c7521d9b26123411a8519b7",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22444,
+        "fileSize": 20565,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -197,7 +197,7 @@
             "TvSeries",
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "SelcukFlix",
         "description": "SelcukFlix - Otomatik domain takipli T\u00fcrk\u00e7e dizi ve film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/SelcukFlix.cs3",
@@ -205,10 +205,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=setfilmizle.ltd&sz=%size%",
-        "fileHash": "sha256-471cea3521e65c4b353d38dec7f32e406f0f169df1007a27a3a8e3f583b01df2",
+        "fileHash": "sha256-7b4c3e27b19aa2dfb7c574044905993b7a8a94aa81e6dd26d776dd4a2d285e30",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22323,
+        "fileSize": 20419,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -218,7 +218,7 @@
             "Movie",
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "SetFilmIzle",
         "description": "SetFilmIzle - Otomatik domain takipli T\u00fcrk\u00e7e film ve dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/SetFilmIzle.cs3",
@@ -226,10 +226,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=sezonlukdizi.cc&sz=%size%",
-        "fileHash": "sha256-36f1d278d6819bec1289214abf08870fcf130c4606f3a90d29b98fea7090956a",
+        "fileHash": "sha256-81990d823ba0c3ff2397020337f12bfd49514ef3e444913b4a3a293a7d21fac2",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 23478,
+        "fileSize": 21652,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -238,7 +238,7 @@
         "tvTypes": [
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "SezonlukDizi",
         "description": "SezonlukDizi - Otomatik domain takipli yabanc\u0131 dizi kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/SezonlukDizi.cs3",
@@ -246,10 +246,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=webteizle.info&sz=%size%",
-        "fileHash": "sha256-33c62f184b6298cf50ffc0807e58e8ec21778690ad4924af99ea293f5424c466",
+        "fileHash": "sha256-abf9e0b939428c4e471f6869c3e7b870714aa8121683dcba507ff75a3724f1d5",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 22103,
+        "fileSize": 20237,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -258,7 +258,7 @@
         "tvTypes": [
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "WebteIzle",
         "description": "WebteIzle - Otomatik domain takipli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/WebteIzle.cs3",
