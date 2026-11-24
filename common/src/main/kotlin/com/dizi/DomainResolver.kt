@@ -1,8 +1,6 @@
 package com.dizi
 
 import com.lagradost.cloudstream3.app
-import kotlinx.coroutines.sync.Mutex
-import kotlinx.coroutines.sync.withLock
 import org.json.JSONObject
 
 data class SiteDomainConfig(
@@ -28,7 +26,6 @@ object DomainResolver {
         "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json"
 
     private const val CACHE_TTL_MS = 30 * 60 * 1000L
-    private val fetchMutex = Mutex()
 
     @Volatile
     private var registryCache: Map<String, SiteDomainConfig> = emptyMap()
@@ -85,51 +82,44 @@ object DomainResolver {
             return registryCache[siteKey]
         }
 
-        return fetchMutex.withLock {
-            val refreshedNow = System.currentTimeMillis()
-            if (registryCache.isNotEmpty() && refreshedNow - registryFetchedAt < CACHE_TTL_MS) {
-                return@withLock registryCache[siteKey]
-            }
-
-            try {
-                val text = app.get(DOMAINS_JSON_URL, timeout = 6).text
-                val root = JSONObject(text)
-                val sitesObj = root.optJSONObject("sites") ?: return@withLock null
-                val parsed = mutableMapOf<String, SiteDomainConfig>()
-                val keys = sitesObj.keys()
-                while (keys.hasNext()) {
-                    val key = keys.next()
-                    val obj = sitesObj.optJSONObject(key) ?: continue
-                    val mirrorsList = mutableListOf<String>()
-                    val mirrorsArr = obj.optJSONArray("mirrors")
-                    if (mirrorsArr != null) {
-                        for (i in 0 until mirrorsArr.length()) {
-                            val item = mirrorsArr.optString(i)
-                            if (item.isNotBlank()) mirrorsList.add(item)
-                        }
+        try {
+            val text = app.get(DOMAINS_JSON_URL, timeout = 6).text
+            val root = JSONObject(text)
+            val sitesObj = root.optJSONObject("sites") ?: return registryCache[siteKey]
+            val parsed = mutableMapOf<String, SiteDomainConfig>()
+            val keys = sitesObj.keys()
+            while (keys.hasNext()) {
+                val key = keys.next()
+                val obj = sitesObj.optJSONObject(key) ?: continue
+                val mirrorsList = mutableListOf<String>()
+                val mirrorsArr = obj.optJSONArray("mirrors")
+                if (mirrorsArr != null) {
+                    for (i in 0 until mirrorsArr.length()) {
+                        val item = mirrorsArr.optString(i)
+                        if (item.isNotBlank()) mirrorsList.add(item)
                     }
-                    parsed[key] = SiteDomainConfig(
-                        currentUrl = obj.optString("currentUrl", ""),
-                        nextUrl = obj.optString("nextUrl", "").takeIf { it.isNotBlank() && it != "null" },
-                        prefix = obj.optString("prefix", "").takeIf { it.isNotBlank() && it != "null" },
-                        suffix = obj.optString("suffix", "").takeIf { it.isNotBlank() && it != "null" },
-                        currentNumber = if (obj.has("currentNumber") && !obj.isNull("currentNumber")) {
-                            obj.optInt("currentNumber")
-                        } else null,
-                        mirrors = mirrorsList,
-                        healthCheckText = obj.optString("healthCheckText", "").takeIf { it.isNotBlank() && it != "null" }
-                    )
                 }
-                if (parsed.isNotEmpty()) {
-                    registryCache = parsed
-                    registryFetchedAt = refreshedNow
-                }
-            } catch (_: Exception) {
-                // Keep existing cache or fallback
+                parsed[key] = SiteDomainConfig(
+                    currentUrl = obj.optString("currentUrl", ""),
+                    nextUrl = obj.optString("nextUrl", "").takeIf { it.isNotBlank() && it != "null" },
+                    prefix = obj.optString("prefix", "").takeIf { it.isNotBlank() && it != "null" },
+                    suffix = obj.optString("suffix", "").takeIf { it.isNotBlank() && it != "null" },
+                    currentNumber = if (obj.has("currentNumber") && !obj.isNull("currentNumber")) {
+                        obj.optInt("currentNumber")
+                    } else null,
+                    mirrors = mirrorsList,
+                    healthCheckText = obj.optString("healthCheckText", "").takeIf { it.isNotBlank() && it != "null" }
+                )
             }
-
-            registryCache[siteKey]
+            if (parsed.isNotEmpty()) {
+                registryCache = parsed
+                registryFetchedAt = now
+            }
+        } catch (_: Exception) {
+            // Keep existing cache or fallback
         }
+
+        return registryCache[siteKey]
     }
 
     private suspend fun isAliveFast(url: String, healthCheckText: String?): Boolean {
