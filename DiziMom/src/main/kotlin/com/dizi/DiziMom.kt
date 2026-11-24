@@ -11,17 +11,17 @@ class DiziMom : BaseTurkishProvider() {
     override val supportedTypes = setOf(TvType.TvSeries, TvType.Movie)
 
     override val mainPage = mainPageOf(
-        "/tum-bolumler/page/1/" to "Son Bölümler",
-        "/yerli-dizi-izle/page/1/" to "Yerli Diziler",
-        "/yabanci-dizi-izle/page/1/" to "Yabancı Diziler",
-        "/turkce-dublaj-diziler/page/1/" to "Türkçe Dublaj Diziler",
-        "/film-izle/page/1/" to "Filmler"
+        "/tum-bolumler/" to "Son Bölümler",
+        "/yerli-dizi-izle/" to "Yerli Diziler",
+        "/yabanci-dizi-izle/" to "Yabancı Diziler",
+        "/turkce-dublaj-diziler/" to "Türkçe Dublaj Diziler",
+        "/film-izle/" to "Filmler"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = "${mainUrl}${request.data.replace("/page/1/", "/page/$page/")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val url = pagedUrl(request.data, page)
+        val document = getDoc(url)
         val items = document.select("div.single-item, div.episode-box").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)
     }

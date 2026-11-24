@@ -11,18 +11,18 @@ class DiziYou : BaseTurkishProvider() {
     override val supportedTypes = setOf(TvType.TvSeries)
 
     override val mainPage = mainPageOf(
-        "/dizi-arsivi/page/1/?filtrele=tarih" to "Yeni Eklenen Diziler",
-        "/dizi-arsivi/page/1/?filtrele=imdb" to "IMDb Puanına Göre",
-        "/dizi-arsivi/page/1/?tur=Aksiyon" to "Aksiyon",
-        "/dizi-arsivi/page/1/?tur=Bilim+Kurgu" to "Bilim Kurgu",
-        "/dizi-arsivi/page/1/?tur=Dram" to "Dram",
-        "/dizi-arsivi/page/1/?tur=Komedi" to "Komedi"
+        "/dizi-arsivi/?filtrele=tarih" to "Yeni Eklenen Diziler",
+        "/dizi-arsivi/?filtrele=imdb" to "IMDb Puanına Göre",
+        "/dizi-arsivi/?tur=Aksiyon" to "Aksiyon",
+        "/dizi-arsivi/?tur=Bilim+Kurgu" to "Bilim Kurgu",
+        "/dizi-arsivi/?tur=Dram" to "Dram",
+        "/dizi-arsivi/?tur=Komedi" to "Komedi"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = "${mainUrl}${request.data.replace("/page/1/", "/page/$page/")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val url = pagedUrl(request.data, page)
+        val document = getDoc(url)
         val items = document.select("div.single-item").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)
     }

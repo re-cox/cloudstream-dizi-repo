@@ -41,12 +41,12 @@
       "healthCheckText": "dizibox"
     },
     "Dizilla": {
-      "currentUrl": "https://dizilla.now",
+      "currentUrl": "https://dizilla.la",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
-        "https://dizilla.now",
         "https://dizilla.la",
+        "https://dizilla.now",
         "https://dizilla.club",
         "https://dizilla.tv",
         "https://dizilla.pw",
@@ -55,17 +55,15 @@
       "healthCheckText": "dizilla"
     },
     "DiziYou": {
-      "currentUrl": "https://diziyou.net",
+      "currentUrl": "https://www.diziyou.love",
       "nextUrl": null,
       "strategy": "mirror_and_redirect",
       "mirrors": [
-        "https://diziyou.net",
-        "https://www.diziyou.one",
         "https://www.diziyou.love",
+        "https://www.diziyou.one",
         "https://www.diziyou.co",
         "https://www.diziyou.tv",
-        "https://www.diziyou.io",
-        "https://www.diziyou.net"
+        "https://www.diziyou.io"
       ],
       "healthCheckText": "diziyou"
     },

@@ -18,7 +18,6 @@ class DiziPal : BaseTurkishProvider() {
     private val mapper = jacksonObjectMapper()
 
     override val mainPage = mainPageOf(
-        "/diziler/son-bolumler" to "Son Bölümler",
         "/diziler" to "Yeni Diziler",
         "/filmler" to "Yeni Filmler",
         "/koleksiyon/netflix" to "Netflix",
@@ -41,11 +40,9 @@ class DiziPal : BaseTurkishProvider() {
             "${mainUrl}${request.data}?page=$page"
         }
 
-        val document = app.get(url).document
-        val home = if (request.data.contains("/diziler/son-bolumler")) {
-            document.select("div.episode-item").mapNotNull { it.toLatestEpisodeResult() }
-        } else {
-            document.select("article.type2 ul li").mapNotNull { it.toSearchResult() }
+        val document = getDoc(url)
+        val home = document.select("article.type2 ul li, div.episode-item").mapNotNull {
+            if (it.hasClass("episode-item")) it.toLatestEpisodeResult() else it.toSearchResult()
         }
 
         return newHomePageResponse(request.name, home)

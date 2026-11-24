@@ -1,4 +1,4 @@
-version = 2
+version = 3
 
 cloudstream {
     description = "DiziYou - Otomatik domain takipli Türkçe altyazılı ve dublajlı dizi kaynağı"

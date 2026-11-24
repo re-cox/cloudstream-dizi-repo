@@ -1,4 +1,4 @@
-version = 2
+version = 3
 
 cloudstream {
     description = "FilmModu - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı"

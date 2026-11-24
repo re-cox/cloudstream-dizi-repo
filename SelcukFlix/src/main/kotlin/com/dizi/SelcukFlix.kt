@@ -11,18 +11,18 @@ class SelcukFlix : BaseTurkishProvider() {
     override val supportedTypes = setOf(TvType.TvSeries, TvType.Movie)
 
     override val mainPage = mainPageOf(
-        "/diziler/page/1" to "Yeni Diziler",
-        "/filmler/page/1" to "Yeni Filmler",
-        "/tur/aksiyon/page/1" to "Aksiyon",
-        "/tur/bilim-kurgu/page/1" to "Bilim Kurgu",
-        "/tur/dram/page/1" to "Dram",
-        "/tur/komedi/page/1" to "Komedi"
+        "/diziler" to "Yeni Diziler",
+        "/filmler" to "Yeni Filmler",
+        "/tur/aksiyon" to "Aksiyon",
+        "/tur/bilim-kurgu" to "Bilim Kurgu",
+        "/tur/dram" to "Dram",
+        "/tur/komedi" to "Komedi"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = "${mainUrl}${request.data.replace("/page/1", "/page/$page")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val url = pagedUrl(request.data, page)
+        val document = getDoc(url)
         val items = document.select("div.poster, article.card, div.movie-card")
             .mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)

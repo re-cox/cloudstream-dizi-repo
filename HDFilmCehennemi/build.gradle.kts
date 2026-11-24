@@ -1,4 +1,4 @@
-version = 2
+version = 3
 
 cloudstream {
     description = "HDFilmCehennemi - Otomatik domain takipli Türkçe film ve dizi kaynağı"

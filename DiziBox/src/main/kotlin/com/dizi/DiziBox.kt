@@ -11,19 +11,19 @@ class DiziBox : BaseTurkishProvider() {
     override val supportedTypes = setOf(TvType.TvSeries)
 
     override val mainPage = mainPageOf(
-        "/dizi-arsivi/page/1/?orderby=date" to "Yeni Eklenen Diziler",
-        "/dizi-arsivi/page/1/?orderby=views" to "Popüler Diziler",
-        "/tur/aksiyon/page/1/" to "Aksiyon",
-        "/tur/bilim-kurgu/page/1/" to "Bilim Kurgu",
-        "/tur/dram/page/1/" to "Dram",
-        "/tur/komedi/page/1/" to "Komedi",
-        "/tur/gerilim/page/1/" to "Gerilim"
+        "/dizi-arsivi/?orderby=date" to "Yeni Eklenen Diziler",
+        "/dizi-arsivi/?orderby=views" to "Popüler Diziler",
+        "/tur/aksiyon/" to "Aksiyon",
+        "/tur/bilim-kurgu/" to "Bilim Kurgu",
+        "/tur/dram/" to "Dram",
+        "/tur/komedi/" to "Komedi",
+        "/tur/gerilim/" to "Gerilim"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = "${mainUrl}${request.data.replace("/page/1/", "/page/$page/")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val url = pagedUrl(request.data, page)
+        val document = getDoc(url)
         val home = document.select("article.detailed-article, div.article-wrapper article")
             .mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, home)

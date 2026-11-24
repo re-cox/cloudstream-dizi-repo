@@ -1,4 +1,4 @@
-version = 2
+version = 3
 
 cloudstream {
     description = "FilmMakinesi - Otomatik domain takipli HD film kaynağı"

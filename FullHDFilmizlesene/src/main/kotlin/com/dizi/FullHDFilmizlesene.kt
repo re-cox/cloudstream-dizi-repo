@@ -23,7 +23,7 @@ class FullHDFilmizlesene : BaseTurkishProvider() {
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
         val url = if (page <= 1) "${mainUrl}${request.data}" else "${mainUrl}${request.data}$page"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val document = getDoc(url)
         val items = document.select("li.film").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)
     }

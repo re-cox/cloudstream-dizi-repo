@@ -1,4 +1,4 @@
-version = 2
+version = 3
 
 cloudstream {
     description = "Dizilla - Otomatik domain takipli yabancı dizi kaynağı"

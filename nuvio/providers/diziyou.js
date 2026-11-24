@@ -3,7 +3,7 @@
 
 const SITE_KEY = "DiziYou";
 const PROVIDER_NAME = "DiziYou";
-const FALLBACK_URL = "https://diziyou.net";
+const FALLBACK_URL = "https://www.diziyou.love";
 const SEARCH_MODE = "wp_search";
 const DOMAINS_JSON_URL = "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json";
 const TMDB_API_KEY = "439c478a771f35c05022f9feabcca01c";

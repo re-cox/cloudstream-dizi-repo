@@ -22,7 +22,7 @@ class WebteIzle : BaseTurkishProvider() {
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
         val url = "${mainUrl}${request.data.replace("s=1", "s=$page")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val document = getDoc(url)
         val items = document.select("div.golgever").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)
     }

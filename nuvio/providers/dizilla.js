@@ -3,7 +3,7 @@
 
 const SITE_KEY = "Dizilla";
 const PROVIDER_NAME = "Dizilla";
-const FALLBACK_URL = "https://dizilla.now";
+const FALLBACK_URL = "https://dizilla.la";
 const SEARCH_MODE = "dizilla_api";
 const DOMAINS_JSON_URL = "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json";
 const TMDB_API_KEY = "439c478a771f35c05022f9feabcca01c";

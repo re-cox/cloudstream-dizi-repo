@@ -11,18 +11,18 @@ class FilmMakinesi : BaseTurkishProvider() {
     override val supportedTypes = setOf(TvType.Movie)
 
     override val mainPage = mainPageOf(
-        "/filmler/sayfa/1/" to "Son Filmler",
-        "/tur/aksiyon/sayfa/1/" to "Aksiyon",
-        "/tur/bilim-kurgu/sayfa/1/" to "Bilim Kurgu",
-        "/tur/dram/sayfa/1/" to "Dram",
-        "/tur/komedi/sayfa/1/" to "Komedi",
-        "/tur/gerilim/sayfa/1/" to "Gerilim"
+        "/filmler/" to "Son Filmler",
+        "/tur/aksiyon/" to "Aksiyon",
+        "/tur/bilim-kurgu/" to "Bilim Kurgu",
+        "/tur/dram/" to "Dram",
+        "/tur/komedi/" to "Komedi",
+        "/tur/gerilim/" to "Gerilim"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = "${mainUrl}${request.data.replace("/sayfa/1/", "/sayfa/$page/")}"
-        val document = app.get(url, referer = "${mainUrl}/").document
+        val url = pagedUrl(request.data, page, pageSegment = "sayfa")
+        val document = getDoc(url)
         val items = document.select("section#film_posts article, div.item-relative")
             .mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)

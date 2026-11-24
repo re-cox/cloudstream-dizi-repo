@@ -31,11 +31,10 @@ class HDFilmCehennemi : BaseTurkishProvider() {
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
         val pagedPath = request.data.replace("/page/1/", "/page/$page/")
-        val document = app.get(
+        val document = getDoc(
             "${mainUrl}$pagedPath",
-            headers = mapOf("X-Requested-With" to "fetch"),
-            referer = "${mainUrl}/"
-        ).document
+            headers = mapOf("X-Requested-With" to "fetch")
+        )
 
         val items = document.select("a.poster, div.poster a").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, items)
