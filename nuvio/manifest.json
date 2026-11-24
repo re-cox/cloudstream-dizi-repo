@@ -10,149 +10,305 @@
       "id": "dizipal",
       "name": "DiziPal",
       "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv",
         "movie"
       ],
       "filename": "providers/dizipal.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=dizipal2150.com&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "hdfilmcehennemi",
       "name": "HDFilmCehennemi",
       "description": "HDFilmCehennemi - Otomatik domain takipli Türkçe film ve dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie",
         "tv"
       ],
       "filename": "providers/hdfilmcehennemi.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=www.hdfilmcehennemi.nl&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "dizibox",
       "name": "DiziBox",
       "description": "DiziBox - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv"
       ],
       "filename": "providers/dizibox.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=www.dizibox.live&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "dizilla",
       "name": "Dizilla",
       "description": "Dizilla - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv"
       ],
       "filename": "providers/dizilla.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=dizilla.now&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "diziyou",
       "name": "DiziYou",
       "description": "DiziYou - Otomatik domain takipli Türkçe altyazılı ve dublajlı dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv"
       ],
       "filename": "providers/diziyou.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=diziyou.net&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "sezonlukdizi",
       "name": "SezonlukDizi",
       "description": "SezonlukDizi - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv"
       ],
       "filename": "providers/sezonlukdizi.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=sezonlukdizi.cc&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "filmmodu",
       "name": "FilmModu",
       "description": "FilmModu - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie"
       ],
       "filename": "providers/filmmodu.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=filmmodu.icu&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "dizimom",
       "name": "DiziMom",
       "description": "DiziMom - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv",
         "movie"
       ],
       "filename": "providers/dizimom.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=ddizimom.icu&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "fullhdfilmizlesene",
       "name": "FullHDFilmizlesene",
       "description": "FullHDFilmizlesene - Otomatik domain takipli Türkçe film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie"
       ],
       "filename": "providers/fullhdfilmizlesene.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=www.fullhdfilmizlesene.now&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "filmmakinesi",
       "name": "FilmMakinesi",
       "description": "FilmMakinesi - Otomatik domain takipli HD film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie"
       ],
       "filename": "providers/filmmakinesi.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=filmmakinesi.co&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "webteizle",
       "name": "WebteIzle",
       "description": "WebteIzle - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie"
       ],
       "filename": "providers/webteizle.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=webteizle.info&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "selcukflix",
       "name": "SelcukFlix",
       "description": "SelcukFlix - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "tv",
         "movie"
       ],
       "filename": "providers/selcukflix.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=selcukflix.app&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     },
     {
       "id": "setfilmizle",
       "name": "SetFilmIzle",
       "description": "SetFilmIzle - Otomatik domain takipli Türkçe film ve dizi kaynağı",
-      "version": "1.0.0",
+      "version": "1.1.0",
+      "author": "re-cox",
       "supportedTypes": [
         "movie",
         "tv"
       ],
       "filename": "providers/setfilmizle.js",
-      "enabled": true
+      "enabled": true,
+      "logo": "https://www.google.com/s2/favicons?domain=www.setfilmizle.ltd&sz=64",
+      "contentLanguage": [
+        "tr"
+      ],
+      "formats": [
+        "m3u8",
+        "mp4"
+      ],
+      "limited": false,
+      "disabledPlatforms": [],
+      "supportsExternalPlayer": true
     }
   ]
 }

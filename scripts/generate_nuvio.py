@@ -180,47 +180,9 @@ async function resolveLiveDomain() {{
     }}
   }} catch (_) {{}}
 
+  // Fast path: immediately trust `currentUrl` from domains.json (already verified by GitHub Actions)
+  // to avoid wasting scraper timeout probing ISP-blocked mirrors on startup.
   const primary = (cfg && cfg.currentUrl) ? cfg.currentUrl.replace(/\\/+$/, "") : FALLBACK_URL;
-  const health = cfg ? cfg.healthCheckText : null;
-
-  if (await isAlive(primary, health)) {{
-    cachedBaseUrl = primary;
-    cachedAt = now;
-    return primary;
-  }}
-
-  if (cfg && cfg.nextUrl) {{
-    const nextUrl = cfg.nextUrl.replace(/\\/+$/, "");
-    if (await isAlive(nextUrl, health)) {{
-      cachedBaseUrl = nextUrl;
-      cachedAt = now;
-      return nextUrl;
-    }}
-  }}
-
-  if (cfg && Array.isArray(cfg.mirrors)) {{
-    for (const m of cfg.mirrors) {{
-      const candidate = String(m || "").replace(/\\/+$/, "");
-      if (!candidate || candidate === primary) continue;
-      if (await isAlive(candidate, health)) {{
-        cachedBaseUrl = candidate;
-        cachedAt = now;
-        return candidate;
-      }}
-    }}
-  }}
-
-  if (cfg && cfg.prefix && cfg.suffix && cfg.currentNumber) {{
-    for (let i = 1; i <= 5; i++) {{
-      const candidate = `${{cfg.prefix}}${{cfg.currentNumber + i}}${{cfg.suffix}}`.replace(/\\/+$/, "");
-      if (await isAlive(candidate, health)) {{
-        cachedBaseUrl = candidate;
-        cachedAt = now;
-        return candidate;
-      }}
-    }}
-  }}
-
   cachedBaseUrl = primary;
   cachedAt = now;
   return primary;
@@ -259,13 +221,25 @@ async function searchSite(baseUrl, query) {{
 
   try {{
     if (SEARCH_MODE === "dizipal_api") {{
-      const res = await fetch(`${{baseUrl}}/api/search-autocomplete`, {{
-        method: "POST",
-        headers: {{ ...headers, "Content-Type": "application/x-www-form-urlencoded", "X-Requested-With": "XMLHttpRequest" }},
-        body: `query=${{encoded}}`
-      }});
-      const obj = await res.json();
-      return Object.values(obj || {{}}).map((item) => absolutize(baseUrl, item.url)).filter(Boolean);
+      try {{
+        const res = await fetch(`${{baseUrl}}/api/search-autocomplete`, {{
+          method: "POST",
+          headers: {{ ...headers, "Content-Type": "application/x-www-form-urlencoded", "X-Requested-With": "XMLHttpRequest" }},
+          body: `query=${{encoded}}`
+        }});
+        if (res.ok) {{
+          const txt = await res.text();
+          if (txt.trim().startsWith("{{")) {{
+            const obj = JSON.parse(txt);
+            const links = Object.values(obj || {{}}).map((item) => absolutize(baseUrl, item.url)).filter(Boolean);
+            if (links.length) return links;
+          }}
+        }}
+      }} catch (_) {{}}
+      // Fallback to /search?q= for newer Dizipal templates
+      const sRes = await fetch(`${{baseUrl}}/search?q=${{encoded}}`, {{ headers }});
+      const sHtml = await sRes.text();
+      return [...new Set([...sHtml.matchAll(/href=["']([^"']*(?:\\/dizi\\/|\\/film\\/)[^"']+)["']/gi)].map((m) => absolutize(baseUrl, m[1])))].slice(0, 6);
     }}
 
     if (SEARCH_MODE === "hdfc_api") {{
@@ -419,15 +393,23 @@ def main() -> None:
             domains_raw_url_json=json.dumps(DOMAINS_RAW_URL),
         )
         (NUVIO_DIR / filename).write_text(js_code, encoding="utf-8")
+        domain_host = site_cfg["currentUrl"].replace("https://", "").replace("http://", "").strip("/")
         scrapers.append(
             {
                 "id": meta["id"],
                 "name": meta["name"],
                 "description": meta["description"],
-                "version": "1.0.0",
+                "version": "1.1.0",
+                "author": "re-cox",
                 "supportedTypes": meta["supportedTypes"],
                 "filename": filename,
                 "enabled": True,
+                "logo": f"https://www.google.com/s2/favicons?domain={domain_host}&sz=64",
+                "contentLanguage": ["tr"],
+                "formats": ["m3u8", "mp4"],
+                "limited": False,
+                "disabledPlatforms": [],
+                "supportsExternalPlayer": True,
             }
         )
 

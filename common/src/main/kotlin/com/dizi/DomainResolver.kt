@@ -1,138 +1,148 @@
 package com.dizi
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.fasterxml.jackson.annotation.JsonProperty
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
 import com.lagradost.cloudstream3.app
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import org.json.JSONObject
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class DomainRegistry(
-    @JsonProperty("updatedAt") val updatedAt: String? = null,
-    @JsonProperty("sites") val sites: Map<String, SiteDomainConfig> = emptyMap()
-)
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 data class SiteDomainConfig(
-    @JsonProperty("currentUrl") val currentUrl: String = "",
-    @JsonProperty("nextUrl") val nextUrl: String? = null,
-    @JsonProperty("strategy") val strategy: String? = null,
-    @JsonProperty("prefix") val prefix: String? = null,
-    @JsonProperty("suffix") val suffix: String? = null,
-    @JsonProperty("currentNumber") val currentNumber: Int? = null,
-    @JsonProperty("mirrors") val mirrors: List<String> = emptyList(),
-    @JsonProperty("healthCheckText") val healthCheckText: String? = null
+    val currentUrl: String = "",
+    val nextUrl: String? = null,
+    val prefix: String? = null,
+    val suffix: String? = null,
+    val currentNumber: Int? = null,
+    val mirrors: List<String> = emptyList(),
+    val healthCheckText: String? = null
 )
 
 /**
- * Resolves live site domains dynamically at runtime:
- * 1. Fetches `domains.json` from the GitHub repository (cached in memory for 30 min).
- * 2. Verifies `currentUrl` is alive (not BTK-blocked or parked).
- * 3. If unreachable, fails over in order:
- *    a) `nextUrl` (e.g. announced "Sonraki adresimiz ...")
- *    b) `mirrors` (known TLD rotations like .nl / .now / .la / .to)
- *    c) sequential numbers (`currentNumber + 1` .. `currentNumber + 5`)
+ * Fast, Android-native (zero Jackson reflection) domain resolver:
+ * 1. Fetches `domains.json` once per 30 minutes (protected by a Mutex so parallel
+ *    `getMainPage` calls never stampede).
+ * 2. Immediately returns `currentUrl` from `domains.json` without blocking startup
+ *    on slow mirror probes (GitHub Actions already verified the live domain).
+ * 3. Provides `failover()` only when a real request fails, trying `nextUrl` -> `mirrors` -> `N+1..N+3`.
  */
 object DomainResolver {
-    // Replace KULLANICI_ADIN/cloudstream-dizi-repo with your own GitHub username & repo
     private const val DOMAINS_JSON_URL =
         "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json"
 
-    private const val CACHE_TTL_MS = 30 * 60 * 1000L // 30 minutes
-    private val mapper = jacksonObjectMapper()
+    private const val CACHE_TTL_MS = 30 * 60 * 1000L
+    private val fetchMutex = Mutex()
 
-    private val blockAndParkingMarkers = listOf(
-        "bilgi teknolojileri ve iletişim kurumu",
-        "erişime engellenmiştir",
-        "5651 sayılı kanun",
-        "buy this domain",
-        "domain is for sale",
-        "sedoparking",
-        "dan.com",
-        "afternic",
-        "godaddy"
-    )
+    @Volatile
+    private var registryCache: Map<String, SiteDomainConfig> = emptyMap()
 
-    private val resolvedCache = mutableMapOf<String, Pair<String, Long>>()
+    @Volatile
+    private var registryFetchedAt: Long = 0L
+
+    private val activeUrlOverrides = mutableMapOf<String, String>()
 
     suspend fun resolve(siteKey: String, fallbackUrl: String): String {
+        activeUrlOverrides[siteKey]?.let { return it }
+
+        val config = getSiteConfig(siteKey)
+        val url = config?.currentUrl?.takeIf { it.isNotBlank() } ?: fallbackUrl
+        return url.trimEnd('/')
+    }
+
+    suspend fun failover(siteKey: String, failedUrl: String): String {
+        val config = getSiteConfig(siteKey) ?: return failedUrl.trimEnd('/')
+        val cleanFailed = failedUrl.trimEnd('/')
+
+        val candidates = mutableListOf<String>()
+        config.nextUrl?.trimEnd('/')?.takeIf { it.isNotBlank() && it != cleanFailed }?.let {
+            candidates.add(it)
+        }
+        config.mirrors.forEach { m ->
+            val clean = m.trimEnd('/')
+            if (clean.isNotBlank() && clean != cleanFailed && clean !in candidates) {
+                candidates.add(clean)
+            }
+        }
+        val currentNum = config.currentNumber ?: extractNumber(cleanFailed)
+        if (!config.prefix.isNullOrBlank() && !config.suffix.isNullOrBlank() && currentNum != null) {
+            for (offset in 1..3) {
+                val seq = "${config.prefix}${currentNum + offset}${config.suffix}".trimEnd('/')
+                if (seq != cleanFailed && seq !in candidates) {
+                    candidates.add(seq)
+                }
+            }
+        }
+
+        for (candidate in candidates.take(4)) {
+            if (isAliveFast(candidate, config.healthCheckText)) {
+                activeUrlOverrides[siteKey] = candidate
+                return candidate
+            }
+        }
+        return cleanFailed
+    }
+
+    private suspend fun getSiteConfig(siteKey: String): SiteDomainConfig? {
         val now = System.currentTimeMillis()
-        resolvedCache[siteKey]?.let { (cachedUrl, timestamp) ->
-            if (now - timestamp < CACHE_TTL_MS) {
-                return cachedUrl
+        if (registryCache.isNotEmpty() && now - registryFetchedAt < CACHE_TTL_MS) {
+            return registryCache[siteKey]
+        }
+
+        return fetchMutex.withLock {
+            val refreshedNow = System.currentTimeMillis()
+            if (registryCache.isNotEmpty() && refreshedNow - registryFetchedAt < CACHE_TTL_MS) {
+                return@withLock registryCache[siteKey]
             }
-        }
 
-        val config = fetchSiteConfig(siteKey)
-        val primaryUrl = config?.currentUrl?.takeIf { it.isNotBlank() } ?: fallbackUrl
-
-        // Fast path: check if primary URL is alive
-        if (isAlive(primaryUrl, config?.healthCheckText)) {
-            val clean = primaryUrl.trimEnd('/')
-            resolvedCache[siteKey] = clean to now
-            return clean
-        }
-
-        // Failover 1: check announced nextUrl
-        val nextUrl = config?.nextUrl?.takeIf { it.isNotBlank() }
-        if (nextUrl != null && isAlive(nextUrl, config.healthCheckText)) {
-            val clean = nextUrl.trimEnd('/')
-            resolvedCache[siteKey] = clean to now
-            return clean
-        }
-
-        // Failover 2: check known mirrors / TLD rotations
-        config?.mirrors?.forEach { mirror ->
-            val candidate = mirror.trimEnd('/')
-            if (candidate.isNotBlank() && candidate != primaryUrl.trimEnd('/') && candidate != nextUrl?.trimEnd('/')) {
-                if (isAlive(candidate, config.healthCheckText)) {
-                    resolvedCache[siteKey] = candidate to now
-                    return candidate
+            try {
+                val text = app.get(DOMAINS_JSON_URL, timeout = 6).text
+                val root = JSONObject(text)
+                val sitesObj = root.optJSONObject("sites") ?: return@withLock null
+                val parsed = mutableMapOf<String, SiteDomainConfig>()
+                val keys = sitesObj.keys()
+                while (keys.hasNext()) {
+                    val key = keys.next()
+                    val obj = sitesObj.optJSONObject(key) ?: continue
+                    val mirrorsList = mutableListOf<String>()
+                    val mirrorsArr = obj.optJSONArray("mirrors")
+                    if (mirrorsArr != null) {
+                        for (i in 0 until mirrorsArr.length()) {
+                            val item = mirrorsArr.optString(i)
+                            if (item.isNotBlank()) mirrorsList.add(item)
+                        }
+                    }
+                    parsed[key] = SiteDomainConfig(
+                        currentUrl = obj.optString("currentUrl", ""),
+                        nextUrl = obj.optString("nextUrl", "").takeIf { it.isNotBlank() && it != "null" },
+                        prefix = obj.optString("prefix", "").takeIf { it.isNotBlank() && it != "null" },
+                        suffix = obj.optString("suffix", "").takeIf { it.isNotBlank() && it != "null" },
+                        currentNumber = if (obj.has("currentNumber") && !obj.isNull("currentNumber")) {
+                            obj.optInt("currentNumber")
+                        } else null,
+                        mirrors = mirrorsList,
+                        healthCheckText = obj.optString("healthCheckText", "").takeIf { it.isNotBlank() && it != "null" }
+                    )
                 }
-            }
-        }
-
-        // Failover 3: sequential probing (N+1 .. N+5) if site uses numbered domains
-        val prefix = config?.prefix
-        val suffix = config?.suffix
-        val currentNum = config?.currentNumber ?: extractNumber(primaryUrl)
-        if (!prefix.isNullOrBlank() && !suffix.isNullOrBlank() && currentNum != null) {
-            for (offset in 1..5) {
-                val candidate = "${prefix}${currentNum + offset}${suffix}".trimEnd('/')
-                if (candidate == nextUrl?.trimEnd('/')) continue
-                if (isAlive(candidate, config.healthCheckText)) {
-                    resolvedCache[siteKey] = candidate to now
-                    return candidate
+                if (parsed.isNotEmpty()) {
+                    registryCache = parsed
+                    registryFetchedAt = refreshedNow
                 }
+            } catch (_: Exception) {
+                // Keep existing cache or fallback
             }
-        }
 
-        val cleanFallback = primaryUrl.trimEnd('/')
-        resolvedCache[siteKey] = cleanFallback to now
-        return cleanFallback
-    }
-
-    fun invalidate(siteKey: String) {
-        resolvedCache.remove(siteKey)
-    }
-
-    private suspend fun fetchSiteConfig(siteKey: String): SiteDomainConfig? {
-        return try {
-            val text = app.get(DOMAINS_JSON_URL, timeout = 10).text
-            val registry = mapper.readValue<DomainRegistry>(text)
-            registry.sites[siteKey]
-        } catch (_: Exception) {
-            null
+            registryCache[siteKey]
         }
     }
 
-    private suspend fun isAlive(url: String, healthCheckText: String?): Boolean {
+    private suspend fun isAliveFast(url: String, healthCheckText: String?): Boolean {
         return try {
-            val response = app.get(url, timeout = 8)
+            val response = app.get(url, timeout = 4)
             if (!response.isSuccessful) return false
             val body = response.text.lowercase()
             if (body.length < 1500) return false
-            if (blockAndParkingMarkers.any { body.contains(it) }) {
+            if (body.contains("erişime engellenmiştir") ||
+                body.contains("5651 sayılı kanun") ||
+                body.contains("sedoparking") ||
+                body.contains("buy this domain")
+            ) {
                 return false
             }
             if (!healthCheckText.isNullOrBlank()) {

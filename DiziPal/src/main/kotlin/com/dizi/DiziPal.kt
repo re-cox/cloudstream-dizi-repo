@@ -95,35 +95,65 @@ class DiziPal : BaseTurkishProvider() {
 
     override suspend fun search(query: String): List<SearchResponse> {
         ensureLiveDomain()
-        val response = app.post(
-            "${mainUrl}/api/search-autocomplete",
-            headers = mapOf(
-                "Accept" to "application/json, text/javascript, */*; q=0.01",
-                "X-Requested-With" to "XMLHttpRequest"
-            ),
-            referer = "${mainUrl}/",
-            data = mapOf("query" to query)
-        )
+        val results = mutableListOf<SearchResponse>()
 
-        val itemsMap = try {
-            mapper.readValue<Map<String, AutoCompleteItem>>(response.text)
-        } catch (_: Exception) {
-            return emptyList()
-        }
-
-        return itemsMap.values.mapNotNull { item ->
-            if (item.title.isBlank() || item.url.isBlank()) return@mapNotNull null
-            val fullUrl = fixUrl(item.url)
-            val isMovie = item.type == "movies" || fullUrl.contains("/film/")
-            if (isMovie) {
-                newMovieSearchResponse(item.title, fullUrl, TvType.Movie) {
-                    this.posterUrl = item.poster?.let { fixUrl(it) }
-                }
-            } else {
-                newTvSeriesSearchResponse(item.title, fullUrl, TvType.TvSeries) {
-                    this.posterUrl = item.poster?.let { fixUrl(it) }
+        // 1. Classic DiziPal autocomplete API
+        try {
+            val response = app.post(
+                "${mainUrl}/api/search-autocomplete",
+                headers = mapOf(
+                    "Accept" to "application/json, text/javascript, */*; q=0.01",
+                    "X-Requested-With" to "XMLHttpRequest"
+                ),
+                referer = "${mainUrl}/",
+                data = mapOf("query" to query)
+            )
+            if (response.isSuccessful && response.text.trimStart().startsWith("{")) {
+                val itemsMap = mapper.readValue<Map<String, AutoCompleteItem>>(response.text)
+                itemsMap.values.forEach { item ->
+                    if (item.title.isBlank() || item.url.isBlank()) return@forEach
+                    val fullUrl = fixUrl(item.url)
+                    val isMovie = item.type == "movies" || fullUrl.contains("/film/")
+                    results.add(
+                        if (isMovie) {
+                            newMovieSearchResponse(item.title, fullUrl, TvType.Movie) {
+                                this.posterUrl = item.poster?.let { fixUrl(it) }
+                            }
+                        } else {
+                            newTvSeriesSearchResponse(item.title, fullUrl, TvType.TvSeries) {
+                                this.posterUrl = item.poster?.let { fixUrl(it) }
+                            }
+                        }
+                    )
                 }
             }
+        } catch (_: Exception) {
+            // Fall through to HTML search
+        }
+
+        if (results.isNotEmpty()) return results
+
+        // 2. Fallback HTML search (/search?q=...) for newer Dizipal layouts
+        return try {
+            val encoded = java.net.URLEncoder.encode(query, "UTF-8")
+            val doc = app.get("${mainUrl}/search?q=$encoded", referer = "${mainUrl}/").document
+            doc.select("article.type2 ul li, div.card, a[href*='/dizi/'], a[href*='/film/']")
+                .mapNotNull { el ->
+                    val link = if (el.tagName() == "a") el else el.selectFirst("a") ?: return@mapNotNull null
+                    val href = fixUrlNull(link.attr("href")) ?: return@mapNotNull null
+                    val title = el.selectFirst("span.title, h2, h3")?.text()?.trim()
+                        ?: link.attr("title").trim().ifBlank { link.text().trim() }
+                    if (title.isBlank()) return@mapNotNull null
+                    val poster = fixUrlNull(el.selectFirst("img")?.let { it.attr("data-src").ifBlank { it.attr("src") } })
+                    if (href.contains("/film/")) {
+                        newMovieSearchResponse(title, href, TvType.Movie) { this.posterUrl = poster }
+                    } else {
+                        newTvSeriesSearchResponse(title, href, TvType.TvSeries) { this.posterUrl = poster }
+                    }
+                }
+                .distinctBy { it.url }
+        } catch (_: Exception) {
+            emptyList()
         }
     }
 

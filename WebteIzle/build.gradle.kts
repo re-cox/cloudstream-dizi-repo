@@ -1,4 +1,4 @@
-version = 1
+version = 2
 
 cloudstream {
     description = "WebteIzle - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı"
