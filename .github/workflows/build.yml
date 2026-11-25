@@ -31,12 +31,13 @@ jobs:
           gradle-version: "8.9"
 
       - name: Build plugins and generate plugins.json
-        run: gradle make makePluginsJson
+        run: gradle make makePluginsJson :Dizilla:testDebugUnitTest
 
       - name: Collect build artifacts
         run: |
           mkdir -p dist
           cp build/plugins.json dist/plugins.json
+          cp LICENSE UPSTREAM.md dist/
           find . -path "*/build/*.cs3" -exec cp {} dist/ \;
           ls -la dist
 

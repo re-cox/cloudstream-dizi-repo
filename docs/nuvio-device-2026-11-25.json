@@ -1,0 +1,201 @@
+{
+  "scope": "NuvioTV native DEX built-in test; default TMDB 603, not playback. TV sample is chosen by the app.",
+  "device": "MiTV Android 11",
+  "results": [
+    {
+      "provider": "FilmModu",
+      "sample": "TMDB 603 (movie)",
+      "streams": 1,
+      "status": "streams_found",
+      "diagnostics": [
+        "Plugin: FilmModuPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 48 results",
+        "Loaded: MovieLoadResponse",
+        "loadLinks returned: success=true, 1 links, 2 subs",
+        "Result: 1 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "DiziBox",
+      "sample": "TMDB 603 (series)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: DiziBoxPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"Veronica's Closet\" (1997)",
+        "Search returned: 0 results",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "HDFilmCehennemi",
+      "sample": "TMDB 603 (movie)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: HDFilmCehennemiPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 4 results",
+        "Runtime exception: InterruptedIOException: timeout",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "DiziMom",
+      "sample": "TMDB 603 (movie)",
+      "streams": 2,
+      "status": "streams_found",
+      "diagnostics": [
+        "Plugin: DiziMomPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 48 results",
+        "Loaded: MovieLoadResponse",
+        "loadLinks returned: success=true, 2 links, 2 subs",
+        "Result: 2 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "DiziYou",
+      "sample": "TMDB 603 (series)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: DiziYouPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"Veronica's Closet\" (1997)",
+        "Search returned: 0 results",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "Dizilla",
+      "sample": "TMDB 603 (series)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: DizillaPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"Veronica's Closet\" (1997)",
+        "Search returned: 0 results",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "WebteIzle",
+      "sample": "TMDB 603 (movie)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: WebteIzlePlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 6 results",
+        "Loaded: MovieLoadResponse",
+        "loadLinks returned: success=false, 0 links, 0 subs",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "FilmMakinesi",
+      "sample": "TMDB 603 (movie)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: FilmMakinesiPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 0 results",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "FullHDFilmizlesene",
+      "sample": "TMDB 603 (movie)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: FullHDFilmizlesenePlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "search() THREW: URISyntaxException: Illegal character in path at index 44: https://www.fullhdfilmizlesene.now/arama/The Matrix",
+        "Search returned: null",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "DiziPal",
+      "sample": "TMDB 603 (movie)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: DiziPalPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "search() THREW: SiteRequestException: DiziPal: HTTP 404 or blocked page at https://dizipal1.rest/arama",
+        "Search returned: null",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "SetFilmIzle",
+      "sample": "TMDB 603 (movie)",
+      "streams": 1,
+      "status": "streams_found",
+      "diagnostics": [
+        "Plugin: SetFilmIzlePlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 4 results",
+        "Loaded: MovieLoadResponse",
+        "loadLinks returned: success=true, 1 links, 2 subs",
+        "Result: 1 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "SelcukFlix",
+      "sample": "TMDB 603 (movie)",
+      "streams": 1,
+      "status": "streams_found",
+      "diagnostics": [
+        "Plugin: SelcukFlixPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"The Matrix\" (1999)",
+        "Search returned: 6 results",
+        "Loaded: MovieLoadResponse",
+        "loadLinks returned: success=true, 1 links, 3 subs",
+        "Result: 1 streams"
+      ],
+      "playbackVerified": false
+    },
+    {
+      "provider": "SezonlukDizi",
+      "sample": "TMDB 603 (series)",
+      "streams": 0,
+      "status": "no_streams",
+      "diagnostics": [
+        "Plugin: SezonlukDiziPlugin, sameBaseClass=true, isWrapper=false",
+        "load(Context): OK, 1 APIs",
+        "TMDB: \"Veronica's Closet\" (1997)",
+        "Search returned: 0 results",
+        "Result: 0 streams"
+      ],
+      "playbackVerified": false
+    }
+  ]
+}

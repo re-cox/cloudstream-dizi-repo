@@ -1,8 +1,8 @@
 {
   "id": "re-cox-dizi-repo",
-  "name": "Özel Dizi & Film Repo (TR)",
+  "name": "re-cox TR (Nuvio JS)",
   "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "re-cox",
   "repository": "https://github.com/re-cox/cloudstream-dizi-repo",
   "scrapers": [
@@ -10,7 +10,7 @@
       "id": "dizipal",
       "name": "DiziPal",
       "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv",
@@ -18,7 +18,7 @@
       ],
       "filename": "providers/dizipal.js",
       "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=dizipal2150.com&sz=64",
+      "logo": "https://www.google.com/s2/favicons?domain=dizipal1.rest&sz=64",
       "contentLanguage": [
         "tr"
       ],
@@ -34,7 +34,7 @@
       "id": "hdfilmcehennemi",
       "name": "HDFilmCehennemi",
       "description": "HDFilmCehennemi - Otomatik domain takipli Türkçe film ve dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie",
@@ -58,7 +58,7 @@
       "id": "dizibox",
       "name": "DiziBox",
       "description": "DiziBox - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv"
@@ -81,7 +81,7 @@
       "id": "dizilla",
       "name": "Dizilla",
       "description": "Dizilla - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv"
@@ -104,7 +104,7 @@
       "id": "diziyou",
       "name": "DiziYou",
       "description": "DiziYou - Otomatik domain takipli Türkçe altyazılı ve dublajlı dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv"
@@ -127,7 +127,7 @@
       "id": "sezonlukdizi",
       "name": "SezonlukDizi",
       "description": "SezonlukDizi - Otomatik domain takipli yabancı dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv"
@@ -150,7 +150,7 @@
       "id": "filmmodu",
       "name": "FilmModu",
       "description": "FilmModu - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie"
@@ -173,7 +173,7 @@
       "id": "dizimom",
       "name": "DiziMom",
       "description": "DiziMom - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv",
@@ -197,7 +197,7 @@
       "id": "fullhdfilmizlesene",
       "name": "FullHDFilmizlesene",
       "description": "FullHDFilmizlesene - Otomatik domain takipli Türkçe film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie"
@@ -220,7 +220,7 @@
       "id": "filmmakinesi",
       "name": "FilmMakinesi",
       "description": "FilmMakinesi - Otomatik domain takipli HD film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie"
@@ -243,7 +243,7 @@
       "id": "webteizle",
       "name": "WebteIzle",
       "description": "WebteIzle - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie"
@@ -266,7 +266,7 @@
       "id": "selcukflix",
       "name": "SelcukFlix",
       "description": "SelcukFlix - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "tv",
@@ -290,7 +290,7 @@
       "id": "setfilmizle",
       "name": "SetFilmIzle",
       "description": "SetFilmIzle - Otomatik domain takipli Türkçe film ve dizi kaynağı",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": "re-cox",
       "supportedTypes": [
         "movie",

@@ -85,7 +85,10 @@ subprojects {
 
         cloudstream("com.lagradost:cloudstream3:pre-release")
 
+        add("testImplementation", "junit:junit:4.13.2")
+        add("testImplementation", "org.json:json:20240303")
         implementation(kotlin("stdlib"))
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
         implementation("com.github.Blatzar:NiceHttp:0.4.11")
         implementation("org.jsoup:jsoup:1.17.2")
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.1")

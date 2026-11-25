@@ -1,87 +1,225 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Adapted from neoser1984/neowatch (13b96229ed698251827568ff914ba3b6830e16c9); see UPSTREAM.md.
 package com.dizi
 
+import android.util.Log
 import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
 import com.lagradost.cloudstream3.utils.*
 import org.jsoup.nodes.Element
 
 class FilmMakinesi : BaseTurkishProvider() {
     override val siteKey = "FilmMakinesi"
-    override var mainUrl = "https://filmmakinesi.to"
-    override var name = "FilmMakinesi"
-    override val supportedTypes = setOf(TvType.Movie)
+    override var mainUrl              = "https://filmmakinesi.to"
+    override var name                 = "FilmMakinesi"
+    override val hasMainPage          = true
+    override var lang                 = "tr"
+    override val hasQuickSearch       = false
+    override val supportedTypes       = setOf(TvType.Movie, TvType.TvSeries)
+
+    // ! CloudFlare bypass
+    override var sequentialMainPage            = true
+    override var sequentialMainPageDelay       = 350L
+    override var sequentialMainPageScrollDelay = 350L
 
     override val mainPage = mainPageOf(
-        "/filmler/" to "Son Filmler",
-        "/tur/aksiyon/" to "Aksiyon",
-        "/tur/bilim-kurgu/" to "Bilim Kurgu",
-        "/tur/dram/" to "Dram",
-        "/tur/komedi/" to "Komedi",
-        "/tur/gerilim/" to "Gerilim"
+        "${mainUrl}/"                                to "Son Filmler",
+        "${mainUrl}/yabanci-dizi-izle-1/"                      to "Diziler",
+        "${mainUrl}/film-izle/olmeden-izlenmesi-gerekenler-fm1/" to "Ölmeden İzle",
+        "${mainUrl}/tur/aksiyon-fmy54y/film/"                  to "Aksiyon",
+        "${mainUrl}/tur/bilim-kurgu-fm3/film/"                 to "Bilim Kurgu",
+        "${mainUrl}/tur/macera-fm1/film/"                      to "Macera",
+        "${mainUrl}/tur/komedi-fm1/film/"                      to "Komedi",
+        "${mainUrl}/tur/romantik-fm1/film/"                    to "Romantik",
+        "${mainUrl}/tur/belgesel/film/"                        to "Belgesel",
+        "${mainUrl}/tur/fantastik-fm1/film/"                   to "Fantastik",
+        "${mainUrl}/tur/polisiye/film/"                        to "Polisiye Suç",
+        "${mainUrl}/tur/korku-fm2/film/"                       to "Korku",
+        "${mainUrl}/ulke/turkiye-fm4/"                         to "Yerli Filmler",
     )
+
+    // Site kısa sürede çok istek gelince "Biraz yavaşlayalım" sayfası döndürüyor; bekleyip bir kez daha denenir
+    private suspend fun sayfa(url: String): org.jsoup.nodes.Document {
+        var document = getDoc(url, referer = "${mainUrl}/")
+        for (bekle in listOf(2_500L, 5_000L)) {
+            if (!document.title().contains("yavaşlayalım", ignoreCase = true)) break
+            Log.d("FLMM", "hız sınırı, ${bekle} ms bekleniyor » $url")
+            kotlinx.coroutines.delay(bekle)
+            document = getDoc(url, referer = "${mainUrl}/")
+        }
+        return document
+    }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = pagedUrl(request.data, page, pageSegment = "sayfa")
-        val document = getDoc(url)
-        val items = document.select("section#film_posts article, div.item-relative")
-            .mapNotNull { it.toSearchResult() }
-        return newHomePageResponse(request.name, items)
+        val url      = if (page <= 1) rewriteToLiveDomain(request.data) else "${rewriteToLiveDomain(request.data)}sayfa/${page}/"
+        val document = sayfa(url)
+        val home     = document.select("div.item-relative > a.item, a.poster").mapNotNull { it.toSearchResult() }
+        val hasNext  = document.selectFirst("a[href*='/sayfa/${page + 1}/']") != null
+
+        return newHomePageResponse(request.name, home, hasNext)
     }
 
     private fun Element.toSearchResult(): SearchResponse? {
-        val link = selectFirst("h6 a, a.title, a") ?: return null
-        val title = link.text().trim().takeIf { it.isNotBlank() } ?: return null
-        val href = fixUrlNull(link.attr("href")) ?: return null
-        val posterUrl = fixUrlNull(selectFirst("img")?.let { it.attr("data-src").ifBlank { it.attr("src") } })
-        return newMovieSearchResponse(title, href, TvType.Movie) {
-            this.posterUrl = posterUrl
+        val title     = this.attr("data-title").ifBlank { this.selectFirst("div.title, strong.poster-title")?.text() ?: this.selectFirst("img")?.attr("alt") ?: "" }.trim()
+        if (title.isBlank()) return null
+        val href      = fixUrlNull(this.attr("href")) ?: return null
+        val posterUrl = fixUrlNull(this.selectFirst("img")?.attr("src"))
+        val score     = this.attr("data-score")
+        val year      = this.selectFirst("div.info span")?.text()?.trim()?.take(4)?.toIntOrNull()
+
+        return if (href.contains("/dizi/")) {
+            newTvSeriesSearchResponse(title, href, TvType.TvSeries) {
+                this.posterUrl = posterUrl
+                this.year      = year
+                this.score     = Score.from10(score)
+            }
+        } else {
+            newMovieSearchResponse(title, href, TvType.Movie) {
+                this.posterUrl = posterUrl
+                this.year      = year
+                this.score     = Score.from10(score)
+            }
         }
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
         ensureLiveDomain()
         val encoded = java.net.URLEncoder.encode(query, "UTF-8")
-        val document = app.get("${mainUrl}/arama/?s=$encoded", referer = "${mainUrl}/").document
-        return document.select("section#film_posts article, div.item-relative")
-            .mapNotNull { it.toSearchResult() }
+        val document = try { sayfa("${mainUrl}/arama/?s=$encoded") }
+            catch (error: java.util.concurrent.CancellationException) { throw error }
+            catch (_: Exception) { sayfa("${mainUrl}/?s=$encoded") }
+
+        return document.select("div.item-relative > a.item, a.poster").mapNotNull { it.toSearchResult() }
     }
+
+    override suspend fun quickSearch(query: String): List<SearchResponse> = search(query)
 
     override suspend fun load(url: String): LoadResponse? {
         ensureLiveDomain()
-        val liveUrl = rewriteToLiveDomain(url)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
+        return loadResolved(rewriteToLiveDomain(url))
+    }
 
-        val title = document.selectFirst("div.content h1, h1")?.text()?.trim() ?: return null
-        val poster = fixUrlNull(document.selectFirst("div.poster img, [property='og:image']")?.let {
-            it.attr("data-src").ifBlank { it.attr("src").ifBlank { it.attr("content") } }
-        })
-        val plot = document.selectFirst("section#film_single p")?.text()?.trim()
+    private suspend fun loadResolved(url: String): LoadResponse? {
+        val document = sayfa(url)
 
-        return newMovieLoadResponse(title, liveUrl, TvType.Movie, liveUrl) {
-            this.posterUrl = poster
-            this.plot = plot
+        val title           = document.selectFirst("h1.title")?.ownText()?.removeSuffix(" izle")?.trim()
+            ?: document.selectFirst("h1")?.text()?.substringBefore(" izle")?.trim() ?: return null
+        val poster          = fixUrlNull(document.selectFirst("img.cover-img")?.attr("src"))
+            ?: fixUrlNull(document.selectFirst("[property='og:image']")?.attr("content"))
+        val description     = document.selectFirst("div.info-description p")?.text()?.trim()
+        val year            = document.selectFirst("h1.title span.date a")?.text()?.trim()?.toIntOrNull()
+        val score           = document.selectFirst("div.imdb b")?.text()?.trim()
+        val tags            = document.select("div.info div.type a").map { it.text().trim() }
+        val duration        = document.selectFirst("div.info div.time")?.text()?.let { Regex("""(\d+)""").find(it)?.groupValues?.get(1)?.toIntOrNull() }
+        val trailer         = document.selectFirst("a.trailer-button")?.attr("data-video_url")?.takeIf { it.isNotBlank() }
+            ?: document.select("iframe[data-src*='youtube']").attr("data-src").takeIf { it.isNotBlank() }
+        val actors          = document.select("a.cast").mapNotNull {
+            val name = it.selectFirst("div.cast-name")?.text()?.trim() ?: return@mapNotNull null
+            Actor(name, fixUrlNull(it.selectFirst("img")?.attr("src")))
+        }
+        val recommendations = document.select("div.item-relative > a.item, a.poster").mapNotNull { it.toSearchResult() }
+
+        if (url.contains("/dizi/")) {
+            val episodes = document.select("#seasons a.item-ep, a.item-ep").mapNotNull {
+                val epHref  = fixUrlNull(it.attr("href")) ?: return@mapNotNull null
+                if (!epHref.contains("/bolum-")) return@mapNotNull null
+                val season  = Regex("""/sezon-(\d+)""").find(epHref)?.groupValues?.get(1)?.toIntOrNull()
+                val episode = Regex("""/bolum-(\d+)""").find(epHref)?.groupValues?.get(1)?.toIntOrNull()
+
+                newEpisode(epHref) {
+                    this.name    = it.selectFirst("div.ep-details span")?.text()?.trim()
+                        ?: it.selectFirst("div.ep-title")?.text()?.trim()
+                    this.season  = season
+                    this.episode = episode
+                }
+            }.distinctBy { it.data }
+
+            return newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
+                this.posterUrl       = poster
+                this.year            = year
+                this.plot            = description
+                this.tags            = tags
+                this.duration        = duration
+                this.score           = Score.from10(score)
+                this.recommendations = recommendations
+                addActors(actors)
+                addTrailer(trailer)
+            }
+        }
+
+        return newMovieLoadResponse(title, url, TvType.Movie, url) {
+            this.posterUrl       = poster
+            this.year            = year
+            this.plot            = description
+            this.tags            = tags
+            this.duration        = duration
+            this.score           = Score.from10(score)
+            this.recommendations = recommendations
+            addActors(actors)
+            addTrailer(trailer)
         }
     }
 
-    override suspend fun loadLinks(
-        data: String,
-        isCasting: Boolean,
-        subtitleCallback: (SubtitleFile) -> Unit,
-        callback: (ExtractorLink) -> Unit
-    ): Boolean {
+    override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         ensureLiveDomain()
-        val liveUrl = rewriteToLiveDomain(data)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
+        var emitted = false
+        loadLinksResolved(rewriteToLiveDomain(data), isCasting, subtitleCallback) { link ->
+            emitted = true
+            callback(link)
+        }
+        return emitted
+    }
 
-        val iframes = document.select("div.player-container iframe, iframe[data-src], iframe[src]")
-            .mapNotNull { it.attr("data-src").ifBlank { it.attr("src") }.takeIf { s -> s.isNotBlank() } }
+    private suspend fun loadLinksResolved(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
+        Log.d("FLMM", "data » $data")
+        val document = sayfa(data)
 
-        var found = false
-        for (iframe in iframes.distinct()) {
-            if (loadExtractor(fixUrl(iframe), "${mainUrl}/", subtitleCallback, callback)) {
-                found = true
+        // ? Alternatifler div.video-parts a[data-video_url] içinde; tek kaynaklı sayfalarda oynatıcı div.after-player iframe'inde
+        val kaynaklar = linkedMapOf<String, String>()   // adres → etiket
+        document.select("[data-video_url]").forEach { a ->
+            val adres = a.attr("data-video_url").trim()
+            if (adres.isBlank() || adres.contains("youtube") || a.text().contains("Fragman", true)) return@forEach
+            kaynaklar.putIfAbsent(if (adres.startsWith("//")) "https:$adres" else adres, a.text().trim())
+        }
+        document.select("iframe[data-src], iframe[src]").forEach { f ->
+            if (f.closest("[class*=fragman], [class*=trailer]") != null) return@forEach
+            val adres = f.attr("data-src").ifBlank { f.attr("src") }.trim()
+            if (adres.isBlank() || adres.startsWith("about:") || adres.contains("youtube") || adres.contains("googletagmanager")) return@forEach
+            kaynaklar.putIfAbsent(if (adres.startsWith("//")) "https:$adres" else adres, "")
+        }
+
+        var bulundu = false
+        for ((iframe, etiket) in kaynaklar) {
+            Log.d("FLMM", "iframe » $etiket » $iframe")
+            val toplanan = mutableListOf<ExtractorLink>()
+            runCatching {
+                val host = iframe.substringAfter("://").substringBefore("/")
+                if (host.startsWith("closeload") || host.startsWith("rapid")) {
+                    GizliJsOynatici().getUrl(iframe, "${mainUrl}/", subtitleCallback) { toplanan.add(it) }
+                } else {
+                    loadExtractor(iframe, "${mainUrl}/", subtitleCallback) { toplanan.add(it) }
+                }
+            }
+            val dil = when {
+                etiket.contains("Dublaj", true)  -> "Dublaj"
+                etiket.contains("Altyaz", true)  -> "Altyazılı"
+                else                             -> ""
+            }
+            for (link in toplanan) {
+                bulundu = true
+                if (dil.isBlank()) { callback.invoke(link); continue }
+                callback.invoke(
+                    newExtractorLink(link.source, "${link.name} - $dil", link.url, link.type) {
+                        this.referer = link.referer
+                        this.quality = link.quality
+                        this.headers = link.headers
+                    }
+                )
             }
         }
-        return found
+
+        return bulundu
     }
 }

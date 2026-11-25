@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-11-25T21:09:05.731Z",
+  "scope": "Live metadata/search/extraction and first response bytes; not device playback",
+  "results": [
+    {
+      "id": "dizipal",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2812,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/search",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/film/matrix",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vod.mntplayer.com:8443/movie/71mdvrjh6n96ckllqc80/239754",
+          "method": "GET",
+          "status": 503
+        }
+      ]
+    }
+  ]
+}

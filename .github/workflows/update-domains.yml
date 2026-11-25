@@ -25,12 +25,15 @@ jobs:
       - name: Check and update active domains
         run: python scripts/update_domains.py
 
-      - name: Commit updated domains.json if changed
+      - name: Regenerate Nuvio fallback addresses
+        run: python scripts/generate_nuvio.py
+
+      - name: Commit updated domains and Nuvio fallbacks if changed
         run: |
-          if ! git diff --quiet domains.json; then
+          if ! git diff --quiet -- domains.json nuvio; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add domains.json
+            git add domains.json nuvio
             git commit -m "chore(domains): update active site domains"
             git push
           else

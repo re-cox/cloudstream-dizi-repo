@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Adapted from neoser1984/neowatch (13b96229ed698251827568ff914ba3b6830e16c9); see UPSTREAM.md.
+package com.dizi
+
+import com.fasterxml.jackson.annotation.JsonProperty
+
+
+data class Kaynak(
+    @JsonProperty("status") val status: String,
+    @JsonProperty("data") val data: List<Veri>,
+)
+
+data class Veri(
+    @JsonProperty("baslik") val baslik: String,
+    @JsonProperty("id") val id: Int,
+    @JsonProperty("kalite") val kalite: Int,
+)
+
+data class AspData(
+    val alternatif : String,
+    val embed : String
+)

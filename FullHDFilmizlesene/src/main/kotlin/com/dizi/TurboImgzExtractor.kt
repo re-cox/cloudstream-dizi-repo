@@ -1,0 +1,35 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Adapted from neoser1984/neowatch (13b96229ed698251827568ff914ba3b6830e16c9); see UPSTREAM.md.
+package com.dizi
+
+import android.util.Log
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.utils.*
+
+open class TurboImgz : ExtractorApi() {
+    override val name            = "TurboImgz"
+    override val mainUrl         = "https://turbo.imgz.me"
+    override val requiresReferer = true
+
+    override suspend fun getUrl(url: String, referer: String?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit) {
+        val extRef   = referer ?: ""
+        val videoReq = app.get(url.substringAfter("||"), referer=extRef).text
+
+        val videoLink = Regex("""file: "(.*)",""").find(videoReq)?.groupValues?.get(1) ?: throw ErrorLoadingException("File not found")
+        Log.d("NeO_${this.name}", "videoLink » $videoLink")
+
+        val etiket = if (url.contains("||")) " - " + url.substringBefore("||").uppercase() else ""
+
+        callback.invoke(
+            newExtractorLink(
+                source = "${this.name}$etiket",
+                name   = "${this.name}$etiket",
+                url    = videoLink,
+                type   = ExtractorLinkType.M3U8
+            ) {
+                this.referer = extRef
+                this.quality = Qualities.Unknown.value
+            }
+        )
+    }
+}

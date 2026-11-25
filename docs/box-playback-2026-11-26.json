@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-25T21:03:37.262683+00:00",
+  "sample": {
+    "title": "Breaking Bad",
+    "tmdbId": "1396",
+    "season": 1,
+    "episode": 1
+  },
+  "nativeResults": {
+    "DiziYou": 2,
+    "Dizilla": 1,
+    "SetFilmIzle": 1,
+    "SelcukFlix": 1,
+    "FilmModu": 1,
+    "DiziMom": 2,
+    "FilmMakinesi": 0,
+    "DiziPal": 0
+  },
+  "playback": {
+    "provider": "DiziYou",
+    "verified": true,
+    "evidence": "ExoPlayer playbackState=3, playWhenReady=true, isPlaying=true; position advanced from 82 ms to 3367 ms; video decoder initialized. Short sample stopped after verification."
+  },
+  "scope": "Observed NuvioTV DEX logs for Breaking Bad S1E1 at 2026-11-26 00:01-00:02 Europe/Istanbul. DiziPal was subsequently updated to the new redirected-domain format."
+}

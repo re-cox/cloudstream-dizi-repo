@@ -51,6 +51,9 @@ BLOCK_AND_PARKING_MARKERS = (
     "afternic",
     "godaddy",
     "parked free",
+    "cf-chl-",
+    "<title>just a moment",
+    "<title>access denied",
 )
 
 MIN_VALID_BODY_LENGTH = 500
@@ -163,9 +166,12 @@ def update_site_entry(
 
     def apply_live(live_origin: str, body: str, note: str) -> Tuple[dict, bool, str]:
         updated["currentUrl"] = live_origin
-        num = extract_domain_number(live_origin)
-        if num is not None:
-            updated["currentNumber"] = num
+        # A redirect to another TLD (e.g. dizipal1.rest) must not reset the
+        # configured .com sequence from 2150 to 1.
+        if cfg.get("prefix") and cfg.get("suffix"):
+            sequence = re.fullmatch(re.escape(cfg["prefix"]) + r"(\d+)" + re.escape(cfg["suffix"]), live_origin)
+            if sequence:
+                updated["currentNumber"] = int(sequence.group(1))
 
         # Keep newly discovered live domain at the front of `mirrors` when present
         if isinstance(updated.get("mirrors"), list):

@@ -2,6 +2,8 @@
 
 Değişen site adreslerini (domain) otomatik takip eden **CloudStream 3** ve **Nuvio** uyumlu Türkçe dizi/film reposu.
 
+> **26 Kasım 2026:** Sağlayıcılar güncel sayfa ve oynatıcı biçimlerine uyarlandı. 13 `.cs3` paketi derlendi; NuvioTV cihazında altı kaynaktan örnek bölüm bağlantısı alındı, DiziYou için kısa oynatma doğrulandı. Tüm siteler için kesintisiz erişim garantisi yoktur. [Test sonuçları ve kaynak durumu](docs/DURUM.md).
+
 ## Uygulamalara Ekleme Bağlantıları
 
 ### CloudStream 3
@@ -10,7 +12,16 @@ Değişen site adreslerini (domain) otomatik takip eden **CloudStream 3** ve **N
 https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/repo.json
 ```
 
-### Nuvio / NuvioTR
+### NuvioTV (box için önerilen)
+
+**Ayarlar → İçerik ve Keşif → Uzantılar → Depo ekle:**
+```text
+https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/repo.json
+```
+
+NuvioTV `.cs3` paketlerini doğrudan destekler. Bu yol, siteye özel çözücüleri ve gerektiğinde uygulamanın WebView ortamını kullanır.
+
+### Nuvio JS / diğer uyumlu istemciler
 **Ayarlar → Eklentiler / Plugins → Depo Ekle:**
 ```text
 https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/nuvio/manifest.json
@@ -47,4 +58,30 @@ https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/nuvio/manife
    - Mevcut adres kapandığında sırayla `nextUrl` → `mirrors` (TLD alternatifleri) → sıralı numara (`+1 .. +15`) taraması yaparak `domains.json` dosyasını otomatik günceller.
 2. **Uygulama İçi Canlı Çözümleyici (CloudStream & Nuvio)**
    - Hem CloudStream eklentileri (`common/src/main/kotlin/com/dizi/DomainResolver.kt`) hem de Nuvio JS eklentileri (`nuvio/providers/*.js`) güncel adresi doğrudan `domains.json` üzerinden çeker.
-   - GitHub Actions henüz çalışmadan adres değişmişse uygulama içinde `nextUrl`, `mirrors` ve `N+1..N+5` denemelerini kendisi yapar.
+   - CloudStream'in ortak `getDoc` / `getText` akışında ve Nuvio site isteklerinde bağlantı/engel hatası olursa alternatif adresler denenir. 404 hatası domain değişikliği sayılmaz.
+   - Deneme bütçesi en fazla dört alternatif adrestir; sıralı adaylar `N+1..N+3` ile sınırlıdır. Bu mekanizma eski sayfa yollarını veya siteye özel oynatıcıları kendiliğinden onarmaz. Ortak akışın dışındaki JSON/POST istekleri ayrıca ele alınmalıdır.
+
+## Yerel kontroller
+
+```powershell
+python scripts/generate_nuvio.py
+python -m unittest discover -s scripts -v
+node --test scripts/test_nuvio.cjs
+python scripts/check_sites.py --output site-health.json
+```
+
+Nuvio kaynakları `scripts/nuvio_provider.js` şablonundan ve lisans bilgisi `scripts/vendor/` altında bulunan yerel kripto yardımcılarından üretilir. Şablonu değiştirdikten sonra üreticiyi çalıştırın. Testler eşleşme, bölüm seçimi, adres geçişi ve temel bağlantı çözümünü denetler; 13 sitenin canlı oynatma garantisi değildir. `check_sites.py` yalnızca ana sayfalara erişimi ölçer ve domain listesini değiştirmez.
+
+CloudStream derlemesi (JDK 17+ ve Android SDK 34 gerekir):
+
+```powershell
+.\gradlew.bat make makePluginsJson :Dizilla:testDebugUnitTest
+```
+
+Canlı Nuvio HTTP denetimi (medyanın tamamını indirmez; başarısız kaynak varsa çıkış kodu 1):
+
+```powershell
+node scripts/check_nuvio_live.cjs --output site-streams.json
+```
+
+Kaynak ve çıkarıcı uyarlamaları GPL-3.0 kapsamındadır; katkı bilgisi [UPSTREAM.md](UPSTREAM.md), üçüncü taraf lisansları `scripts/vendor/` altındadır.

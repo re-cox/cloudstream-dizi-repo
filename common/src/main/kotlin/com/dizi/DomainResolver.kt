@@ -2,6 +2,9 @@ package com.dizi
 
 import com.lagradost.cloudstream3.app
 import org.json.JSONObject
+import java.net.URI
+import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.CancellationException
 
 data class SiteDomainConfig(
     val currentUrl: String = "",
@@ -15,8 +18,7 @@ data class SiteDomainConfig(
 
 /**
  * Fast, Android-native (zero Jackson reflection) domain resolver:
- * 1. Fetches `domains.json` once per 30 minutes (protected by a Mutex so parallel
- *    `getMainPage` calls never stampede).
+ * 1. Caches `domains.json` for 30 minutes.
  * 2. Immediately returns `currentUrl` from `domains.json` without blocking startup
  *    on slow mirror probes (GitHub Actions already verified the live domain).
  * 3. Provides `failover()` only when a real request fails, trying `nextUrl` -> `mirrors` -> `N+1..N+3`.
@@ -33,10 +35,13 @@ object DomainResolver {
     @Volatile
     private var registryFetchedAt: Long = 0L
 
-    private val activeUrlOverrides = mutableMapOf<String, String>()
+    private val activeUrlOverrides = ConcurrentHashMap<String, Pair<String, Long>>()
 
     suspend fun resolve(siteKey: String, fallbackUrl: String): String {
-        activeUrlOverrides[siteKey]?.let { return it }
+        activeUrlOverrides[siteKey]?.let { (url, savedAt) ->
+            if (System.currentTimeMillis() - savedAt < CACHE_TTL_MS) return url
+            activeUrlOverrides.remove(siteKey)
+        }
 
         val config = getSiteConfig(siteKey)
         val url = config?.currentUrl?.takeIf { it.isNotBlank() } ?: fallbackUrl
@@ -44,6 +49,7 @@ object DomainResolver {
     }
 
     suspend fun failover(siteKey: String, failedUrl: String): String {
+        activeUrlOverrides.remove(siteKey)
         val config = getSiteConfig(siteKey) ?: return failedUrl.trimEnd('/')
         val cleanFailed = failedUrl.trimEnd('/')
 
@@ -68,9 +74,10 @@ object DomainResolver {
         }
 
         for (candidate in candidates.take(4)) {
-            if (isAliveFast(candidate, config.healthCheckText)) {
-                activeUrlOverrides[siteKey] = candidate
-                return candidate
+            val live = probeOrigin(candidate, config.healthCheckText)
+            if (live != null) {
+                activeUrlOverrides[siteKey] = live to System.currentTimeMillis()
+                return live
             }
         }
         return cleanFailed
@@ -115,33 +122,35 @@ object DomainResolver {
                 registryCache = parsed
                 registryFetchedAt = now
             }
-        } catch (_: Exception) {
+        } catch (error: Exception) {
+            if (error is CancellationException) throw error
             // Keep existing cache or fallback
         }
 
         return registryCache[siteKey]
     }
 
-    private suspend fun isAliveFast(url: String, healthCheckText: String?): Boolean {
+    fun isBlockedPage(text: String): Boolean {
+        val body = text.lowercase()
+        return listOf(
+            "erişime engellenmiştir", "5651 sayılı kanun", "sedoparking",
+            "buy this domain", "domain is for sale", "cf-chl-",
+            "<title>just a moment", "<title>access denied"
+        ).any { body.contains(it) }
+    }
+
+    private suspend fun probeOrigin(url: String, healthCheckText: String?): String? {
         return try {
             val response = app.get(url, timeout = 4)
-            if (!response.isSuccessful) return false
+            if (!response.isSuccessful) return null
             val body = response.text.lowercase()
-            if (body.length < 1500) return false
-            if (body.contains("erişime engellenmiştir") ||
-                body.contains("5651 sayılı kanun") ||
-                body.contains("sedoparking") ||
-                body.contains("buy this domain")
-            ) {
-                return false
-            }
-            if (!healthCheckText.isNullOrBlank()) {
-                body.contains(healthCheckText.lowercase())
-            } else {
-                true
-            }
-        } catch (_: Exception) {
-            false
+            if (body.length < 1500 || isBlockedPage(body)) return null
+            if (!healthCheckText.isNullOrBlank() && !body.contains(healthCheckText.lowercase())) return null
+            val finalUri = URI(response.url)
+            "${finalUri.scheme}://${finalUri.rawAuthority}"
+        } catch (error: Exception) {
+            if (error is CancellationException) throw error
+            null
         }
     }
 

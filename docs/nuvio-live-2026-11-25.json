@@ -1,0 +1,825 @@
+{
+  "checkedAt": "2026-11-25T20:47:55.967Z",
+  "scope": "Live metadata/search/extraction and first response bytes; not device playback",
+  "results": [
+    {
+      "id": "dizipal",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2619,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/api/search-autocomplete",
+          "method": "POST",
+          "status": 404
+        },
+        {
+          "url": "https://dizipal1.rest/arama",
+          "method": "GET",
+          "status": 404
+        },
+        {
+          "url": "https://dizipal1.rest/api/search-autocomplete",
+          "method": "POST",
+          "status": 404
+        },
+        {
+          "url": "https://dizipal1.rest/arama",
+          "method": "GET",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "id": "dizibox",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2610,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.dizibox.live/",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.dizibox.plus",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.dizibox.so",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.dizibox.de",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.dizibox.tv",
+          "method": "GET",
+          "status": 403
+        }
+      ]
+    },
+    {
+      "id": "diziyou",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "manifest_verified",
+      "playbackVerified": false,
+      "streamCount": 2,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "DiziYou • Orijinal"
+        },
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "DiziYou • Türkçe Dublaj"
+        }
+      ],
+      "durationMs": 1938,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.diziyou.love/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.diziyou.love/breaking-bad2/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.diziyou.love/breaking-bad-1-sezon-1-bolum/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://storage.diziyou.love/episodes/10551/play.m3u8",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://storage.diziyou.love/episodes/10551_tr/play.m3u8",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "dizilla",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2031,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizilla.la/api/mj",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://dizilla.la/dizi/breaking-bad-2",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizilla.la/breaking-bad-1-sezon-1-bolum-c02",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://four.pichive.online/iframe.php",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://pichive.online/iframe.php",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://pichive.online/iframe.php",
+          "method": "GET",
+          "status": 403
+        }
+      ]
+    },
+    {
+      "id": "hdfilmcehennemi",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 4773,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.nl/search",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.lol",
+          "method": "GET",
+          "status": 410
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.sh",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.cx",
+          "method": "GET",
+          "status": 410
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.life",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.nl/search",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.lol",
+          "method": "GET",
+          "status": 410
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.sh",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.cx",
+          "method": "GET",
+          "status": 410
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.life",
+          "method": "GET",
+          "status": 403
+        }
+      ]
+    },
+    {
+      "id": "dizimom",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "manifest_verified",
+      "playbackVerified": false,
+      "streamCount": 1,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "DiziMom • Player"
+        }
+      ],
+      "durationMs": 2286,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://ddizimom.icu/ara",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://ddizimom.icu/film/matrix",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://play2.pilavyerplay.top/assets/js/s.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://play2.pilavyerplay.top/api/stream.php",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "fullhdfilmizlesene",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2974,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.now/arama/Matrix",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.pw",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.biz",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.nl",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.de",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.now/arama/The%20Matrix",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.pw",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.biz",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.nl",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.de",
+          "method": "GET",
+          "status": 403
+        }
+      ]
+    },
+    {
+      "id": "sezonlukdizi",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 10543,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://sezonlukdizi.cc/diziler.asp",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://sezonlukdizi.vip",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://sezonlukdizi.com",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://sezonlukdizi.cc/diziler.asp",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://sezonlukdizi.net",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://sezonlukdizi.tv",
+          "method": "GET",
+          "error": "fetch failed"
+        }
+      ]
+    },
+    {
+      "id": "filmmakinesi",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 8410,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://filmmakinesi.co/arama/",
+          "method": "GET",
+          "status": 404
+        },
+        {
+          "url": "https://filmmakinesi.co/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://filmmakinesi.co/arama/",
+          "method": "GET",
+          "status": 404
+        },
+        {
+          "url": "https://filmmakinesi.co/",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "selcukflix",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 1254,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://selcukflix.app/api/mj",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://selcukflix.app/film/the-matrix/izle",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://four.pichive.online/iframe.php",
+          "method": "GET",
+          "status": 403
+        }
+      ]
+    },
+    {
+      "id": "setfilmizle",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "manifest_verified",
+      "playbackVerified": false,
+      "streamCount": 1,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "SetFilmIzle • SetPlay"
+        }
+      ],
+      "durationMs": 1481,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.setfilmizle.ltd/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.setfilmizle.ltd/film/matrix/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://www.setfilmizle.ltd/wp-admin/admin-ajax.php",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://setplay.sbs/player/stfplay.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://fastplay.mom/stfplay.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://fastplay.mom/manifests/wKhqPFdlX19q/master.txt",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "webteizle",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 20339,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://webteizle.info/filtre",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://webteizle.xyz",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://webteizle.org",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.tv",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.net",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.info/filtre",
+          "method": "GET",
+          "status": 403
+        },
+        {
+          "url": "https://webteizle.xyz",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.org",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.tv",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://webteizle.net",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        }
+      ]
+    },
+    {
+      "id": "filmmodu",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 45016,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://filmmodu.icu/ara",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://filmmodu.news",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://filmmodu.nl",
+          "method": "GET",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://filmmodu.org",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://filmmodu.vip",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://filmmodu.icu/ara",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://filmmodu.news",
+          "method": "GET",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://filmmodu.nl",
+          "method": "GET",
+          "error": "This operation was aborted"
+        },
+        {
+          "url": "https://filmmodu.org",
+          "method": "GET",
+          "error": "This operation was aborted"
+        },
+        {
+          "url": "https://filmmodu.vip",
+          "method": "GET",
+          "error": "This operation was aborted"
+        }
+      ]
+    }
+  ]
+}

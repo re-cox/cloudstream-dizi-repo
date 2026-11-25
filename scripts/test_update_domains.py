@@ -1,7 +1,7 @@
 import json
 import unittest
 from pathlib import Path
-from update_domains import update_site_entry
+from update_domains import update_site_entry, probe_url
 
 
 DIZIPAL_CFG = {
@@ -30,6 +30,18 @@ DIZILLA_CFG = {
 
 
 class TestDomainTracker(unittest.TestCase):
+    def test_redirect_to_different_tld_preserves_original_sequence(self):
+        def fake_fetcher(url, timeout=12):
+            return 200, 'https://dizipal1.rest/', 'dizipal ' + 'x' * 2000
+        updated, _, _ = update_site_entry('DiziPal', DIZIPAL_CFG, fetcher=fake_fetcher)
+        self.assertEqual(updated['currentUrl'], 'https://dizipal1.rest')
+        self.assertEqual(updated['currentNumber'], 2150)
+
+    def test_http_200_cloudflare_page_is_not_a_healthy_domain(self):
+        def fake_fetcher(url, timeout=12):
+            return 200, url, '<title>Just a moment...</title>dizilla' + 'x' * 2000
+        self.assertIsNone(probe_url('https://dizilla.test', 'dizilla', fetcher=fake_fetcher))
+
     def test_extracts_announced_next_domain_while_current_is_alive(self):
         def fake_fetcher(url, timeout=12):
             if url == "https://dizipal2150.com":

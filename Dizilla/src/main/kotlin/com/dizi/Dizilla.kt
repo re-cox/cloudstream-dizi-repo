@@ -2,101 +2,87 @@ package com.dizi
 
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
-import org.jsoup.nodes.Element
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.RequestBody.Companion.toRequestBody
+import org.json.JSONArray
+import org.json.JSONObject
 
+/** Current public /api/mj and streamed RSC format, observed November 2026. */
 class Dizilla : BaseTurkishProvider() {
     override val siteKey = "Dizilla"
-    override var mainUrl = "https://dizilla.now"
+    override var mainUrl = "https://dizilla.la"
     override var name = "Dizilla"
-    override val supportedTypes = setOf(TvType.TvSeries)
+    override val supportedTypes = setOf(TvType.TvSeries, TvType.Anime)
+    override val mainPage = mainPageOf("dizi" to "Diziler", "anime" to "Anime")
 
-    override val mainPage = mainPageOf(
-        "/tum-bolumler" to "Son Eklenen Bölümler",
-        "/dizi-turu/aksiyon" to "Aksiyon",
-        "/dizi-turu/bilim-kurgu" to "Bilim Kurgu",
-        "/dizi-turu/dram" to "Dram",
-        "/dizi-turu/komedi" to "Komedi",
-        "/dizi-turu/gerilim" to "Gerilim"
-    )
+    private suspend fun api(action: String, params: List<Any?>): JSONObject {
+        val body = JSONObject().put("action", action).put("params", JSONArray(params)).toString()
+        return JSONObject(app.post("$mainUrl/api/mj", referer = "$mainUrl/",
+            headers = mapOf("Origin" to mainUrl),
+            requestBody = body.toRequestBody("application/json".toMediaType())).text)
+    }
+
+    private fun items(array: JSONArray?): List<SearchResponse> = (0 until (array?.length() ?: 0)).mapNotNull { i ->
+        val item = array?.optJSONObject(i) ?: return@mapNotNull null
+        val title = item.optString("title").takeIf { it.isNotBlank() } ?: return@mapNotNull null
+        val href = item.optString("url").ifBlank { "/" + item.optString("slug") }
+        if (href == "/") return@mapNotNull null
+        newTvSeriesSearchResponse(title, fixUrl(href), TvType.TvSeries) {
+            this.posterUrl = fixUrlNull(item.optString("poster_url"))
+            this.year = item.optInt("year").takeIf { it > 0 }
+        }
+    }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         ensureLiveDomain()
-        val url = if (page <= 1) "${mainUrl}${request.data}" else "${mainUrl}${request.data}/$page"
-        val document = app.get(url, referer = "${mainUrl}/").document
-        val items = document.select("div.grid a[href*='/dizi/'], span.watchlistitem-card a, div.single-item a")
-            .mapNotNull { it.toSearchResult() }
-            .distinctBy { it.url }
-        return newHomePageResponse(request.name, items)
-    }
-
-    private fun Element.toSearchResult(): SearchResponse? {
-        val title = selectFirst("h2, span.font-normal, div.title")?.text()?.trim()
-            ?: attr("title").trim().takeIf { it.isNotBlank() }
-            ?: return null
-        val href = fixUrlNull(attr("href")) ?: return null
-        val posterUrl = fixUrlNull(selectFirst("img")?.let { it.attr("data-src").ifBlank { it.attr("src") } })
-        return newTvSeriesSearchResponse(title, href, TvType.TvSeries) {
-            this.posterUrl = posterUrl
-        }
+        val result = api("getBrowseTitles", listOf("", request.data, null, null, null, null, null, "rec", page, 24))
+            .optJSONObject("result")
+        return newHomePageResponse(request.name, items(result?.optJSONArray("items")), hasNext = result?.optBoolean("has_more") == true)
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
         ensureLiveDomain()
-        val response = app.post(
-            "${mainUrl}/bg/searchcontent",
-            headers = mapOf("X-Requested-With" to "XMLHttpRequest"),
-            referer = "${mainUrl}/",
-            data = mapOf("query" to query)
-        ).text
-        val doc = org.jsoup.Jsoup.parse(response)
-        return doc.select("a[href*='/dizi/']").mapNotNull { it.toSearchResult() }.distinctBy { it.url }
+        val result = api("getSearchSuggest", listOf(query, 20)).optJSONObject("result")
+        return items(result?.optJSONArray("items"))
     }
 
     override suspend fun load(url: String): LoadResponse? {
         ensureLiveDomain()
-        val liveUrl = rewriteToLiveDomain(url)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
-
+        val live = rewriteToLiveDomain(url)
+        val document = getDoc(live)
         val title = document.selectFirst("h1")?.text()?.trim() ?: return null
-        val poster = fixUrlNull(document.selectFirst("img.poster, [property='og:image']")?.let {
-            it.attr("data-src").ifBlank { it.attr("src").ifBlank { it.attr("content") } }
-        })
-        val plot = document.selectFirst("div.mt-2 p, p.overview")?.text()?.trim()
-
-        val episodes = document.select("div.episodes-list a, a[href*='-sezon-'][href*='-bolum']").mapNotNull { ep ->
-            val href = fixUrlNull(ep.attr("href")) ?: return@mapNotNull null
-            val name = ep.text().trim()
-            val season = Regex("""(\d+)-sezon""").find(href)?.groupValues?.get(1)?.toIntOrNull()
-            val episode = Regex("""(\d+)-bolum""").find(href)?.groupValues?.get(1)?.toIntOrNull()
-            newEpisode(href) {
-                this.name = name
-                this.season = season
-                this.episode = episode
+        val rsc = PageJson.rsc(document.html())
+        val episodes = PageJson.arrays(rsc, "episodes").flatMap { array ->
+            (0 until array.length()).mapNotNull { index ->
+                val item = array.optJSONObject(index) ?: return@mapNotNull null
+                val href = item.optString("url").takeIf { it.contains("-bolum") } ?: return@mapNotNull null
+                newEpisode(fixUrl(href)) {
+                    this.name = item.optString("title")
+                    this.season = item.optInt("s").takeIf { it > 0 }
+                    this.episode = item.optInt("n").takeIf { it > 0 }
+                    this.posterUrl = fixUrlNull(item.optString("still"))
+                }
             }
         }.distinctBy { it.data }
-
-        return newTvSeriesLoadResponse(title, liveUrl, TvType.TvSeries, episodes) {
-            this.posterUrl = poster
-            this.plot = plot
+        return newTvSeriesLoadResponse(title, live, TvType.TvSeries, episodes) {
+            this.posterUrl = document.selectFirst("meta[property=og:image]")?.attr("content")
+            this.plot = document.selectFirst("meta[name=description]")?.attr("content")
         }
     }
 
-    override suspend fun loadLinks(
-        data: String,
-        isCasting: Boolean,
-        subtitleCallback: (SubtitleFile) -> Unit,
-        callback: (ExtractorLink) -> Unit
-    ): Boolean {
+    override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         ensureLiveDomain()
-        val liveUrl = rewriteToLiveDomain(data)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
-        val iframes = document.select("iframe[data-src], iframe[src]")
-            .mapNotNull { it.attr("data-src").ifBlank { it.attr("src") }.takeIf { s -> s.isNotBlank() } }
-
+        val document = getDoc(rewriteToLiveDomain(data))
+        val rsc = PageJson.rsc(document.html())
+        val sources = PageJson.arrays(rsc, "sources").flatMap { array ->
+            (0 until array.length()).mapNotNull { i -> array.optJSONObject(i)?.optString("src")?.takeIf { it.startsWith("http") } }
+        }.distinct()
         var found = false
-        for (iframe in iframes.distinct()) {
-            if (loadExtractor(fixUrl(iframe), "${mainUrl}/", subtitleCallback, callback)) {
-                found = true
+        for (source in sources) {
+            val collect: (ExtractorLink) -> Unit = { link -> found = true; callback(link) }
+            runCatching {
+                if (ContentXGenel.uygunMu(source)) ContentXGenel().getUrl(source, "$mainUrl/", subtitleCallback, collect)
+                else loadExtractor(source, "$mainUrl/", subtitleCallback, collect)
             }
         }
         return found

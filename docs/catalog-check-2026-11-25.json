@@ -1,0 +1,41 @@
+{
+  "scope": "Provider first main-page route with existing CSS selector; not playback",
+  "results": [
+    {
+      "site": "Dizilla",
+      "url": "https://dizilla.la/tum-bolumler",
+      "httpStatus": 200,
+      "selector": "div.grid a[href*='/dizi/'], span.watchlistitem-card a, div.single-item a",
+      "matches": 0
+    },
+    {
+      "site": "DiziMom",
+      "url": "https://ddizimom.icu/tum-bolumler/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "site": "FilmMakinesi",
+      "url": "https://filmmakinesi.co/filmler/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "site": "SelcukFlix",
+      "url": "https://selcukflix.app/diziler",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "site": "SetFilmIzle",
+      "url": "https://www.setfilmizle.ltd/tur/aksiyon/page/1/",
+      "httpStatus": 200,
+      "selector": "div.items article",
+      "matches": 0
+    },
+    {
+      "site": "SezonlukDizi",
+      "url": "https://sezonlukdizi.cc/diziler.asp?siralama_tipi=id&s=1",
+      "httpStatus": 200,
+      "selector": "div.afis a",
+      "matches": 36
+    }
+  ]
+}

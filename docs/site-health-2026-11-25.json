@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-11-25T20:19:49.037984+00:00",
+  "scope": "HTTP home pages only; not search, extraction or playback",
+  "results": [
+    {
+      "site": "DiziPal",
+      "requestedUrl": "https://dizipal2150.com",
+      "playbackVerified": false,
+      "status": "timeout",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "site": "HDFilmCehennemi",
+      "requestedUrl": "https://www.hdfilmcehennemi.nl",
+      "playbackVerified": false,
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "site": "DiziBox",
+      "requestedUrl": "https://www.dizibox.live",
+      "playbackVerified": false,
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "site": "Dizilla",
+      "requestedUrl": "https://dizilla.la",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://dizilla.la",
+      "bodyLength": 376270,
+      "title": "Yabancı Dizi İzle - Yabancı Diziler - Dizilla"
+    },
+    {
+      "site": "DiziYou",
+      "requestedUrl": "https://www.diziyou.love",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://www.diziyou.love",
+      "bodyLength": 251311,
+      "title": "Diziyou - Türkçe Dublaj & Altyazılı Yabancı Dizi İzle"
+    },
+    {
+      "site": "SezonlukDizi",
+      "requestedUrl": "https://sezonlukdizi.cc",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://sezonlukdizi.cc",
+      "bodyLength": 33447,
+      "title": "Sezonluk Dizi izle - 1080p yabancı dizi izle"
+    },
+    {
+      "site": "FilmModu",
+      "requestedUrl": "https://filmmodu.icu",
+      "playbackVerified": false,
+      "status": "timeout",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "site": "DiziMom",
+      "requestedUrl": "https://ddizimom.icu",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://ddizimom.icu",
+      "bodyLength": 454096,
+      "title": "DiziMom - Dizi izle - Yabancı Dizi izle"
+    },
+    {
+      "site": "FullHDFilmizlesene",
+      "requestedUrl": "https://www.fullhdfilmizlesene.now",
+      "playbackVerified": false,
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "site": "FilmMakinesi",
+      "requestedUrl": "https://filmmakinesi.co",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://filmmakinesi.co",
+      "bodyLength": 137470,
+      "title": "FilmMakinesi | En iyi 1080p Full HD film sitesi | Film izle"
+    },
+    {
+      "site": "WebteIzle",
+      "requestedUrl": "https://webteizle.info",
+      "playbackVerified": false,
+      "status": "http_error",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "site": "SelcukFlix",
+      "requestedUrl": "https://selcukflix.app",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://selcukflix.app",
+      "bodyLength": 224340,
+      "title": "Yabancı Dizi ve film izle - Selcukflix"
+    },
+    {
+      "site": "SetFilmIzle",
+      "requestedUrl": "https://www.setfilmizle.ltd",
+      "playbackVerified": false,
+      "status": "reachable_html",
+      "httpStatus": 200,
+      "finalUrl": "https://www.setfilmizle.ltd",
+      "bodyLength": 109371,
+      "title": "Set Film izle | HD Film | Yabancı Dizi"
+    }
+  ]
+}

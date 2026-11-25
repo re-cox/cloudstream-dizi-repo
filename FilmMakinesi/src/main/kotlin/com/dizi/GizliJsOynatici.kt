@@ -1,0 +1,118 @@
+// SPDX-License-Identifier: GPL-3.0-only
+// Adapted from neoser1984/neowatch (13b96229ed698251827568ff914ba3b6830e16c9); see UPSTREAM.md.
+package com.dizi
+
+import android.util.Log
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.network.WebViewResolver
+import com.lagradost.cloudstream3.utils.*
+import org.json.JSONArray
+import org.jsoup.Jsoup
+
+/**
+ * CloseLoad / Rapidrame / Rapid tipi JWPlayer oynatıcıları.
+ * Video adresi her istekte değişen gizlenmiş JavaScript fonksiyonları ile üretilir
+ * (bazen P.A.C.K.E.R. ile paketlenmiş). İlgili betikler host uygulamanın WebView ortamında çalıştırılıp
+ * `sources: [{file: X}]` değişkeninin değeri okunur.
+ */
+open class GizliJsOynatici : ExtractorApi() {
+    override val name            = "CloseLoad"
+    override val mainUrl         = "https://closeload.filmmakinesi.to"
+    override val requiresReferer = true
+
+    override suspend fun getUrl(url: String, referer: String?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit) {
+        val base   = Regex("""^(https?://[^/]+)""").find(url)?.groupValues?.get(1) ?: return
+        val host   = base.substringAfter("://")
+        val isim   = when {
+            url.contains("/rplayer/") || url.contains("/playerr/") -> "Rapidrame"
+            host.startsWith("rapid")                               -> "Rapid"
+            else                                                   -> "CloseLoad"
+        }
+        val extRef = referer ?: "$base/"
+
+        val html = app.get(
+            url,
+            referer = extRef,
+            headers = mapOf("Sec-Fetch-Dest" to "iframe", "Sec-Fetch-Mode" to "navigate")
+        ).text
+
+        // ? Altyazılar
+        Regex("""\{[^{}]*?"file"\s*:\s*"([^"]+?\.(?:vtt|srt)[^"]*)"[^{}]*?"label"\s*:\s*"([^"]*)"[^{}]*?\}""").findAll(html).forEach {
+            val (dosya, etiket) = it.destructured
+            val subUrl = dosya.replace("\\/", "/").let { s -> if (s.startsWith("http")) s else "$base/${s.trimStart('/')}" }
+            subtitleCallback.invoke(newSubtitleFile(GizliJs.unicodeCoz(etiket), subUrl))
+        }
+
+        // "file: atob(file_link)" gibi çağrılar değişken sayılmaz (Rapidrame / rplayer)
+        val degisken = Regex("""sources\s*:\s*\[\s*\{\s*file\s*:\s*([A-Za-z_$][\w$]*)\s*[,}]""").find(html)?.groupValues?.get(1)
+            ?.takeIf { it != "atob" }
+        var link: String? = null
+        if (link != null && !link.startsWith("http")) link = null
+        Log.d("NeO_$isim", "sayfa uzunluk=${html.length} değişken=$degisken rhino=${link?.take(50) ?: "yok"} başlık='${Regex("<title[^>]*>([^<]{0,60})").find(html)?.groupValues?.get(1)?.trim()}'")
+
+        // Eski tip: file_link="base64"
+        if (link.isNullOrBlank()) {
+            val fileLink = Regex("""file_link\s*=\s*"([^"]+)"""").find(getAndUnpack(html))?.groupValues?.get(1)
+            link = fileLink?.let { runCatching { base64Decode(it) }.getOrNull() }
+        }
+
+        // Kasım 2026: betikler location.hostname, sayfadaki data-* değeri ve tarayıcı ortamı denetimleriyle
+        // anahtar üretiyor; Rhino'da çalışmıyor. Bu durumda sayfa uygulamanın gerçek WebView'ında açılıp değer okunur.
+        if ((link.isNullOrBlank() || !link.startsWith("http")) && degisken != null) {
+            link = runCatching { tarayiciIle(url, extRef) }
+                .onFailure { Log.d("NeO_$isim", "WebView » ${it.message}") }.getOrNull()
+        }
+
+        if (link.isNullOrBlank() || !link.startsWith("http")) {
+            Log.d("NeO_$isim", "video adresi çözülemedi » $url")
+            return
+        }
+        Log.d("NeO_$isim", "link » $link")
+
+        callback.invoke(
+            newExtractorLink(isim, isim, link, ExtractorLinkType.M3U8) {
+                this.referer = "$base/"
+                this.quality = Qualities.Unknown.value
+            }
+        )
+    }
+
+    /**
+     * Oynatıcı sayfasını gömülü WebView'da açar; sayfa kendi betiklerini çalıştırdıktan sonra
+     * `sources: [{file: X}]` değişkeninin değerini okur. Değişken adı her yüklemede değiştiği için
+     * ad sayfanın içinden bulunur. Değer okununca geçersiz bir adrese istek atılarak WebView erken kapatılır.
+     * useOkhttp = true: sayfa istekleri uygulamanın (DNS over HTTPS ayarlı) istemcisiyle yapılır.
+     */
+    private suspend fun tarayiciIle(url: String, referer: String): String? {
+        var okunan: String? = null
+        val betik = """(function(){try{var h=document.documentElement.innerHTML;""" +
+            """var m=h.match(/sources\s*:\s*\[\s*\{\s*file\s*:\s*([A-Za-z_${'$'}][\w${'$'}]*)/);if(!m)return "";""" +
+            """var v=window[m[1]];if(typeof v==="string"&&v.indexOf("http")===0){""" +
+            """if(!window.__neo){window.__neo=1;var i=new Image();i.src="https://neowatch.invalid/sonuc?u="+encodeURIComponent(v);}""" +
+            """return v;}}catch(e){}return "";})()"""
+
+        val (istek, _) = WebViewResolver(
+            interceptUrl   = Regex("""neowatch\.invalid/sonuc|\.m3u8(?:\?|$)"""),
+            useOkhttp      = true,
+            script         = betik,
+            scriptCallback = { sonuc ->
+                val deger = runCatching { JSONArray("[$sonuc]").optString(0) }.getOrNull()
+                if (!deger.isNullOrBlank() && deger.startsWith("http")) okunan = deger
+            },
+            timeout        = 20_000L
+        ).resolveUsingWebView(url, referer = referer)
+
+        val adres = istek?.url
+        Log.d("NeO_GizliJs", "WebView sonucu: istek=${adres?.host ?: "yok"} okunan=${okunan?.take(50) ?: "yok"}")
+        if (adres != null) {
+            if (adres.host == "neowatch.invalid") adres.queryParameter("u")?.takeIf { it.startsWith("http") }?.let { return it }
+            else return adres.toString()
+        }
+        return okunan
+    }
+}
+
+object GizliJs {
+    fun unicodeCoz(metin: String): String =
+        Regex("""\\u([0-9a-fA-F]{4})""").replace(metin) { it.groupValues[1].toInt(16).toChar().toString() }
+}

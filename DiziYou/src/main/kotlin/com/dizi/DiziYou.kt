@@ -6,7 +6,7 @@ import org.jsoup.nodes.Element
 
 class DiziYou : BaseTurkishProvider() {
     override val siteKey = "DiziYou"
-    override var mainUrl = "https://www.diziyou.one"
+    override var mainUrl = "https://www.diziyou.love"
     override var name = "DiziYou"
     override val supportedTypes = setOf(TvType.TvSeries)
 
@@ -29,7 +29,7 @@ class DiziYou : BaseTurkishProvider() {
 
     private fun Element.toSearchResult(): SearchResponse? {
         val title = selectFirst("div#categorytitle a, div.title a")?.text()?.trim() ?: return null
-        val href = fixUrlNull(selectFirst("a")?.attr("href")) ?: return null
+        val href = fixUrlNull(selectFirst("div#categorytitle a, div.title a, a")?.attr("href")) ?: return null
         val posterUrl = fixUrlNull(selectFirst("img")?.let { it.attr("data-src").ifBlank { it.attr("src") } })
         return newTvSeriesSearchResponse(title, href, TvType.TvSeries) {
             this.posterUrl = posterUrl
@@ -39,20 +39,15 @@ class DiziYou : BaseTurkishProvider() {
     override suspend fun search(query: String): List<SearchResponse> {
         ensureLiveDomain()
         val encoded = java.net.URLEncoder.encode(query, "UTF-8")
-        val document = app.get("${mainUrl}/?s=$encoded", referer = "${mainUrl}/").document
-        return document.select("div.incontent div.list-series").mapNotNull { el ->
-            val link = el.selectFirst("a") ?: return@mapNotNull null
-            val title = el.selectFirst("div.title")?.text()?.trim() ?: link.text().trim()
-            val href = fixUrlNull(link.attr("href")) ?: return@mapNotNull null
-            val poster = fixUrlNull(el.selectFirst("img")?.let { it.attr("data-src").ifBlank { it.attr("src") } })
-            newTvSeriesSearchResponse(title, href, TvType.TvSeries) { this.posterUrl = poster }
-        }
+        val document = getDoc("${mainUrl}/?s=$encoded", referer = "${mainUrl}/")
+        return document.select("div.incontent div#list-series, div.incontent div.list-series")
+            .mapNotNull { it.toSearchResult() }.distinctBy { it.url }
     }
 
     override suspend fun load(url: String): LoadResponse? {
         ensureLiveDomain()
         val liveUrl = rewriteToLiveDomain(url)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
+        val document = getDoc(liveUrl, referer = "${mainUrl}/")
 
         val title = document.selectFirst("h1")?.text()?.trim() ?: return null
         val poster = fixUrlNull(document.selectFirst("div.category_image img, [property='og:image']")?.let {
@@ -60,8 +55,9 @@ class DiziYou : BaseTurkishProvider() {
         })
         val plot = document.selectFirst("div.diziyou_desc")?.text()?.trim()
 
-        val episodes = document.select("div.bolumust a").mapNotNull { ep ->
-            val href = fixUrlNull(ep.attr("href")) ?: return@mapNotNull null
+        val episodes = document.select("div.bolumust").mapNotNull { ep ->
+            val href = fixUrlNull(ep.closest("a")?.attr("href") ?: ep.selectFirst("a")?.attr("href"))
+                ?: return@mapNotNull null
             val epName = ep.selectFirst("div.bolumismi")?.text()?.trim() ?: ep.text().trim()
             val season = Regex("""(\d+)-sezon""").find(href)?.groupValues?.get(1)?.toIntOrNull()
             val episode = Regex("""(\d+)-bolum""").find(href)?.groupValues?.get(1)?.toIntOrNull()
@@ -70,7 +66,7 @@ class DiziYou : BaseTurkishProvider() {
                 this.season = season
                 this.episode = episode
             }
-        }
+        }.distinctBy { it.data }
 
         return newTvSeriesLoadResponse(title, liveUrl, TvType.TvSeries, episodes) {
             this.posterUrl = poster
@@ -86,29 +82,39 @@ class DiziYou : BaseTurkishProvider() {
     ): Boolean {
         ensureLiveDomain()
         val liveUrl = rewriteToLiveDomain(data)
-        val document = app.get(liveUrl, referer = "${mainUrl}/").document
+        val document = getDoc(liveUrl, referer = "${mainUrl}/")
         val itemId = document.selectFirst("iframe#diziyouPlayer")?.attr("src")
             ?.substringAfterLast("/")?.substringBefore(".html")
 
         if (!itemId.isNullOrBlank()) {
-            val storageUrl = "https://storage.diziyou.one"
-            callback.invoke(
-                newExtractorLink(
-                    source = name,
-                    name = "$name (Altyazılı)",
-                    url = "$storageUrl/episodes/$itemId/play.m3u8",
-                    type = ExtractorLinkType.M3U8
-                ) {
-                    this.referer = "${mainUrl}/"
-                    this.quality = Qualities.Unknown.value
-                }
-            )
-            subtitleCallback.invoke(SubtitleFile("Türkçe", "$storageUrl/subtitles/$itemId/tr.vtt"))
-            subtitleCallback.invoke(SubtitleFile("English", "$storageUrl/subtitles/$itemId/en.vtt"))
-            return true
+            val host = java.net.URI(mainUrl).host.removePrefix("www.")
+            val storageUrl = "https://storage.$host"
+            val options = document.select("span.diziyouOption").map { it.id() }.toSet()
+            var found = false
+            for ((_, suffix, label) in listOf(
+                Triple("turkceAltyazili", "", "Altyazılı"),
+                Triple("ingilizceAltyazili", "", "Orijinal"),
+                Triple("turkceDublaj", "_tr", "Türkçe Dublaj")
+            ).filter { it.first in options }.distinctBy { it.second }) {
+                callback.invoke(
+                    newExtractorLink(
+                        source = name,
+                        name = "$name ($label)",
+                        url = "$storageUrl/episodes/$itemId$suffix/play.m3u8",
+                        type = ExtractorLinkType.M3U8
+                    ) {
+                        this.referer = "${mainUrl}/"
+                        this.quality = Qualities.Unknown.value
+                    }
+                )
+                found = true
+            }
+            if ("turkceAltyazili" in options) subtitleCallback.invoke(SubtitleFile("Türkçe", "$storageUrl/subtitles/$itemId/tr.vtt"))
+            if ("ingilizceAltyazili" in options) subtitleCallback.invoke(SubtitleFile("English", "$storageUrl/subtitles/$itemId/en.vtt"))
+            return found
         }
 
-        val iframe = document.selectFirst("iframe[src]")?.attr("src") ?: return false
+        val iframe = document.selectFirst("iframe[src]:not([src*=youtube])")?.attr("src") ?: return false
         return loadExtractor(fixUrl(iframe), "${mainUrl}/", subtitleCallback, callback)
     }
 }
