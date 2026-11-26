@@ -1,4 +1,4 @@
-version = 5
+version = 6
 
 cloudstream {
     description = "SetFilmIzle - Otomatik domain takipli Türkçe film ve dizi kaynağı"

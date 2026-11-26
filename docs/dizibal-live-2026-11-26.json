@@ -1,0 +1,83 @@
+{
+  "checkedAt": "2026-11-26T13:07:17.156Z",
+  "scope": "Live metadata/search/extraction, HLS and first segment response bytes; not device playback",
+  "results": [
+    {
+      "id": "dizibal",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "manifest_verified",
+      "playbackVerified": false,
+      "streamCount": 1,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "DiziBal • Player",
+          "segment": {
+            "status": 200,
+            "bytes": 1369,
+            "contentType": "video/mp2t",
+            "payloadReceived": true
+          }
+        }
+      ],
+      "durationMs": 1847,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/ara",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/movie/matrix",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/movie/matrix",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://play2.pilavyerplay.top/assets/js/s.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://play2.pilavyerplay.top/api/stream.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://play2.pilavyerplay.top/api/stream.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://pilavyer6.top/cdn/194b67b2739340a4c9b5d9042683fbb3/stream_v720/00000.txt",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

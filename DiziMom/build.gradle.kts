@@ -1,4 +1,4 @@
-version = 5
+version = 6
 
 cloudstream {
     description = "DiziMom - Otomatik domain takipli Türkçe dizi ve film kaynağı"

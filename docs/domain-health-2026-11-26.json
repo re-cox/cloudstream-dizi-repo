@@ -1,0 +1,308 @@
+{
+  "checkedAt": "2026-11-26T13:14:49.653935+00:00",
+  "scope": "Homepage identity checks, not playback",
+  "results": [
+    {
+      "site": "DiziPal",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://dizipal1.rest",
+          "httpStatus": 200,
+          "finalUrl": "https://dizipal1.rest",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "HDFilmCehennemi",
+      "status": "unverified",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://www.hdfilmcehennemi.nl",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.lol",
+          "httpStatus": 200,
+          "finalUrl": "https://www.hdfilmcehennemi.lol",
+          "status": "blocked_or_parked"
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.sh",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.cx",
+          "status": "timeout"
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.life",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://www.hdfilmcehennemi.com",
+          "status": "challenge"
+        }
+      ]
+    },
+    {
+      "site": "DiziBox",
+      "status": "unverified",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://www.dizibox.live",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.dizibox.plus",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://www.dizibox.so",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.dizibox.de",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.dizibox.tv",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://www.dizibox.pw",
+          "status": "timeout"
+        }
+      ]
+    },
+    {
+      "site": "Dizilla",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://dizilla.la",
+          "httpStatus": 200,
+          "finalUrl": "https://dizilla.la",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "DiziYou",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://www.diziyou.love",
+          "httpStatus": 200,
+          "finalUrl": "https://www.diziyou.love",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "SezonlukDizi",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://sezonlukdizi.cc",
+          "httpStatus": 200,
+          "finalUrl": "https://sezonlukdizi.cc",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "FilmModu",
+      "status": "unverified",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://filmmodu.icu",
+          "status": "timeout"
+        },
+        {
+          "url": "https://filmmodu.news",
+          "status": "timeout"
+        },
+        {
+          "url": "https://filmmodu.nl",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://filmmodu.org",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://filmmodu.vip",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://filmmodu.co",
+          "httpStatus": 200,
+          "finalUrl": "https://filmmodu.co",
+          "status": "short_body"
+        }
+      ]
+    },
+    {
+      "site": "DiziMom",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://ddizimom.icu",
+          "httpStatus": 200,
+          "finalUrl": "https://ddizimom.icu",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "FullHDFilmizlesene",
+      "status": "unverified",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://www.fullhdfilmizlesene.now",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.pw",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.biz",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.nl",
+          "status": "challenge"
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.de",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://www.fullhdfilmizlesene.so",
+          "status": "tls_error"
+        }
+      ]
+    },
+    {
+      "site": "FilmMakinesi",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://filmmakinesi.co",
+          "httpStatus": 200,
+          "finalUrl": "https://filmmakinesi.co",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "WebteIzle",
+      "status": "unverified",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://webteizle.info",
+          "status": "challenge"
+        },
+        {
+          "url": "https://webteizle.xyz",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://webteizle.org",
+          "status": "timeout"
+        },
+        {
+          "url": "https://webteizle.tv",
+          "status": "dns_error"
+        },
+        {
+          "url": "https://webteizle.net",
+          "status": "tls_error"
+        },
+        {
+          "url": "https://webteizle.co",
+          "status": "challenge"
+        }
+      ]
+    },
+    {
+      "site": "SelcukFlix",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://selcukflix.app",
+          "httpStatus": 200,
+          "finalUrl": "https://selcukflix.app",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "SetFilmIzle",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://www.setfilmizle.ltd",
+          "httpStatus": 200,
+          "finalUrl": "https://www.setfilmizle.ltd",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "DiziBal",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://dizibal.org",
+          "httpStatus": 200,
+          "finalUrl": "https://dizibal.org",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "JetFilmizle",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://jetfilmizle.app",
+          "httpStatus": 200,
+          "finalUrl": "https://jetfilmizle.app",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "site": "KultFilmler",
+      "status": "healthy",
+      "playbackVerified": false,
+      "probes": [
+        {
+          "url": "https://kultfilmler.net",
+          "httpStatus": 200,
+          "finalUrl": "https://kultfilmler.net",
+          "status": "healthy"
+        }
+      ]
+    }
+  ]
+}

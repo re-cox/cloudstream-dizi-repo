@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generates `nuvio/manifest.json` and standalone Nuvio JS scrapers under
-`nuvio/providers/` for all 13 Turkish sites configured in `domains.json`.
+`nuvio/providers/` for all Turkish sites configured in `domains.json`.
 
 Each generated JS scraper is self-contained (as required by Nuvio) and
 dynamically fetches the live domain from `domains.json` at runtime, with
@@ -126,12 +126,20 @@ SITES_META = [
         "supportedTypes": ["movie", "tv"],
         "searchMode": "wp_search",
     },
+    {'id': 'dizibal', 'siteKey': 'DiziBal', 'name': 'DiziBal', 'description': 'Türkçe dizi ve film', 'supportedTypes': ['tv', 'movie'], 'searchMode': 'dizibal_search'},
+    {'id': 'jetfilmizle', 'siteKey': 'JetFilmizle', 'name': 'JetFilmizle', 'description': 'Deneysel: player API HTTP 403 veriyor; varsayılan kapalı', 'supportedTypes': ['movie', 'tv'], 'searchMode': 'jet_search'},
+    {'id': 'kultfilmler', 'siteKey': 'KultFilmler', 'name': 'KultFilmler', 'description': 'Kült film ve dizi', 'supportedTypes': ['movie', 'tv'], 'searchMode': 'wp_search'},
 ]
 
 PROVIDER_TEMPLATE = (ROOT / "scripts" / "vendor" / "crypto-js.min.js").read_text(encoding="utf-8") + "\n" + (ROOT / "scripts" / "nuvio_provider.js").read_text(encoding="utf-8")
 
 
 def main() -> None:
+    policy = json.loads((ROOT / 'domain-policy.json').read_text(encoding='utf-8'))
+    (ROOT / 'common/src/main/kotlin/com/dizi/DomainPolicy.kt').write_text(
+        'package com.dizi\n\n// Generated from domain-policy.json by scripts/generate_nuvio.py.\nobject DomainPolicy {\n    const val minBodyLength = '
+        + str(policy['minBodyLength']) + '\n    const val runtimeBudgetMs = ' + str(policy['runtimeBudgetMs']) + 'L\n    const val probeTimeoutSeconds = ' + str(policy['probeTimeoutSeconds']) + '\n    val blockedMarkers = listOf('
+        + ', '.join(json.dumps(x, ensure_ascii=False) for x in policy['blockedMarkers']) + ')\n}\n', encoding='utf-8')
     domains_data = json.loads((ROOT / "domains.json").read_text(encoding="utf-8"))
     sites_cfg = domains_data["sites"]
 
@@ -149,6 +157,7 @@ def main() -> None:
             "__SEARCH_MODE__": meta["searchMode"],
             "__DOMAINS_JSON_URL__": DOMAINS_RAW_URL,
             "__SUPPORTED_TYPES__": meta["supportedTypes"],
+            "__DOMAIN_POLICY__": json.loads((ROOT / "domain-policy.json").read_text(encoding="utf-8")),
         }
         for token, value in replacements.items():
             js_code = js_code.replace(token, json.dumps(value, ensure_ascii=False))
@@ -159,11 +168,11 @@ def main() -> None:
                 "id": meta["id"],
                 "name": meta["name"],
                 "description": meta["description"],
-                "version": "1.3.0",
+                "version": "1.4.0",
                 "author": "re-cox",
                 "supportedTypes": meta["supportedTypes"],
                 "filename": filename,
-                "enabled": True,
+                "enabled": meta["id"] != "jetfilmizle",
                 "logo": f"https://www.google.com/s2/favicons?domain={domain_host}&sz=64",
                 "contentLanguage": ["tr"],
                 "formats": ["m3u8", "mp4"],
@@ -177,7 +186,7 @@ def main() -> None:
         "id": "re-cox-dizi-repo",
         "name": "re-cox TR (Nuvio JS)",
         "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "author": "re-cox",
         "repository": f"https://github.com/{GITHUB_REPO}",
         "scrapers": scrapers,

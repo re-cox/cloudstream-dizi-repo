@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: domain-registry
+  cancel-in-progress: false
+
 jobs:
   update-domains:
     runs-on: ubuntu-latest
@@ -23,7 +27,17 @@ jobs:
           python-version: "3.11"
 
       - name: Check and update active domains
-        run: python scripts/update_domains.py
+        run: python scripts/update_domains.py --report health-report.json --require-healthy
+
+      - name: Publish site health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domain-health
+          path: health-report.json
+
+      - name: Validate domain changes
+        run: python -m unittest discover -s scripts -v
 
       - name: Regenerate Nuvio fallback addresses
         run: python scripts/generate_nuvio.py

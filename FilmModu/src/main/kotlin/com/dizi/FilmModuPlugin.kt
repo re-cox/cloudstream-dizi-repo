@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class FilmModuPlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(FilmModu())
         registerExtractorAPI(Pilavyer())
     }

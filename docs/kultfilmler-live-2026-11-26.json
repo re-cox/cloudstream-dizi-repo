@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-26T13:10:16.134Z",
+  "scope": "Live metadata/search/extraction, HLS and first segment response bytes; not device playback",
+  "results": [
+    {
+      "id": "kultfilmler",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "media_sample_verified",
+      "playbackVerified": false,
+      "streamCount": 1,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "KultFilmler • FirePlayer",
+          "segment": {
+            "status": 200,
+            "bytes": 889,
+            "mediaSignature": true,
+            "contentType": "text/html",
+            "signature": "474011100042f0250001c10000ff01ff",
+            "payloadReceived": true
+          }
+        }
+      ],
+      "durationMs": 1759,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/the-matrix-matrix-izle-4/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/the-matrix-matrix-izle-4/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/4476b929e30dd0c4e8bdbcc82c6ba23a",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/4476b929e30dd0c4e8bdbcc82c6ba23a",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/cdn/hls/ba50fc7cdf994a35819e84a588cf07ee/master.m3u8",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/hls/d3Njd0tJemkwUDJwWjkrRHZpYzBEWlEwR1Y3b2ZUbWl4N2MyUy9MaEhVdFlBYU5kVVFNTGhWM0Y1cDJBb2JOWllRNWdsK05IUk1zOFh5RTVmaHBZaWRudHFuZnMrWnlUejNUYi9vWVNlOUF0UjZtY0lBS2l2UTdzYUk5VDd0Zi9SM1c1N1BSaHJ5VUZodk5DME51VnlSRitSQUtEakxSZEJ0REhWVUhIaXZHZCt2WVJCUE1pV1dDdzBBK1BWSVp3K2MxeFl5Z0hZZnRqUVU2SHJ5K29DLy93SnU0Y3gweHA1SExYRUN4U2s1enNJRTZJcUNpTUJnNFhVYWZXbHR6N2RLYVpzSmk2Wk8yRXNYNE1qWjVpeWNscU1RUEcvejZpOExoOFd1cWtoVXM9",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://moliy1.com/cdn/down/ba50fc7cdf994a35819e84a588cf07ee/Video/800p/800p_000.html",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

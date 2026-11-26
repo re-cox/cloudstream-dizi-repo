@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class WebteIzlePlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(WebteIzle())
     }
 }

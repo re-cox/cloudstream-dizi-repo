@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "minBodyLength": 1500,
+  "blockedMarkers": ["bilgi teknolojileri ve iletişim kurumu", "erişime engellenmiştir", "access to this site has been blocked", "5651 sayılı kanun", "buy this domain", "domain is for sale", "sedoparking", "dan.com", "afternic", "godaddy", "parked free", "cf-chl-", "<title>just a moment", "<title>access denied"],
+  "runtimeBudgetMs": 16000,
+  "probeTimeoutSeconds": 4
+}

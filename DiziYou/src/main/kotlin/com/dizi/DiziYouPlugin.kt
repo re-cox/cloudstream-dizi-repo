@@ -7,6 +7,7 @@ import com.lagradost.cloudstream3.plugins.Plugin
 @CloudstreamPlugin
 class DiziYouPlugin : Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(DiziYou())
     }
 }

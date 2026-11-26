@@ -1,3 +1,5 @@
+> Sonraki güncelleme: [domain güvenilirliği, yeni kaynaklar ve İzlemeli hero düzeltmesi](GUNCELLEME-2026-11-26.md). Aşağıdaki cihaz sonuçları önceki sürümün tarihli ölçümleridir.
+
 # Test ve düzeltme durumu — 26 Kasım 2026
 
 13 sağlayıcının katalog, arama, bölüm ve oynatıcı kodları gözden geçirildi; eski genel şablonların yerine güncel site akışları eklendi. Kaynakların tamamının her ağda ve her içerikte oynadığı iddia edilmiyor.

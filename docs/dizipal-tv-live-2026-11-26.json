@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-26T13:14:09.333Z",
+  "scope": "Live metadata/search/extraction, HLS and first segment response bytes; not device playback",
+  "results": [
+    {
+      "id": "dizipal",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 2210,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/search",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/dizi/breaking-bad-2",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizipal1.rest/dizi/breaking-bad-2/1-sezon/1-bolum",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vod.mntplayer.com:8443/series/71mdvrjh6n96ckllqc80/39608",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

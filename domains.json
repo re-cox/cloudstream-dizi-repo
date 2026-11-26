@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T03:27:53Z",
+  "updatedAt": "2026-11-26T13:10:53Z",
   "sites": {
     "DiziPal": {
       "currentUrl": "https://dizipal1.rest",
@@ -10,7 +10,14 @@
       "currentNumber": 2150,
       "maxProbe": 15,
       "announcementRegex": "Sonraki\\s+adresimiz\\s+(?:https?://)?([a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
-      "healthCheckText": "dizipal"
+      "healthCheckText": "dizipal",
+      "requiredMarkers": [
+        "/dizi/",
+        "/search"
+      ],
+      "templateId": "public-html-xhr",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "HDFilmCehennemi": {
       "currentUrl": "https://www.hdfilmcehennemi.nl",
@@ -24,7 +31,13 @@
         "https://www.hdfilmcehennemi.life",
         "https://www.hdfilmcehennemi.com"
       ],
-      "healthCheckText": "hdfilmcehennemi"
+      "healthCheckText": "hdfilmcehennemi",
+      "requiredMarkers": [
+        "section-content"
+      ],
+      "templateId": "hdfc-search",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "DiziBox": {
       "currentUrl": "https://www.dizibox.live",
@@ -38,7 +51,9 @@
         "https://www.dizibox.tv",
         "https://www.dizibox.pw"
       ],
-      "healthCheckText": "dizibox"
+      "healthCheckText": "dizibox",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "Dizilla": {
       "currentUrl": "https://dizilla.la",
@@ -52,7 +67,13 @@
         "https://dizilla.pw",
         "https://dizilla.in"
       ],
-      "healthCheckText": "dizilla"
+      "healthCheckText": "dizilla",
+      "requiredMarkers": [
+        "__next_f"
+      ],
+      "templateId": "next-rsc-mj",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "DiziYou": {
       "currentUrl": "https://www.diziyou.love",
@@ -65,7 +86,9 @@
         "https://www.diziyou.tv",
         "https://www.diziyou.io"
       ],
-      "healthCheckText": "diziyou"
+      "healthCheckText": "diziyou",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "SezonlukDizi": {
       "currentUrl": "https://sezonlukdizi.cc",
@@ -79,7 +102,9 @@
         "https://sezonlukdizi.tv",
         "https://sezonlukdizi.co"
       ],
-      "healthCheckText": "sezonlukdizi"
+      "healthCheckText": "sezonlukdizi",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "FilmModu": {
       "currentUrl": "https://filmmodu.icu",
@@ -93,7 +118,13 @@
         "https://filmmodu.vip",
         "https://filmmodu.co"
       ],
-      "healthCheckText": "filmmodu"
+      "healthCheckText": "filmmodu",
+      "requiredMarkers": [
+        "/film/"
+      ],
+      "templateId": "filmmodu-pv",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "DiziMom": {
       "currentUrl": "https://ddizimom.icu",
@@ -107,7 +138,13 @@
         "https://ddizimom.org",
         "https://www.dizimom.pro"
       ],
-      "healthCheckText": "dizimom"
+      "healthCheckText": "dizimom",
+      "requiredMarkers": [
+        "/dizi/"
+      ],
+      "templateId": "dizimom-pv",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "FullHDFilmizlesene": {
       "currentUrl": "https://www.fullhdfilmizlesene.now",
@@ -121,7 +158,9 @@
         "https://www.fullhdfilmizlesene.de",
         "https://www.fullhdfilmizlesene.so"
       ],
-      "healthCheckText": "fullhdfilmizlesene"
+      "healthCheckText": "fullhdfilmizlesene",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "FilmMakinesi": {
       "currentUrl": "https://filmmakinesi.co",
@@ -135,7 +174,9 @@
         "https://filmmakinesi.vip",
         "https://filmmakinesi.net"
       ],
-      "healthCheckText": "filmmakinesi"
+      "healthCheckText": "filmmakinesi",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "WebteIzle": {
       "currentUrl": "https://webteizle.info",
@@ -149,7 +190,13 @@
         "https://webteizle.net",
         "https://webteizle.co"
       ],
-      "healthCheckText": "webteizle"
+      "healthCheckText": "webteizle",
+      "requiredMarkers": [
+        "golgever"
+      ],
+      "templateId": "webte-asp",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "SelcukFlix": {
       "currentUrl": "https://selcukflix.app",
@@ -163,7 +210,9 @@
         "https://selcukflix.co",
         "https://selcukflix.info"
       ],
-      "healthCheckText": "selcukflix"
+      "healthCheckText": "selcukflix",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
     },
     "SetFilmIzle": {
       "currentUrl": "https://www.setfilmizle.ltd",
@@ -177,7 +226,56 @@
         "https://www.setfilmizle.tv",
         "https://www.setfilmizle.net"
       ],
-      "healthCheckText": "setfilmizle"
+      "healthCheckText": "setfilmizle",
+      "requiredMarkers": [
+        "card-link"
+      ],
+      "templateId": "setplay",
+      "sourceType": "maintainer_config",
+      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
+    },
+    "DiziBal": {
+      "currentUrl": "https://dizibal.org",
+      "strategy": "mirror_and_redirect",
+      "mirrors": [
+        "https://dizibal.org"
+      ],
+      "healthCheckText": "dizibal",
+      "sourceType": "upstream_source",
+      "sourceUrl": "https://github.com/neoser1984/neowatch/tree/13b96229ed698251827568ff914ba3b6830e16c9/DiziBal",
+      "requiredMarkers": [
+        "/series/"
+      ],
+      "templateId": "dizibal-pv"
+    },
+    "JetFilmizle": {
+      "currentUrl": "https://jetfilmizle.app",
+      "strategy": "mirror_and_redirect",
+      "mirrors": [
+        "https://jetfilmizle.app"
+      ],
+      "healthCheckText": "jetfilmizle",
+      "sourceType": "upstream_source",
+      "sourceUrl": "https://github.com/neoser1984/neowatch/tree/13b96229ed698251827568ff914ba3b6830e16c9/JetFilmizle",
+      "requiredMarkers": [
+        "film-card-wrapper"
+      ],
+      "templateId": "jetplayer"
+    },
+    "KultFilmler": {
+      "currentUrl": "https://kultfilmler.net",
+      "strategy": "mirror_and_redirect",
+      "mirrors": [
+        "https://kultfilmler.net"
+      ],
+      "healthCheckText": "kultfilmler",
+      "sourceType": "upstream_source",
+      "sourceUrl": "https://github.com/neoser1984/neowatch/tree/13b96229ed698251827568ff914ba3b6830e16c9/KultFilmler",
+      "requiredMarkers": [
+        "mcard"
+      ],
+      "templateId": "kult-srcdata"
     }
-  }
+  },
+  "schemaVersion": 2
 }

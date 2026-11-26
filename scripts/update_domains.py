@@ -24,9 +24,13 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import os
 import re
 import ssl
 import sys
+import time
+from concurrent.futures import ThreadPoolExecutor
+from domain_health import POLICY, valid_origin, identity_error, error_status, body_status
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -39,24 +43,8 @@ USER_AGENT = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-BLOCK_AND_PARKING_MARKERS = (
-    "bilgi teknolojileri ve iletişim kurumu",
-    "erişime engellenmiştir",
-    "access to this site has been blocked",
-    "5651 sayılı kanun",
-    "buy this domain",
-    "domain is for sale",
-    "sedoparking",
-    "dan.com",
-    "afternic",
-    "godaddy",
-    "parked free",
-    "cf-chl-",
-    "<title>just a moment",
-    "<title>access denied",
-)
-
-MIN_VALID_BODY_LENGTH = 500
+BLOCK_AND_PARKING_MARKERS = tuple(POLICY['blockedMarkers'])
+MIN_VALID_BODY_LENGTH = POLICY['minBodyLength']
 
 
 def normalize_origin(url: str) -> str:
@@ -66,10 +54,7 @@ def normalize_origin(url: str) -> str:
         return ""
     if not re.match(r"^https?://", raw, flags=re.IGNORECASE):
         raw = f"https://{raw}"
-    parsed = urllib.parse.urlparse(raw)
-    scheme = (parsed.scheme or "https").lower()
-    host = parsed.netloc.lower().rstrip("/")
-    return f"{scheme}://{host}" if host else ""
+    return valid_origin(raw)
 
 
 def extract_domain_number(url: str) -> Optional[int]:
@@ -113,24 +98,27 @@ def probe_url(
     fetcher: Callable[[str, int], Tuple[int, str, str]] = default_fetcher,
     timeout: int = 12,
     min_length: int = MIN_VALID_BODY_LENGTH,
+    config: Optional[dict] = None,
+    observations: Optional[list] = None,
 ) -> Optional[Tuple[str, str]]:
     """
     Check if `url` is alive and valid (not BTK-blocked or domain-parked).
     Returns (normalized_final_origin, body_text) if healthy, otherwise None.
     """
+    observation = {"url": url}
     try:
         status, final_url, body = fetcher(url, timeout)
-    except Exception:
-        return None
-
-    if status < 200 or status >= 400:
-        return None
-    if not body or len(body) < min_length or is_blocked_or_parked(body):
-        return None
-    if health_check_text and health_check_text.lower() not in body.lower():
-        return None
-
-    return normalize_origin(final_url), body
+        observation.update(httpStatus=status, finalUrl=final_url)
+        state = body_status(status, body, health_check_text, min_length)
+        if state == 'healthy':
+            state = identity_error(url, final_url, body, config or {}) or 'healthy'
+    except Exception as error:
+        state = error_status(error)
+        body, final_url = '', url
+    observation['status'] = state
+    if observations is not None:
+        observations.append(observation)
+    return (normalize_origin(final_url), body) if state == 'healthy' else None
 
 
 def extract_announcement_next_url(html: str, regex_pattern: Optional[str]) -> Optional[str]:
@@ -149,6 +137,7 @@ def update_site_entry(
     cfg: dict,
     fetcher: Callable[[str, int], Tuple[int, str, str]] = default_fetcher,
     min_length: int = MIN_VALID_BODY_LENGTH,
+    observations: Optional[list] = None,
 ) -> Tuple[dict, bool, str]:
     """
     Check and update a single site config.
@@ -158,6 +147,15 @@ def update_site_entry(
     if "mirrors" in cfg and isinstance(cfg["mirrors"], list):
         updated["mirrors"] = list(cfg["mirrors"])
 
+    deadline = time.monotonic() + 45
+    def checked_probe(url, health_text, **kwargs):
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            if observations is not None and not any(o['status'] == 'budget_exhausted' for o in observations):
+                observations.append({'url': url, 'status': 'budget_exhausted'})
+            return None
+        return probe_url(url, health_text, timeout=max(1, min(12, int(remaining))), **kwargs)
+
     strategy = cfg.get("strategy", "sequential_and_announcement")
     current_url = normalize_origin(cfg.get("currentUrl", ""))
     next_url = normalize_origin(cfg.get("nextUrl", "")) if cfg.get("nextUrl") else None
@@ -166,6 +164,11 @@ def update_site_entry(
 
     def apply_live(live_origin: str, body: str, note: str) -> Tuple[dict, bool, str]:
         updated["currentUrl"] = live_origin
+        if live_origin != current_url:
+            updated['previousUrl'] = current_url
+            updated['verifiedAt'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+            updated['sourceType'] = 'verified_probe'
+            updated['sourceUrl'] = live_origin
         # A redirect to another TLD (e.g. dizipal1.rest) must not reset the
         # configured .com sequence from 2150 to 1.
         if cfg.get("prefix") and cfg.get("suffix"):
@@ -180,7 +183,7 @@ def update_site_entry(
                 updated["mirrors"] = [live_origin] + normalized_mirrors
 
         announced = extract_announcement_next_url(body, announcement_regex)
-        if announced and announced != live_origin:
+        if announced and announced != live_origin and (not health_text or health_text.lower() in urllib.parse.urlsplit(announced).hostname):
             updated["nextUrl"] = announced
         elif updated.get("nextUrl") == live_origin:
             updated["nextUrl"] = None
@@ -190,7 +193,7 @@ def update_site_entry(
 
     # Strategy: redirect
     if strategy == "redirect" and cfg.get("redirectSourceUrl"):
-        result = probe_url(cfg["redirectSourceUrl"], health_text, fetcher=fetcher, min_length=min_length)
+        result = checked_probe(cfg["redirectSourceUrl"], health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
         if result:
             live_origin, body = result
             return apply_live(live_origin, body, f"{site_name}: resolved via redirect -> {live_origin}")
@@ -203,7 +206,7 @@ def update_site_entry(
             matches = re.findall(cfg["telegramRegex"], tg_html, flags=re.IGNORECASE)
             for candidate in reversed(matches):
                 candidate_origin = normalize_origin(candidate)
-                result = probe_url(candidate_origin, health_text, fetcher=fetcher, min_length=min_length)
+                result = checked_probe(candidate_origin, health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
                 if result:
                     live_origin, body = result
                     return apply_live(live_origin, body, f"{site_name}: resolved via telegram -> {live_origin}")
@@ -215,7 +218,7 @@ def update_site_entry(
     # 1. Check currentUrl first (follows HTTP redirects)
     if current_url:
         tried.add(current_url)
-        result = probe_url(current_url, health_text, fetcher=fetcher, min_length=min_length)
+        result = checked_probe(current_url, health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
         if result:
             live_origin, body = result
             note = (
@@ -228,7 +231,7 @@ def update_site_entry(
     # 2. Current URL is down -> try announced nextUrl
     if next_url and next_url not in tried:
         tried.add(next_url)
-        result = probe_url(next_url, health_text, fetcher=fetcher, min_length=min_length)
+        result = checked_probe(next_url, health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
         if result:
             live_origin, body = result
             return apply_live(live_origin, body, f"{site_name}: moved to announced nextUrl -> {live_origin}")
@@ -239,7 +242,7 @@ def update_site_entry(
         if not mirror or mirror in tried:
             continue
         tried.add(mirror)
-        result = probe_url(mirror, health_text, fetcher=fetcher, min_length=min_length)
+        result = checked_probe(mirror, health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
         if result:
             live_origin, body = result
             return apply_live(live_origin, body, f"{site_name}: moved to mirror -> {live_origin}")
@@ -256,7 +259,7 @@ def update_site_entry(
             if candidate in tried:
                 continue
             tried.add(candidate)
-            result = probe_url(candidate, health_text, fetcher=fetcher, min_length=min_length)
+            result = checked_probe(candidate, health_text, fetcher=fetcher, min_length=min_length, config=cfg, observations=observations)
             if result:
                 live_origin, body = result
                 return apply_live(
@@ -268,17 +271,38 @@ def update_site_entry(
     return cfg, False, f"{site_name}: unreachable (kept {current_url})"
 
 
-def run_update(domains_path: Path, dry_run: bool = False) -> bool:
+def run_update(domains_path: Path, dry_run: bool = False, report_path: Optional[Path] = None) -> bool:
     data = json.loads(domains_path.read_text(encoding="utf-8"))
     sites = data.get("sites", {})
     any_changed = False
 
-    for site_name, cfg in list(sites.items()):
-        new_cfg, changed, msg = update_site_entry(site_name, cfg)
-        print(msg)
-        if changed:
-            sites[site_name] = new_cfg
-            any_changed = True
+    results = []
+    def check(item):
+        site_name, cfg = item
+        observations = []
+        new_cfg, changed, msg = update_site_entry(site_name, cfg, observations=observations)
+        return site_name, new_cfg, changed, msg, observations
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for site_name, new_cfg, changed, msg, observations in executor.map(check, list(sites.items())):
+            print(msg)
+            healthy = any(x['status'] == 'healthy' for x in observations)
+            results.append({'site': site_name, 'status': 'healthy' if healthy else 'unverified',
+                            'playbackVerified': False, 'probes': observations})
+            if changed:
+                sites[site_name] = new_cfg
+                any_changed = True
+    report = {'checkedAt': datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'scope': 'Homepage identity checks, not playback', 'results': results}
+    if report_path:
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    run_update.last_healthy_count = sum(r['status'] == 'healthy' for r in results)
+    if os.environ.get('GITHUB_STEP_SUMMARY'):
+        with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+            summary.write('## Domain identity checks (not playback)\n')
+            for result in results:
+                states = ', '.join(sorted({p['status'] for p in result['probes']}))
+                summary.write('- ' + result['site'] + ': ' + result['status'] + ' (' + states + ')\n')
 
     if any_changed:
         data["updatedAt"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -306,10 +330,12 @@ def main() -> int:
         help="Path to domains.json",
     )
     parser.add_argument("--dry-run", action="store_true", help="Do not write changes to disk")
+    parser.add_argument('--report', type=Path, default=Path('health-report.json'))
+    parser.add_argument('--require-healthy', action='store_true', help='Fail if no site identity was verified')
     args = parser.parse_args()
 
-    run_update(args.file, dry_run=args.dry_run)
-    return 0
+    run_update(args.file, dry_run=args.dry_run, report_path=args.report)
+    return 1 if args.require_healthy and not run_update.last_healthy_count else 0
 
 
 if __name__ == "__main__":

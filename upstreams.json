@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "repository": "neoser1984/neowatch",
+      "branch": "main",
+      "pinnedCommit": "13b96229ed698251827568ff914ba3b6830e16c9",
+      "license": "GPL-3.0-only",
+      "modules": ["DiziBox", "DiziMom", "DiziPal", "Dizilla", "FilmMakinesi", "FilmModu", "FullHDFilmizlesene", "HDFilmCehennemi", "SelcukFlix", "SezonlukDizi", "WebteIzle", "DiziBal", "JetFilmizle", "KultFilmler"]
+    }
+  ]
+}

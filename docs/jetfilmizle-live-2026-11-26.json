@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-26T12:58:45.605Z",
+  "scope": "Live metadata/search/extraction and first response bytes; not device playback",
+  "results": [
+    {
+      "id": "jetfilmizle",
+      "mediaType": "movie",
+      "tmdbId": "603",
+      "season": null,
+      "episode": null,
+      "status": "no_streams",
+      "playbackVerified": false,
+      "streamCount": 0,
+      "manifests": [],
+      "durationMs": 9013,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/603",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://jetfilmizle.app/arama",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://jetfilmizle.app/film/matrix",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        },
+        {
+          "url": "https://jetfilmizle.app/jetplayer",
+          "method": "POST",
+          "status": 403
+        }
+      ]
+    }
+  ]
+}

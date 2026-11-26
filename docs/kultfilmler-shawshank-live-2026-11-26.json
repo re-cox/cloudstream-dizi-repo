@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-11-26T13:09:00.164Z",
+  "scope": "Live metadata/search/extraction, HLS and first segment response bytes; not device playback",
+  "results": [
+    {
+      "id": "kultfilmler",
+      "mediaType": "movie",
+      "tmdbId": "278",
+      "season": null,
+      "episode": null,
+      "status": "manifest_verified",
+      "playbackVerified": false,
+      "streamCount": 2,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "KultFilmler • FirePlayer",
+          "segment": {
+            "status": 200,
+            "bytes": 888,
+            "contentType": "text/html",
+            "payloadReceived": true
+          }
+        },
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "KultFilmler • FirePlayer",
+          "segment": {
+            "status": 200,
+            "bytes": 1437,
+            "contentType": "text/html",
+            "payloadReceived": true
+          }
+        }
+      ],
+      "durationMs": 3505,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/278",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/movie/278",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/the-shawshank-redemption-esaretin-bedeli-izle/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://kultfilmler.net/the-shawshank-redemption-esaretin-bedeli-izle/",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/81e74d678581a3bb7a720b019f4f1a93",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/81e74d678581a3bb7a720b019f4f1a93",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/85422afb467e9456013a2a51d4dff702",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/video/85422afb467e9456013a2a51d4dff702",
+          "method": "POST",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/cdn/hls/376d3fc06796d065eecd621bf248de23/master.m3u8",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/hls/TVFsbURWbWhON0RMd0dWcXVVVEJvNTA2ZklCdlJLRkMvU3Y2S2RoR0M1VU5DWEhubHNJOVQ1enpUTEdwQ250UTRXVWVCYlJqQjRBc1QxQjJ4RDV5cVdXd00xM1VQVm1XclNIait6bHIzMk5HcW9Sd3VicEF6cjlNeFM0K1pmaFFnWnpOa0FiSFBKczg2TjkzMGVLL0UrNzZoWWFoRHFTSVU4eWNYNC91aXRSTHNmWnJhVEtwc3JvZGFpRlgwREgxLy9HUXFTT0VJRWIza1FBVCtvNUZtZnpCMWFEcFZrNDY2L2l2YXVmRWlIVmRLRG1pVGhudzkza1diUERwbU5jc0JLT0NpRWQ3WXlsZlppbjlZODlldkQwOWwzR0gvSi9wYTJHS3U3bzNrK00rNHM3MHpQUVJZSE94MVNmY3lmT0w%3D",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://moliy1.com/cdn/down/376d3fc06796d065eecd621bf248de23/Video/1072p/1072p_000.html",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/cdn/hls/16140c5f896b4c847e101dc5701401ac/master.m3u8",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://vidpapi.xyz/hls/Yk1GaE5OMnJsQWxOTFE5amhCZTBIN04xR2hxemlhZWRUYmR0NDRLMXdyVzBUTEltTStZM05nTHVoMUVFb0wvT08wTUxDYXB5OW9SNEUrRXlNY1lWZDlUUitXRDVSNU8zdXZ0VnU3U3Vldm5rbWJxTUhKWUt3WjMva3cyMUtmemo2MFlWbVlCYzc3aDNWa0h0aWx1aGV2dkM2NW1rU0Q1NXM5NXF4citqeUxMNG5EQjFBTVNwN2hJNzBWYnIwYlZRQVZPNkZlbnZKZnZCd2ppUlJLTEF6RG1wRDNMSkdoU2M4TmpHS01LOXpkTHl0SVl6bXZ0cUl5UC84YWgwQUx2RkVTZ2Y0OUYrSzFjWVBIcXdNaW5Mb2Y3T0xqMVZaa2I1MlFMSDA2bHp0WTQ9",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://moliy1.com/cdn/down/16140c5f896b4c847e101dc5701401ac/Video/720p/720p_000.html",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

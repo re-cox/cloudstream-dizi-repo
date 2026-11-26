@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class SelcukFlixPlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(SelcukFlix())
         registerExtractorAPI(ContentXGenel())
     }

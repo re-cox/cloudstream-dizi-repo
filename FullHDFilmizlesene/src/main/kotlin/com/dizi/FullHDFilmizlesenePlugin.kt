@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class FullHDFilmizlesenePlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(FullHDFilmizlesene())
         registerExtractorAPI(TurboImgz())
     }

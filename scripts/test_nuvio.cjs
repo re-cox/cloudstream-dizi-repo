@@ -25,8 +25,57 @@ function provider(id, routes = {}, config = {}) {
 
 test('all generated providers parse and export the Nuvio entry point', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '../nuvio/manifest.json')));
-  assert.equal(manifest.scrapers.length, 13);
+  assert.equal(manifest.scrapers.length, 16);
   for (const entry of manifest.scrapers) assert.equal(typeof provider(entry.id).api.getStreams, 'function');
+});
+
+test('many dead mirrors cannot starve a sequential domain candidate', async () => {
+  const old = 'https://dizipal2150.com', next = 'https://dizipal2151.com';
+  const config = {DiziPal: {currentUrl: old, prefix:'https://dizipal', suffix:'.com', currentNumber:2150,
+    healthCheckText:'dizipal', mirrors:Array.from({length:7}, (_,i)=>`https://dead${i}.test`)}};
+  const {context:c, requests} = provider('dizipal', {
+    [old + '/test']:new Error('offline'), [next]:'dizipal ' + 'x'.repeat(2000), [next+'/test']:'recovered'
+  }, config);
+  assert.equal(await c.siteText(old+'/test'), 'recovered');
+  assert.ok(requests.some(r=>r.url===next));
+});
+
+test('a dual-language exact title matches without accepting its sequel', () => {
+  const {context:c}=provider('kultfilmler');
+  const items=c.matchingPages([{title:'The Matrix – Matrix',url:'/matrix'},
+    {title:'The Matrix Reloaded – Matrix: Yeniden Yüklendi',url:'/sequel'}],['The Matrix']);
+  assert.equal(items.length,1);
+  assert.equal(items[0].url,'/matrix');
+});
+
+test('same-name remakes and wrong media types are rejected using structured metadata', () => {
+  const {context:c}=provider('kultfilmler');
+  const page = year=>`<script type="application/ld+json">{"@type":"Movie","datePublished":"${year}-01-01"}</script>`;
+  assert.equal(c.matchesContentMetadata(page(1999),'movie',1999),true);
+  assert.equal(c.matchesContentMetadata(page(2026),'movie',1999),false);
+  assert.equal(c.matchesContentMetadata(page(1999),'tv',1999),false);
+  assert.equal(c.matchesContentMetadata('<html>No metadata</html>','movie',1999),true);
+});
+
+test('redirect and parser identity are validated independently of page branding', () => {
+  const {context:c}=provider('dizipal');
+  const cfg={currentUrl:'https://dizipal.test',requiredMarkers:['__next_f']};
+  assert.equal(c.validDomainIdentity(cfg.currentUrl,'https://ads.test','dizipal __next_f',cfg),false);
+  assert.equal(c.validDomainIdentity(cfg.currentUrl,cfg.currentUrl,'dizipal',cfg),false);
+  assert.equal(c.validDomainIdentity(cfg.currentUrl,cfg.currentUrl,'dizipal __next_f',cfg),true);
+});
+
+test('FirePlayer uses the public video API and emits its returned source', async () => {
+  const base='https://kultfilmler.net', frame='https://player.test/video/'+'a'.repeat(32);
+  const {context:c,requests}=provider('kultfilmler', {
+    [frame]:'<title>FirePlayer</title>',
+    [frame+'?do=getVideo']:{videoSources:[{file:'https://cdn.test/movie.m3u8',label:'HD'}]}
+  });
+  const streams=await c.extractStreamsFromPage(base,frame,0,new Set(),base+'/film/');
+  assert.ok(streams.some(s=>s.url==='https://cdn.test/movie.m3u8'));
+  const request=requests.find(r=>r.url.endsWith('?do=getVideo'));
+  assert.equal(request.options.method,'POST');
+  assert.equal(request.options.headers.Referer,frame);
 });
 
 test('URL resolution handles page-relative, root-relative and protocol-relative links', () => {

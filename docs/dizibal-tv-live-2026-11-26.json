@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-26T13:10:14.209Z",
+  "scope": "Live metadata/search/extraction, HLS and first segment response bytes; not device playback",
+  "results": [
+    {
+      "id": "dizibal",
+      "mediaType": "tv",
+      "tmdbId": "1396",
+      "season": 1,
+      "episode": 1,
+      "status": "media_sample_verified",
+      "playbackVerified": false,
+      "streamCount": 1,
+      "manifests": [
+        {
+          "status": 200,
+          "isHls": true,
+          "isVideo": false,
+          "title": "DiziBal • Player",
+          "segment": {
+            "status": 200,
+            "bytes": 1369,
+            "mediaSignature": false,
+            "contentType": "video/mp2t",
+            "signature": "64800139623103b5b0cb91d6d393dff5",
+            "payloadReceived": true
+          }
+        }
+      ],
+      "durationMs": 2653,
+      "requests": [
+        {
+          "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/domains.json",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://api.themoviedb.org/3/tv/1396",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/ara",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/series/breaking-bad",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/series/breaking-bad",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://dizibal.org/series/breaking-bad/season/1/episode/1",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://pilavyerplay.top/assets/js/s.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://pilavyerplay.top/api/stream.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://pilavyerplay.top/api/stream.php",
+          "method": "GET",
+          "status": 200
+        },
+        {
+          "url": "https://pilavyer1.top/cdn/88a2ac7f9bb8bbd5869496886f51abd4/stream_v720/00000.txt",
+          "method": "GET",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}

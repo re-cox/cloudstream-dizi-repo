@@ -33,7 +33,7 @@ class TestDomainTracker(unittest.TestCase):
     def test_redirect_to_different_tld_preserves_original_sequence(self):
         def fake_fetcher(url, timeout=12):
             return 200, 'https://dizipal1.rest/', 'dizipal ' + 'x' * 2000
-        updated, _, _ = update_site_entry('DiziPal', DIZIPAL_CFG, fetcher=fake_fetcher)
+        updated, _, _ = update_site_entry('DiziPal', dict(DIZIPAL_CFG, allowedRedirectHosts=['dizipal1.rest']), fetcher=fake_fetcher)
         self.assertEqual(updated['currentUrl'], 'https://dizipal1.rest')
         self.assertEqual(updated['currentNumber'], 2150)
 
@@ -130,12 +130,12 @@ class TestDomainTracker(unittest.TestCase):
                 )
             raise ConnectionError("unreachable")
 
-        updated, changed, _ = update_site_entry("Dizilla", DIZILLA_CFG, fetcher=fake_fetcher, min_length=20)
+        updated, changed, _ = update_site_entry("Dizilla", dict(DIZILLA_CFG, allowedRedirectHosts=["dizilla.vip"]), fetcher=fake_fetcher, min_length=20)
         self.assertTrue(changed)
         self.assertEqual(updated["currentUrl"], "https://dizilla.vip")
         self.assertEqual(updated["mirrors"][0], "https://dizilla.vip")
 
-    def test_domains_json_is_valid_and_has_all_13_sites(self):
+    def test_domains_json_is_valid_and_has_all_sites(self):
         domains_file = Path(__file__).resolve().parent.parent / "domains.json"
         data = json.loads(domains_file.read_text(encoding="utf-8"))
         expected = {
@@ -151,7 +151,7 @@ class TestDomainTracker(unittest.TestCase):
             "FilmMakinesi",
             "WebteIzle",
             "SelcukFlix",
-            "SetFilmIzle",
+            "SetFilmIzle", "DiziBal", "JetFilmizle", "KultFilmler",
         }
         self.assertEqual(set(data["sites"].keys()), expected)
 

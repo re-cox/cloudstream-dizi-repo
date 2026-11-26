@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class DiziMomPlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(DiziMom())
         registerExtractorAPI(FirePlayer())
     }

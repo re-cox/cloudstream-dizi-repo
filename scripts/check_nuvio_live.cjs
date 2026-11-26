@@ -8,11 +8,26 @@ const args = process.argv.slice(2);
 const selected = args.includes('--id') ? args[args.indexOf('--id') + 1] : null;
 const output = args.includes('--output') ? args[args.indexOf('--output') + 1] : null;
 
+async function readSample(response) {
+  const playlist = /mpegurl/i.test(response.headers.get('content-type') || '') || /\.m3u8(?:[?#]|$)/i.test(response.url);
+  const reader=response.body?.getReader();
+  if (!reader) return new Uint8Array();
+  const chunks=[]; let total=0;
+  try {
+    do {
+      const {value,done}=await reader.read();
+      if (done) break;
+      chunks.push(value); total+=value.length;
+    } while (playlist && total<512000);
+  } finally { await reader.cancel(); }
+  return Buffer.concat(chunks).subarray(0,512000);
+}
+
 async function check(entry) {
   const started = Date.now(), requests = [], controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 45000);
-  const mediaType = entry.supportedTypes.includes('movie') ? 'movie' : 'tv';
-  const tmdbId = mediaType === 'movie' ? '603' : '1396';
+  const mediaType = args.includes('--type') ? args[args.indexOf('--type')+1] : entry.supportedTypes.includes('movie') ? 'movie' : 'tv';
+  const tmdbId = args.includes('--tmdb') ? args[args.indexOf('--tmdb')+1] : mediaType === 'movie' ? '603' : '1396';
   const result = {id: entry.id, mediaType, tmdbId, season: mediaType === 'tv' ? 1 : null,
     episode: mediaType === 'tv' ? 1 : null, status: 'no_streams', playbackVerified: false};
   const boundedFetch = async (url, options = {}) => {
@@ -34,17 +49,41 @@ async function check(entry) {
     for (const stream of streams.slice(0, 3)) {
       try {
         const response = await boundedFetch(stream.url, {headers: stream.headers});
-        const reader = response.body?.getReader();
-        const first = reader ? await reader.read() : {value: new Uint8Array()};
-        if (reader) await reader.cancel(); // Never download the full video.
-        const text = new TextDecoder().decode(first.value || new Uint8Array());
+        const text = new TextDecoder().decode(await readSample(response));
         const isHls = text.trimStart().startsWith('#EXTM3U');
         const isVideo = /video\/mp4/i.test(response.headers.get('content-type') || '');
-        result.manifests.push({status: response.status, isHls, isVideo, title: stream.title});
+        const evidence = {status: response.status, isHls, isVideo, title: stream.title};
+        if (response.ok && isHls) {
+          try {
+            let playlist = text, playlistUrl = response.url || stream.url;
+            for (let level=0; level<3; level++) {
+              const relative = playlist.split(/\r?\n/).map(l=>l.trim()).find(l=>l && !l.startsWith('#'));
+              if (!relative) break;
+              const sample = await boundedFetch(new URL(relative, playlistUrl), {headers:stream.headers});
+              const chunk = {value: await readSample(sample)};
+              const sampleText = new TextDecoder().decode(chunk.value || new Uint8Array());
+              if (sampleText.trimStart().startsWith('#EXTM3U')) {
+                playlist = sampleText; playlistUrl = sample.url; continue;
+              }
+              const bytes=chunk.value || new Uint8Array();
+              const mediaSignature=bytes[0]===0x47 || /^(?:ftyp|styp|moof)$/.test(Buffer.from(bytes).subarray(4,8).toString()) || Buffer.from(bytes).subarray(0,3).toString()==='ID3';
+              evidence.segment = {status:sample.status, bytes:bytes.length, mediaSignature,
+                contentType:sample.headers.get('content-type'), signature:Buffer.from(chunk.value || []).subarray(0,16).toString('hex'),
+                payloadReceived:sample.ok && bytes.length>0 && (mediaSignature || /^(?:video|audio)\//i.test(sample.headers.get('content-type') || '')) && !/^\s*<(?:!doctype|html|script|head|body)/i.test(sampleText)};
+              break;
+            }
+          } catch (error) { evidence.segment = {error:error.message}; }
+        }
+        result.manifests.push(evidence);
       } catch (error) { result.manifests.push({error: error.message}); }
     }
-    if (result.manifests.some(item => item.status >= 200 && item.status < 300 && (item.isHls || item.isVideo))) result.status = 'manifest_verified';
+    if (result.manifests.some(item => item.segment?.payloadReceived || item.isVideo)) result.status = 'media_sample_verified';
+    else if (result.manifests.some(item => item.segment && !item.segment.payloadReceived)) result.status = 'segment_failed';
+    else if (result.manifests.some(item => item.status >= 200 && item.status < 300 && item.isHls)) result.status = 'manifest_verified';
     else if (streams.length) result.status = 'unverified_links';
+    else if (requests.some(r=>r.status===403)) result.status='challenge_or_denied';
+    else if (requests.some(r=>r.status===429)) result.status='rate_limited';
+    else if (requests.some(r=>r.error)) result.status='network_error';
   } catch (error) { result.status = 'error'; result.error = error.message; }
   finally { clearTimeout(timer); controller.abort(); }
   result.durationMs = Date.now() - started;
@@ -53,12 +92,14 @@ async function check(entry) {
   return result;
 }
 
-(async () => {
+if (require.main === module) (async () => {
   const queue = manifest.scrapers.filter(entry => !selected || entry.id === selected), results = [];
   await Promise.all(Array.from({length: Math.min(3, queue.length)}, async () => {
     while (queue.length) results.push(await check(queue.shift()));
   }));
-  const report = {checkedAt: new Date().toISOString(), scope: 'Live metadata/search/extraction and first response bytes; not device playback', results};
+  const report = {checkedAt: new Date().toISOString(), scope: 'Live metadata/search/extraction, HLS and first segment response bytes; not device playback', results};
   if (output) fs.writeFileSync(output, JSON.stringify(report, null, 2) + '\n');
-  process.exitCode = results.every(result => result.status === 'manifest_verified') ? 0 : 1;
+  process.exitCode = results.every(result => ['manifest_verified','media_sample_verified'].includes(result.status)) ? 0 : 1;
 })();
+
+module.exports = {readSample};

@@ -7,3 +7,6 @@ local.properties
 __pycache__/
 *.pyc
 .venv/
+
+health-report.json
+upstream-report.json

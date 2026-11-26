@@ -9,6 +9,7 @@ import android.content.Context
 @CloudstreamPlugin
 class DizillaPlugin: Plugin() {
     override fun load(context: Context) {
+        DomainResolver.initialize(context)
         registerMainAPI(Dizilla())
         registerExtractorAPI(ContentXGenel())
     }
