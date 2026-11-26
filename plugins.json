@@ -92,11 +92,11 @@
         "name": "DiziMom"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=dizipal2150.com&sz=%size%",
-        "fileHash": "sha256-b57b3534ff7e36946b8546c84bfd7f0104873fee14a780182f6675283210d400",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dizipal2161.com&sz=%size%",
+        "fileHash": "sha256-4e1f9715305998e7b4aca5fd40d14b85d998183cb7702c4f20f43ee503d468d4",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/re-cox/cloudstream-dizi-repo",
-        "fileSize": 43634,
+        "fileSize": 43023,
         "status": 1,
         "language": "tr",
         "authors": [
@@ -109,7 +109,7 @@
             "Movie",
             "Anime"
         ],
-        "version": 6,
+        "version": 7,
         "internalName": "DiziPal",
         "description": "DiziPal - Otomatik domain takipli T\u00fcrk\u00e7e dizi ve film kayna\u011f\u0131",
         "url": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/builds/DiziPal.cs3",
