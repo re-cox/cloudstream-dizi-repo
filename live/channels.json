@@ -29,7 +29,7 @@
       "id": "recox-live-ntv",
       "name": "NTV",
       "group": "Haber",
-      "poster": "https://www.ntv.com.tr/favicon.ico",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
       "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web",
       "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",

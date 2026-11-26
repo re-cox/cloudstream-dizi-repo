@@ -3,8 +3,8 @@
     "id": "recox-live-ntv",
     "type": "channel",
     "name": "NTV",
-    "poster": "https://www.ntv.com.tr/favicon.ico",
-    "background": "https://www.ntv.com.tr/favicon.ico",
+    "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
+    "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
     "posterShape": "landscape",
     "description": "NTV · İnternet canlı yayını",
     "genres": [
