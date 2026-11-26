@@ -1,35 +1,162 @@
 {
-  "schemaVersion": 1,
   "channels": [
     {
       "id": "recox-live-trt-1",
       "name": "TRT 1",
       "group": "Ulusal",
-      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-trt-1.png",
       "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
       "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
         "Referer": "https://www.tabii.com/"
       },
-      "reference": "https://github.com/F0Rextasy/bigbullapp-cs/blob/39f7e53b5cc3fecb9551a056d6fc3ba8c5968f4d/nuvio/addon-live/stream/tv/bb-trt-1.json"
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-trt-1.json"
+    },
+    {
+      "id": "recox-live-tv8",
+      "name": "TV8",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8.png",
+      "url": "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=tv8_web&ce=3",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-tv8.json"
     },
     {
       "id": "recox-live-kanal-d",
       "name": "Kanal D",
       "group": "Ulusal",
-      "poster": "https://i.imgur.com/9o1atM6.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-d.png",
       "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3",
       "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
         "Referer": "https://www.tabii.com/"
       },
-      "reference": "https://github.com/F0Rextasy/bigbullapp-cs/blob/39f7e53b5cc3fecb9551a056d6fc3ba8c5968f4d/nuvio/addon-live/stream/tv/bb-kanal-d.json"
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-kanal-d.json"
+    },
+    {
+      "id": "recox-live-atv",
+      "name": "ATV",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-atv.png",
+      "url": "https://tvvoo.stremio-italia.eu/live/manifest.m3u8?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F1255594337000000000000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "reference": "https://tvvoo.stremio-italia.eu/cfg-tr/stream/tv/vavoo_ATV%7Cgroup%3Atr.json"
+    },
+    {
+      "id": "recox-live-now",
+      "name": "NOW / FOX",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-now.png",
+      "url": "https://tvvoo.stremio-italia.eu/live/manifest.m3u8?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F3105184056000000000000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "reference": "https://tvvoo.stremio-italia.eu/cfg-tr/stream/tv/vavoo_NOW%7Cgroup%3Atr.json"
+    },
+    {
+      "id": "recox-live-star-tv",
+      "name": "Star TV",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-star-tv.png",
+      "url": "https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web&ce=3",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-star-tv.json"
+    },
+    {
+      "id": "recox-live-show-tv",
+      "name": "Show TV",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-show-tv.png",
+      "url": "https://ciner.daioncdn.net/showtv/showtv.m3u8?app=showtv_web&ce=3",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.showtv.com.tr/"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-show-tv.json"
+    },
+    {
+      "id": "recox-live-kanal-7",
+      "name": "Kanal 7",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-7.png",
+      "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8?app=web",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-kanal-7.json"
+    },
+    {
+      "id": "recox-live-beyaz-tv",
+      "name": "Beyaz TV",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-beyaz-tv.png",
+      "url": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://www.beyaztv.com.tr/"
+      },
+      "reference": "https://www.beyaztv.com.tr/"
+    },
+    {
+      "id": "recox-live-teve2",
+      "name": "tv2",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-teve2.png",
+      "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://www.teve2.com.tr/"
+      },
+      "reference": "https://www.teve2.com.tr/canli-yayin"
+    },
+    {
+      "id": "recox-live-tv8-5",
+      "name": "TV8,5",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-5.png",
+      "url": "https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web&ce=3",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-tv8-5.json"
+    },
+    {
+      "id": "recox-live-tv8-int",
+      "name": "TV8 Int",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-int.png",
+      "url": "https://tvvoo.stremio-italia.eu/live/manifest.m3u8?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F1764745585000000000000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "reference": "https://tvvoo.stremio-italia.eu/cfg-tr/stream/tv/vavoo_TV%25208%2520INT%7Cgroup%3Atr.json"
+    },
+    {
+      "id": "recox-live-a2tv",
+      "name": "A2 TV",
+      "group": "Ulusal",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-a2tv.png",
+      "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://iptv-org.github.io/"
+      },
+      "reference": "https://raw.githubusercontent.com/F0Rextasy/bigbullapp-cs/master/nuvio/addon-live/stream/tv/bb-a2tv.json"
     },
     {
       "id": "recox-live-ntv",
       "name": "NTV",
       "group": "Haber",
-      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-ntv.png",
       "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web",
       "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",

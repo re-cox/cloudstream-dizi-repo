@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "name": "re-cox Canlı TV",
+      "title": "tv2 · Canlı",
+      "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
+      "headers": {
+        "User-Agent": "Mozilla/5.0",
+        "Referer": "https://www.teve2.com.tr/"
+      },
+      "behaviorHints": {
+        "isLive": true,
+        "proxyHeaders": {
+          "request": {
+            "User-Agent": "Mozilla/5.0",
+            "Referer": "https://www.teve2.com.tr/"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -15,8 +15,8 @@ def generate():
         path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
     write('manifest.json', {
-        'id': 'com.recox.live', 'version': '1.0.0', 'name': 're-cox Canlı TV',
-        'description': 'TRT 1, Kanal D ve NTV. İnternet yayınları; HDMI uydu girişini kontrol etmez.',
+        'id': 'com.recox.live', 'version': '1.1.0', 'name': 're-cox Canlı TV',
+        'description': 'Ulusal canlı TV kanalları. NOW, eski FOX adıyla aynı kanaldır.',
         'resources': ['catalog', {'name': 'meta', 'types': ['channel'], 'idPrefixes': ['recox-live-']},
                       {'name': 'stream', 'types': ['channel'], 'idPrefixes': ['recox-live-']}],
         'types': ['channel'], 'idPrefixes': ['recox-live-'],

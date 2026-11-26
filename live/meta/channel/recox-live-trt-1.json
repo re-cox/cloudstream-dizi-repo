@@ -3,8 +3,8 @@
     "id": "recox-live-trt-1",
     "type": "channel",
     "name": "TRT 1",
-    "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
-    "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-trt-1.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-trt-1.png",
     "posterShape": "landscape",
     "description": "TRT 1 · İnternet canlı yayını",
     "genres": [

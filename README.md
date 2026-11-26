@@ -105,7 +105,7 @@ Kataloğun güncellemelerini almak için kopyasını yayımlamıyoruz. Kaynak ek
 
 ## Nuvio içinde Canlı TV
 
-TRT 1, Kanal D ve NTV için küçük canlı kanal paketi:
+TRT 1, TV8, Kanal D, ATV, NOW / FOX, Star TV, Show TV, Kanal 7, Beyaz TV, tv2, TV8,5, TV8 Int, A2 TV ve NTV için küçük canlı kanal paketi:
 
 ```text
 https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/manifest.json

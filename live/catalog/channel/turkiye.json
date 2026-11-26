@@ -4,10 +4,22 @@
       "id": "recox-live-trt-1",
       "type": "channel",
       "name": "TRT 1",
-      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
-      "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-trt-1.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-trt-1.png",
       "posterShape": "landscape",
       "description": "TRT 1 · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-tv8",
+      "type": "channel",
+      "name": "TV8",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8.png",
+      "posterShape": "landscape",
+      "description": "TV8 · İnternet canlı yayını",
       "genres": [
         "Ulusal"
       ]
@@ -16,10 +28,130 @@
       "id": "recox-live-kanal-d",
       "type": "channel",
       "name": "Kanal D",
-      "poster": "https://i.imgur.com/9o1atM6.png",
-      "background": "https://i.imgur.com/9o1atM6.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-d.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-d.png",
       "posterShape": "landscape",
       "description": "Kanal D · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-atv",
+      "type": "channel",
+      "name": "ATV",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-atv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-atv.png",
+      "posterShape": "landscape",
+      "description": "ATV · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-now",
+      "type": "channel",
+      "name": "NOW / FOX",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-now.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-now.png",
+      "posterShape": "landscape",
+      "description": "NOW / FOX · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-star-tv",
+      "type": "channel",
+      "name": "Star TV",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-star-tv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-star-tv.png",
+      "posterShape": "landscape",
+      "description": "Star TV · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-show-tv",
+      "type": "channel",
+      "name": "Show TV",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-show-tv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-show-tv.png",
+      "posterShape": "landscape",
+      "description": "Show TV · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-kanal-7",
+      "type": "channel",
+      "name": "Kanal 7",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-7.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-7.png",
+      "posterShape": "landscape",
+      "description": "Kanal 7 · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-beyaz-tv",
+      "type": "channel",
+      "name": "Beyaz TV",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-beyaz-tv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-beyaz-tv.png",
+      "posterShape": "landscape",
+      "description": "Beyaz TV · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-teve2",
+      "type": "channel",
+      "name": "tv2",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-teve2.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-teve2.png",
+      "posterShape": "landscape",
+      "description": "tv2 · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-tv8-5",
+      "type": "channel",
+      "name": "TV8,5",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-5.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-5.png",
+      "posterShape": "landscape",
+      "description": "TV8,5 · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-tv8-int",
+      "type": "channel",
+      "name": "TV8 Int",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-int.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-int.png",
+      "posterShape": "landscape",
+      "description": "TV8 Int · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-a2tv",
+      "type": "channel",
+      "name": "A2 TV",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-a2tv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-a2tv.png",
+      "posterShape": "landscape",
+      "description": "A2 TV · İnternet canlı yayını",
       "genres": [
         "Ulusal"
       ]
@@ -28,8 +160,8 @@
       "id": "recox-live-ntv",
       "type": "channel",
       "name": "NTV",
-      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
-      "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png",
+      "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-ntv.png",
+      "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-ntv.png",
       "posterShape": "landscape",
       "description": "NTV · İnternet canlı yayını",
       "genres": [

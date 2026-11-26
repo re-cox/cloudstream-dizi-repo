@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-now",
+    "type": "channel",
+    "name": "NOW / FOX",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-now.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-now.png",
+    "posterShape": "landscape",
+    "description": "NOW / FOX · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}

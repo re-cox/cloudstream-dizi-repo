@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-atv",
+    "type": "channel",
+    "name": "ATV",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-atv.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-atv.png",
+    "posterShape": "landscape",
+    "description": "ATV · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}

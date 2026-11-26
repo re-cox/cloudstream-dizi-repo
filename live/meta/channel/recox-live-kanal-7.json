@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-kanal-7",
+    "type": "channel",
+    "name": "Kanal 7",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-7.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-7.png",
+    "posterShape": "landscape",
+    "description": "Kanal 7 · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}

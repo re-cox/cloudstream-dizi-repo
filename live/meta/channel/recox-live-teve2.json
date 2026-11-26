@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-teve2",
+    "type": "channel",
+    "name": "tv2",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-teve2.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-teve2.png",
+    "posterShape": "landscape",
+    "description": "tv2 · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-11-26T19:33:31.763Z",
+  "scope": "HLS and first media response; not TV picture/audio or long-run playback",
+  "results": [
+    {
+      "id": "recox-live-kanal-d",
+      "name": "Kanal D",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "ackaxsqacw.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15882
+    },
+    {
+      "id": "recox-live-tv8",
+      "name": "TV8",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "rkhubpaomb.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15882
+    },
+    {
+      "id": "recox-live-trt-1",
+      "name": "TRT 1",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "tv-trt1.medya.trt.com.tr",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 1068
+    },
+    {
+      "id": "recox-live-star-tv",
+      "name": "Star TV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "emmazbvkkf.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15838
+    },
+    {
+      "id": "recox-live-now",
+      "name": "NOW / FOX",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "31.43.191.165:8008",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 12911
+    },
+    {
+      "id": "recox-live-show-tv",
+      "name": "Show TV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "rmtftbjlne.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15882
+    },
+    {
+      "id": "recox-live-teve2",
+      "name": "tv2",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "ackaxsqacw.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15884
+    },
+    {
+      "id": "recox-live-atv",
+      "name": "ATV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "31.43.191.165:8008",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 12911
+    },
+    {
+      "id": "recox-live-tv8-5",
+      "name": "TV8,5",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "rkhubpaomb.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15881
+    },
+    {
+      "id": "recox-live-kanal-7",
+      "name": "Kanal 7",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "kanal7-live.daioncdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 16038
+    },
+    {
+      "id": "recox-live-tv8-int",
+      "name": "TV8 Int",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "109.205.187.47:8008",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 12911
+    },
+    {
+      "id": "recox-live-beyaz-tv",
+      "name": "Beyaz TV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "beyaztv-live.daioncdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 16038
+    },
+    {
+      "id": "recox-live-ntv",
+      "name": "NTV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "emmazbvkkf.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15836
+    },
+    {
+      "id": "recox-live-a2tv",
+      "name": "A2 TV",
+      "mediaVerified": true,
+      "devicePlaybackVerified": false,
+      "status": 200,
+      "host": "rnttwmjcin.turknet.ercdn.net",
+      "hlsVerified": true,
+      "container": "MPEG-TS",
+      "sampleBytes": 15881
+    }
+  ]
+}

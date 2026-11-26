@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-tv8-5",
+    "type": "channel",
+    "name": "TV8,5",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-5.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-5.png",
+    "posterShape": "landscape",
+    "description": "TV8,5 · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}

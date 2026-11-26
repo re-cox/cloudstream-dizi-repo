@@ -3,8 +3,8 @@
     "id": "recox-live-kanal-d",
     "type": "channel",
     "name": "Kanal D",
-    "poster": "https://i.imgur.com/9o1atM6.png",
-    "background": "https://i.imgur.com/9o1atM6.png",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-d.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-kanal-d.png",
     "posterShape": "landscape",
     "description": "Kanal D · İnternet canlı yayını",
     "genres": [

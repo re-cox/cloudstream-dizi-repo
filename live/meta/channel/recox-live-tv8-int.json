@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-tv8-int",
+    "type": "channel",
+    "name": "TV8 Int",
+    "poster": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-int.png",
+    "background": "https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/logos/recox-live-tv8-int.png",
+    "posterShape": "landscape",
+    "description": "TV8 Int · İnternet canlı yayını",
+    "genres": [
+      "Ulusal"
+    ]
+  }
+}
