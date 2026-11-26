@@ -24,6 +24,7 @@ DOMAINS_RAW_URL = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/domains
 SITES_META = [
     {
         "id": "dizipal",
+        "version": "1.4.1",
         "siteKey": "DiziPal",
         "name": "DiziPal",
         "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
@@ -168,7 +169,7 @@ def main() -> None:
                 "id": meta["id"],
                 "name": meta["name"],
                 "description": meta["description"],
-                "version": "1.4.0",
+                "version": meta.get("version", "1.4.0"),
                 "author": "re-cox",
                 "supportedTypes": meta["supportedTypes"],
                 "filename": filename,
@@ -186,7 +187,7 @@ def main() -> None:
         "id": "re-cox-dizi-repo",
         "name": "re-cox TR (Nuvio JS)",
         "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
-        "version": "1.2.0",
+        "version": "1.2.1",
         "author": "re-cox",
         "repository": f"https://github.com/{GITHUB_REPO}",
         "scrapers": scrapers,

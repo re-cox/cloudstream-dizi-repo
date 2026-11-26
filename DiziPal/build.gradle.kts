@@ -1,4 +1,4 @@
-version = 6
+version = 7
 
 cloudstream {
     description = "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı"
@@ -15,5 +15,5 @@ cloudstream {
     status = 1
 
     tvTypes = listOf("TvSeries", "Movie", "Anime")
-    iconUrl = "https://www.google.com/s2/favicons?domain=dizipal2150.com&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=dizipal2161.com&sz=%size%"
 }

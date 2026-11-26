@@ -2,7 +2,7 @@
   "id": "re-cox-dizi-repo",
   "name": "re-cox TR (Nuvio JS)",
   "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "re-cox",
   "repository": "https://github.com/re-cox/cloudstream-dizi-repo",
   "scrapers": [
@@ -10,7 +10,7 @@
       "id": "dizipal",
       "name": "DiziPal",
       "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "author": "re-cox",
       "supportedTypes": [
         "tv",
@@ -18,7 +18,7 @@
       ],
       "filename": "providers/dizipal.js",
       "enabled": true,
-      "logo": "https://www.google.com/s2/favicons?domain=dizipal1.rest&sz=64",
+      "logo": "https://www.google.com/s2/favicons?domain=dizipal2161.com&sz=64",
       "contentLanguage": [
         "tr"
       ],

@@ -1,23 +1,25 @@
 {
-  "updatedAt": "2026-11-26T13:10:53Z",
+  "updatedAt": "2026-11-26T23:04:57Z",
   "sites": {
     "DiziPal": {
-      "currentUrl": "https://dizipal1.rest",
-      "nextUrl": "https://dizipal2151.com",
+      "currentUrl": "https://dizipal2161.com",
+      "nextUrl": "https://dizipal2162.com",
       "strategy": "sequential_and_announcement",
       "prefix": "https://dizipal",
       "suffix": ".com",
-      "currentNumber": 2150,
+      "currentNumber": 2161,
       "maxProbe": 15,
       "announcementRegex": "Sonraki\\s+adresimiz\\s+(?:https?://)?([a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
       "healthCheckText": "dizipal",
       "requiredMarkers": [
         "/dizi/",
-        "/search"
+        "/arama"
       ],
-      "templateId": "public-html-xhr",
-      "sourceType": "maintainer_config",
-      "sourceUrl": "https://github.com/re-cox/cloudstream-dizi-repo/blob/180caf1/domains.json"
+      "templateId": "public-html-arama",
+      "sourceType": "verified_probe",
+      "sourceUrl": "https://dizipal2161.com",
+      "previousUrl": "https://dizipal1.rest",
+      "verifiedAt": "2026-11-26T23:04:57Z"
     },
     "HDFilmCehennemi": {
       "currentUrl": "https://www.hdfilmcehennemi.nl",

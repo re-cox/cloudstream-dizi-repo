@@ -2,16 +2,15 @@ package com.dizi
 
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
-import org.json.JSONObject
 import org.jsoup.nodes.Element
 
 /** Current public HTML and XHR search format at the registry's redirected domain. */
 class DiziPal : BaseTurkishProvider() {
     override val siteKey = "DiziPal"
-    override var mainUrl = "https://dizipal1.rest"
+    override var mainUrl = "https://dizipal2161.com"
     override var name = "DiziPal"
     override val supportedTypes = setOf(TvType.TvSeries, TvType.Movie, TvType.Anime)
-    override val mainPage = mainPageOf("/diziler" to "Diziler", "/filmler" to "Filmler", "/animeler" to "Anime")
+    override val mainPage = mainPageOf("/diziler" to "Diziler", "/filmler" to "Filmler", "/anime" to "Anime")
 
     private fun Element.card(): SearchResponse? {
         val href = fixUrlNull(attr("href")) ?: return null
@@ -32,16 +31,9 @@ class DiziPal : BaseTurkishProvider() {
     override suspend fun search(query: String): List<SearchResponse> {
         ensureLiveDomain()
         val encoded = java.net.URLEncoder.encode(query, "UTF-8")
-        val json = JSONObject(getText("$mainUrl/search?q=$encoded", headers = mapOf("X-Requested-With" to "XMLHttpRequest")))
-        val items = json.optJSONArray("results") ?: return emptyList()
-        return (0 until items.length()).mapNotNull { i ->
-            val item = items.optJSONObject(i) ?: return@mapNotNull null
-            val title = item.optString("title").takeIf { it.isNotBlank() } ?: return@mapNotNull null
-            val href = fixUrlNull(item.optString("url")) ?: return@mapNotNull null
-            val poster = fixUrlNull(item.optString("poster"))
-            if (item.optString("type") == "film") newMovieSearchResponse(title, href, TvType.Movie) { posterUrl = poster }
-            else newTvSeriesSearchResponse(title, href, TvType.TvSeries) { posterUrl = poster }
-        }
+        return getDoc("$mainUrl/arama?q=$encoded")
+            .select("a.card-link[href*='/dizi/'], a.card-link[href*='/film/']")
+            .mapNotNull { it.card() }.distinctBy { it.url }
     }
 
     override suspend fun load(url: String): LoadResponse? {
@@ -52,12 +44,12 @@ class DiziPal : BaseTurkishProvider() {
         val poster = doc.selectFirst("meta[property=og:image]")?.attr("content")
         val plot = doc.selectFirst("meta[name=description]")?.attr("content")
         if (live.contains("/film/")) return newMovieLoadResponse(title, live, TvType.Movie, live) { posterUrl = poster; this.plot = plot }
-        val episodes = doc.select("a.episode-card-link").mapNotNull { a ->
+        val episodes = doc.select("a.detail-episode-item, a.episode-card-link").mapNotNull { a ->
             val href = fixUrlNull(a.attr("href")) ?: return@mapNotNull null
             newEpisode(href) {
                 this.name = a.text().trim()
-                season = Regex("""/(\d+)-sezon/""").find(href)?.groupValues?.get(1)?.toIntOrNull()
-                episode = Regex("""/(\d+)-bolum""").find(href)?.groupValues?.get(1)?.toIntOrNull()
+                season = Regex("""[-/](\d+)-sezon[-/]""").find(href)?.groupValues?.get(1)?.toIntOrNull()
+                episode = Regex("""[-/](\d+)-bolum""").find(href)?.groupValues?.get(1)?.toIntOrNull()
             }
         }.distinctBy { it.data }
         return newTvSeriesLoadResponse(title, live, TvType.TvSeries, episodes) { posterUrl = poster; this.plot = plot }

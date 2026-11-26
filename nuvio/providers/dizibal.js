@@ -188,8 +188,7 @@ function matchingPages(items, titles) {
 async function searchSite(base, query) {
   const encoded = encodeURIComponent(query);
   if (SITE_KEY === "DiziPal") {
-    const data = JSON.parse(await siteText(`${base}/search?q=${encoded}`, {headers:{"X-Requested-With":"XMLHttpRequest"}}));
-    return (data.results || []).map(item => ({title:item.title,url:absolutize(cachedBaseUrl + "/",item.url)}));
+    return anchors(await siteText(`${base}/arama?q=${encoded}`), cachedBaseUrl + "/");
   }
   if (SITE_KEY === "Dizilla" || SITE_KEY === "SelcukFlix") {
     const action = SITE_KEY === "Dizilla" ? "getSearchSuggest" : "searchContent";

@@ -233,15 +233,15 @@ test('NP_CONFIG nonce hashes satisfy the public SHA-256 condition', () => {
 });
 
 
-test('DiziPal redirected-domain search requires XHR and exposes slash episode numbers', async () => {
-  let xhr;
-  const base='https://dizipal1.rest';
-  const {context}=provider('dizipal',(url,options)=>{
-    if(url.startsWith(base+'/search?')){xhr=options.headers['X-Requested-With'];return {results:[{title:'Breaking Bad',url:base+'/dizi/breaking-bad-2'}]};}
+test('DiziPal current HTML search and hyphen episode URLs are supported', async () => {
+  const base='https://dizipal2161.com';
+  let requested=false;
+  const {context}=provider('dizipal',(url)=>{
+    if(url.startsWith(base+'/arama?')){requested=true;return '<a class="card-link" href="'+base+'/dizi/breaking-bad"><img alt="Breaking Bad"></a>';}
   });
   await context.resolveLiveDomain();
   const matches=await context.searchSite(base,'Breaking Bad');
-  assert.equal(xhr,'XMLHttpRequest');
+  assert.equal(requested,true);
   assert.equal(matches[0].title,'Breaking Bad');
-  assert.equal(context.episodeNumbers(base+'/dizi/breaking-bad-2/1-sezon/1-bolum').join(','),'1,1');
+  assert.equal(context.episodeNumbers(base+'/bolum/breaking-bad-1-sezon-1-bolum').join(','),'1,1');
 });
