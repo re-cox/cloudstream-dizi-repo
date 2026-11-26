@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-27",
+  "current": "https://dizipal2161.com",
+  "next": "https://dizipal2162.com",
+  "registry": "local pending CDN cache refresh",
+  "searchVerified": true,
+  "episodeSelectionVerified": true,
+  "episodeUrl": "https://dizipal2161.com/bolum/breaking-bad-1-sezon-1-bolum",
+  "verificationPage": true,
+  "playbackVerified": false,
+  "requests": [
+    {
+      "url": "https://dizipal2161.com/arama",
+      "status": 200
+    },
+    {
+      "url": "https://dizipal2161.com/dizi/breaking-bad",
+      "status": 200
+    },
+    {
+      "url": "https://dizipal2161.com/bolum/breaking-bad-1-sezon-1-bolum",
+      "status": 200
+    }
+  ]
+}
