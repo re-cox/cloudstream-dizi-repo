@@ -1,0 +1,40 @@
+{
+  "id": "com.recox.live",
+  "version": "1.0.0",
+  "name": "re-cox Canlı TV",
+  "description": "TRT 1, Kanal D ve NTV. İnternet yayınları; HDMI uydu girişini kontrol etmez.",
+  "resources": [
+    "catalog",
+    {
+      "name": "meta",
+      "types": [
+        "channel"
+      ],
+      "idPrefixes": [
+        "recox-live-"
+      ]
+    },
+    {
+      "name": "stream",
+      "types": [
+        "channel"
+      ],
+      "idPrefixes": [
+        "recox-live-"
+      ]
+    }
+  ],
+  "types": [
+    "channel"
+  ],
+  "idPrefixes": [
+    "recox-live-"
+  ],
+  "catalogs": [
+    {
+      "type": "channel",
+      "id": "turkiye",
+      "name": "Canlı TV · Türkiye"
+    }
+  ]
+}

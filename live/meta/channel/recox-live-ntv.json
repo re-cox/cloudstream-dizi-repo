@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "id": "recox-live-ntv",
+    "type": "channel",
+    "name": "NTV",
+    "poster": "https://www.ntv.com.tr/favicon.ico",
+    "background": "https://www.ntv.com.tr/favicon.ico",
+    "posterShape": "landscape",
+    "description": "NTV · İnternet canlı yayını",
+    "genres": [
+      "Haber"
+    ]
+  }
+}

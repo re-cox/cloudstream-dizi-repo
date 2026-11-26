@@ -102,3 +102,13 @@ https://izlemeli.github.io/nuvio/tr/manifest.json
 PC Nuvio'da **Ayarlar → Görünüm → Düzen → Ana ekran → Öne çıkan kaynakları** bölümünden en fazla iki katalog seçin. Önerilen: **Şu An Popüler — Filmler** ve **En Yüksek Puanlı Diziler — Diziler**. “Öne çıkanları göster” açık olsa bile sıfır kaynak seçiliyse hero alanı boş kalabilir. Bu iki seçim PC uygulamasında yapıldı ve arka plan görseliyle doğrulandı. Box'ta aynı ayar ayrıca kontrol edilmelidir; eşitlendiği varsayılmıyor.
 
 Kataloğun güncellemelerini almak için kopyasını yayımlamıyoruz. Kaynak eklentileri ile katalog eklentisi farklı işler yapar.
+
+## Nuvio içinde Canlı TV
+
+TRT 1, Kanal D ve NTV için küçük canlı kanal paketi:
+
+```text
+https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/live/manifest.json
+```
+
+Nuvio'nun katalog eklentisi olarak eklenir. Üç kanalın HLS ve ilk video parçası HTTP kontrolünden geçti; box oynatma testi akşam yapılacak. [Kanal paketi ve kaynak bilgileri](live/README.md). HDMI 2'deki uydu alıcısından bağımsız olarak internetten oynatır.

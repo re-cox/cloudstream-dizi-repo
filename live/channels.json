@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "channels": [
+    {
+      "id": "recox-live-trt-1",
+      "name": "TRT 1",
+      "group": "Ulusal",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+      "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://github.com/F0Rextasy/bigbullapp-cs/blob/39f7e53b5cc3fecb9551a056d6fc3ba8c5968f4d/nuvio/addon-live/stream/tv/bb-trt-1.json"
+    },
+    {
+      "id": "recox-live-kanal-d",
+      "name": "Kanal D",
+      "group": "Ulusal",
+      "poster": "https://i.imgur.com/9o1atM6.png",
+      "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://github.com/F0Rextasy/bigbullapp-cs/blob/39f7e53b5cc3fecb9551a056d6fc3ba8c5968f4d/nuvio/addon-live/stream/tv/bb-kanal-d.json"
+    },
+    {
+      "id": "recox-live-ntv",
+      "name": "NTV",
+      "group": "Haber",
+      "poster": "https://www.ntv.com.tr/favicon.ico",
+      "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+        "Referer": "https://www.tabii.com/"
+      },
+      "reference": "https://github.com/F0Rextasy/bigbullapp-cs/blob/39f7e53b5cc3fecb9551a056d6fc3ba8c5968f4d/nuvio/addon-live/stream/tv/bb-ntv.json"
+    }
+  ]
+}

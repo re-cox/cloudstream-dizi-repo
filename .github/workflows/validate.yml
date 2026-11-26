@@ -25,6 +25,7 @@ jobs:
       - name: Verify generated providers are current
         run: |
           python scripts/generate_nuvio.py
-          git diff --exit-code -- nuvio common/src/main/kotlin/com/dizi/DomainPolicy.kt
+          python scripts/generate_live_tv.py
+          git diff --exit-code -- nuvio live common/src/main/kotlin/com/dizi/DomainPolicy.kt
       - name: Test Nuvio matching, episodes and extraction
         run: node --test scripts/test_nuvio.cjs scripts/test_live_checker.cjs

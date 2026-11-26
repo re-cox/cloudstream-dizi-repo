@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-26T13:48:48.572Z",
+  "results": [
+    {
+      "id": "bb-trt-1",
+      "status": "media_sample_verified",
+      "hops": [
+        {
+          "status": 200,
+          "host": "tv-trt1.medya.trt.com.tr",
+          "bytes": 790
+        },
+        {
+          "status": 200,
+          "host": "tv-trt1.medya.trt.com.tr",
+          "bytes": 512000
+        },
+        {
+          "status": 200,
+          "host": "tv-trt1.medya.trt.com.tr",
+          "bytes": 1085
+        }
+      ]
+    },
+    {
+      "id": "bb-ntv",
+      "status": "media_sample_verified",
+      "hops": [
+        {
+          "status": 200,
+          "host": "dogus.daioncdn.net",
+          "bytes": 660
+        },
+        {
+          "status": 200,
+          "host": "dogus.daioncdn.net",
+          "bytes": 651
+        },
+        {
+          "status": 200,
+          "host": "dogus-live.daioncdn.net",
+          "bytes": 15945
+        }
+      ]
+    },
+    {
+      "id": "bb-kanal-d",
+      "status": "media_sample_verified",
+      "hops": [
+        {
+          "status": 200,
+          "host": "demiroren.daioncdn.net",
+          "bytes": 672
+        },
+        {
+          "status": 200,
+          "host": "demiroren.daioncdn.net",
+          "bytes": 2776
+        },
+        {
+          "status": 200,
+          "host": "demiroren-live.daioncdn.net",
+          "bytes": 16038
+        }
+      ]
+    }
+  ]
+}

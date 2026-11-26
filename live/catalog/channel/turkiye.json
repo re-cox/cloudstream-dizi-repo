@@ -1,0 +1,40 @@
+{
+  "metas": [
+    {
+      "id": "recox-live-trt-1",
+      "type": "channel",
+      "name": "TRT 1",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+      "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",
+      "posterShape": "landscape",
+      "description": "TRT 1 · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-kanal-d",
+      "type": "channel",
+      "name": "Kanal D",
+      "poster": "https://i.imgur.com/9o1atM6.png",
+      "background": "https://i.imgur.com/9o1atM6.png",
+      "posterShape": "landscape",
+      "description": "Kanal D · İnternet canlı yayını",
+      "genres": [
+        "Ulusal"
+      ]
+    },
+    {
+      "id": "recox-live-ntv",
+      "type": "channel",
+      "name": "NTV",
+      "poster": "https://www.ntv.com.tr/favicon.ico",
+      "background": "https://www.ntv.com.tr/favicon.ico",
+      "posterShape": "landscape",
+      "description": "NTV · İnternet canlı yayını",
+      "genres": [
+        "Haber"
+      ]
+    }
+  ]
+}
