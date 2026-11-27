@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "imdb_id": "tt15940132",
+    "name": "Katil Makine",
+    "popularities": {
+      "trakt": 56,
+      "moviedb": 24.7826,
+      "stremio": 0.8260866666666666,
+      "stremio_lib": 0
+    },
+    "type": "movie",
+    "awards": "1 nomination total",
+    "cast": [
+      "Alan Ritchson",
+      "Stephan James",
+      "Blake Richardson"
+    ],
+    "country": "United Kingdom, Australia, New Zealand, United States",
+    "description": "ABD Ordusu Komando eğitim tatbikatının zorlu son görevinde bir muharebe istihkâm eri, dünya dışından devasa bir ölüm makinesine karşı savaşta birliğine liderlik etmek zorundadır.",
+    "director": [
+      "Patrick Hughes"
+    ],
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "imdbRating": "6.3",
+    "released": "2026-03-06T00:00:00.000Z",
+    "slug": "movie/war-machine-15940132",
+    "writer": [
+      "Patrick Hughes",
+      "James Beaufort"
+    ],
+    "year": "2026",
+    "moviedb_id": 1265609,
+    "poster": "https://image.tmdb.org/t/p/w500/tn6zYcdEvfoTJeBP0OeNqu3Sl4J.jpg",
+    "runtime": "110 min",
+    "trailers": [
+      {
+        "source": "AFuE1LRxm80",
+        "type": "Trailer"
+      }
+    ],
+    "background": "https://image.tmdb.org/t/p/w1280/6yeVcxFR0j08vlv2OlL6zbewm4D.jpg",
+    "logo": "https://images.metahub.space/logo/medium/tt15940132/img",
+    "popularity": 0.8260866666666666,
+    "id": "tt15940132",
+    "genres": [
+      "Aksiyon",
+      "Bilim-Kurgu",
+      "Gerilim"
+    ],
+    "releaseInfo": "2026",
+    "trailerStreams": [
+      {
+        "title": "War Machine",
+        "ytId": "AFuE1LRxm80"
+      }
+    ],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": "tt15940132",
+      "hasScheduledVideos": false
+    },
+    "posterShape": "poster"
+  }
+}
