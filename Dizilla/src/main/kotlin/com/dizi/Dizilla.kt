@@ -71,6 +71,17 @@ class Dizilla : BaseTurkishProvider() {
     }
 
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
+        var emittedContent = false
+        loadContentLinks(data, isCasting, subtitleCallback) { link ->
+            if (!AdPolicy.isAdvertisingUrl(link.url)) {
+                emittedContent = true
+                callback(link)
+            }
+        }
+        return emittedContent
+    }
+
+    private suspend fun loadContentLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         ensureLiveDomain()
         val document = getDoc(rewriteToLiveDomain(data))
         val rsc = PageJson.rsc(document.html())

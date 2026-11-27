@@ -163,6 +163,17 @@ class FilmMakinesi : BaseTurkishProvider() {
     }
 
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
+        var emittedContent = false
+        loadContentLinks(data, isCasting, subtitleCallback) { link ->
+            if (!AdPolicy.isAdvertisingUrl(link.url)) {
+                emittedContent = true
+                callback(link)
+            }
+        }
+        return emittedContent
+    }
+
+    private suspend fun loadContentLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         ensureLiveDomain()
         var emitted = false
         loadLinksResolved(rewriteToLiveDomain(data), isCasting, subtitleCallback) { link ->

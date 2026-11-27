@@ -24,7 +24,7 @@ DOMAINS_RAW_URL = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/domains
 SITES_META = [
     {
         "id": "dizipal",
-        "version": "1.4.1",
+        "version": "1.5.0",
         "siteKey": "DiziPal",
         "name": "DiziPal",
         "description": "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı",
@@ -141,6 +141,11 @@ def main() -> None:
         'package com.dizi\n\n// Generated from domain-policy.json by scripts/generate_nuvio.py.\nobject DomainPolicy {\n    const val minBodyLength = '
         + str(policy['minBodyLength']) + '\n    const val runtimeBudgetMs = ' + str(policy['runtimeBudgetMs']) + 'L\n    const val probeTimeoutSeconds = ' + str(policy['probeTimeoutSeconds']) + '\n    val blockedMarkers = listOf('
         + ', '.join(json.dumps(x, ensure_ascii=False) for x in policy['blockedMarkers']) + ')\n}\n', encoding='utf-8')
+    ad_policy = json.loads((ROOT / 'ad-policy.json').read_text(encoding='utf-8'))
+    ad_kotlin = 'package com.dizi\n\n// Generated from ad-policy.json.\nobject AdPolicyData {\n'
+    for key in ['hostSuffixes', 'hostLabels', 'pathTokens', 'queryFlags', 'queryTypes']:
+        ad_kotlin += '    val ' + key + ' = setOf(' + ', '.join(json.dumps(v) for v in ad_policy[key]) + ')\n'
+    (ROOT / 'common/src/main/kotlin/com/dizi/AdPolicyData.kt').write_text(ad_kotlin + '}\n', encoding='utf-8')
     domains_data = json.loads((ROOT / "domains.json").read_text(encoding="utf-8"))
     sites_cfg = domains_data["sites"]
 
@@ -150,8 +155,9 @@ def main() -> None:
     for meta in SITES_META:
         site_cfg = sites_cfg[meta["siteKey"]]
         filename = f"providers/{meta['id']}.js"
-        js_code = PROVIDER_TEMPLATE
+        js_code = (ROOT / "scripts/ad_filter.js").read_text(encoding="utf-8") + "\n" + PROVIDER_TEMPLATE
         replacements = {
+            "__AD_POLICY__": json.loads((ROOT / "ad-policy.json").read_text(encoding="utf-8")),
             "__SITE_KEY__": meta["siteKey"],
             "__PROVIDER_NAME__": meta["name"],
             "__FALLBACK_CONFIG__": site_cfg,
@@ -169,7 +175,7 @@ def main() -> None:
                 "id": meta["id"],
                 "name": meta["name"],
                 "description": meta["description"],
-                "version": meta.get("version", "1.4.0"),
+                "version": meta.get("version", "1.5.0"),
                 "author": "re-cox",
                 "supportedTypes": meta["supportedTypes"],
                 "filename": filename,
@@ -187,7 +193,7 @@ def main() -> None:
         "id": "re-cox-dizi-repo",
         "name": "re-cox TR (Nuvio JS)",
         "description": "Otomatik domain takipli Türkçe dizi ve film sağlayıcıları",
-        "version": "1.2.1",
+        "version": "1.3.0",
         "author": "re-cox",
         "repository": f"https://github.com/{GITHUB_REPO}",
         "scrapers": scrapers,

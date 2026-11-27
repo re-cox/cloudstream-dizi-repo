@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "hostSuffixes": ["doubleclick.net", "googlesyndication.com", "imasdk.googleapis.com"],
+  "hostLabels": ["ads", "adserver", "adservice", "vast", "vpaid"],
+  "pathTokens": ["ads", "advert", "adverts", "advertisement", "advertisements", "preroll", "pre-roll", "midroll", "mid-roll", "postroll", "post-roll", "vast", "vpaid", "reklam", "reklamlar"],
+  "queryFlags": ["is_ad", "isad", "advertisement"],
+  "queryTypes": ["ad", "ads", "advertisement", "preroll", "midroll", "postroll", "vast", "vpaid"]
+}

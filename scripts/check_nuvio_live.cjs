@@ -43,6 +43,13 @@ async function check(entry) {
   try {
     const context = vm.createContext({module: {exports: {}}, console, fetch: boundedFetch});
     vm.runInContext(fs.readFileSync(path.join(root, 'nuvio', entry.filename), 'utf8'), context);
+    if (args.includes('--ad-audit')) {
+      const seenAds = new Set();
+      result.adFilter = {rejectedUniqueUrls:0,pagesWithAdMarkup:0};
+      const classify = context.advertisingUrl, scrub = context.withoutAdvertising;
+      context.advertisingUrl = url => {const ad=classify(url);if(ad){seenAds.add(String(url));result.adFilter.rejectedUniqueUrls=seenAds.size;}return ad;};
+      context.withoutAdvertising = html => {const clean=scrub(html);if(clean!==html)result.adFilter.pagesWithAdMarkup++;return clean;};
+    }
     const streams = await context.module.exports.getStreams(tmdbId, mediaType, 1, 1);
     result.streamCount = streams.length;
     result.manifests = [];

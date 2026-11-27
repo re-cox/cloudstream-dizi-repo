@@ -1,4 +1,4 @@
-version = 7
+version = 8
 
 cloudstream {
     description = "DiziPal - Otomatik domain takipli Türkçe dizi ve film kaynağı"

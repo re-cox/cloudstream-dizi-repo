@@ -27,6 +27,6 @@ jobs:
         run: |
           python scripts/generate_nuvio.py
           python scripts/generate_live_tv.py
-          git diff --exit-code -- nuvio live common/src/main/kotlin/com/dizi/DomainPolicy.kt
+          git diff --exit-code -- nuvio live common/src/main/kotlin/com/dizi/DomainPolicy.kt common/src/main/kotlin/com/dizi/AdPolicyData.kt
       - name: Test Nuvio matching, episodes and extraction
         run: node --test scripts/test_nuvio.cjs scripts/test_live_checker.cjs

@@ -245,3 +245,34 @@ test('DiziPal current HTML search and hyphen episode URLs are supported', async 
   assert.equal(matches[0].title,'Breaking Bad');
   assert.equal(context.episodeNumbers(base+'/bolum/breaking-bad-1-sezon-1-bolum').join(','),'1,1');
 });
+
+
+test('explicit ad URLs are filtered without confusing signed tokens or adaptive content', () => {
+  const {context:c}=provider('kultfilmler');
+  for (const url of ['https://ads.test/opaque.mp4','https://cdn.test/%61ds/opaque.mp4','https://cdn.test/pre-roll.mp4','https://cdn.test/v.mp4?is_ad=true']) assert.equal(c.advertisingUrl(url),true,url);
+  for (const url of ['https://cdn.test/adventure/shadow.m3u8?token=ads&signature=a%2Fads%2Fb','https://cdn.test/adaptive/movie.mp4?is_ad=false','https://doubleclick.net.example.com/movie.m3u8']) assert.equal(c.advertisingUrl(url),false,url);
+});
+test('opaque advertising config and nested ad containers never become movie streams', async () => {
+  const base='https://content.test', page=base+'/film';
+  const html=`<div class="ad-container"><div><video src="https://cdn.test/opaque-a.mp4"></video></div><iframe src="https://player.test/opaque-ad"></iframe></div>
+  <script>setup({file:"https://cdn.test/movie.m3u8?token=ads&exp=123",advertising:{client:'vast',schedule:[{tag:'https://cdn.test/opaque-b.mp4'}]}});</script>`;
+  const {context:c,requests}=provider('kultfilmler',{[page]:html});
+  const streams=await c.extractStreamsFromPage(base,page);
+  assert.deepEqual(Array.from(streams,s=>s.url),['https://cdn.test/movie.m3u8?token=ads&exp=123']);
+  assert.equal(requests.some(r=>r.url.includes('opaque-ad')),false);
+});
+test('mixed player source arrays exclude marked advertisements with opaque filenames', async () => {
+  const base='https://content.test', page=base+'/film';
+  const {context:c}=provider('kultfilmler',{[page]:'<script>var __PLAYER__={"sources":[{"master":"https://cdn.test/opaque.mp4","isAd":true},{"master":"https://cdn.test/movie.m3u8"}]};</script>'});
+  const streams=await c.extractStreamsFromPage(base,page);
+  assert.equal(streams.some(s=>s.url.includes('opaque.mp4')),false);
+  assert.ok(streams.some(s=>s.url.endsWith('movie.m3u8')));
+});
+test('VAST media files and an advertising redirect are never returned as content', async () => {
+  const base='https://content.test';
+  const {context:c}=provider('kultfilmler',{[base+'/vast']:'<?xml version="1.0"?><VAST><Ad><MediaFile>https://cdn.test/opaque.mp4</MediaFile></Ad></VAST>'});
+  assert.equal((await c.extractStreamsFromPage(base,base+'/vast')).length,0);
+  const redirect=new Error('Direct media');redirect.directUrl='https://ads.test/opaque.mp4';redirect.mediaType='mp4';
+  const {context:d}=provider('kultfilmler',{[base+'/redirect']:redirect});
+  await assert.rejects(d.extractStreamsFromPage(base,base+'/redirect'));
+});

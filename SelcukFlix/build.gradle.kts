@@ -1,4 +1,4 @@
-version = 6
+version = 7
 
 cloudstream {
     description = "SelcukFlix - Otomatik domain takipli Türkçe dizi ve film kaynağı"

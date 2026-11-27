@@ -1,4 +1,4 @@
-version = 6
+version = 7
 
 cloudstream {
     description = "FullHDFilmizlesene - Otomatik domain takipli Türkçe dublaj ve altyazılı film kaynağı"

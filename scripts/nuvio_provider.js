@@ -298,7 +298,7 @@ async function extraFrames(html, pageUrl) {
   const frames = [];
   const rsc = rscText(html);
   for (const sources of jsonFields(rsc, "sources")) {
-    if (Array.isArray(sources)) frames.push(...sources.map(item => item.src).filter(Boolean));
+    if (Array.isArray(sources)) frames.push(...sources.filter(item => !advertisingSource(item)).map(item => item.src).filter(Boolean));
   }
   for (const player of jsonFields(rsc, "player")) {
     if (!player.enc || !player.k) continue;
@@ -395,16 +395,17 @@ function episodeNumbers(url) {
 }
 
 async function extractStreamsFromPage(base, pageUrl, depth = 0, visited = new Set(), referer = base + "/") {
-  if (depth > 4 || visited.size >= 16 || visited.has(pageUrl)) return [];
+  if (advertisingUrl(pageUrl) || depth > 4 || visited.size >= 16 || visited.has(pageUrl)) return [];
   visited.add(pageUrl);
   let html;
   try { html = await siteText(pageUrl, { headers: { Referer: referer } }); }
   catch (error) {
-    if (error.directUrl) return [{name:PROVIDER_NAME,title:PROVIDER_NAME,url:error.directUrl,type:error.mediaType,headers:{Referer:referer}}];
+    if (error.directUrl && !advertisingUrl(error.directUrl)) return [{name:PROVIDER_NAME,title:PROVIDER_NAME,url:error.directUrl,type:error.mediaType,headers:{Referer:referer}}];
     throw error;
   }
+  html = withoutAdvertising(html);
   const streams = [];
-  const addStream = (url, label, ref) => streams.push({ name: PROVIDER_NAME, title: `${PROVIDER_NAME} • ${label}`,
+  const addStream = (url, label, ref) => !advertisingUrl(url) && streams.push({ name: PROVIDER_NAME, title: `${PROVIDER_NAME} • ${label}`,
     url: decodeHtml(url), type: /\.mp4(?:[?#]|$)/i.test(url) ? "mp4" : "hls", headers: { Referer: ref, Origin: originOf(ref) } });
   // Normalize escaped JSON URLs before looking for media; retain signed query strings.
   const normalized = decodeHtml(html.replace(/\\\//g, "/").replace(/\\u0026/gi, "&"));
@@ -422,7 +423,7 @@ async function extractStreamsFromPage(base, pageUrl, depth = 0, visited = new Se
     if (data.stream) addStream(absolutize(pageUrl, data.stream), "Player", originOf(pageUrl) + "/");
     const proof = data.gate ? playerProof(html, data.gate) : null;
     if (!data.gate || proof !== null) for (const item of (data.sources || [])) {
-      if (item.master) {
+      if (item.master && !advertisingSource(item)) {
         const url = absolutize(pageUrl, item.master);
         addStream(proof === null ? url : url + (url.includes("?") ? "&" : "?") + "p=" + proof, item.title || "Player", pageUrl);
       }
@@ -449,7 +450,7 @@ async function extractStreamsFromPage(base, pageUrl, depth = 0, visited = new Se
           headers:{'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8','X-Requested-With':'XMLHttpRequest',Origin:host,Referer:pageUrl},
           body:`hash=${fireHash}&r=${encodeURIComponent(referer || pageUrl)}&s=`}));
         for (const source of [...(data.videoSources || []), {file:data.securedLink || data.videoSource}]) {
-          if (source.file) addStream(absolutize(pageUrl, source.file.replace(/GenYoutube\.net/g, host.replace(/^https?:\/\//,''))), source.label || 'FirePlayer',host+'/');
+          if (source.file && !advertisingSource(source)) addStream(absolutize(pageUrl, source.file.replace(/GenYoutube\.net/g, host.replace(/^https?:\/\//,''))), source.label || 'FirePlayer',host+'/');
         }
         if (data.videoSrc) streams.push(...await extractStreamsFromPage(base,absolutize(pageUrl,data.videoSrc),depth+1,visited,pageUrl));
         if (streams.length) break;
@@ -458,7 +459,7 @@ async function extractStreamsFromPage(base, pageUrl, depth = 0, visited = new Se
   }
   const frames = [...await extraFrames(html, pageUrl), ...[...html.matchAll(/<iframe\b[^>]*>/gi)]
     .map(m => absolutize(pageUrl, attr(m[0], "data-src") || attr(m[0], "src")))]
-    .filter(url => url && !/youtube\.com|youtu\.be/i.test(url)).slice(0, 8);
+    .filter(url => url && !advertisingUrl(url) && !/youtube\.com|youtu\.be/i.test(url)).slice(0, 8);
   for (const frame of frames) {
     try { streams.push(...await extractStreamsFromPage(base, frame, depth + 1, visited, pageUrl)); } catch (_) {}
   }
