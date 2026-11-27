@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-11-27T06:44:53.980885+00:00",
+  "updatedAt": "2026-11-27T21:27:07.189112+00:00",
   "shelves": {
     "netflix": {
       "source": "https://www.netflix.com/tr/",
       "sourceCount": 10,
-      "published": 9,
+      "published": 5,
       "excluded": [],
       "unresolved": [
+        {
+          "title": "Organize İşler",
+          "reason": "ambiguous or unmatched title: Organize İşler"
+        },
         {
           "title": "WWE Survivor Series",
           "reason": "ambiguous or unmatched title: WWE Survivor Series"
-        }
-      ],
-      "status": "updated",
-      "deliveryCountry": "TR",
-      "regionGuard": true,
-      "sourceSnapshot": "2026-11-27T06:37:45Z"
-    },
-    "exxen": {
-      "source": "https://www.exxen.com/tr/",
-      "sourceCount": 26,
-      "published": 25,
-      "excluded": [],
-      "unresolved": [
+        },
         {
-          "title": "Alper Rende ile Kaçış",
-          "reason": "ambiguous or unmatched title: Alper Rende ile Kaçış"
+          "title": "The Mentalist",
+          "reason": "ambiguous or unmatched title: The Mentalist"
+        },
+        {
+          "title": "Lupin",
+          "reason": "ambiguous or unmatched title: Lupin"
+        },
+        {
+          "title": "Mezarlık",
+          "reason": "ambiguous or unmatched title: Mezarlık"
         }
       ],
       "status": "updated"
@@ -41,6 +41,19 @@
         {
           "title": "The Remarried Empress",
           "reason": "ambiguous or unmatched title: The Remarried Empress"
+        }
+      ],
+      "status": "updated"
+    },
+    "exxen": {
+      "source": "https://www.exxen.com/tr/",
+      "sourceCount": 26,
+      "published": 25,
+      "excluded": [],
+      "unresolved": [
+        {
+          "title": "Alper Rende ile Kaçış",
+          "reason": "ambiguous or unmatched title: Alper Rende ile Kaçış"
         }
       ],
       "status": "updated"

@@ -25,10 +25,10 @@
     "year": "2023–",
     "moviedb_id": 103540,
     "popularities": {
-      "moviedb": 104.1924,
-      "stremio": 3.4730800000000004,
+      "moviedb": 117.282,
+      "stremio": 3.9093999999999998,
       "stremio_lib": 0,
-      "trakt": 1163
+      "trakt": 2697
     },
     "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
     "runtime": "40 min",
@@ -48,7 +48,7 @@
         "type": "Trailer"
       }
     ],
-    "popularity": 3.4730800000000004,
+    "popularity": 3.9093999999999998,
     "id": "tt12324366",
     "genres": [
       "Aksiyon & Macera",

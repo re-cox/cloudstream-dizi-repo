@@ -24,10 +24,10 @@
     "year": "2024–",
     "moviedb_id": 211288,
     "popularities": {
-      "moviedb": 74.4324,
-      "stremio": 2.48108,
+      "moviedb": 94.4736,
+      "stremio": 3.1491200000000004,
       "stremio_lib": 0,
-      "trakt": 1257
+      "trakt": 1219
     },
     "poster": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
     "trailers": [
@@ -43,7 +43,7 @@
     "background": "https://image.tmdb.org/t/p/w1280/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
     "logo": "https://images.metahub.space/logo/medium/tt13875494/img",
     "awards": "4 wins & 7 nominations total",
-    "popularity": 2.48108,
+    "popularity": 3.1491200000000004,
     "id": "tt13875494",
     "genres": [
       "Dram",

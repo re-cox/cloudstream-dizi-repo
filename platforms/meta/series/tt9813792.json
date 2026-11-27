@@ -3,9 +3,9 @@
     "imdb_id": "tt9813792",
     "name": "From",
     "popularities": {
-      "trakt": 838,
-      "moviedb": 143.0234,
-      "stremio": 4.767446666666667,
+      "trakt": 892,
+      "moviedb": 173.1383,
+      "stremio": 5.771276666666666,
       "stremio_lib": 0
     },
     "type": "series",
@@ -43,7 +43,7 @@
         "type": "Trailer"
       }
     ],
-    "popularity": 4.767446666666667,
+    "popularity": 5.771276666666666,
     "id": "tt9813792",
     "genres": [
       "Gizem",

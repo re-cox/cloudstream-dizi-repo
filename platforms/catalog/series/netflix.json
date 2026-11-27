@@ -16,38 +16,6 @@
       "posterShape": "poster"
     },
     {
-      "id": "tt38732131",
-      "type": "series",
-      "poster": "https://image.tmdb.org/t/p/w500/5UCLCdz8CMTnrKrERAWUkhZhySQ.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/rMvfkMMITQXIMm44epyRaGwMaNw.jpg",
-      "name": "Organize İşler",
-      "description": "Ucunda hazine olan gizemli harita gün yüzüne çıkınca, bu “mesleği” geride bırakmaya niyetli organize suç duayeni, son bir vurguna imza atmaya karar verir.",
-      "genres": [
-        "Komedi",
-        "Suç",
-        "Aksiyon & Macera"
-      ],
-      "releaseInfo": "2026",
-      "imdbRating": "2.6",
-      "posterShape": "poster"
-    },
-    {
-      "description": "Patrick Jane isimli bir medyum, sirkte çalışan ve gözlem güçlerini kullanarak insanlar hakkında birtakım fikirler edinip bu fikirleri onlara medyum gibi satan biridir. Bir gün bu özelliği sebebiyle televizyona çıkar ve kendine Red John isimli bir düşman edinir. Red John Jane’in kızını ve eşini öldürünce ortada kalan ve bu ölümlerin sebebinin kendisi olduğunu düşünen Jane, en sonunda FBI’a başvurarak Red John’ın peşine düşmek ister. Her ne kadar ilk başlarda bu isteği geri çevrilse de FBI’ın çözemediği birtakım davaları çözen Jane, bu özel ekibe danışman olarak işe alınır.",
-      "imdbRating": "8.2",
-      "name": "The Mentalist",
-      "poster": "https://image.tmdb.org/t/p/w500/k0kMdO52LpC5JWgd0uWEH7gqcCe.jpg",
-      "type": "series",
-      "background": "https://image.tmdb.org/t/p/w1280/rJFqKcmMSttdNP58l0dVzY2NcTA.jpg",
-      "id": "tt1196946",
-      "genres": [
-        "Suç",
-        "Dram",
-        "Gizem"
-      ],
-      "releaseInfo": "2008",
-      "posterShape": "poster"
-    },
-    {
       "name": "Seni Tanıyorum",
       "type": "series",
       "imdbRating": "",
@@ -59,38 +27,6 @@
       ],
       "releaseInfo": "2026",
       "description": "Doğum yaptıktan sonra ara verdiği ressamlığa dönmek isteyen Funda aradığı bakıcıyı sonunda bulur. Bakıcı Nazlı’nın gizemi ve tekinsizliği, Funda ve eşi İlker’in hayatlarını sonsuza kadar değiştirecektir.",
-      "posterShape": "poster"
-    },
-    {
-      "id": "tt2531336",
-      "type": "series",
-      "poster": "https://image.tmdb.org/t/p/w500/sOUWRai0215iUSMackrZx3Y1j05.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
-      "name": "Lupin",
-      "description": "Arsen Lüpen'in maceralarından esinlenen kibar hırsız Assane Diop, düşmanlarını alt edip sevdiklerini korumak için zekâsını ve cazibesini kullanır.",
-      "genres": [
-        "Suç",
-        "Dram",
-        "Gizem"
-      ],
-      "releaseInfo": "2021",
-      "imdbRating": "7.5",
-      "posterShape": "poster"
-    },
-    {
-      "id": "tt16420408",
-      "type": "series",
-      "poster": "https://image.tmdb.org/t/p/w500/p22xaH2ZpxhdJa1ZFF528Yk7AWc.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/g9Qn9LBk9fKKgxHtPFqkKnglsm8.jpg",
-      "name": "Mezarlık",
-      "description": "Kadın cinayetlerini araştırmak için emniyet bünyesinde yeni kurulan birimin başına Önem başkomiser getirilir ve ekip katillerle amansız bir mücadeleye başlar.",
-      "genres": [
-        "Suç",
-        "Dram",
-        "Gizem"
-      ],
-      "releaseInfo": "2022",
-      "imdbRating": "7.3",
       "posterShape": "poster"
     },
     {

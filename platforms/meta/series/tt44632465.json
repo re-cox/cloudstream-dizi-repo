@@ -79,7 +79,7 @@
       {
         "character": "Osman",
         "name": "Umut Kaplıca",
-        "profile_path": "/tNVaTgvPhDnf6Lp2lWOeAQiPQnv.jpg",
+        "profile_path": "/4U1QQ5ZQzne77M0BKBFoSNnprWu.jpg",
         "id": 3974493
       }
     ],
@@ -173,6 +173,17 @@
         "overview": "",
         "thumbnail": "https://episodes.metahub.space/tt44632465/1/8/w780.jpg",
         "moviedb_id": 8116219
+      },
+      {
+        "id": "tt44632465:1:9",
+        "title": "Episode 9",
+        "season": 1,
+        "episode": 9,
+        "number": 9,
+        "released": "2026-11-24T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt44632465/1/9/w780.jpg",
+        "moviedb_id": 8143392
       }
     ],
     "imdbRating": "4.9",
