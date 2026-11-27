@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "awards": null,
+    "cast": [
+      "Erdal Besikçioglu",
+      "Sanem Çelik",
+      "Nejat Isler"
+    ],
+    "country": "Turkey",
+    "description": "Bir mahalle bakkalı, Alman konsolosluğunda vize memuru ve İçişleri bakanının öldürülmesi olayı ülkede kaos ortamı yaratır. Ülke çapında polis baskınları ve şiddetine karşı halk ayaklanması yaşanır. Cinayet büroya yeni atanan Himmet başkomiser ve yalaka bir komiser, bu cinayeti TEM ile ortak hareket ederek çözerek kendi lehine çevirmek ve terfi almak peşindedir. Açığa alınan Behzat Ç. cinayet bürodaki ekiplerin de dağıtılmasından sonra bu cinayeti incelemeyi kabul eder. Ulrike'nin de yardımıyla tüm ekip Ankara'dan Kıbrıs'a süren bir kovalamaca sonunda Ercüment Çözer ile karşılaşır.",
+    "director": [
+      "Serdar Akar"
+    ],
+    "dvdRelease": null,
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "imdbRating": "7.5",
+    "imdb_id": "tt3283714",
+    "moviedb_id": 255161,
+    "name": "Behzat Ç. Ankara Yanıyor",
+    "popularity": 0.02702,
+    "poster": "https://image.tmdb.org/t/p/w500/AqxFA7U5RdSVq5Y8CbkbU6uglZJ.jpg",
+    "released": "2013-11-01T00:00:00.000Z",
+    "runtime": "97 min",
+    "trailers": [],
+    "type": "movie",
+    "writer": [
+      "Ercan Mehmet Erdem",
+      "Emrah Serbes"
+    ],
+    "year": "2013",
+    "popularities": {
+      "moviedb": 0.8106,
+      "stremio": 0.02702,
+      "stremio_lib": 0
+    },
+    "slug": "movie/behzat-ankara-is-on-fire-3283714",
+    "background": "https://image.tmdb.org/t/p/w1280/aUG77FIwimVzFcnegaiG6YSQz7K.jpg",
+    "logo": "https://images.metahub.space/logo/medium/tt3283714/img",
+    "id": "tt3283714",
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Suç"
+    ],
+    "releaseInfo": "2013",
+    "trailerStreams": [],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": "tt3283714",
+      "hasScheduledVideos": false
+    },
+    "posterShape": "poster"
+  }
+}

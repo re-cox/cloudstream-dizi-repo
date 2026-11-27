@@ -1,0 +1,46 @@
+{
+  "updatedAt": "2026-11-27T06:39:52.113634+00:00",
+  "shelves": {
+    "netflix": {
+      "source": "https://www.netflix.com/tr/",
+      "sourceCount": 10,
+      "published": 9,
+      "excluded": [],
+      "unresolved": [
+        {
+          "title": "WWE Survivor Series",
+          "reason": "ambiguous or unmatched title: WWE Survivor Series"
+        }
+      ],
+      "status": "updated"
+    },
+    "exxen": {
+      "source": "https://www.exxen.com/tr/",
+      "sourceCount": 26,
+      "published": 25,
+      "excluded": [],
+      "unresolved": [
+        {
+          "title": "Alper Rende ile Kaçış",
+          "reason": "ambiguous or unmatched title: Alper Rende ile Kaçış"
+        }
+      ],
+      "status": "updated"
+    },
+    "disney": {
+      "source": "https://www.disneyplus.com/tr-tr",
+      "sourceCount": 10,
+      "published": 8,
+      "excluded": [
+        "Perfect Crown"
+      ],
+      "unresolved": [
+        {
+          "title": "The Remarried Empress",
+          "reason": "ambiguous or unmatched title: The Remarried Empress"
+        }
+      ],
+      "status": "updated"
+    }
+  }
+}

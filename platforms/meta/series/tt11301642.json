@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "imdb_id": "tt11301642",
+    "name": "Bir Başkadır",
+    "popularities": {
+      "trakt": 5,
+      "moviedb": 14.9945,
+      "stremio": 0.4998166666666667,
+      "stremio_lib": 0
+    },
+    "type": "series",
+    "genre": [
+      "Drama"
+    ],
+    "imdbRating": "8.4",
+    "released": "2020-11-12T00:00:00.000Z",
+    "slug": "series/ethos-11301642",
+    "year": "2020",
+    "status": "Continuing",
+    "tvdb_id": 391429,
+    "cast": [
+      "Öykü Karayel",
+      "Fatih Artman",
+      "Funda Eryigit"
+    ],
+    "director": [],
+    "writer": [],
+    "country": "Turkey",
+    "description": "Dizi, birbirlerinden oldukça farklı karakterde olan ve bambaşka hayatlar yaşayan bir grup insanın yollarının kesişmesiyle değişen yaşamlarını konu ediyor. Bu karakterler ya yeni bir yola yürümek ya da karmaşık bir geçmişle hesaplaşmak zorunda kalacaklardır.",
+    "poster": "https://image.tmdb.org/t/p/w500/9MzukREEyaCqW197buBrJr2LcTI.jpg",
+    "background": "https://image.tmdb.org/t/p/w1280/peOoKDVMbXdBMwZd9SeOxtOfCXD.jpg",
+    "logo": "https://images.metahub.space/logo/medium/tt11301642/img",
+    "runtime": "45 min",
+    "moviedb_id": 112745,
+    "awards": "2 wins & 3 nominations total",
+    "popularity": 0.4998166666666667,
+    "id": "tt11301642",
+    "genres": [
+      "Dram",
+      "Gizem"
+    ],
+    "releaseInfo": "2020",
+    "videos": [
+      {
+        "name": "Episode 1",
+        "season": 1,
+        "number": 1,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8030852,
+        "rating": "0",
+        "overview": "Afflicted by fainting spells, part-time cleaner Meryem confides in psychologist Peri — but she's reluctant to reveal one detail.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/1/w780.jpg",
+        "id": "tt11301642:1:1",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 1,
+        "description": "Afflicted by fainting spells, part-time cleaner Meryem confides in psychologist Peri — but she's reluctant to reveal one detail."
+      },
+      {
+        "name": "Episode 2",
+        "season": 1,
+        "number": 2,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8034994,
+        "rating": "0",
+        "overview": "Ruhiye’s condition deteriorates under Yasin’s maltreatment. Peri crosses paths with Melisa. Meryem broaches a sensitive subject with Peri.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/2/w780.jpg",
+        "id": "tt11301642:1:2",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 2,
+        "description": "Ruhiye’s condition deteriorates under Yasin’s maltreatment. Peri crosses paths with Melisa. Meryem broaches a sensitive subject with Peri."
+      },
+      {
+        "name": "Episode 3",
+        "season": 1,
+        "number": 3,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8034997,
+        "rating": "0",
+        "overview": "After Ruhiye's upsetting dream, Yasin encounters Hayrunnisa, the hodja's daughter. Melisa asks Peri to face her biases. Gülbin catches Sinan unawares.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/3/w780.jpg",
+        "id": "tt11301642:1:3",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 3,
+        "description": "After Ruhiye's upsetting dream, Yasin encounters Hayrunnisa, the hodja's daughter. Melisa asks Peri to face her biases. Gülbin catches Sinan unawares."
+      },
+      {
+        "name": "Episode 4",
+        "season": 1,
+        "number": 4,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8034998,
+        "rating": "0",
+        "overview": "Meryem tells Peri about her star-struck encounter. Tensions come to a head between Gülbin and her sister. Yasin orders Meryem to stop visiting Peri.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/4/w780.jpg",
+        "id": "tt11301642:1:4",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 4,
+        "description": "Meryem tells Peri about her star-struck encounter. Tensions come to a head between Gülbin and her sister. Yasin orders Meryem to stop visiting Peri."
+      },
+      {
+        "name": "Episode 5",
+        "season": 1,
+        "number": 5,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8034999,
+        "rating": "0",
+        "overview": "A suspicious Meryem questions Yasin about Hayrunnisa, who grapples with guilt in the wake of tragedy. Ruhiye, Yasin and Meryem head for the village.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/5/w780.jpg",
+        "id": "tt11301642:1:5",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 5,
+        "description": "A suspicious Meryem questions Yasin about Hayrunnisa, who grapples with guilt in the wake of tragedy. Ruhiye, Yasin and Meryem head for the village."
+      },
+      {
+        "name": "Episode 6",
+        "season": 1,
+        "number": 6,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8035001,
+        "rating": "0",
+        "overview": "Gülbin ends her sessions with Peri, who reaches a breaking point. Ruhiye revisits a dark chapter in her past. An unwelcome figure follows Burcu.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/6/w780.jpg",
+        "id": "tt11301642:1:6",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 6,
+        "description": "Gülbin ends her sessions with Peri, who reaches a breaking point. Ruhiye revisits a dark chapter in her past. An unwelcome figure follows Burcu."
+      },
+      {
+        "name": "Episode 7",
+        "season": 1,
+        "number": 7,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8035003,
+        "rating": "0",
+        "overview": "A connection grows between Hilmi and Meryem. At Semiha's house, Ruhiye makes an earth-shattering revelation.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/7/w780.jpg",
+        "id": "tt11301642:1:7",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 7,
+        "description": "A connection grows between Hilmi and Meryem. At Semiha's house, Ruhiye makes an earth-shattering revelation."
+      },
+      {
+        "name": "Episode 8",
+        "season": 1,
+        "number": 8,
+        "firstAired": "2020-11-12T11:00:00.000Z",
+        "tvdb_id": 8035004,
+        "rating": "0",
+        "overview": "Peri talks to Meryem about repressed emotions. Ruhiye and Yasin make amends. Hayrunnisa sets off on her own path.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/1/8/w780.jpg",
+        "id": "tt11301642:1:8",
+        "released": "2020-11-12T11:00:00.000Z",
+        "episode": 8,
+        "description": "Peri talks to Meryem about repressed emotions. Ruhiye and Yasin make amends. Hayrunnisa sets off on her own path."
+      },
+      {
+        "name": "Episode 1",
+        "season": 2,
+        "number": 1,
+        "firstAired": "2026-11-12T11:00:00.000Z",
+        "tvdb_id": 11448013,
+        "rating": "0",
+        "overview": "Struggling with his past actions and emotions, police chief Muzaffer decides to see a psychiatrist. Meryem and Peri reunite in the therapy room.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/2/1/w780.jpg",
+        "id": "tt11301642:2:1",
+        "released": "2026-11-12T11:00:00.000Z",
+        "episode": 1,
+        "description": "Struggling with his past actions and emotions, police chief Muzaffer decides to see a psychiatrist. Meryem and Peri reunite in the therapy room."
+      },
+      {
+        "name": "Episode 2",
+        "season": 2,
+        "number": 2,
+        "firstAired": "2026-11-12T11:00:00.000Z",
+        "tvdb_id": 11448014,
+        "rating": "0",
+        "overview": "Meryem shares her worries with Peri about her husband's new online venture. Peri grapples with confidentiality as Meryem probes beyond her reach.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/2/2/w780.jpg",
+        "id": "tt11301642:2:2",
+        "released": "2026-11-12T11:00:00.000Z",
+        "episode": 2,
+        "description": "Meryem shares her worries with Peri about her husband's new online venture. Peri grapples with confidentiality as Meryem probes beyond her reach."
+      },
+      {
+        "name": "Episode 3",
+        "season": 2,
+        "number": 3,
+        "firstAired": "2026-11-12T11:00:00.000Z",
+        "tvdb_id": 11448015,
+        "rating": "0",
+        "overview": "Muzaffer tells Peri about his bond with the object his late wife longed to own. Meanwhile, pregnant Meryem is distressed about Hilmi's predicament.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/2/3/w780.jpg",
+        "id": "tt11301642:2:3",
+        "released": "2026-11-12T11:00:00.000Z",
+        "episode": 3,
+        "description": "Muzaffer tells Peri about his bond with the object his late wife longed to own. Meanwhile, pregnant Meryem is distressed about Hilmi's predicament."
+      },
+      {
+        "name": "Episode 4",
+        "season": 2,
+        "number": 4,
+        "firstAired": "2026-11-12T11:00:00.000Z",
+        "tvdb_id": 11448016,
+        "rating": "0",
+        "overview": "Amid a sudden upheaval in her personal life, a desperate Meryem tries to reach Muzaffer any way she can. Sadık confronts his father about the past.",
+        "thumbnail": "https://episodes.metahub.space/tt11301642/2/4/w780.jpg",
+        "id": "tt11301642:2:4",
+        "released": "2026-11-12T11:00:00.000Z",
+        "episode": 4,
+        "description": "Amid a sudden upheaval in her personal life, a desperate Meryem tries to reach Muzaffer any way she can. Sadık confronts his father about the past."
+      }
+    ],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "id": "tt13247296",
+    "imdb_id": "tt13247296",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/hBjQNVTqcysbV7x74DL1AQQ4GJm.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt13247296/img",
+    "background": "https://image.tmdb.org/t/p/w1280/fir8J63O6xxSpKtFOG5L5NA17Qk.jpg",
+    "moviedb_id": 115683,
+    "name": "Şeref Bey",
+    "description": "O romantik ve hassas olduğu kadar prensiplerine sıkı sıkıya bağlı ve son derece inatçı. Arnavutluk'tan Türkiye'ye göç eden ve en iyi aşçılar arasında gösterilen Şeref Bey bu kez yeni bir hayat için yola çıkıyor ama hiç beklemediği sürprizler ve kim bilir belki de yeni bir aşk onu bekliyor.",
+    "genres": [
+      "Komedi"
+    ],
+    "releaseInfo": "2021",
+    "status": "Ended",
+    "runtime": "50 min",
+    "trailers": [],
+    "cast": [
+      "Haluk Bilginer",
+      "Songül Öden",
+      "Ertan Saban"
+    ],
+    "credits_cast": [
+      {
+        "character": "Şeref",
+        "name": "Haluk Bilginer",
+        "profile_path": "/krCEBAIGmEUUcA4GpLt3RiTHKLC.jpg",
+        "id": 117640
+      },
+      {
+        "character": "Neşe",
+        "name": "Songül Öden",
+        "profile_path": "/acl05Z7I5v8PmWgVnzDzmx3irvv.jpg",
+        "id": 113871
+      },
+      {
+        "character": "Luran",
+        "name": "Ertan Saban",
+        "profile_path": "/yDiMpZsf1yWaEOqdAGVPJSeyeIv.jpg",
+        "id": 59757
+      },
+      {
+        "character": "Nejat",
+        "name": "Serhat Kılıç",
+        "profile_path": "/mhqfAxuR7DPOP3FRiI2SQKaSRn6.jpg",
+        "id": 237374
+      },
+      {
+        "character": "Solmaz",
+        "name": "Devrim Yakut",
+        "profile_path": "/i7WGKyvlDluHkXx4Tkqn3WsILZi.jpg",
+        "id": 1452408
+      },
+      {
+        "character": "Baki",
+        "name": "Ahmet Rıfat Şungar",
+        "profile_path": "/7tgV1HWmTkPNzhCLzjX0aVX7ZEA.jpg",
+        "id": 1291746
+      },
+      {
+        "character": "Suna",
+        "name": "Şükran Ovalı",
+        "profile_path": "/2mq5fq3GEoqGWjSvNjTl7nZ7eL3.jpg",
+        "id": 1042721
+      },
+      {
+        "character": "Yıldız",
+        "name": "Ecem Uzun",
+        "profile_path": "/zUjhuneEe2TWtGuD3v3XX0peMBQ.jpg",
+        "id": 1673318
+      },
+      {
+        "character": "Oktay",
+        "name": "Erdem Kaynarca",
+        "profile_path": "/jmOpw1OoCHBoSdG4FFfauvmUmKv.jpg",
+        "id": 2679739
+      }
+    ],
+    "credits_crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Onur Ünlü",
+        "profile_path": "/x3Zq2q0g0mGUUhheeObxHwtoLVc.jpg",
+        "id": 113873
+      }
+    ],
+    "director": [
+      "Onur Ünlü"
+    ],
+    "videos": [
+      {
+        "id": "tt13247296:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2021-01-01T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/1/w780.jpg",
+        "moviedb_id": 2603657
+      },
+      {
+        "id": "tt13247296:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2021-01-04T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/2/w780.jpg",
+        "moviedb_id": 2633653
+      },
+      {
+        "id": "tt13247296:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2021-01-11T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/3/w780.jpg",
+        "moviedb_id": 2633657
+      },
+      {
+        "id": "tt13247296:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2021-01-18T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/4/w780.jpg",
+        "moviedb_id": 2864437
+      },
+      {
+        "id": "tt13247296:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2021-01-25T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/5/w780.jpg",
+        "moviedb_id": 2864438
+      },
+      {
+        "id": "tt13247296:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2021-02-05T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/6/w780.jpg",
+        "moviedb_id": 2864439
+      },
+      {
+        "id": "tt13247296:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2021-02-12T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/7/w780.jpg",
+        "moviedb_id": 2864440
+      },
+      {
+        "id": "tt13247296:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2021-02-19T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/8/w780.jpg",
+        "moviedb_id": 2864441
+      },
+      {
+        "id": "tt13247296:1:9",
+        "title": "Episode 9",
+        "season": 1,
+        "episode": 9,
+        "number": 9,
+        "released": "2021-02-26T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/9/w780.jpg",
+        "moviedb_id": 2864442
+      },
+      {
+        "id": "tt13247296:1:10",
+        "title": "Episode 10",
+        "season": 1,
+        "episode": 10,
+        "number": 10,
+        "released": "2021-03-05T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13247296/1/10/w780.jpg",
+        "moviedb_id": 2864443
+      }
+    ],
+    "imdbRating": "5.6",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "series/seref-bey-13247296",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "id": "tt23738874",
+    "imdb_id": "tt23738874",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/l1XzfBxaCABfvL17qWvWOkM1IIt.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt23738874/img",
+    "background": "https://image.tmdb.org/t/p/w1280/sN45NZ71ejE2NF2OvbwTZfdtuvJ.jpg",
+    "moviedb_id": 214237,
+    "name": "Esnaf",
+    "description": "Mehmet Yalçınkaya, ülkenin dört bir yanındaki esnaf lokantalarının saklı kalmış hikayelerini gün yüzüne çıkartıyor. Esnaf lokantalarından yola çıkarak, geçmişten geleceğe taşınması gereken ahilik kültürü mirasları ilk kez kayıt altına alınıyor.",
+    "genres": [
+      "Belgesel",
+      "Gerçeklik"
+    ],
+    "releaseInfo": "2022",
+    "status": "Continuing",
+    "trailers": [],
+    "cast": [
+      "Mehmet Yalçınkaya"
+    ],
+    "credits_cast": [
+      {
+        "character": "Mehmet Yalçınkaya",
+        "name": "Mehmet Yalçınkaya",
+        "profile_path": null,
+        "id": 2185563
+      }
+    ],
+    "credits_crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Onural Efe Bozkurt",
+        "profile_path": null,
+        "id": 3505272
+      }
+    ],
+    "director": [
+      "Onural Efe Bozkurt"
+    ],
+    "videos": [
+      {
+        "id": "tt23738874:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2022-11-11T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/1/w780.jpg",
+        "moviedb_id": 4048840
+      },
+      {
+        "id": "tt23738874:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2022-11-18T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/2/w780.jpg",
+        "moviedb_id": 4059002
+      },
+      {
+        "id": "tt23738874:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2022-11-25T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/3/w780.jpg",
+        "moviedb_id": 4080964
+      },
+      {
+        "id": "tt23738874:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2022-11-30T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/4/w780.jpg",
+        "moviedb_id": 4084554
+      },
+      {
+        "id": "tt23738874:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2022-12-01T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/5/w780.jpg",
+        "moviedb_id": 4084555
+      },
+      {
+        "id": "tt23738874:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2022-12-02T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt23738874/1/6/w780.jpg",
+        "moviedb_id": 4107886
+      }
+    ],
+    "imdbRating": "6.0",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "series/esnaf-23738874",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

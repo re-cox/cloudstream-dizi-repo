@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "id": "tt20319260",
+    "imdb_id": "tt20319260",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/mqOD3FhBNNwxWBNVE4mjvtsQfSj.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt20319260/img",
+    "background": "https://image.tmdb.org/t/p/w1280/r3GE1HOfl4kptmNDdbf29GOmgTt.jpg",
+    "moviedb_id": 210348,
+    "name": "Sadece Arkadaşız",
+    "description": "Aynı evi paylaşmaya karar veren Ece ve Umut'un hayatı; Umut’un halasından gelen sürpriz bir kararla altüst olur. Tüm mal varlığını elinden çıkarmaya karar veren hala, elinde kalan tek evi ilk önce kim evlenirse ona bırakacaktır. Umut ve Ece, evliliğe sıcak bakmasalar da evin sahibi olabilmek için her gün farklı biriyle randevuya çıkarak doğru eşi aramaya başlarlar.",
+    "genres": [
+      "Komedi"
+    ],
+    "releaseInfo": "2022",
+    "status": "Ended",
+    "runtime": "15 min",
+    "trailers": [],
+    "cast": [
+      "Kubilay Aka",
+      "Hazar Ergüçlü"
+    ],
+    "credits_cast": [
+      {
+        "character": "Umut",
+        "name": "Kubilay Aka",
+        "profile_path": "/mSk2nqlDcdEJDbWKdSUk3B2GpWV.jpg",
+        "id": 1930511
+      },
+      {
+        "character": "Ece",
+        "name": "Hazar Ergüçlü",
+        "profile_path": "/jxBuzsc6l6IbkVONkh6Msb80n1H.jpg",
+        "id": 1086261
+      }
+    ],
+    "credits_crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Emre Erdoğdu",
+        "profile_path": null,
+        "id": 1975605
+      }
+    ],
+    "director": [
+      "Emre Erdoğdu"
+    ],
+    "videos": [
+      {
+        "id": "tt20319260:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2022-09-16T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/1/w780.jpg",
+        "moviedb_id": 3958257
+      },
+      {
+        "id": "tt20319260:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2022-09-16T00:00:01.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/2/w780.jpg",
+        "moviedb_id": 3958261
+      },
+      {
+        "id": "tt20319260:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2022-09-23T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/3/w780.jpg",
+        "moviedb_id": 3970080
+      },
+      {
+        "id": "tt20319260:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2022-09-23T00:00:01.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/4/w780.jpg",
+        "moviedb_id": 3970081
+      },
+      {
+        "id": "tt20319260:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2022-09-30T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/5/w780.jpg",
+        "moviedb_id": 3980793
+      },
+      {
+        "id": "tt20319260:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2022-09-30T00:00:01.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/6/w780.jpg",
+        "moviedb_id": 3980794
+      },
+      {
+        "id": "tt20319260:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2022-10-07T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/7/w780.jpg",
+        "moviedb_id": 3991988
+      },
+      {
+        "id": "tt20319260:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2022-10-14T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/8/w780.jpg",
+        "moviedb_id": 3991992
+      },
+      {
+        "id": "tt20319260:1:9",
+        "title": "Episode 9",
+        "season": 1,
+        "episode": 9,
+        "number": 9,
+        "released": "2022-10-21T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/9/w780.jpg",
+        "moviedb_id": 4017807
+      },
+      {
+        "id": "tt20319260:1:10",
+        "title": "Episode 10",
+        "season": 1,
+        "episode": 10,
+        "number": 10,
+        "released": "2022-10-28T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/10/w780.jpg",
+        "moviedb_id": 4028862
+      },
+      {
+        "id": "tt20319260:1:11",
+        "title": "Episode 11",
+        "season": 1,
+        "episode": 11,
+        "number": 11,
+        "released": "2022-11-04T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/11/w780.jpg",
+        "moviedb_id": 4039491
+      },
+      {
+        "id": "tt20319260:1:12",
+        "title": "Episode 12",
+        "season": 1,
+        "episode": 12,
+        "number": 12,
+        "released": "2022-11-11T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/12/w780.jpg",
+        "moviedb_id": 4049212
+      },
+      {
+        "id": "tt20319260:1:13",
+        "title": "Episode 13",
+        "season": 1,
+        "episode": 13,
+        "number": 13,
+        "released": "2022-11-18T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/13/w780.jpg",
+        "moviedb_id": 4059016
+      },
+      {
+        "id": "tt20319260:1:14",
+        "title": "Episode 14",
+        "season": 1,
+        "episode": 14,
+        "number": 14,
+        "released": "2022-11-25T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/14/w780.jpg",
+        "moviedb_id": 4080965
+      },
+      {
+        "id": "tt20319260:1:15",
+        "title": "Episode 15",
+        "season": 1,
+        "episode": 15,
+        "number": 15,
+        "released": "2022-12-02T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/15/w780.jpg",
+        "moviedb_id": 4087032
+      },
+      {
+        "id": "tt20319260:1:16",
+        "title": "Episode 16",
+        "season": 1,
+        "episode": 16,
+        "number": 16,
+        "released": "2022-12-09T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/16/w780.jpg",
+        "moviedb_id": 4096729
+      },
+      {
+        "id": "tt20319260:1:17",
+        "title": "Episode 17",
+        "season": 1,
+        "episode": 17,
+        "number": 17,
+        "released": "2022-12-16T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/17/w780.jpg",
+        "moviedb_id": 4107885
+      },
+      {
+        "id": "tt20319260:1:18",
+        "title": "Episode 18",
+        "season": 1,
+        "episode": 18,
+        "number": 18,
+        "released": "2022-12-23T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/18/w780.jpg",
+        "moviedb_id": 4129326
+      },
+      {
+        "id": "tt20319260:1:19",
+        "title": "Episode 19",
+        "season": 1,
+        "episode": 19,
+        "number": 19,
+        "released": "2022-12-30T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/19/w780.jpg",
+        "moviedb_id": 4129328
+      },
+      {
+        "id": "tt20319260:1:20",
+        "title": "Episode 20",
+        "season": 1,
+        "episode": 20,
+        "number": 20,
+        "released": "2023-01-05T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt20319260/1/20/w780.jpg",
+        "moviedb_id": 4142320
+      }
+    ],
+    "imdbRating": "5.7",
+    "language": "Turkish",
+    "country": "Turkey",
+    "awards": "3 nominations",
+    "slug": "series/we-re-just-friends-20319260",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

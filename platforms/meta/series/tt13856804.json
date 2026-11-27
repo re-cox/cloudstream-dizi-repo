@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "id": "tt13856804",
+    "imdb_id": "tt13856804",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/jqNPYtGGJsGxPiYAEJfs49cb4j5.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt13856804/img",
+    "background": "https://image.tmdb.org/t/p/w1280/w2Cw6n2hqbi0AD0roLBChfhsfV9.jpg",
+    "moviedb_id": 121772,
+    "name": "Ölüm Zamanı",
+    "description": "Dört arkadaş birlikte kamp yapmak için yola çıkarlar. Yol boyunca, onları karavanlı birinin takip ettiğini fark edip huzursuz olurlar ama aldırmazlar; ta ki içlerinden biri sabah üstü başı kan içinde uyanana dek… Komiser Cevat'ın işin içine girmesiyle, işler daha da karışık bir hal almaya başlar.",
+    "genres": [
+      "Gizem",
+      "Aksiyon & Macera"
+    ],
+    "releaseInfo": "2021",
+    "status": "Continuing",
+    "runtime": "30 min",
+    "trailers": [],
+    "cast": [
+      "Ahmet Mümtaz Taylan",
+      "Mert Yazıcıoğlu",
+      "Nilsu Berfin Aktaş"
+    ],
+    "credits_cast": [
+      {
+        "character": "Cevat",
+        "name": "Ahmet Mümtaz Taylan",
+        "profile_path": "/7BcirImyPmuD8PxMVKPx6xefunW.jpg",
+        "id": 230759
+      },
+      {
+        "character": "Cüneyt",
+        "name": "Mert Yazıcıoğlu",
+        "profile_path": "/wUjrEbsldvvXGHTGKhA9LZ2XbwA.jpg",
+        "id": 1554460
+      },
+      {
+        "character": "Dilara",
+        "name": "Nilsu Berfin Aktaş",
+        "profile_path": "/iuLzabYbtPyj4tf0faNmYtlJNOP.jpg",
+        "id": 3135562
+      },
+      {
+        "character": "Ayhan",
+        "name": "Mert Ramazan Demir",
+        "profile_path": "/9pf8Lkb6oeJAiZlwzyM7xAZVPQ6.jpg",
+        "id": 2545917
+      },
+      {
+        "character": "Nazlı",
+        "name": "Ece Yaşar",
+        "profile_path": "/juXqjSoK0UW5aRFWrCdVRpgmqqY.jpg",
+        "id": 1962714
+      },
+      {
+        "character": "Selim",
+        "name": "Taylan Güldere",
+        "profile_path": "/4tg6wCyRQwnuJN5g1EmP7Yq4p6S.jpg",
+        "id": 4773174
+      },
+      {
+        "character": "",
+        "name": "Muhammet Ayyıldız",
+        "profile_path": null,
+        "id": 4773175
+      }
+    ],
+    "credits_crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Yunus Ozan Korkut",
+        "profile_path": null,
+        "id": 1884908
+      }
+    ],
+    "director": [
+      "Yunus Ozan Korkut"
+    ],
+    "videos": [
+      {
+        "id": "tt13856804:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2021-06-24T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/1/w780.jpg",
+        "moviedb_id": 2826101
+      },
+      {
+        "id": "tt13856804:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2021-06-24T00:00:01.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/2/w780.jpg",
+        "moviedb_id": 3042994
+      },
+      {
+        "id": "tt13856804:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2021-07-02T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/3/w780.jpg",
+        "moviedb_id": 3042995
+      },
+      {
+        "id": "tt13856804:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2021-07-09T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/4/w780.jpg",
+        "moviedb_id": 3042996
+      },
+      {
+        "id": "tt13856804:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2021-07-16T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/5/w780.jpg",
+        "moviedb_id": 3042997
+      },
+      {
+        "id": "tt13856804:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2021-07-23T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/6/w780.jpg",
+        "moviedb_id": 3042998
+      },
+      {
+        "id": "tt13856804:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2021-07-30T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/7/w780.jpg",
+        "moviedb_id": 3042999
+      },
+      {
+        "id": "tt13856804:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2021-08-06T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt13856804/1/8/w780.jpg",
+        "moviedb_id": 3043000
+      }
+    ],
+    "imdbRating": "6.3",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "series/time-of-death-13856804",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

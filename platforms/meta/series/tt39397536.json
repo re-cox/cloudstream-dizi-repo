@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "imdb_id": "tt39397536",
+    "name": "Seni Tanıyorum",
+    "popularities": {
+      "trakt": 223,
+      "moviedb": 8.1429,
+      "stremio": 0.27142999999999995,
+      "stremio_lib": 0
+    },
+    "type": "series",
+    "cast": [
+      "Elçin Sangu",
+      "Melis Sezen",
+      "Ozan Dolunay"
+    ],
+    "country": "Turkey",
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdbRating": "",
+    "released": "2026-09-17T00:00:00.000Z",
+    "slug": "series/seni-taniyorum-39397536",
+    "year": "2026",
+    "runtime": "51 min",
+    "status": "Ended",
+    "tvdb_id": 482025,
+    "moviedb_id": 320760,
+    "poster": "https://image.tmdb.org/t/p/w500/tgBRNtynz81e0DE4bWo8XwTbCw9.jpg",
+    "trailers": [
+      {
+        "source": "ODIk9yGmpQI",
+        "type": "Trailer"
+      }
+    ],
+    "director": [],
+    "writer": [],
+    "background": "https://image.tmdb.org/t/p/w1280/RUkgsqD4YbEKKq77eFgJjeH89n.jpg",
+    "logo": "https://images.metahub.space/logo/medium/tt39397536/img",
+    "popularity": 0.27142999999999995,
+    "id": "tt39397536",
+    "genres": [
+      "Dram"
+    ],
+    "releaseInfo": "2026",
+    "videos": [
+      {
+        "name": "Episode 1",
+        "season": 1,
+        "number": 1,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11959571,
+        "rating": "0",
+        "overview": "Struggling to keep her marriage alive, Funda is overcome with the stresses of first-time motherhood, until the perfect caretaker walks into her life.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/1/w780.jpg",
+        "id": "tt39397536:1:1",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 1,
+        "description": "Struggling to keep her marriage alive, Funda is overcome with the stresses of first-time motherhood, until the perfect caretaker walks into her life."
+      },
+      {
+        "name": "Episode 2",
+        "season": 1,
+        "number": 2,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985302,
+        "rating": "0",
+        "overview": "Funda's hunger to get back in her art studio is enough to overlook the details of İlker's confession… But is there more to his story?",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/2/w780.jpg",
+        "id": "tt39397536:1:2",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 2,
+        "description": "Funda's hunger to get back in her art studio is enough to overlook the details of İlker's confession… But is there more to his story?"
+      },
+      {
+        "name": "Episode 3",
+        "season": 1,
+        "number": 3,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985303,
+        "rating": "0",
+        "overview": "While Funda makes an effort to get to know Nazlı a bit better, İlker tries to keep his distance but can't help keeping a watchful eye on her.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/3/w780.jpg",
+        "id": "tt39397536:1:3",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 3,
+        "description": "While Funda makes an effort to get to know Nazlı a bit better, İlker tries to keep his distance but can't help keeping a watchful eye on her."
+      },
+      {
+        "name": "Episode 4",
+        "season": 1,
+        "number": 4,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985304,
+        "rating": "0",
+        "overview": "Funda can't wait to leave town for work when her in-laws drop in for a visit, but İlker escapes the crossfire by getting lost in old memories.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/4/w780.jpg",
+        "id": "tt39397536:1:4",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 4,
+        "description": "Funda can't wait to leave town for work when her in-laws drop in for a visit, but İlker escapes the crossfire by getting lost in old memories."
+      },
+      {
+        "name": "Episode 5",
+        "season": 1,
+        "number": 5,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985305,
+        "rating": "0",
+        "overview": "Returning to her studio, Funda gets the sense that something is off. Ridden with guilt and fear, Nazlı attempts to sidestep her suspicions.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/5/w780.jpg",
+        "id": "tt39397536:1:5",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 5,
+        "description": "Returning to her studio, Funda gets the sense that something is off. Ridden with guilt and fear, Nazlı attempts to sidestep her suspicions."
+      },
+      {
+        "name": "Episode 6",
+        "season": 1,
+        "number": 6,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985306,
+        "rating": "0",
+        "overview": "With Emre's life on the line, Nazlı is consumed by memories of her own accident. İlker worries that Emre will wake up and divulge his secret.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/6/w780.jpg",
+        "id": "tt39397536:1:6",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 6,
+        "description": "With Emre's life on the line, Nazlı is consumed by memories of her own accident. İlker worries that Emre will wake up and divulge his secret."
+      },
+      {
+        "name": "Episode 7",
+        "season": 1,
+        "number": 7,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985307,
+        "rating": "0",
+        "overview": "As her exhibition prepares to launch, Funda is unable to shake the events leading up to Emre's fate and all she has come to know about her husband.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/7/w780.jpg",
+        "id": "tt39397536:1:7",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 7,
+        "description": "As her exhibition prepares to launch, Funda is unable to shake the events leading up to Emre's fate and all she has come to know about her husband."
+      },
+      {
+        "name": "Episode 8",
+        "season": 1,
+        "number": 8,
+        "firstAired": "2026-09-17T04:00:00.000Z",
+        "tvdb_id": 11985308,
+        "rating": "0",
+        "overview": "As everything she's built goes up in flames, Funda seeks help, realizing that her mental state has become a danger to her life and her family.",
+        "thumbnail": "https://episodes.metahub.space/tt39397536/1/8/w780.jpg",
+        "id": "tt39397536:1:8",
+        "released": "2026-09-17T04:00:00.000Z",
+        "episode": 8,
+        "description": "As everything she's built goes up in flames, Funda seeks help, realizing that her mental state has become a danger to her life and her family."
+      }
+    ],
+    "trailerStreams": [
+      {
+        "title": "Seni Taniyorum",
+        "ytId": "ODIk9yGmpQI"
+      }
+    ],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "description": "Doğum yaptıktan sonra ara verdiği ressamlığa dönmek isteyen Funda aradığı bakıcıyı sonunda bulur. Bakıcı Nazlı’nın gizemi ve tekinsizliği, Funda ve eşi İlker’in hayatlarını sonsuza kadar değiştirecektir.",
+    "posterShape": "poster"
+  }
+}

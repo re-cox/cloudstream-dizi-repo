@@ -1,0 +1,3133 @@
+{
+  "metas": [
+    {
+      "id": "tt39222526",
+      "imdb_id": "tt39222526",
+      "type": "series",
+      "poster": "https://image.tmdb.org/t/p/w500/dYdNTb7rfRJty4OPj9Oy1hyLq9V.jpg",
+      "logo": "https://live.metahub.space/logo/medium/tt39222526/img",
+      "background": "https://image.tmdb.org/t/p/w1280/coimivzQ8V1nQnru7RND7uQGLsX.jpg",
+      "moviedb_id": 309328,
+      "name": "Yeraltı",
+      "description": "Ailesinin katilini öldürerek intikamını alan Haydar Ali, cezaevine düştüğünde kendini Türkiye’nin en tehlikeli yeraltı kartellerinden birinin ortasında bulur. Ancak asıl ölümcül yüzleşme üç yıl sonra özgürlüğüne kavuştuğunda başlar: Haydar Ali’nin hâlâ unutamadığı kadın, artık onun en yakınındaki adamın karısıdır.",
+      "genres": [
+        "Dram",
+        "Aksiyon & Macera"
+      ],
+      "releaseInfo": "2026",
+      "status": "Continuing",
+      "trailers": [
+        {
+          "source": "OKld1dtFycg",
+          "type": "Trailer"
+        }
+      ],
+      "cast": [
+        "Deniz Can Aktaş",
+        "Uraz Kaygılaroğlu",
+        "Devrim Özkan"
+      ],
+      "credits_cast": [
+        {
+          "character": "Haydar Ali Aslan",
+          "name": "Deniz Can Aktaş",
+          "profile_path": "/2BiYbPCAosP81e1xffLDPMvEjtI.jpg",
+          "id": 1584434
+        },
+        {
+          "character": "Bozkurt \"Bozo\" Hanoğlu",
+          "name": "Uraz Kaygılaroğlu",
+          "profile_path": "/7rdov56gMxgsBhOMeqdwv1cgOiW.jpg",
+          "id": 1258831
+        },
+        {
+          "character": "Halide Ceylan",
+          "name": "Devrim Özkan",
+          "profile_path": "/12rRcA5jxTKyFnFoq26RpOam75a.jpg",
+          "id": 2210161
+        },
+        {
+          "character": "Sultan Hanoğlu/Aslan",
+          "name": "Sümeyye Aydoğan",
+          "profile_path": "/z5eA9gWnJIJR86gtSeG2vAPHkAN.jpg",
+          "id": 3615858
+        },
+        {
+          "character": "Merdan Hanoğlu",
+          "name": "Burak Sevinç",
+          "profile_path": "/gnym6wXOpiwRvkdJZjSzfTWipWg.jpg",
+          "id": 1789658
+        },
+        {
+          "character": "Melek Aslan",
+          "name": "Ülkü Hilal Çiftçi",
+          "profile_path": "/rdUDdySRzJl7EfhfOFBRAIra3Cb.jpg",
+          "id": 1985843
+        },
+        {
+          "character": "Rüzgar Karabay",
+          "name": "İsmail Hacıoğlu",
+          "profile_path": "/zb0hpfpPjHgZo1pM3Jtm9m6jOql.jpg",
+          "id": 106621
+        },
+        {
+          "character": "Derya Karabay",
+          "name": "Şükran Ovalı",
+          "profile_path": "/2mq5fq3GEoqGWjSvNjTl7nZ7eL3.jpg",
+          "id": 1042721
+        },
+        {
+          "character": "Kartal",
+          "name": "Cemal Hünal",
+          "profile_path": "/fR3xGBAeOaLVI0W4XGsR9khWE3O.jpg",
+          "id": 120877
+        },
+        {
+          "character": "Volkan",
+          "name": "Burak Çelik",
+          "profile_path": "/i37OCilwZQLx5fOPL0X1UztLxmZ.jpg",
+          "id": 1651019
+        }
+      ],
+      "credits_crew": [],
+      "director": [],
+      "videos": [
+        {
+          "id": "tt39222526:1:1",
+          "title": "Episode 1",
+          "season": 1,
+          "episode": 1,
+          "number": 1,
+          "released": "2026-01-28T00:00:00.000Z",
+          "overview": "The passionate love between Haydar Ali and Ceylan takes an irreversible turn on an unexpected night, placing Haydar Ali at the heart of both the state’s secret plans and Istanbul’s ruthless underworld. Ceylan, determined to protect the man she loves, pushes beyond her own limits, navigating the thin line between innocence and guilt on a dangerous journey. In this world where betrayal, loyalty, and survival instincts are tested, a single wrong step can have deadly consequences for everyone.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/1/w780.jpg",
+          "moviedb_id": 6792843
+        },
+        {
+          "id": "tt39222526:1:2",
+          "title": "Episode 2",
+          "season": 1,
+          "episode": 2,
+          "number": 2,
+          "released": "2026-02-04T00:00:00.000Z",
+          "overview": "Haydar Ali being forced into the marriage process with Sultan pushes the conflict with Ceylan to a breaking point, as their tense exchange during the ring purchase reveals that their past love is still an unhealed wound. Ceylan threatens to tell everything to Bozo if Haydar Ali goes through with the marriage, bringing their relationship to the edge. Meanwhile, Bozo anticipates a major upcoming operation, moves his money out of the city, and signals that a huge storm is brewing in the underworld. The intel brought by Merdan about the international team called “Shadow” shows that the threat is no longer confined to the family. The episode ends with Haydar Ali standing at a critical crossroads: he must navigate Bozo’s trust tests while entering an almost irreversible conflict with Ceylan, making the underground war inevitable.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/2/w780.jpg",
+          "moviedb_id": 6792875
+        },
+        {
+          "id": "tt39222526:1:3",
+          "title": "Episode 3",
+          "season": 1,
+          "episode": 3,
+          "number": 3,
+          "released": "2026-02-11T00:00:00.000Z",
+          "overview": "While Hamburglu’s proposal is openly discussed within the family, the fact that Bozo is waiting for the “sign that will come from the underworld” gives the sense that the approaching war is only the visible part of something much bigger. On the state front, Aslı cornering Pınar makes the balance even more unstable, while the shadow of the word “betrayal” begins to circulate between Ceylan and Bozo. The unexpected deal that Sultan makes with Haydar Ali and the shocking confrontation experienced during the night ignite the fuse of a rupture that will affect not only two young people, but the fate of two families.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/3/w780.jpg",
+          "moviedb_id": 6792876
+        },
+        {
+          "id": "tt39222526:1:4",
+          "title": "Episode 4",
+          "season": 1,
+          "episode": 4,
+          "number": 4,
+          "released": "2026-02-18T00:00:00.000Z",
+          "overview": "While Bozo is in custody, discussions about leadership within the family intensify. Merdan puts his own plan into action, and Haydar Ali decides to take control once and for all. The secret message sent by Bozo, citing four names linked to the betrayal, completely changes the balance of power. At the same time, a shadowy business network with connections in Malta emerges. On the police side, covert maneuvers conducted through lawyers make the confrontation in the underworld even more complex. The major turning point occurs when Ceylan, alongside Gülsüm, goes to Azize's house and openly declares war: \"Since you started this war, you will face the consequences.\" Amidst love, loyalty, and the struggle for power, Haydar Ali embarks on a path of no return, trying to keep the family together while seeking to discover who the true enemy is.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/4/w780.jpg",
+          "moviedb_id": 6918236
+        },
+        {
+          "id": "tt39222526:1:5",
+          "title": "Episode 5",
+          "season": 1,
+          "episode": 5,
+          "number": 5,
+          "released": "2026-02-25T00:00:00.000Z",
+          "overview": "The fact that Bozo throws himself in front of the bullet for Haydar Ali turns everything upside down in Yeraltı. The bullet may have missed its target, but the score has not been settled. Caner is captured, Zafer is summoned, and a single question hangs before everyone: Will this end here, or is the real war just beginning now? Bozo’s decision seems to contain the bloodshed, but some are ready to interpret this calm as weakness. While Haydar Ali finds himself torn between debt and conscience before the man who risked his own life for him, Ceylan tries to uncover the real reason behind her husband’s sacrifice. Sultan faces her own past one last time and closes certain doors once and for all. On Paşa’s side, a crisis on the verge of exploding and an even bigger plan being set in motion behind the scenes.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/5/w780.jpg",
+          "moviedb_id": 6918237
+        },
+        {
+          "id": "tt39222526:1:6",
+          "title": "Episode 6",
+          "season": 1,
+          "episode": 6,
+          "number": 6,
+          "released": "2026-03-04T00:00:00.000Z",
+          "overview": "The bullet that hits Pasha in the chest targets not just one body, but the entire family. While hope and fear intertwine in the hospital corridors, Bozo's cold and harsh demeanor shocks everyone. As Ceylan tries to keep the family together, Sultan's digging into Haydar Ali's past in the hospital corridors brings the \"ex-lover\" issue back to the forefront, igniting a hidden tension. As questions grow about whose orders Pasha followed that night, the fire of revenge spreads rapidly through the neighborhood. Haydar Ali, believing Pasha didn't act alone, decides to uncover the truth. Gunfire in a house in Tuzla changes the course of events. The actions of Ferhat Bozo's impulsive cousin, Derman, instead of covering up the truth, open the door to a bigger confrontation. Yavuz catching them red-handed brings the reckoning directly to Bozo. This time, the war is growing not just in the streets, but in people's hearts. And Bozo's decision will reveal who the real enemy is.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/6/w780.jpg",
+          "moviedb_id": 6918238
+        },
+        {
+          "id": "tt39222526:1:7",
+          "title": "Episode 7",
+          "season": 1,
+          "episode": 7,
+          "number": 7,
+          "released": "2026-03-11T00:00:00.000Z",
+          "overview": "The decisions Bozo has made reestablish the balances in the Underground, while a fragile order forms within the family. As everyone tries to understand where the new boundaries have been drawn, it becomes increasingly clear that some accounts have yet to be settled. Meanwhile, the steps taken on the Azize front are signaling the signs of an approaching major reckoning. However, an even greater danger that no one knows about is quietly growing. A secret that has fallen into Hamburglu’s hands holds the power to expose everything about Ceylan and Haydar Ali’s past. If this truth comes to light, it won’t just destroy one relationship—it will shatter all the established balances. At the same time, an unexpected development from Europe becomes the harbinger of a new storm in the Underground. Now, everyone in the Underground is chasing the same question: Whose message is this unexpected development… and what’s next?",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/7/w780.jpg",
+          "moviedb_id": 6918239
+        },
+        {
+          "id": "tt39222526:1:8",
+          "title": "Episode 8",
+          "season": 1,
+          "episode": 8,
+          "number": 8,
+          "released": "2026-03-18T00:00:00.000Z",
+          "overview": "While openly voicing what his weaknesses are, Bozo clearly demonstrates that this is not a weakness, but rather a line that must be protected. The concepts of family and loyalty take on a much more dangerous meaning this time. Meanwhile, the long-unspoken feelings between Sultan and Haydar Ali begin to be openly expressed for the first time. While Sultan now views the past as a regret, she is no longer playing for keeps. Another unexpected surprise comes when Ceylan, chasing after Paşa's happiness, encounters it. Pınar's confession to Ceylan heralds a breaking point not only for Pınar, but one that could also change the future of Paşa and the family. After Azize's move, Bozo responds in kind and clearly shows that the war is now inevitable. He confronts Haydar Ali and Azize. He issues a bold challenge to Azize. The family that tests others will be tested by family. Azize must either give up on Hülya or pay the price with Hülya's life.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/8/w780.jpg",
+          "moviedb_id": 6918240
+        },
+        {
+          "id": "tt39222526:1:9",
+          "title": "Episode 9",
+          "season": 1,
+          "episode": 9,
+          "number": 9,
+          "released": "2026-03-25T00:00:00.000Z",
+          "overview": "Ceylan’s arrival at Sultan’s house brings long-buried feelings from the past back to the surface between her and Haydar Ali. The tension between the two intensifies even more with the unsaid words; meanwhile, the budding closeness between Sultan and Haydar Ali makes this balance all the more complicated. Now under the same roof, the emotions of three people are irretrievably tangled. On Paşa’s front, things take an even more inextricable turn. Pınar’s pregnancy drags Paşa to the brink of an irreversible decision, while Paşa, caught between his heart and his logic, can neither move forward nor fully let go. Every move he makes pushes him a little deeper into the impasse. Azize may seem to have stepped off the stage, but she’s not out of the game. This time, she’s preparing for a move whose timing and origin remain unpredictable.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/9/w780.jpg",
+          "moviedb_id": 7051775
+        },
+        {
+          "id": "tt39222526:1:10",
+          "title": "Episode 10",
+          "season": 1,
+          "episode": 10,
+          "number": 10,
+          "released": "2026-04-01T00:00:00.000Z",
+          "overview": "The pent-up anger between Bozo and Haydar Ali erupts as they come face to face at the police station. Although the confrontation quickly turns into a physical clash, this encounter takes their relationship to a completely different place rather than breaking it apart. However, the danger waiting outside is strong enough to shake this fragile balance at any moment.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/10/w780.jpg",
+          "moviedb_id": 7051777
+        },
+        {
+          "id": "tt39222526:1:11",
+          "title": "Episode 11",
+          "season": 1,
+          "episode": 11,
+          "number": 11,
+          "released": "2026-04-08T00:00:00.000Z",
+          "overview": "Paşa’s loss deeply shakes everyone’s lives, as those trying to bring him back to life clash with his desire to face his grief alone. Bozo’s harsh confrontation and Ceylan’s heartfelt words push Paşa to the edge of an irreversible decision. Meanwhile, Ceylan’s suppressed emotions resurface, and the fragile balance between Sultan and Haydar Ali teeters on the brink. As power shifts on Azize’s side, a mysterious visitor from Europe reshapes the game. Kartal’s arrival is set to redefine the balance of power in the underworld.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/11/w780.jpg",
+          "moviedb_id": 7051778
+        },
+        {
+          "id": "tt39222526:1:12",
+          "title": "Episode 12",
+          "season": 1,
+          "episode": 12,
+          "number": 12,
+          "released": "2026-04-22T00:00:00.000Z",
+          "overview": "Tension peaks when Sultan confronts Ceylan with the ring, and its discovery in her drawer pulls her into a new lie. As Ceylan struggles to contain the situation, she is drawn into an inevitable confrontation with Haydar Ali, where her suppressed emotions begin to spiral out of control. Meanwhile, the rekindling closeness between Sultan and Haydar Ali makes the balance even more fragile, while dangerous schemes behind the scenes—driven by Hamit and Bozo—ignite the spark of open conflict. As Kartal’s shadow looms larger, everyone is pulled into a harsher game where truths can no longer remain hidden.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/12/w780.jpg",
+          "moviedb_id": 7051780
+        },
+        {
+          "id": "tt39222526:1:13",
+          "title": "Episode 13",
+          "season": 1,
+          "episode": 13,
+          "number": 13,
+          "released": "2026-04-29T00:00:00.000Z",
+          "overview": "What appears to be a simple family gathering at the farm organized by Bozo hides a much larger plan beneath the surface. As everyone believes they are enjoying a peaceful day, Kartal’s hidden setup is triggered, and a sudden explosion shakes the balance of the underworld, revealing that the war has become deeply personal. In the aftermath, Haydar Ali is shaken by his sister’s fight for survival and is forced to confront his past and choices, while Ceylan faces her suppressed feelings as her life with Bozo begins to fall apart. As Kartal’s scheme through Kaan reshapes the game, the line between sacrifice and betrayal fades, and in a world where no one remains innocent, those trying to protect their loved ones will pay the highest price.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/13/w780.jpg",
+          "moviedb_id": 7140160
+        },
+        {
+          "id": "tt39222526:1:14",
+          "title": "Episode 14",
+          "season": 1,
+          "episode": 14,
+          "number": 14,
+          "released": "2026-05-06T00:00:00.000Z",
+          "overview": "As the power struggle between Bozo and Haydar Ali intensifies, Haydar Ali’s decisions begin shaking the balance of the underworld. While Kartal’s hidden schemes reshape the course of the war, Ceylan is forced to confront both her suppressed feelings for Haydar Ali and the cracks forming in her life with Bozo. A critical detail noticed by Melek threatens to expose long-hidden truths, pushing Haydar Ali to openly challenge those keeping him out of the game.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/14/w780.jpg",
+          "moviedb_id": 7140161
+        },
+        {
+          "id": "tt39222526:1:15",
+          "title": "Episode 15",
+          "season": 1,
+          "episode": 15,
+          "number": 15,
+          "released": "2026-05-13T00:00:00.000Z",
+          "overview": "Kartal's kidnapping of Ceylan turns the entire balance upside down. As Bozo finds himself dragged into such a massive impasse, Haydar Ali, unarmed and alone, comes face-to-face with death in order to rescue Ceylan. With Ceylan trapped in the mountain house, there's nowhere to escape anymore. As Ceylan reveals the truth behind her marriage to Bozo and the deal she made with intelligence, Haydar Ali begins to question everything he thought he knew. Bozo is forced to confront not only Kartal but his own marriage as well. As the chasm between the life Ceylan wants and the world Bozo has built grows ever wider, an irreparable rift occurs between the two. On the Sultan and Haydar Ali front, however, the emotional balances shift completely. The step Sultan takes opens a new door in Haydar Ali's life; for Ceylan, facing certain truths becomes heavier than ever before. Armed with the truths he's learned, Haydar Ali now finds himself on the threshold of an entirely different crossroads.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/15/w780.jpg",
+          "moviedb_id": 7140162
+        },
+        {
+          "id": "tt39222526:1:16",
+          "title": "Episode 16",
+          "season": 1,
+          "episode": 16,
+          "number": 16,
+          "released": "2026-05-20T00:00:00.000Z",
+          "overview": "While holding on to his dream of building a completely new life with Ceylan, Bozo begins making new plans for everyone around him. But the future he envisions soon becomes a serious threat to certain people. Meanwhile, Azize’s unexpected decisions shake the fragile balance formed after years of hostility, pushing some relationships to a point of no return.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/1/16/w780.jpg",
+          "moviedb_id": 7230990
+        },
+        {
+          "id": "tt39222526:2:1",
+          "title": "Episode 1",
+          "season": 2,
+          "episode": 1,
+          "number": 1,
+          "released": "2026-10-07T00:00:00.000Z",
+          "overview": "As Haydar Ali and Sultan’s wedding approaches, Ceylan struggles to accept that the man she loves is about to marry someone else. The arrival of Bozo’s ex-girlfriend, Derya, brings a seemingly forgotten relationship back into the spotlight. Meanwhile, the name “Ada,” mentioned during a conversation between Bozo and Derya, raises new questions about their past.",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/1/w780.jpg",
+          "moviedb_id": 7735801
+        },
+        {
+          "id": "tt39222526:2:2",
+          "title": "Episode 2",
+          "season": 2,
+          "episode": 2,
+          "number": 2,
+          "released": "2026-10-14T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/2/w780.jpg",
+          "moviedb_id": 7935047
+        },
+        {
+          "id": "tt39222526:2:3",
+          "title": "Episode 3",
+          "season": 2,
+          "episode": 3,
+          "number": 3,
+          "released": "2026-10-21T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/3/w780.jpg",
+          "moviedb_id": 7950075
+        },
+        {
+          "id": "tt39222526:2:4",
+          "title": "Episode 4",
+          "season": 2,
+          "episode": 4,
+          "number": 4,
+          "released": "2026-10-28T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/4/w780.jpg",
+          "moviedb_id": 7992619
+        },
+        {
+          "id": "tt39222526:2:5",
+          "title": "Episode 5",
+          "season": 2,
+          "episode": 5,
+          "number": 5,
+          "released": "2026-11-04T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/5/w780.jpg",
+          "moviedb_id": 8028935
+        },
+        {
+          "id": "tt39222526:2:6",
+          "title": "Episode 6",
+          "season": 2,
+          "episode": 6,
+          "number": 6,
+          "released": "2026-11-11T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/6/w780.jpg",
+          "moviedb_id": 8077880
+        },
+        {
+          "id": "tt39222526:2:7",
+          "title": "Episode 7",
+          "season": 2,
+          "episode": 7,
+          "number": 7,
+          "released": "2026-11-18T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39222526/2/7/w780.jpg",
+          "moviedb_id": 8120594
+        }
+      ],
+      "imdbRating": "7.1",
+      "country": "Turkey",
+      "slug": "series/underground-39222526",
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster",
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ]
+    },
+    {
+      "id": "tmdb:301090",
+      "type": "series",
+      "videos": [
+        {
+          "id": "tmdb:301090:1:1",
+          "title": "1. Bölüm",
+          "season": 1,
+          "episode": 1,
+          "released": "2025-09-19T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:2",
+          "title": "2. Bölüm",
+          "season": 1,
+          "episode": 2,
+          "released": "2025-10-03T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:3",
+          "title": "3. Bölüm",
+          "season": 1,
+          "episode": 3,
+          "released": "2025-10-10T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:4",
+          "title": "4. Bölüm",
+          "season": 1,
+          "episode": 4,
+          "released": "2025-10-17T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:5",
+          "title": "5. Bölüm",
+          "season": 1,
+          "episode": 5,
+          "released": "2025-10-24T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:6",
+          "title": "6. Bölüm",
+          "season": 1,
+          "episode": 6,
+          "released": "2025-10-31T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:7",
+          "title": "7. Bölüm",
+          "season": 1,
+          "episode": 7,
+          "released": "2025-11-07T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:8",
+          "title": "8. Bölüm",
+          "season": 1,
+          "episode": 8,
+          "released": "2025-11-14T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:9",
+          "title": "9. Bölüm",
+          "season": 1,
+          "episode": 9,
+          "released": "2025-11-21T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:10",
+          "title": "10. Bölüm",
+          "season": 1,
+          "episode": 10,
+          "released": "2025-11-28T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:11",
+          "title": "11. Bölüm",
+          "season": 1,
+          "episode": 11,
+          "released": "2025-12-05T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:12",
+          "title": "12. Bölüm",
+          "season": 1,
+          "episode": 12,
+          "released": "2025-12-12T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:13",
+          "title": "13. Bölüm",
+          "season": 1,
+          "episode": 13,
+          "released": "2025-12-19T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:14",
+          "title": "14. Bölüm",
+          "season": 1,
+          "episode": 14,
+          "released": "2025-12-26T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:15",
+          "title": "15. Bölüm",
+          "season": 1,
+          "episode": 15,
+          "released": "2026-01-02T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:16",
+          "title": "16. Bölüm",
+          "season": 1,
+          "episode": 16,
+          "released": "2026-01-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:17",
+          "title": "17. Bölüm",
+          "season": 1,
+          "episode": 17,
+          "released": "2026-01-16T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:18",
+          "title": "18. Bölüm",
+          "season": 1,
+          "episode": 18,
+          "released": "2026-01-23T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:19",
+          "title": "19. Bölüm",
+          "season": 1,
+          "episode": 19,
+          "released": "2026-01-30T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:20",
+          "title": "20. Bölüm",
+          "season": 1,
+          "episode": 20,
+          "released": "2026-02-06T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:21",
+          "title": "21. Bölüm",
+          "season": 1,
+          "episode": 21,
+          "released": "2026-02-13T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:22",
+          "title": "22. Bölüm",
+          "season": 1,
+          "episode": 22,
+          "released": "2026-02-20T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:23",
+          "title": "23. Bölüm",
+          "season": 1,
+          "episode": 23,
+          "released": "2026-02-27T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:24",
+          "title": "24. Bölüm",
+          "season": 1,
+          "episode": 24,
+          "released": "2026-03-06T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:25",
+          "title": "25. Bölüm",
+          "season": 1,
+          "episode": 25,
+          "released": "2026-03-13T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:26",
+          "title": "26. Bölüm",
+          "season": 1,
+          "episode": 26,
+          "released": "2026-03-20T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:27",
+          "title": "27. Bölüm",
+          "season": 1,
+          "episode": 27,
+          "released": "2026-04-10T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:28",
+          "title": "28. Bölüm",
+          "season": 1,
+          "episode": 28,
+          "released": "2026-04-17T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:29",
+          "title": "29. Bölüm",
+          "season": 1,
+          "episode": 29,
+          "released": "2026-04-24T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:30",
+          "title": "30. Bölüm",
+          "season": 1,
+          "episode": 30,
+          "released": "2026-04-17T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:31",
+          "title": "Zor Kız Duru",
+          "season": 1,
+          "episode": 31,
+          "released": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:32",
+          "title": "Saf Dora",
+          "season": 1,
+          "episode": 32,
+          "released": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:33",
+          "title": "Süt Çocuğu Yusuf",
+          "season": 1,
+          "episode": 33,
+          "released": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:34",
+          "title": "Dünyanın En Rahat Çifti",
+          "season": 1,
+          "episode": 34,
+          "released": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:1:35",
+          "title": "Zeki ve Yakışıklı Can / Bad Boy Genç",
+          "season": 1,
+          "episode": 35,
+          "released": "2026-06-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:1",
+          "title": "36. Bölüm",
+          "season": 2,
+          "episode": 1,
+          "released": "2026-10-02T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:2",
+          "title": "37. Bölüm",
+          "season": 2,
+          "episode": 2,
+          "released": "2026-10-09T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:3",
+          "title": "38. Bölüm",
+          "season": 2,
+          "episode": 3,
+          "released": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:4",
+          "title": "39. Bölüm",
+          "season": 2,
+          "episode": 4,
+          "released": "2026-10-23T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:5",
+          "title": "40. Bölüm",
+          "season": 2,
+          "episode": 5,
+          "released": "2026-10-30T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:6",
+          "title": "41. Bölüm",
+          "season": 2,
+          "episode": 6,
+          "released": "2026-11-06T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:7",
+          "title": "42. Bölüm",
+          "season": 2,
+          "episode": 7,
+          "released": "2026-11-13T00:00:00.000Z"
+        },
+        {
+          "id": "tmdb:301090:2:8",
+          "title": "43. Bölüm",
+          "season": 2,
+          "episode": 8,
+          "released": "2026-11-20T00:00:00.000Z"
+        }
+      ],
+      "name": "Konuşanlar",
+      "description": "‘Konuşanlar’, komedyen Hasan Can Kaya’nın eşsiz mizahı ve kıvrak zekasıyla sıradan insanların en komik, sıra dışı ve absürt hikayelerini sahneye taşıyor. Samimiyetin ve filtresiz mizahın tavan yaptığı, kahkahanın dinmediği bu talk show itiraflar ve farklı sürprizlerle dolu. Hasan Can Kaya, en cesur 'konuşanları' seçiyor, spontane şakaları ve sorularıyla kahkaha tufanının fitilini ateşliyor.",
+      "releaseInfo": "2025",
+      "poster": "https://image.tmdb.org/t/p/w500/uHnTjj3OYiJ50Kn9P1Cb3Wd2RqJ.jpg",
+      "background": "https://image.tmdb.org/t/p/w1280/exyrUEUANQAMgZQgL8UvBoTYDm0.jpg",
+      "posterShape": "poster",
+      "genres": [
+        "Komedi"
+      ],
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ]
+    },
+    {
+      "id": "tt39333720",
+      "imdb_id": "tt39333720",
+      "type": "series",
+      "poster": "https://image.tmdb.org/t/p/w500/tNU9FZWQ9vtobH6G4HS9USVGEP4.jpg",
+      "logo": "https://live.metahub.space/logo/medium/tt39333720/img",
+      "background": "https://image.tmdb.org/t/p/w1280/pqnN9TY5Jedb36RJ19PsdCvj1iX.jpg",
+      "moviedb_id": 322280,
+      "name": "Ömür Usta",
+      "description": "Aile bağları, ihanet, aşk, sınıf çatışmaları ve ikinci şanslar üzerine kurulan “Ömür Usta”; tüm yaralarına rağmen hayata tutunmayı başaran bir kadının, kendi ışığını yeniden keşfetme hikayesini anlatacak.",
+      "genres": [
+        "Dram"
+      ],
+      "releaseInfo": "2026",
+      "status": "Continuing",
+      "trailers": [
+        {
+          "source": "YoiIGyluDoo",
+          "type": "Trailer"
+        }
+      ],
+      "cast": [
+        "Nurgül Yeşilçay",
+        "Bülent İnal",
+        "Gonca Vuslateri"
+      ],
+      "credits_cast": [
+        {
+          "character": "Ömür Uçar",
+          "name": "Nurgül Yeşilçay",
+          "profile_path": "/kdXz4MfvvieBoPsc5q7R8ARPc90.jpg",
+          "id": 120680
+        },
+        {
+          "character": "Tunç Arıkan",
+          "name": "Bülent İnal",
+          "profile_path": "/svYzXIg3ocFIwJRaDDYNhd3OHjN.jpg",
+          "id": 239060
+        },
+        {
+          "character": "Nevra Arıkan",
+          "name": "Gonca Vuslateri",
+          "profile_path": "/wu2gvPyKKAGEVn1VX5WmHJ5szYI.jpg",
+          "id": 1258448
+        },
+        {
+          "character": "Mete Uçar",
+          "name": "Enes Koçak",
+          "profile_path": "/7pmasRDvRqVvqBvVcEc7BKx7LNt.jpg",
+          "id": 3974495
+        },
+        {
+          "character": "Gülsüm Karaca",
+          "name": "Gülçin Kültür Şahin",
+          "profile_path": "/aHDAUVp0I4l2UluLTnD7VBqRxaD.jpg",
+          "id": 2443401
+        },
+        {
+          "character": "Halil İbrahim Eren",
+          "name": "İbrahim Selim",
+          "profile_path": "/3EAJVfqgEZCM17RTWfUIEJ1iKv3.jpg",
+          "id": 1590337
+        },
+        {
+          "character": "Yıldız Aydın",
+          "name": "Pınar Çağlar Gençtürk",
+          "profile_path": "/iMSnVDGstCuVjwfvEv1EzinbejB.jpg",
+          "id": 1464766
+        },
+        {
+          "character": "İpek Arıkan",
+          "name": "Sude Zülal Güler",
+          "profile_path": "/ascs0R9hBhhuvWQnXdZ1UGgiZhR.jpg",
+          "id": 1954606
+        },
+        {
+          "character": "Müzeyyen Uçar",
+          "name": "Zerrin Sümer",
+          "profile_path": "/azHrBuWJye9eFH08waLWHLBCqVc.jpg",
+          "id": 929801
+        },
+        {
+          "character": "Nazlı Uçar",
+          "name": "Cemre Arda",
+          "profile_path": "/8p8FS9Vlk7fAyX6La3RpKBdrZfG.jpg",
+          "id": 4454974
+        }
+      ],
+      "credits_crew": [
+        {
+          "department": "Directing",
+          "job": "Director",
+          "name": "Hilal Saral",
+          "profile_path": "/dbVu1VpAVqttIhag4x2rnAqyi9I.jpg",
+          "id": 1575019
+        }
+      ],
+      "director": [
+        "Hilal Saral"
+      ],
+      "videos": [
+        {
+          "id": "tt39333720:1:1",
+          "title": "1. Bölüm",
+          "season": 1,
+          "episode": 1,
+          "number": 1,
+          "released": "2026-09-27T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/1/w780.jpg",
+          "moviedb_id": 7263863
+        },
+        {
+          "id": "tt39333720:1:2",
+          "title": "Episode 2",
+          "season": 1,
+          "episode": 2,
+          "number": 2,
+          "released": "2026-10-04T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/2/w780.jpg",
+          "moviedb_id": 7813424
+        },
+        {
+          "id": "tt39333720:1:3",
+          "title": "Episode 3",
+          "season": 1,
+          "episode": 3,
+          "number": 3,
+          "released": "2026-10-11T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/3/w780.jpg",
+          "moviedb_id": 7813425
+        },
+        {
+          "id": "tt39333720:1:4",
+          "title": "Episode 4",
+          "season": 1,
+          "episode": 4,
+          "number": 4,
+          "released": "2026-10-18T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/4/w780.jpg",
+          "moviedb_id": 7936526
+        },
+        {
+          "id": "tt39333720:1:5",
+          "title": "Episode 5",
+          "season": 1,
+          "episode": 5,
+          "number": 5,
+          "released": "2026-10-25T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/5/w780.jpg",
+          "moviedb_id": 8016714
+        },
+        {
+          "id": "tt39333720:1:6",
+          "title": "Episode 6",
+          "season": 1,
+          "episode": 6,
+          "number": 6,
+          "released": "2026-11-01T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/6/w780.jpg",
+          "moviedb_id": 8016720
+        },
+        {
+          "id": "tt39333720:1:7",
+          "title": "Episode 7",
+          "season": 1,
+          "episode": 7,
+          "number": 7,
+          "released": "2026-11-08T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/7/w780.jpg",
+          "moviedb_id": 8050280
+        },
+        {
+          "id": "tt39333720:1:8",
+          "title": "Episode 8",
+          "season": 1,
+          "episode": 8,
+          "number": 8,
+          "released": "2026-11-15T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/8/w780.jpg",
+          "moviedb_id": 8104498
+        },
+        {
+          "id": "tt39333720:1:9",
+          "title": "Episode 9",
+          "season": 1,
+          "episode": 9,
+          "number": 9,
+          "released": "2026-11-22T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt39333720/1/9/w780.jpg",
+          "moviedb_id": 8136408
+        }
+      ],
+      "imdbRating": "5.4",
+      "language": "Turkish",
+      "country": "Turkey",
+      "slug": "series/master-omur-39333720",
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster",
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ]
+    },
+    {
+      "id": "tt44632465",
+      "imdb_id": "tt44632465",
+      "type": "series",
+      "poster": "https://image.tmdb.org/t/p/w500/iMKB5gIUumT6V1GvJd3HbIB0XjI.jpg",
+      "logo": "https://live.metahub.space/logo/medium/tt44632465/img",
+      "background": "https://image.tmdb.org/t/p/w1280/of64wZ6WYVdverh1YSeV0fXufdY.jpg",
+      "moviedb_id": 333821,
+      "name": "Anne Yarısı",
+      "description": "8 yıl önce Almanya'da yaşanan büyük bir kaybın ardından yolları küçük bir çocuğun etrafında kesişen Ali ve Zeynep'in duygusal hikayesini anlatıyor",
+      "genres": [
+        "Dram",
+        "Pembe Dizi"
+      ],
+      "releaseInfo": "2026",
+      "status": "Continuing",
+      "trailers": [],
+      "cast": [
+        "Esra Dermancıoğlu",
+        "Cihangir Ceyhan",
+        "Burcu Özberk"
+      ],
+      "credits_cast": [
+        {
+          "character": "Meryem Altay",
+          "name": "Esra Dermancıoğlu",
+          "profile_path": "/d8GubeGUpIqFMnpEGaZ3dlhBCZq.jpg",
+          "id": 1256373
+        },
+        {
+          "character": "Ali Altay",
+          "name": "Cihangir Ceyhan",
+          "profile_path": "/yVC6P6VfgZ7bCEDDy7tBCHxsnO1.jpg",
+          "id": 1992191
+        },
+        {
+          "character": "Zeynep",
+          "name": "Burcu Özberk",
+          "profile_path": "/wDhKUUR7pRzgVolACed0YnSozbL.jpg",
+          "id": 1522700
+        },
+        {
+          "character": "Nazlı",
+          "name": "Yeliz Korkmaz",
+          "profile_path": "/qOY4XKomIchay9bOEd23OltoXjC.jpg",
+          "id": 5841954
+        },
+        {
+          "character": "Adem",
+          "name": "Rızacan Durmuş",
+          "profile_path": "/lLcqRFFqLwSErXvcm2dbIIgVhRY.jpg",
+          "id": 4446959
+        },
+        {
+          "character": "Sibel",
+          "name": "Merve Şen",
+          "profile_path": "/wiObe2PxMNGOOsHbhd0LvtHU8je.jpg",
+          "id": 3866284
+        },
+        {
+          "character": "Kadir",
+          "name": "Fatih Gühan",
+          "profile_path": "/imRXSYyxrzf4k7UZ9gFNL6WFII.jpg",
+          "id": 4045039
+        },
+        {
+          "character": "Ege Altay",
+          "name": "Melisa Duru Ünal",
+          "profile_path": "/k4VdkNRVzWu5Opdqu5mtCathaW5.jpg",
+          "id": 3708776
+        },
+        {
+          "character": "Altın",
+          "name": "Selen Uçer",
+          "profile_path": "/mMLJD36aFnYNGQ2Ln5LCoT1ALIe.jpg",
+          "id": 1004400
+        },
+        {
+          "character": "Osman",
+          "name": "Umut Kaplıca",
+          "profile_path": "/tNVaTgvPhDnf6Lp2lWOeAQiPQnv.jpg",
+          "id": 3974493
+        }
+      ],
+      "credits_crew": [],
+      "director": [],
+      "videos": [
+        {
+          "id": "tt44632465:1:1",
+          "title": "Episode 1",
+          "season": 1,
+          "episode": 1,
+          "number": 1,
+          "released": "2026-09-22T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/1/w780.jpg",
+          "moviedb_id": 7763884
+        },
+        {
+          "id": "tt44632465:1:2",
+          "title": "Episode 2",
+          "season": 1,
+          "episode": 2,
+          "number": 2,
+          "released": "2026-09-29T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/2/w780.jpg",
+          "moviedb_id": 7786764
+        },
+        {
+          "id": "tt44632465:1:3",
+          "title": "Episode 3",
+          "season": 1,
+          "episode": 3,
+          "number": 3,
+          "released": "2026-10-06T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/3/w780.jpg",
+          "moviedb_id": 7786765
+        },
+        {
+          "id": "tt44632465:1:4",
+          "title": "Episode 4",
+          "season": 1,
+          "episode": 4,
+          "number": 4,
+          "released": "2026-10-13T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/4/w780.jpg",
+          "moviedb_id": 7949171
+        },
+        {
+          "id": "tt44632465:1:5",
+          "title": "Episode 5",
+          "season": 1,
+          "episode": 5,
+          "number": 5,
+          "released": "2026-10-20T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/5/w780.jpg",
+          "moviedb_id": 7949174
+        },
+        {
+          "id": "tt44632465:1:6",
+          "title": "Episode 6",
+          "season": 1,
+          "episode": 6,
+          "number": 6,
+          "released": "2026-10-27T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/6/w780.jpg",
+          "moviedb_id": 7988751
+        },
+        {
+          "id": "tt44632465:1:7",
+          "title": "Episode 7",
+          "season": 1,
+          "episode": 7,
+          "number": 7,
+          "released": "2026-11-10T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/7/w780.jpg",
+          "moviedb_id": 8025900
+        },
+        {
+          "id": "tt44632465:1:8",
+          "title": "Episode 8",
+          "season": 1,
+          "episode": 8,
+          "number": 8,
+          "released": "2026-11-17T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt44632465/1/8/w780.jpg",
+          "moviedb_id": 8116219
+        }
+      ],
+      "imdbRating": "4.9",
+      "language": "Turkish",
+      "country": "Turkey",
+      "slug": "series/like-a-second-mother-44632465",
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster",
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ]
+    },
+    {
+      "id": "tt19759234",
+      "imdb_id": "tt19759234",
+      "type": "series",
+      "poster": "https://image.tmdb.org/t/p/w500/3Fe4MMlydVQ3o5eYA4AVKjLMSPb.jpg",
+      "logo": "https://live.metahub.space/logo/medium/tt19759234/img",
+      "background": "https://image.tmdb.org/t/p/w1280/wQN0H5vJN42rWDRxwHa3Q45m6WZ.jpg",
+      "moviedb_id": 204925,
+      "name": "Tozluyaka",
+      "description": "Şans bile yolunu şaşırmadan uğramazdı Tozluyaka’ya ama bodoslama daldı birbirlerini kardeş seçenlerin arasına. Umudun yolculuğu başladı bu defa. Geçtikleri her sokağa, adını söyledikleri her insana, zulme, adaletsizliğe, sevgiye aç olanlara dokunmalarını sağladı. Bu herkesin hikayesiydi. Onlar sadece içimizdeki şanslı olanlardı.",
+      "genres": [
+        "Dram",
+        "Komedi"
+      ],
+      "releaseInfo": "2022",
+      "status": "Ended",
+      "trailers": [],
+      "cast": [
+        "Dolunay Soysert",
+        "Emre Kınay",
+        "Tayanç Ayaydın"
+      ],
+      "credits_cast": [
+        {
+          "character": "Derya Öztürk",
+          "name": "Dolunay Soysert",
+          "profile_path": "/fp6jAtAAbDLpoBkQs2GAUUFyOIj.jpg",
+          "id": 120866
+        },
+        {
+          "character": "Kenan Yağızoğlu",
+          "name": "Emre Kınay",
+          "profile_path": "/yDnU3QjzuEIhiUJY88penDszZDs.jpg",
+          "id": 236656
+        },
+        {
+          "character": "Önder Koçak",
+          "name": "Tayanç Ayaydın",
+          "profile_path": "/inYsIQR47uBIjQzH8d2OKRpaPcl.jpg",
+          "id": 72168
+        },
+        {
+          "character": "Ali Öztürk (Yangın Ali)",
+          "name": "Kaan Mirac Sezen",
+          "profile_path": "/9cQe32heKx6LQx1Gy8Iz0Pz0NCr.jpg",
+          "id": 3603819
+        },
+        {
+          "character": "Berk Yağızoğlu",
+          "name": "Ulvi Kahyaoğlu",
+          "profile_path": "/krbeohlmEgZ09PHDlcuIG5uW2PV.jpg",
+          "id": 1899067
+        },
+        {
+          "character": "Sinan Narinses (Arap)",
+          "name": "Can Bartu Arslan",
+          "profile_path": "/hyIZmZpOIIlgiN0YQpv2aua6hEQ.jpg",
+          "id": 2565499
+        },
+        {
+          "character": "Cemre Yılmaz",
+          "name": "Ecem Çalhan",
+          "profile_path": "/cfqQoSkGjmJXQ6VjjEb9LHYBMHo.jpg",
+          "id": 3603820
+        },
+        {
+          "character": "Zeyno Sarı",
+          "name": "Serra Pirinç",
+          "profile_path": "/9tqmLHuchaD1ZDP2q79DwKc8HvM.jpg",
+          "id": 1992179
+        },
+        {
+          "character": "Hazal Küçük",
+          "name": "Çağla Şimşek",
+          "profile_path": "/a6l7BK2nxKwXTrKJfjFbvhXBPOy.jpg",
+          "id": 3138200
+        },
+        {
+          "character": "Kader Sarı",
+          "name": "Nur Yazar",
+          "profile_path": "/dLYagVx1SeljjgJ5IsHnXx70zaL.jpg",
+          "id": 3603815
+        }
+      ],
+      "credits_crew": [
+        {
+          "department": "Production",
+          "job": "Producer",
+          "name": "Fatih Aksoy",
+          "profile_path": "/bcgKRkfFUt00CTVG6wOSNmyMcC6.jpg",
+          "id": 1256317
+        },
+        {
+          "department": "Production",
+          "job": "Producer",
+          "name": "Mehmet Yiğit Alp",
+          "profile_path": null,
+          "id": 1577605
+        },
+        {
+          "department": "Directing",
+          "job": "Director",
+          "name": "Semih Bagci",
+          "profile_path": null,
+          "id": 1937418
+        }
+      ],
+      "director": [
+        "Semih Bagci"
+      ],
+      "videos": [
+        {
+          "id": "tt19759234:1:1",
+          "title": "Episode 1",
+          "season": 1,
+          "episode": 1,
+          "number": 1,
+          "released": "2022-06-27T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/1/w780.jpg",
+          "moviedb_id": 3808580
+        },
+        {
+          "id": "tt19759234:1:2",
+          "title": "Episode 2",
+          "season": 1,
+          "episode": 2,
+          "number": 2,
+          "released": "2022-07-04T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/2/w780.jpg",
+          "moviedb_id": 3822542
+        },
+        {
+          "id": "tt19759234:1:3",
+          "title": "Episode 3",
+          "season": 1,
+          "episode": 3,
+          "number": 3,
+          "released": "2022-07-18T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/3/w780.jpg",
+          "moviedb_id": 3825998
+        },
+        {
+          "id": "tt19759234:1:4",
+          "title": "Episode 4",
+          "season": 1,
+          "episode": 4,
+          "number": 4,
+          "released": "2022-07-25T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/4/w780.jpg",
+          "moviedb_id": 3825999
+        },
+        {
+          "id": "tt19759234:1:5",
+          "title": "Episode 5",
+          "season": 1,
+          "episode": 5,
+          "number": 5,
+          "released": "2022-08-01T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/5/w780.jpg",
+          "moviedb_id": 3826000
+        },
+        {
+          "id": "tt19759234:1:6",
+          "title": "Episode 6",
+          "season": 1,
+          "episode": 6,
+          "number": 6,
+          "released": "2022-08-08T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/6/w780.jpg",
+          "moviedb_id": 3826001
+        },
+        {
+          "id": "tt19759234:1:7",
+          "title": "Episode 7",
+          "season": 1,
+          "episode": 7,
+          "number": 7,
+          "released": "2022-08-15T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/7/w780.jpg",
+          "moviedb_id": 3826002
+        },
+        {
+          "id": "tt19759234:1:8",
+          "title": "Episode 8",
+          "season": 1,
+          "episode": 8,
+          "number": 8,
+          "released": "2022-08-22T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/8/w780.jpg",
+          "moviedb_id": 3826003
+        },
+        {
+          "id": "tt19759234:1:9",
+          "title": "Episode 9",
+          "season": 1,
+          "episode": 9,
+          "number": 9,
+          "released": "2022-08-28T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/9/w780.jpg",
+          "moviedb_id": 3826004
+        },
+        {
+          "id": "tt19759234:1:10",
+          "title": "Episode 10",
+          "season": 1,
+          "episode": 10,
+          "number": 10,
+          "released": "2022-09-04T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/10/w780.jpg",
+          "moviedb_id": 3826005
+        },
+        {
+          "id": "tt19759234:1:11",
+          "title": "Episode 11",
+          "season": 1,
+          "episode": 11,
+          "number": 11,
+          "released": "2022-09-11T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/11/w780.jpg",
+          "moviedb_id": 3826006
+        },
+        {
+          "id": "tt19759234:1:12",
+          "title": "Episode 12",
+          "season": 1,
+          "episode": 12,
+          "number": 12,
+          "released": "2022-09-18T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/12/w780.jpg",
+          "moviedb_id": 3826007
+        },
+        {
+          "id": "tt19759234:1:13",
+          "title": "Episode 13",
+          "season": 1,
+          "episode": 13,
+          "number": 13,
+          "released": "2022-09-25T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/13/w780.jpg",
+          "moviedb_id": 3826008
+        },
+        {
+          "id": "tt19759234:1:14",
+          "title": "Episode 14",
+          "season": 1,
+          "episode": 14,
+          "number": 14,
+          "released": "2022-10-02T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/14/w780.jpg",
+          "moviedb_id": 3826009
+        },
+        {
+          "id": "tt19759234:1:15",
+          "title": "Episode 15",
+          "season": 1,
+          "episode": 15,
+          "number": 15,
+          "released": "2022-10-09T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/15/w780.jpg",
+          "moviedb_id": 3826010
+        },
+        {
+          "id": "tt19759234:1:16",
+          "title": "Episode 16",
+          "season": 1,
+          "episode": 16,
+          "number": 16,
+          "released": "2022-10-16T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/16/w780.jpg",
+          "moviedb_id": 3826011
+        },
+        {
+          "id": "tt19759234:1:17",
+          "title": "Episode 17",
+          "season": 1,
+          "episode": 17,
+          "number": 17,
+          "released": "2022-10-23T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/17/w780.jpg",
+          "moviedb_id": 3826012
+        },
+        {
+          "id": "tt19759234:1:18",
+          "title": "Episode 18",
+          "season": 1,
+          "episode": 18,
+          "number": 18,
+          "released": "2022-10-30T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/18/w780.jpg",
+          "moviedb_id": 3826013
+        },
+        {
+          "id": "tt19759234:1:19",
+          "title": "Episode 19",
+          "season": 1,
+          "episode": 19,
+          "number": 19,
+          "released": "2022-11-06T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/19/w780.jpg",
+          "moviedb_id": 3826016
+        },
+        {
+          "id": "tt19759234:1:20",
+          "title": "Episode 20",
+          "season": 1,
+          "episode": 20,
+          "number": 20,
+          "released": "2022-11-13T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/20/w780.jpg",
+          "moviedb_id": 3826018
+        },
+        {
+          "id": "tt19759234:1:21",
+          "title": "Episode 21",
+          "season": 1,
+          "episode": 21,
+          "number": 21,
+          "released": "2022-11-20T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/21/w780.jpg",
+          "moviedb_id": 3826019
+        },
+        {
+          "id": "tt19759234:1:22",
+          "title": "Episode 22",
+          "season": 1,
+          "episode": 22,
+          "number": 22,
+          "released": "2022-11-27T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/22/w780.jpg",
+          "moviedb_id": 3826020
+        },
+        {
+          "id": "tt19759234:1:23",
+          "title": "Episode 23",
+          "season": 1,
+          "episode": 23,
+          "number": 23,
+          "released": "2022-12-04T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/23/w780.jpg",
+          "moviedb_id": 3826021
+        },
+        {
+          "id": "tt19759234:1:24",
+          "title": "Episode 24",
+          "season": 1,
+          "episode": 24,
+          "number": 24,
+          "released": "2022-12-11T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/24/w780.jpg",
+          "moviedb_id": 3826022
+        },
+        {
+          "id": "tt19759234:1:25",
+          "title": "Episode 25",
+          "season": 1,
+          "episode": 25,
+          "number": 25,
+          "released": "2022-12-18T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/25/w780.jpg",
+          "moviedb_id": 3826023
+        },
+        {
+          "id": "tt19759234:1:26",
+          "title": "Episode 26",
+          "season": 1,
+          "episode": 26,
+          "number": 26,
+          "released": "2022-12-25T00:00:00.000Z",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt19759234/1/26/w780.jpg",
+          "moviedb_id": 3826024
+        }
+      ],
+      "imdbRating": "5.6",
+      "language": "Turkish",
+      "country": "Turkey",
+      "awards": "1 nomination",
+      "slug": "series/tozluyaka-19759234",
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster",
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ]
+    },
+    {
+      "imdb_id": "tt12324366",
+      "name": "Percy Jackson and The Olympians",
+      "type": "series",
+      "cast": [
+        "Walker Scobell",
+        "Leah Sava&apos; Jeffries",
+        "Aryan Simhadri"
+      ],
+      "country": "United States",
+      "description": "Percy Jackson tehlikeli bir maceraya atılır. Zeus'un İlk Şimşeğini geri getirmek ve topyekûn bir savaşı engellemek için Amerika'yı boydan boya kat etmesi, bu esnada da peşindeki canavarlardan kurtulması ve kurnazlığıyla tanrıları alt etmesi gerekmektedir. Görev arkadaşları Annabeth ve Kıvırcık'ın da yardımıyla Percy'nin yolculuğu onu, aradığı cevaplara yaklaştıracaktır: Kendini yabancı hissettiği bir dünyaya nasıl uyum sağlayacağına ve aslen kim olduğunun cevabını bulmaya.",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Family"
+      ],
+      "imdbRating": "7.0",
+      "released": "2023-12-19T00:00:00.000Z",
+      "slug": "series/percy-jackson-and-the-olympians-12324366",
+      "writer": [
+        "Rick Riordan",
+        "Jonathan E. Steinberg"
+      ],
+      "year": "2023–",
+      "moviedb_id": 103540,
+      "popularities": {
+        "moviedb": 104.1924,
+        "stremio": 3.4730800000000004,
+        "stremio_lib": 0,
+        "trakt": 1163
+      },
+      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+      "runtime": "40 min",
+      "status": "Continuing",
+      "tvdb_id": 415151,
+      "director": [],
+      "background": "https://image.tmdb.org/t/p/w1280/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
+      "logo": "https://images.metahub.space/logo/medium/tt12324366/img",
+      "awards": "21 wins & 41 nominations total",
+      "trailers": [
+        {
+          "source": "yT1ng2tiwLA",
+          "type": "Trailer"
+        },
+        {
+          "source": "YbBAb0FxDbU",
+          "type": "Trailer"
+        }
+      ],
+      "popularity": 3.4730800000000004,
+      "id": "tt12324366",
+      "genres": [
+        "Aksiyon & Macera",
+        "Bilim Kurgu & Fantazi",
+        "Dram",
+        "Aile"
+      ],
+      "releaseInfo": "2023",
+      "videos": [
+        {
+          "name": "A Hero’s Journey: The Making of Percy Jackson and the Olympians",
+          "season": 0,
+          "number": 1,
+          "firstAired": "2024-01-30T20:00:00.000Z",
+          "tvdb_id": 10279597,
+          "rating": "0",
+          "overview": "Being a demigod isn't easy... and neither is filling the shoes of beloved characters in a massive television series. While embodying characters on a quest, Walker, Leah, and Aryan embark on an epic adventure of their own. Alongside a passionate cast and crew, follow these three young heroes on the set of \"Percy Jackson and the Olympians\" as they step into worlds fit for gods, battle unforgettable creatures, and perform legendary stunts. Oh, and they still have to go to school. Produced by Evolve Studios, this journey full of challenges and growth uncovers the magic behind-the-Mist.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/0/1/w780.jpg",
+          "id": "tt12324366:0:1",
+          "released": "2024-01-30T20:00:00.000Z",
+          "episode": 1,
+          "description": "Being a demigod isn't easy... and neither is filling the shoes of beloved characters in a massive television series. While embodying characters on a quest, Walker, Leah, and Aryan embark on an epic adventure of their own. Alongside a passionate cast and crew, follow these three young heroes on the set of \"Percy Jackson and the Olympians\" as they step into worlds fit for gods, battle unforgettable creatures, and perform legendary stunts. Oh, and they still have to go to school. Produced by Evolve Studios, this journey full of challenges and growth uncovers the magic behind-the-Mist."
+        },
+        {
+          "name": "Season 3 Panel with Cast - Live from D23 2026",
+          "season": 0,
+          "number": 2,
+          "firstAired": "2026-08-17T20:00:00.000Z",
+          "tvdb_id": 11937894,
+          "rating": "0",
+          "overview": "\"Percy Jackson and the Olympians\" previews Season 3 at D23.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/0/2/w780.jpg",
+          "id": "tt12324366:0:2",
+          "released": "2026-08-17T20:00:00.000Z",
+          "episode": 2,
+          "description": "\"Percy Jackson and the Olympians\" previews Season 3 at D23."
+        },
+        {
+          "name": "I Accidentally Vaporize My Pre-Algebra Teacher",
+          "season": 1,
+          "number": 1,
+          "firstAired": "2023-12-19T20:00:00.000Z",
+          "tvdb_id": 8965310,
+          "rating": "0",
+          "overview": "Expelled from school, Percy Jackson unravels who he is, confronting a world of gods and monsters.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/1/w780.jpg",
+          "id": "tt12324366:1:1",
+          "released": "2023-12-19T20:00:00.000Z",
+          "episode": 1,
+          "description": "Expelled from school, Percy Jackson unravels who he is, confronting a world of gods and monsters."
+        },
+        {
+          "name": "I Become Supreme Lord of the Bathroom",
+          "season": 1,
+          "number": 2,
+          "firstAired": "2023-12-19T20:00:00.000Z",
+          "tvdb_id": 9960586,
+          "rating": "0",
+          "overview": "Percy finds his place at Camp Half Blood, where he learns just how special his origins may be.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/2/w780.jpg",
+          "id": "tt12324366:1:2",
+          "released": "2023-12-19T20:00:00.000Z",
+          "episode": 2,
+          "description": "Percy finds his place at Camp Half Blood, where he learns just how special his origins may be."
+        },
+        {
+          "name": "We Visit the Garden Gnome Emporium",
+          "season": 1,
+          "number": 3,
+          "firstAired": "2023-12-26T20:00:00.000Z",
+          "tvdb_id": 9960684,
+          "rating": "0",
+          "overview": "Percy sets off on the quest to return Zeus’ master bolt and stop a war between the gods.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/3/w780.jpg",
+          "id": "tt12324366:1:3",
+          "released": "2023-12-26T20:00:00.000Z",
+          "episode": 3,
+          "description": "Percy sets off on the quest to return Zeus’ master bolt and stop a war between the gods."
+        },
+        {
+          "name": "I Plunge to My Death",
+          "season": 1,
+          "number": 4,
+          "firstAired": "2024-01-02T20:00:00.000Z",
+          "tvdb_id": 9960685,
+          "rating": "0",
+          "overview": "Our heroes search for a refuge in St Louis, and come face to face with the mother of all monsters.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/4/w780.jpg",
+          "id": "tt12324366:1:4",
+          "released": "2024-01-02T20:00:00.000Z",
+          "episode": 4,
+          "description": "Our heroes search for a refuge in St Louis, and come face to face with the mother of all monsters."
+        },
+        {
+          "name": "A God Buys Us Cheeseburgers",
+          "season": 1,
+          "number": 5,
+          "firstAired": "2024-01-09T20:00:00.000Z",
+          "tvdb_id": 9960686,
+          "rating": "0",
+          "overview": "The quest deepens as Percy, Annabeth, and Grover are tasked with a favor from a fearsome opponent.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/5/w780.jpg",
+          "id": "tt12324366:1:5",
+          "released": "2024-01-09T20:00:00.000Z",
+          "episode": 5,
+          "description": "The quest deepens as Percy, Annabeth, and Grover are tasked with a favor from a fearsome opponent."
+        },
+        {
+          "name": "We Take a Zebra to Vegas",
+          "season": 1,
+          "number": 6,
+          "firstAired": "2024-01-16T20:00:00.000Z",
+          "tvdb_id": 9960687,
+          "rating": "0",
+          "overview": "Percy, Annabeth, and Grover must resist the alluring draw of a casino that feels outside of time.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/6/w780.jpg",
+          "id": "tt12324366:1:6",
+          "released": "2024-01-16T20:00:00.000Z",
+          "episode": 6,
+          "description": "Percy, Annabeth, and Grover must resist the alluring draw of a casino that feels outside of time."
+        },
+        {
+          "name": "We Find Out the Truth, Sort Of",
+          "season": 1,
+          "number": 7,
+          "firstAired": "2024-01-23T20:00:00.000Z",
+          "tvdb_id": 9960688,
+          "rating": "0",
+          "overview": "Our heroes journey across the Underworld, and bargain for their safety with the god of the dead.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/7/w780.jpg",
+          "id": "tt12324366:1:7",
+          "released": "2024-01-23T20:00:00.000Z",
+          "episode": 7,
+          "description": "Our heroes journey across the Underworld, and bargain for their safety with the god of the dead."
+        },
+        {
+          "name": "The Prophecy Comes True",
+          "season": 1,
+          "number": 8,
+          "firstAired": "2024-01-30T20:00:00.000Z",
+          "tvdb_id": 9960689,
+          "rating": "0",
+          "overview": "Mount Olympus beckons... and Percy must face his greatest battle yet.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/1/8/w780.jpg",
+          "id": "tt12324366:1:8",
+          "released": "2024-01-30T20:00:00.000Z",
+          "episode": 8,
+          "description": "Mount Olympus beckons... and Percy must face his greatest battle yet."
+        },
+        {
+          "name": "I Play Dodgeball With Cannibals",
+          "season": 2,
+          "number": 1,
+          "firstAired": "2025-12-10T20:00:00.000Z",
+          "tvdb_id": 11260355,
+          "rating": "0",
+          "overview": "Percy, Annabeth, and Tyson race to defend Camp Half-Blood from dangerous forces.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/1/w780.jpg",
+          "id": "tt12324366:2:1",
+          "released": "2025-12-10T20:00:00.000Z",
+          "episode": 1,
+          "description": "Percy, Annabeth, and Tyson race to defend Camp Half-Blood from dangerous forces."
+        },
+        {
+          "name": "Demon Pigeons Attack",
+          "season": 2,
+          "number": 2,
+          "firstAired": "2025-12-10T20:00:00.000Z",
+          "tvdb_id": 11285774,
+          "rating": "0",
+          "overview": "Percy and Annabeth contend with a new activities director as they try to locate Grover.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/2/w780.jpg",
+          "id": "tt12324366:2:2",
+          "released": "2025-12-10T20:00:00.000Z",
+          "episode": 2,
+          "description": "Percy and Annabeth contend with a new activities director as they try to locate Grover."
+        },
+        {
+          "name": "We Board the Princess Andromeda",
+          "season": 2,
+          "number": 3,
+          "firstAired": "2025-12-17T20:00:00.000Z",
+          "tvdb_id": 11285775,
+          "rating": "0",
+          "overview": "Aboard a cruise ship, our heroes struggle to differentiate friend from foe.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/3/w780.jpg",
+          "id": "tt12324366:2:3",
+          "released": "2025-12-17T20:00:00.000Z",
+          "episode": 3,
+          "description": "Aboard a cruise ship, our heroes struggle to differentiate friend from foe."
+        },
+        {
+          "name": "Clarisse Blows Up Everything",
+          "season": 2,
+          "number": 4,
+          "firstAired": "2025-12-24T20:00:00.000Z",
+          "tvdb_id": 11285776,
+          "rating": "0",
+          "overview": "Quests collide as our crew voyages into the perilous Sea of Monsters.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/4/w780.jpg",
+          "id": "tt12324366:2:4",
+          "released": "2025-12-24T20:00:00.000Z",
+          "episode": 4,
+          "description": "Quests collide as our crew voyages into the perilous Sea of Monsters."
+        },
+        {
+          "name": "We Check In to C.C.'s Spa and Resort",
+          "season": 2,
+          "number": 5,
+          "firstAired": "2025-12-31T20:00:00.000Z",
+          "tvdb_id": 11285777,
+          "rating": "0",
+          "overview": "Percy and Annabeth must confront their flaws at a resort sanctuary.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/5/w780.jpg",
+          "id": "tt12324366:2:5",
+          "released": "2025-12-31T20:00:00.000Z",
+          "episode": 5,
+          "description": "Percy and Annabeth must confront their flaws at a resort sanctuary."
+        },
+        {
+          "name": "Nobody Gets the Fleece",
+          "season": 2,
+          "number": 6,
+          "firstAired": "2026-01-07T20:00:00.000Z",
+          "tvdb_id": 11285778,
+          "rating": "0",
+          "overview": "Percy and Annabeth go undercover on an island to rescue their friends.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/6/w780.jpg",
+          "id": "tt12324366:2:6",
+          "released": "2026-01-07T20:00:00.000Z",
+          "episode": 6,
+          "description": "Percy and Annabeth go undercover on an island to rescue their friends."
+        },
+        {
+          "name": "I Go Down With the Ship",
+          "season": 2,
+          "number": 7,
+          "firstAired": "2026-01-14T20:00:00.000Z",
+          "tvdb_id": 11285779,
+          "rating": "0",
+          "overview": "With a friend in danger, our heroes must risk everything to continue their quest.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/7/w780.jpg",
+          "id": "tt12324366:2:7",
+          "released": "2026-01-14T20:00:00.000Z",
+          "episode": 7,
+          "description": "With a friend in danger, our heroes must risk everything to continue their quest."
+        },
+        {
+          "name": "The Fleece Works Its Magic Too Well",
+          "season": 2,
+          "number": 8,
+          "firstAired": "2026-01-21T20:00:00.000Z",
+          "tvdb_id": 11285780,
+          "rating": "0",
+          "overview": "Our heroes race to save camp as Luke and Kronos’ army advances.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/2/8/w780.jpg",
+          "id": "tt12324366:2:8",
+          "released": "2026-01-21T20:00:00.000Z",
+          "episode": 8,
+          "description": "Our heroes race to save camp as Luke and Kronos’ army advances."
+        },
+        {
+          "name": "My Rescue Operation Goes Very Wrong",
+          "season": 3,
+          "number": 1,
+          "firstAired": "2026-11-20T20:00:00.000Z",
+          "tvdb_id": 11900120,
+          "rating": "0",
+          "overview": "A demigod rescue mission goes terribly awry for Percy, Annabeth, Thalia, and Grover.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/1/w780.jpg",
+          "id": "tt12324366:3:1",
+          "released": "2026-11-20T20:00:00.000Z",
+          "episode": 1,
+          "description": "A demigod rescue mission goes terribly awry for Percy, Annabeth, Thalia, and Grover."
+        },
+        {
+          "name": "An Old Dead Friend Comes to Visit",
+          "season": 3,
+          "number": 2,
+          "firstAired": "2026-11-20T20:00:00.000Z",
+          "tvdb_id": 11924973,
+          "rating": "0",
+          "overview": "Thalia and Percy clash with a shared enemy and each other at Camp Half-Blood.",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/2/w780.jpg",
+          "id": "tt12324366:3:2",
+          "released": "2026-11-20T20:00:00.000Z",
+          "episode": 2,
+          "description": "Thalia and Percy clash with a shared enemy and each other at Camp Half-Blood."
+        },
+        {
+          "name": "I Learn How to Grow Zombies",
+          "season": 3,
+          "number": 3,
+          "firstAired": "2026-11-27T20:00:00.000Z",
+          "tvdb_id": 11924974,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/3/w780.jpg",
+          "id": "tt12324366:3:3",
+          "released": "2026-11-27T20:00:00.000Z",
+          "episode": 3
+        },
+        {
+          "name": "We Visit the Junkyard of the Gods",
+          "season": 3,
+          "number": 4,
+          "firstAired": "2026-11-27T20:00:00.000Z",
+          "tvdb_id": 11924975,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/4/w780.jpg",
+          "id": "tt12324366:3:4",
+          "released": "2026-11-27T20:00:00.000Z",
+          "episode": 4
+        },
+        {
+          "name": "I have a Dam Problem",
+          "season": 3,
+          "number": 5,
+          "firstAired": "2026-12-04T20:00:00.000Z",
+          "tvdb_id": 11924976,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/5/w780.jpg",
+          "id": "tt12324366:3:5",
+          "released": "2026-12-04T20:00:00.000Z",
+          "episode": 5
+        },
+        {
+          "name": "I Wrestle Santa's Evil Twin",
+          "season": 3,
+          "number": 6,
+          "firstAired": "2026-12-04T20:00:00.000Z",
+          "tvdb_id": 11924977,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/6/w780.jpg",
+          "id": "tt12324366:3:6",
+          "released": "2026-12-04T20:00:00.000Z",
+          "episode": 6
+        },
+        {
+          "name": "I Put on A Few Million Extra Pounds",
+          "season": 3,
+          "number": 7,
+          "firstAired": "2026-12-11T20:00:00.000Z",
+          "tvdb_id": 11924978,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/7/w780.jpg",
+          "id": "tt12324366:3:7",
+          "released": "2026-12-11T20:00:00.000Z",
+          "episode": 7
+        },
+        {
+          "name": "The Gods Vote How to Kill Us",
+          "season": 3,
+          "number": 8,
+          "firstAired": "2026-12-11T20:00:00.000Z",
+          "tvdb_id": 11924979,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt12324366/3/8/w780.jpg",
+          "id": "tt12324366:3:8",
+          "released": "2026-12-11T20:00:00.000Z",
+          "episode": 8
+        }
+      ],
+      "trailerStreams": [
+        {
+          "title": "Percy Jackson and the Olympians",
+          "ytId": "yT1ng2tiwLA"
+        },
+        {
+          "title": "Percy Jackson and the Olympians",
+          "ytId": "YbBAb0FxDbU"
+        }
+      ],
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ],
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster"
+    },
+    {
+      "imdb_id": "tt23112594",
+      "name": "VisionQuest",
+      "popularities": {
+        "trakt": 1759,
+        "moviedb": 144.4468,
+        "stremio": 4.814893333333333,
+        "stremio_lib": 0
+      },
+      "type": "series",
+      "cast": [
+        "Paul Bettany",
+        "James Spader",
+        "Ruaridh Mollica"
+      ],
+      "country": "United States, United Kingdom",
+      "description": "Başına konulan ödül yüzünden Vision, hayatta kalabilmek için kendi doğasıyla yüzleşmeli ve Ultron’un etkisine direnmelidir.",
+      "genre": [
+        "Action"
+      ],
+      "imdbRating": "7.8",
+      "released": "2026-10-13T00:00:00.000Z",
+      "slug": "series/visionquest-23112594",
+      "year": "2026",
+      "moviedb_id": 213375,
+      "poster": "https://image.tmdb.org/t/p/w500/vNAE76jPwWeIOl9UrbtuL3SssaW.jpg",
+      "trailers": [
+        {
+          "source": "sXKnmgmbkoE",
+          "type": "Trailer"
+        },
+        {
+          "source": "pM9HZ8Ovjdw",
+          "type": "Trailer"
+        },
+        {
+          "source": "oSVTAUKyrL8",
+          "type": "Trailer"
+        }
+      ],
+      "runtime": "54 min",
+      "status": "Ended",
+      "tvdb_id": 426606,
+      "director": [],
+      "writer": [],
+      "background": "https://image.tmdb.org/t/p/w1280/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+      "logo": "https://images.metahub.space/logo/medium/tt23112594/img",
+      "popularity": 4.814893333333333,
+      "id": "tt23112594",
+      "genres": [
+        "Bilim Kurgu & Fantazi",
+        "Dram"
+      ],
+      "releaseInfo": "2026",
+      "videos": [
+        {
+          "name": "No Strings",
+          "season": 1,
+          "number": 1,
+          "firstAired": "2026-10-14T05:00:00.000Z",
+          "tvdb_id": 9493851,
+          "rating": "0",
+          "overview": "Vision is living in Edinburgh, working at a local bar. His peaceful existence is interrupted when a bounty is placed on his head. Meanwhile, a mysterious grifter named Tommy Shepherd is troubled by disturbing memories of Westview.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/1/w780.jpg",
+          "id": "tt23112594:1:1",
+          "released": "2026-10-14T05:00:00.000Z",
+          "episode": 1,
+          "description": "Vision is living in Edinburgh, working at a local bar. His peaceful existence is interrupted when a bounty is placed on his head. Meanwhile, a mysterious grifter named Tommy Shepherd is troubled by disturbing memories of Westview."
+        },
+        {
+          "name": "Theseus",
+          "season": 1,
+          "number": 2,
+          "firstAired": "2026-10-14T05:00:00.000Z",
+          "tvdb_id": 12023758,
+          "rating": "0",
+          "overview": "Vision, who is still being hunted by a mysterious force, learns of Tommy's existence and begins to question if this boy is truly his son. Vision returns to the remains of the bar in Edinburgh, and comes face to face with his unknown assailant.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/2/w780.jpg",
+          "id": "tt23112594:1:2",
+          "released": "2026-10-14T05:00:00.000Z",
+          "episode": 2,
+          "description": "Vision, who is still being hunted by a mysterious force, learns of Tommy's existence and begins to question if this boy is truly his son. Vision returns to the remains of the bar in Edinburgh, and comes face to face with his unknown assailant."
+        },
+        {
+          "name": "Reboot",
+          "season": 1,
+          "number": 3,
+          "firstAired": "2026-10-21T05:00:00.000Z",
+          "tvdb_id": 12023759,
+          "rating": "0",
+          "overview": "Vision and Tommy Shepherd join forces in order to survive while a terrifying killer strikes again.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/3/w780.jpg",
+          "id": "tt23112594:1:3",
+          "released": "2026-10-21T05:00:00.000Z",
+          "episode": 3,
+          "description": "Vision and Tommy Shepherd join forces in order to survive while a terrifying killer strikes again."
+        },
+        {
+          "name": "Malware",
+          "season": 1,
+          "number": 4,
+          "firstAired": "2026-10-21T05:00:00.000Z",
+          "tvdb_id": 12023760,
+          "rating": "0",
+          "overview": "As Vision confronts a new enemy, Ultron and Tommy Shepherd come face to face.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/4/w780.jpg",
+          "id": "tt23112594:1:4",
+          "released": "2026-10-21T05:00:00.000Z",
+          "episode": 4,
+          "description": "As Vision confronts a new enemy, Ultron and Tommy Shepherd come face to face."
+        },
+        {
+          "name": "Firewall",
+          "season": 1,
+          "number": 5,
+          "firstAired": "2026-10-28T05:00:00.000Z",
+          "tvdb_id": 12023761,
+          "rating": "0",
+          "overview": "Ultron and Jocasta join forces; Lisa comes to Vision's aid to help him evade capture.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/5/w780.jpg",
+          "id": "tt23112594:1:5",
+          "released": "2026-10-28T05:00:00.000Z",
+          "episode": 5,
+          "description": "Ultron and Jocasta join forces; Lisa comes to Vision's aid to help him evade capture."
+        },
+        {
+          "name": "Deadlock",
+          "season": 1,
+          "number": 6,
+          "firstAired": "2026-10-28T05:00:00.000Z",
+          "tvdb_id": 12023762,
+          "rating": "0",
+          "overview": "Vision and Paladin form an uneasy alliance as Thomas finally learns the truth about his past.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/6/w780.jpg",
+          "id": "tt23112594:1:6",
+          "released": "2026-10-28T05:00:00.000Z",
+          "episode": 6,
+          "description": "Vision and Paladin form an uneasy alliance as Thomas finally learns the truth about his past."
+        },
+        {
+          "name": "Immolation",
+          "season": 1,
+          "number": 7,
+          "firstAired": "2026-11-04T05:00:00.000Z",
+          "tvdb_id": 12023763,
+          "rating": "0",
+          "overview": "Vision and Ultron's twisted relationship comes undone.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/7/w780.jpg",
+          "id": "tt23112594:1:7",
+          "released": "2026-11-04T05:00:00.000Z",
+          "episode": 7,
+          "description": "Vision and Ultron's twisted relationship comes undone."
+        },
+        {
+          "name": "Forever",
+          "season": 1,
+          "number": 8,
+          "firstAired": "2026-11-11T05:00:00.000Z",
+          "tvdb_id": 12023764,
+          "rating": "0",
+          "overview": "Vision’s quest to embrace his true identity comes to a close.",
+          "thumbnail": "https://episodes.metahub.space/tt23112594/1/8/w780.jpg",
+          "id": "tt23112594:1:8",
+          "released": "2026-11-11T05:00:00.000Z",
+          "episode": 8,
+          "description": "Vision’s quest to embrace his true identity comes to a close."
+        }
+      ],
+      "trailerStreams": [
+        {
+          "title": "VisionQuest",
+          "ytId": "sXKnmgmbkoE"
+        },
+        {
+          "title": "VisionQuest",
+          "ytId": "pM9HZ8Ovjdw"
+        },
+        {
+          "title": "VisionQuest",
+          "ytId": "oSVTAUKyrL8"
+        }
+      ],
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ],
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster"
+    },
+    {
+      "imdb_id": "tt13875494",
+      "name": "Tracker",
+      "type": "series",
+      "cast": [
+        "Justin Hartley",
+        "Fiona Rene",
+        "Chris Lee"
+      ],
+      "country": "United States",
+      "description": "Bir hayatta kalma uzmanı, ödül avcısı olarak ülkeyi dolaşırken bir yanda dağılmış ailesiyle uğraşır.",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "imdbRating": "7.2",
+      "released": "2024-02-11T00:00:00.000Z",
+      "slug": "series/tracker-13875494",
+      "writer": [
+        "Ben H. Winters"
+      ],
+      "year": "2024–",
+      "moviedb_id": 211288,
+      "popularities": {
+        "moviedb": 74.4324,
+        "stremio": 2.48108,
+        "stremio_lib": 0,
+        "trakt": 1257
+      },
+      "poster": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+      "trailers": [
+        {
+          "source": "Hw6RlFyPbNM",
+          "type": "Trailer"
+        }
+      ],
+      "runtime": "42 min",
+      "status": "Continuing",
+      "tvdb_id": 428433,
+      "director": [],
+      "background": "https://image.tmdb.org/t/p/w1280/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
+      "logo": "https://images.metahub.space/logo/medium/tt13875494/img",
+      "awards": "4 wins & 7 nominations total",
+      "popularity": 2.48108,
+      "id": "tt13875494",
+      "genres": [
+        "Dram",
+        "Suç"
+      ],
+      "releaseInfo": "2024",
+      "videos": [
+        {
+          "name": "Klamath Falls",
+          "season": 1,
+          "number": 1,
+          "firstAired": "2024-02-13T05:00:00.000Z",
+          "tvdb_id": 9507844,
+          "rating": "0",
+          "overview": "Colter's handlers send him to Klamath Falls, Oregon, to investigate the disappearance of 14-year-old Gil Brown who is suspected to have been taken by his birth dad with a criminal background. While pursuing a lead at a local burger joint based on intel, Colter finds himself in some trouble of his own.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/1/w780.jpg",
+          "id": "tt13875494:1:1",
+          "released": "2024-02-13T05:00:00.000Z",
+          "episode": 1,
+          "description": "Colter's handlers send him to Klamath Falls, Oregon, to investigate the disappearance of 14-year-old Gil Brown who is suspected to have been taken by his birth dad with a criminal background. While pursuing a lead at a local burger joint based on intel, Colter finds himself in some trouble of his own."
+        },
+        {
+          "name": "Missoula",
+          "season": 1,
+          "number": 2,
+          "firstAired": "2024-02-19T05:00:00.000Z",
+          "tvdb_id": 10305002,
+          "rating": "0",
+          "overview": "Colter tracks down a missing young man who has been pulled into a deadly cult and doesn't want to be found.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/2/w780.jpg",
+          "id": "tt13875494:1:2",
+          "released": "2024-02-19T05:00:00.000Z",
+          "episode": 2,
+          "description": "Colter tracks down a missing young man who has been pulled into a deadly cult and doesn't want to be found."
+        },
+        {
+          "name": "Springland",
+          "season": 1,
+          "number": 3,
+          "firstAired": "2024-02-26T05:00:00.000Z",
+          "tvdb_id": 10144080,
+          "rating": "0",
+          "overview": "As Colter helps a young woman locate her free-spirited sister, he digs deeper into how the sister's last days may lead to a dark secret she unearthed in this tight-knit town.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/3/w780.jpg",
+          "id": "tt13875494:1:3",
+          "released": "2024-02-26T05:00:00.000Z",
+          "episode": 3,
+          "description": "As Colter helps a young woman locate her free-spirited sister, he digs deeper into how the sister's last days may lead to a dark secret she unearthed in this tight-knit town."
+        },
+        {
+          "name": "Mt. Shasta",
+          "season": 1,
+          "number": 4,
+          "firstAired": "2024-03-04T05:00:00.000Z",
+          "tvdb_id": 10166667,
+          "rating": "0",
+          "overview": "Colter races against the clock to find the missing teenage son of Reenie's close friend Erika.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/4/w780.jpg",
+          "id": "tt13875494:1:4",
+          "released": "2024-03-04T05:00:00.000Z",
+          "episode": 4,
+          "description": "Colter races against the clock to find the missing teenage son of Reenie's close friend Erika."
+        },
+        {
+          "name": "St. Louis",
+          "season": 1,
+          "number": 5,
+          "firstAired": "2024-03-18T05:00:00.000Z",
+          "tvdb_id": 10311865,
+          "rating": "0",
+          "overview": "The odds are stacked against Colter as he is tasked by a convicted murderer’s teenage daughter to track down a missing witness who could prove her dad’s innocence.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/5/w780.jpg",
+          "id": "tt13875494:1:5",
+          "released": "2024-03-18T05:00:00.000Z",
+          "episode": 5,
+          "description": "The odds are stacked against Colter as he is tasked by a convicted murderer’s teenage daughter to track down a missing witness who could prove her dad’s innocence."
+        },
+        {
+          "name": "Lexington",
+          "season": 1,
+          "number": 6,
+          "firstAired": "2024-03-25T05:00:00.000Z",
+          "tvdb_id": 10166670,
+          "rating": "0",
+          "overview": "Colter reluctantly teams up with his nemesis, fellow reward seeker Billie Matalon, to track down a missing racehorse.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/6/w780.jpg",
+          "id": "tt13875494:1:6",
+          "released": "2024-03-25T05:00:00.000Z",
+          "episode": 6,
+          "description": "Colter reluctantly teams up with his nemesis, fellow reward seeker Billie Matalon, to track down a missing racehorse."
+        },
+        {
+          "name": "Chicago",
+          "season": 1,
+          "number": 7,
+          "firstAired": "2024-04-01T05:00:00.000Z",
+          "tvdb_id": 10367564,
+          "rating": "0",
+          "overview": "Colter, Bobby and Reenie race against time to track down a talented MMA fighter who disappeared while trying to solve her family’s trouble with their visas.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/7/w780.jpg",
+          "id": "tt13875494:1:7",
+          "released": "2024-04-01T05:00:00.000Z",
+          "episode": 7,
+          "description": "Colter, Bobby and Reenie race against time to track down a talented MMA fighter who disappeared while trying to solve her family’s trouble with their visas."
+        },
+        {
+          "name": "Camden",
+          "season": 1,
+          "number": 8,
+          "firstAired": "2024-04-15T05:00:00.000Z",
+          "tvdb_id": 10367565,
+          "rating": "0",
+          "overview": "Colter tracks down a dockworker who went missing two weeks before his wedding following a confrontation with his past.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/8/w780.jpg",
+          "id": "tt13875494:1:8",
+          "released": "2024-04-15T05:00:00.000Z",
+          "episode": 8,
+          "description": "Colter tracks down a dockworker who went missing two weeks before his wedding following a confrontation with his past."
+        },
+        {
+          "name": "Aurora",
+          "season": 1,
+          "number": 9,
+          "firstAired": "2024-04-22T05:00:00.000Z",
+          "tvdb_id": 10419264,
+          "rating": "0",
+          "overview": "When a widower offers a reward to find his only daughter who disappeared three years ago and is presumed dead, Colter’s search leads him into the world of amateur ghost hunting and paranormal activity.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/9/w780.jpg",
+          "id": "tt13875494:1:9",
+          "released": "2024-04-22T05:00:00.000Z",
+          "episode": 9,
+          "description": "When a widower offers a reward to find his only daughter who disappeared three years ago and is presumed dead, Colter’s search leads him into the world of amateur ghost hunting and paranormal activity."
+        },
+        {
+          "name": "Into the Wild",
+          "season": 1,
+          "number": 10,
+          "firstAired": "2024-04-29T05:00:00.000Z",
+          "tvdb_id": 10419265,
+          "rating": "0",
+          "overview": "Colter journeys into the wilderness of Idaho to help track down the owner of an aerial outfitting company’s missing adult children, and friends of Reenie’s father, who were last seen in a plane that took off during bad weather with a mysterious client on board.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/10/w780.jpg",
+          "id": "tt13875494:1:10",
+          "released": "2024-04-29T05:00:00.000Z",
+          "episode": 10,
+          "description": "Colter journeys into the wilderness of Idaho to help track down the owner of an aerial outfitting company’s missing adult children, and friends of Reenie’s father, who were last seen in a plane that took off during bad weather with a mysterious client on board."
+        },
+        {
+          "name": "Beyond the Campus Walls",
+          "season": 1,
+          "number": 11,
+          "firstAired": "2024-05-06T05:00:00.000Z",
+          "tvdb_id": 10419266,
+          "rating": "0",
+          "overview": "When a grad student goes missing after a house party, his friends and family believe he buckled under the pressure of his research grant. But, after consulting with his sister Dr. Dory Shaw, a professor at the school, Colter uncovers a trail of explicit photos and messages that lead him to uncover a dangerous – and deadly – conspiracy on campus",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/11/w780.jpg",
+          "id": "tt13875494:1:11",
+          "released": "2024-05-06T05:00:00.000Z",
+          "episode": 11,
+          "description": "When a grad student goes missing after a house party, his friends and family believe he buckled under the pressure of his research grant. But, after consulting with his sister Dr. Dory Shaw, a professor at the school, Colter uncovers a trail of explicit photos and messages that lead him to uncover a dangerous – and deadly – conspiracy on campus"
+        },
+        {
+          "name": "Off the Books",
+          "season": 1,
+          "number": 12,
+          "firstAired": "2024-05-13T05:00:00.000Z",
+          "tvdb_id": 10419267,
+          "rating": "0",
+          "overview": "Colter is forced to team up with his estranged brother, Russell, who enlists his help to track down a former army buddy who’s gone missing after several weeks of paranoid behavior. The investigation takes the brothers into the world of Special Forces missions, shady off-the-books programs and conspiracy theories, all while they contend with their family’s past.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/12/w780.jpg",
+          "id": "tt13875494:1:12",
+          "released": "2024-05-13T05:00:00.000Z",
+          "episode": 12,
+          "description": "Colter is forced to team up with his estranged brother, Russell, who enlists his help to track down a former army buddy who’s gone missing after several weeks of paranoid behavior. The investigation takes the brothers into the world of Special Forces missions, shady off-the-books programs and conspiracy theories, all while they contend with their family’s past."
+        },
+        {
+          "name": "The Storm",
+          "season": 1,
+          "number": 13,
+          "firstAired": "2024-05-20T05:00:00.000Z",
+          "tvdb_id": 10419268,
+          "rating": "0",
+          "overview": "Colter investigates the disappearance of two amateur storm chasers that the local police have written off as an accidental drowning. Colter’s expert tracking skills lead him to uncover the seedy underbelly of a small town resort.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/1/13/w780.jpg",
+          "id": "tt13875494:1:13",
+          "released": "2024-05-20T05:00:00.000Z",
+          "episode": 13,
+          "description": "Colter investigates the disappearance of two amateur storm chasers that the local police have written off as an accidental drowning. Colter’s expert tracking skills lead him to uncover the seedy underbelly of a small town resort."
+        },
+        {
+          "name": "Out of the Past",
+          "season": 2,
+          "number": 1,
+          "firstAired": "2024-10-14T05:00:00.000Z",
+          "tvdb_id": 10704140,
+          "rating": "0",
+          "overview": "While investigating the strange disappearance of a missing family whose car was found abandoned on the side of the road in the backwoods of Arkansas, Colter makes a shocking discovery about the mother’s past that leads him into the world of organized crime. Also, Reenie opens up her new law firm and enlists Velma’s help in setting up shop.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/1/w780.jpg",
+          "id": "tt13875494:2:1",
+          "released": "2024-10-14T05:00:00.000Z",
+          "episode": 1,
+          "description": "While investigating the strange disappearance of a missing family whose car was found abandoned on the side of the road in the backwoods of Arkansas, Colter makes a shocking discovery about the mother’s past that leads him into the world of organized crime. Also, Reenie opens up her new law firm and enlists Velma’s help in setting up shop."
+        },
+        {
+          "name": "Ontological Shock",
+          "season": 2,
+          "number": 2,
+          "firstAired": "2024-10-21T05:00:00.000Z",
+          "tvdb_id": 10720737,
+          "rating": "0",
+          "overview": "When Colter goes missing during his search for a missing father, Reenie recruits his brother, Russell, for help.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/2/w780.jpg",
+          "id": "tt13875494:2:2",
+          "released": "2024-10-21T05:00:00.000Z",
+          "episode": 2,
+          "description": "When Colter goes missing during his search for a missing father, Reenie recruits his brother, Russell, for help."
+        },
+        {
+          "name": "Bloodlines",
+          "season": 2,
+          "number": 3,
+          "firstAired": "2024-10-28T05:00:00.000Z",
+          "tvdb_id": 10730780,
+          "rating": "0",
+          "overview": "Colter and rival rewardist Billie Matalon team up to find a missing high school baseball star.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/3/w780.jpg",
+          "id": "tt13875494:2:3",
+          "released": "2024-10-28T05:00:00.000Z",
+          "episode": 3,
+          "description": "Colter and rival rewardist Billie Matalon team up to find a missing high school baseball star."
+        },
+        {
+          "name": "Noble Rot",
+          "season": 2,
+          "number": 4,
+          "firstAired": "2024-11-04T05:00:00.000Z",
+          "tvdb_id": 10739467,
+          "rating": "0",
+          "overview": "Reenie gets Colter to take a case involving a woman missing from a high-end wellness retreat in Napa designed for CEOs.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/4/w780.jpg",
+          "id": "tt13875494:2:4",
+          "released": "2024-11-04T05:00:00.000Z",
+          "episode": 4,
+          "description": "Reenie gets Colter to take a case involving a woman missing from a high-end wellness retreat in Napa designed for CEOs."
+        },
+        {
+          "name": "Preternatural",
+          "season": 2,
+          "number": 5,
+          "firstAired": "2024-11-11T05:00:00.000Z",
+          "tvdb_id": 10770390,
+          "rating": "0",
+          "overview": "Colter takes a job locating a missing teen with a unique spiritual gift in an inhospitable mining town.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/5/w780.jpg",
+          "id": "tt13875494:2:5",
+          "released": "2024-11-11T05:00:00.000Z",
+          "episode": 5,
+          "description": "Colter takes a job locating a missing teen with a unique spiritual gift in an inhospitable mining town."
+        },
+        {
+          "name": "Trust Fall",
+          "season": 2,
+          "number": 6,
+          "firstAired": "2024-11-18T05:00:00.000Z",
+          "tvdb_id": 10798858,
+          "rating": "0",
+          "overview": "While searching for missing campers, Colter meets a retired police officer who believes a serial killer is on the loose.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/6/w780.jpg",
+          "id": "tt13875494:2:6",
+          "released": "2024-11-18T05:00:00.000Z",
+          "episode": 6,
+          "description": "While searching for missing campers, Colter meets a retired police officer who believes a serial killer is on the loose."
+        },
+        {
+          "name": "Man's Best Friend",
+          "season": 2,
+          "number": 7,
+          "firstAired": "2024-11-25T05:00:00.000Z",
+          "tvdb_id": 10798859,
+          "rating": "0",
+          "overview": "When Colter finds a lost dog at a gas station in Denver and the dog is subsequently stolen from his truck, Colter makes it his mission to track him down and reunite him with his family.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/7/w780.jpg",
+          "id": "tt13875494:2:7",
+          "released": "2024-11-25T05:00:00.000Z",
+          "episode": 7,
+          "description": "When Colter finds a lost dog at a gas station in Denver and the dog is subsequently stolen from his truck, Colter makes it his mission to track him down and reunite him with his family."
+        },
+        {
+          "name": "The Night Movers",
+          "season": 2,
+          "number": 8,
+          "firstAired": "2024-12-02T05:00:00.000Z",
+          "tvdb_id": 10798860,
+          "rating": "0",
+          "overview": "Colter is tasked with tracking down a \"ghost\" when hired to find a man who seemingly died in a car accident months earlier. Meanwhile, Colter catches a break in his white whale case.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/8/w780.jpg",
+          "id": "tt13875494:2:8",
+          "released": "2024-12-02T05:00:00.000Z",
+          "episode": 8,
+          "description": "Colter is tasked with tracking down a \"ghost\" when hired to find a man who seemingly died in a car accident months earlier. Meanwhile, Colter catches a break in his white whale case."
+        },
+        {
+          "name": "The Disciple",
+          "season": 2,
+          "number": 9,
+          "firstAired": "2025-02-17T05:00:00.000Z",
+          "tvdb_id": 10822909,
+          "rating": "0",
+          "overview": "A new lead in Colter’s white whale case, the disappearance of Gina Picket, brings him and retired cop Keaton back together to track down a serial killer.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/9/w780.jpg",
+          "id": "tt13875494:2:9",
+          "released": "2025-02-17T05:00:00.000Z",
+          "episode": 9,
+          "description": "A new lead in Colter’s white whale case, the disappearance of Gina Picket, brings him and retired cop Keaton back together to track down a serial killer."
+        },
+        {
+          "name": "Nightingale",
+          "season": 2,
+          "number": 10,
+          "firstAired": "2025-02-24T05:00:00.000Z",
+          "tvdb_id": 10974261,
+          "rating": "0",
+          "overview": "After Colter is hired to find a missing singer linked to a violent crime, he discovers his target is a stoic survivalist, not unlike himself.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/10/w780.jpg",
+          "id": "tt13875494:2:10",
+          "released": "2025-02-24T05:00:00.000Z",
+          "episode": 10,
+          "description": "After Colter is hired to find a missing singer linked to a violent crime, he discovers his target is a stoic survivalist, not unlike himself."
+        },
+        {
+          "name": "Shades of Grey",
+          "season": 2,
+          "number": 11,
+          "firstAired": "2025-03-03T05:00:00.000Z",
+          "tvdb_id": 10974262,
+          "rating": "0",
+          "overview": "While tracking the son of a prominent New Jersey cupcake chain founder, Colter gets thrust into the middle of a violent mafia war.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/11/w780.jpg",
+          "id": "tt13875494:2:11",
+          "released": "2025-03-03T05:00:00.000Z",
+          "episode": 11,
+          "description": "While tracking the son of a prominent New Jersey cupcake chain founder, Colter gets thrust into the middle of a violent mafia war."
+        },
+        {
+          "name": "Monster",
+          "season": 2,
+          "number": 12,
+          "firstAired": "2025-03-10T05:00:00.000Z",
+          "tvdb_id": 10974424,
+          "rating": "0",
+          "overview": "Colter is hired to find a mother in Ohio who went missing after tucking her son in for the night.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/12/w780.jpg",
+          "id": "tt13875494:2:12",
+          "released": "2025-03-10T05:00:00.000Z",
+          "episode": 12,
+          "description": "Colter is hired to find a mother in Ohio who went missing after tucking her son in for the night."
+        },
+        {
+          "name": "Neptune",
+          "season": 2,
+          "number": 13,
+          "firstAired": "2025-03-17T05:00:00.000Z",
+          "tvdb_id": 10974425,
+          "rating": "0",
+          "overview": "Colter travels to New York City to find a woman who vanished in the dressing room of an upscale clothing store.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/13/w780.jpg",
+          "id": "tt13875494:2:13",
+          "released": "2025-03-17T05:00:00.000Z",
+          "episode": 13,
+          "description": "Colter travels to New York City to find a woman who vanished in the dressing room of an upscale clothing store."
+        },
+        {
+          "name": "Exodus",
+          "season": 2,
+          "number": 14,
+          "firstAired": "2025-03-24T05:00:00.000Z",
+          "tvdb_id": 11005550,
+          "rating": "0",
+          "overview": "When a teenage musician vanishes in New Orleans, Colter teams up with a local detective and uncovers a chilling mystery involving dark magic.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/14/w780.jpg",
+          "id": "tt13875494:2:14",
+          "released": "2025-03-24T05:00:00.000Z",
+          "episode": 14,
+          "description": "When a teenage musician vanishes in New Orleans, Colter teams up with a local detective and uncovers a chilling mystery involving dark magic."
+        },
+        {
+          "name": "The Grey Goose",
+          "season": 2,
+          "number": 15,
+          "firstAired": "2025-03-31T05:00:00.000Z",
+          "tvdb_id": 11018004,
+          "rating": "0",
+          "overview": "Colter recruits fellow rewardist Billie Matalon to infiltrate a women’s prison in order to gain access to critical information that would help track down an escaped prisoner and her hostage.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/15/w780.jpg",
+          "id": "tt13875494:2:15",
+          "released": "2025-03-31T05:00:00.000Z",
+          "episode": 15,
+          "description": "Colter recruits fellow rewardist Billie Matalon to infiltrate a women’s prison in order to gain access to critical information that would help track down an escaped prisoner and her hostage."
+        },
+        {
+          "name": "The Mercy Seat",
+          "season": 2,
+          "number": 16,
+          "firstAired": "2025-04-14T05:00:00.000Z",
+          "tvdb_id": 11068038,
+          "rating": "0",
+          "overview": "Colter helps an old friend with a search and rescue mission for two missing sisters in the snowy Montana wilderness. Meanwhile, Reenie gets a visit from a new client that challenges her morality.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/16/w780.jpg",
+          "id": "tt13875494:2:16",
+          "released": "2025-04-14T05:00:00.000Z",
+          "episode": 16,
+          "description": "Colter helps an old friend with a search and rescue mission for two missing sisters in the snowy Montana wilderness. Meanwhile, Reenie gets a visit from a new client that challenges her morality."
+        },
+        {
+          "name": "Memories",
+          "season": 2,
+          "number": 17,
+          "firstAired": "2025-04-21T05:00:00.000Z",
+          "tvdb_id": 11068039,
+          "rating": "0",
+          "overview": "Randy enlists Colter’s services for his ex after her best friend goes missing following a night on the town in Reno.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/17/w780.jpg",
+          "id": "tt13875494:2:17",
+          "released": "2025-04-21T05:00:00.000Z",
+          "episode": 17,
+          "description": "Randy enlists Colter’s services for his ex after her best friend goes missing following a night on the town in Reno."
+        },
+        {
+          "name": "Collision",
+          "season": 2,
+          "number": 18,
+          "firstAired": "2025-04-28T05:00:00.000Z",
+          "tvdb_id": 11068040,
+          "rating": "0",
+          "overview": "Colter heads to Willow Creek, Mich., after a worried mother hires him to track down her beauty queen daughter, Riley, who vanished while driving home from work. While investigating at the garden center where Riley works, Colter looks into her modeling past and uncovers that she was hiding a major secret.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/18/w780.jpg",
+          "id": "tt13875494:2:18",
+          "released": "2025-04-28T05:00:00.000Z",
+          "episode": 18,
+          "description": "Colter heads to Willow Creek, Mich., after a worried mother hires him to track down her beauty queen daughter, Riley, who vanished while driving home from work. While investigating at the garden center where Riley works, Colter looks into her modeling past and uncovers that she was hiding a major secret."
+        },
+        {
+          "name": "Rules of the Game",
+          "season": 2,
+          "number": 19,
+          "firstAired": "2025-05-05T05:00:00.000Z",
+          "tvdb_id": 11068041,
+          "rating": "0",
+          "overview": "When Reenie’s client, Leo Sharf, hires Colter to track down his missing assistant before his company launch, the case takes a personal turn and Reenie becomes entangled in a deadly vendetta threatening both of their lives.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/19/w780.jpg",
+          "id": "tt13875494:2:19",
+          "released": "2025-05-05T05:00:00.000Z",
+          "episode": 19,
+          "description": "When Reenie’s client, Leo Sharf, hires Colter to track down his missing assistant before his company launch, the case takes a personal turn and Reenie becomes entangled in a deadly vendetta threatening both of their lives."
+        },
+        {
+          "name": "Echo Ridge",
+          "season": 2,
+          "number": 20,
+          "firstAired": "2025-05-12T05:00:00.000Z",
+          "tvdb_id": 11068042,
+          "rating": "0",
+          "overview": "Colter returns to Echo Ridge to investigate a diner owner's disappearance, only to uncover a decades-old kidnapping and a shocking family secret.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/2/20/w780.jpg",
+          "id": "tt13875494:2:20",
+          "released": "2025-05-12T05:00:00.000Z",
+          "episode": 20,
+          "description": "Colter returns to Echo Ridge to investigate a diner owner's disappearance, only to uncover a decades-old kidnapping and a shocking family secret."
+        },
+        {
+          "name": "The Process (1)",
+          "season": 3,
+          "number": 1,
+          "firstAired": "2025-10-20T05:00:00.000Z",
+          "tvdb_id": 11239512,
+          "rating": "0",
+          "overview": "As Colter grapples with the shocking truth surrounding his father’s death, Russell joins forces with his brother to help track down the missing wife and daughter of one of Reenie’s clients. Their reunion finds them mixed up in a chain of events involving a sinister underground operation known as ‘The Process.’",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/1/w780.jpg",
+          "id": "tt13875494:3:1",
+          "released": "2025-10-20T05:00:00.000Z",
+          "episode": 1,
+          "description": "As Colter grapples with the shocking truth surrounding his father’s death, Russell joins forces with his brother to help track down the missing wife and daughter of one of Reenie’s clients. Their reunion finds them mixed up in a chain of events involving a sinister underground operation known as ‘The Process.’"
+        },
+        {
+          "name": "Leverage (2)",
+          "season": 3,
+          "number": 2,
+          "firstAired": "2025-10-27T05:00:00.000Z",
+          "tvdb_id": 11301007,
+          "rating": "0",
+          "overview": "After discovering they’ve disrupted a sinister underground operation called “The Process,” Colter and Russell must race to find the source behind these chained events and end it once and for all.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/2/w780.jpg",
+          "id": "tt13875494:3:2",
+          "released": "2025-10-27T05:00:00.000Z",
+          "episode": 2,
+          "description": "After discovering they’ve disrupted a sinister underground operation called “The Process,” Colter and Russell must race to find the source behind these chained events and end it once and for all."
+        },
+        {
+          "name": "First Fire",
+          "season": 3,
+          "number": 3,
+          "firstAired": "2025-11-03T05:00:00.000Z",
+          "tvdb_id": 11335275,
+          "rating": "0",
+          "overview": "On Halloween night, when a nurse is murdered and arsonist Heston Koontz disappears from a psychiatric facility, Colter follows a trail of unsettling clues to uncover the truth with assistance from local officer Dundee.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/3/w780.jpg",
+          "id": "tt13875494:3:3",
+          "released": "2025-11-03T05:00:00.000Z",
+          "episode": 3,
+          "description": "On Halloween night, when a nurse is murdered and arsonist Heston Koontz disappears from a psychiatric facility, Colter follows a trail of unsettling clues to uncover the truth with assistance from local officer Dundee."
+        },
+        {
+          "name": "No Man's Land",
+          "season": 3,
+          "number": 4,
+          "firstAired": "2025-11-10T05:00:00.000Z",
+          "tvdb_id": 11349071,
+          "rating": "0",
+          "overview": "When a man disappears in a lawless Arizona desert town, Colter’s investigation uncovers a hidden relationship that draws him into a dangerous power struggle – and leaves him facing the hard conditions of the wilderness.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/4/w780.jpg",
+          "id": "tt13875494:3:4",
+          "released": "2025-11-10T05:00:00.000Z",
+          "episode": 4,
+          "description": "When a man disappears in a lawless Arizona desert town, Colter’s investigation uncovers a hidden relationship that draws him into a dangerous power struggle – and leaves him facing the hard conditions of the wilderness."
+        },
+        {
+          "name": "The Old Ways",
+          "season": 3,
+          "number": 5,
+          "firstAired": "2025-11-17T05:00:00.000Z",
+          "tvdb_id": 11364010,
+          "rating": "0",
+          "overview": "When four teens vanish during a hike in the Santa Cruz Mountains, Colter’s search uncovers a hidden agenda behind their journey, leading him to an off-grid community where all their lives are put in danger.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/5/w780.jpg",
+          "id": "tt13875494:3:5",
+          "released": "2025-11-17T05:00:00.000Z",
+          "episode": 5,
+          "description": "When four teens vanish during a hike in the Santa Cruz Mountains, Colter’s search uncovers a hidden agenda behind their journey, leading him to an off-grid community where all their lives are put in danger."
+        },
+        {
+          "name": "Angel",
+          "season": 3,
+          "number": 6,
+          "firstAired": "2025-11-24T05:00:00.000Z",
+          "tvdb_id": 11407126,
+          "rating": "0",
+          "overview": "When a crime scene cleaner disappears, Colter discovers her fascination with true crime, which may have led her into dangerous territory. As he follows her trail, Colter uncovers a group of amateur sleuths whose hunt for a killer puts everyone at risk.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/6/w780.jpg",
+          "id": "tt13875494:3:6",
+          "released": "2025-11-24T05:00:00.000Z",
+          "episode": 6,
+          "description": "When a crime scene cleaner disappears, Colter discovers her fascination with true crime, which may have led her into dangerous territory. As he follows her trail, Colter uncovers a group of amateur sleuths whose hunt for a killer puts everyone at risk."
+        },
+        {
+          "name": "Eat the Rich",
+          "season": 3,
+          "number": 7,
+          "firstAired": "2025-12-01T05:00:00.000Z",
+          "tvdb_id": 11435272,
+          "rating": "0",
+          "overview": "When chasing down leads about his father’s past, Colter meets a man desperate to find his daughter who vanished while working a courier route. As Colter retraces his steps, he’s pulled into an orbit of a wealthy family and their ruthless fixer, who will stop at nothing to keep their secrets buried.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/7/w780.jpg",
+          "id": "tt13875494:3:7",
+          "released": "2025-12-01T05:00:00.000Z",
+          "episode": 7,
+          "description": "When chasing down leads about his father’s past, Colter meets a man desperate to find his daughter who vanished while working a courier route. As Colter retraces his steps, he’s pulled into an orbit of a wealthy family and their ruthless fixer, who will stop at nothing to keep their secrets buried."
+        },
+        {
+          "name": "Eurydice",
+          "season": 3,
+          "number": 8,
+          "firstAired": "2025-12-08T05:00:00.000Z",
+          "tvdb_id": 11444860,
+          "rating": "0",
+          "overview": "When a grieving mother becomes the prime suspect in her missing daughter’s murder, Colter sets out to find the true culprit and prove her innocence.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/8/w780.jpg",
+          "id": "tt13875494:3:8",
+          "released": "2025-12-08T05:00:00.000Z",
+          "episode": 8,
+          "description": "When a grieving mother becomes the prime suspect in her missing daughter’s murder, Colter sets out to find the true culprit and prove her innocence."
+        },
+        {
+          "name": "Good Trouble (1)",
+          "season": 3,
+          "number": 9,
+          "firstAired": "2025-12-15T05:00:00.000Z",
+          "tvdb_id": 11460126,
+          "rating": "0",
+          "overview": "When Colter's old friend Keaton asks for help finding his former partner, they uncover a trail of bodies and a conspiracy that runs deeper than they could've imagined.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/9/w780.jpg",
+          "id": "tt13875494:3:9",
+          "released": "2025-12-15T05:00:00.000Z",
+          "episode": 9,
+          "description": "When Colter's old friend Keaton asks for help finding his former partner, they uncover a trail of bodies and a conspiracy that runs deeper than they could've imagined."
+        },
+        {
+          "name": "The Fallout (2)",
+          "season": 3,
+          "number": 10,
+          "firstAired": "2026-03-02T05:00:00.000Z",
+          "tvdb_id": 11462686,
+          "rating": "0",
+          "overview": "Injured and framed for a string of murders, Colter, cut off from Reenie and Randy, must rely on unexpected ally Billie to stop a relentless assassin, uncovering a murky truth where justice and vengeance blur.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/10/w780.jpg",
+          "id": "tt13875494:3:10",
+          "released": "2026-03-02T05:00:00.000Z",
+          "episode": 10,
+          "description": "Injured and framed for a string of murders, Colter, cut off from Reenie and Randy, must rely on unexpected ally Billie to stop a relentless assassin, uncovering a murky truth where justice and vengeance blur."
+        },
+        {
+          "name": "To the Bone",
+          "season": 3,
+          "number": 11,
+          "firstAired": "2026-03-09T05:00:00.000Z",
+          "tvdb_id": 11496452,
+          "rating": "0",
+          "overview": "When an 18-year-old goes missing from his family’s restaurant, Colter uncovers the teen’s underground fake ID business and the secret life he’s been hiding from his parents.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/11/w780.jpg",
+          "id": "tt13875494:3:11",
+          "released": "2026-03-09T05:00:00.000Z",
+          "episode": 11,
+          "description": "When an 18-year-old goes missing from his family’s restaurant, Colter uncovers the teen’s underground fake ID business and the secret life he’s been hiding from his parents."
+        },
+        {
+          "name": "Do No Harm",
+          "season": 3,
+          "number": 12,
+          "firstAired": "2026-03-16T05:00:00.000Z",
+          "tvdb_id": 11563952,
+          "rating": "0",
+          "overview": "When a doctor vanishes after her shift, Colter uncovers a trail of stolen drugs and disguises revealing a calculated revenge plot.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/12/w780.jpg",
+          "id": "tt13875494:3:12",
+          "released": "2026-03-16T05:00:00.000Z",
+          "episode": 12,
+          "description": "When a doctor vanishes after her shift, Colter uncovers a trail of stolen drugs and disguises revealing a calculated revenge plot."
+        },
+        {
+          "name": "Breakaway",
+          "season": 3,
+          "number": 13,
+          "firstAired": "2026-03-23T05:00:00.000Z",
+          "tvdb_id": 11610387,
+          "rating": "0",
+          "overview": "After Baxter, a veteran stuntman, disappears following a risky stunt, his girlfriend, Laura, calls Colter to investigate a B-movie set, uncovering shady producers and a trail that leads into a dangerous underground world.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/13/w780.jpg",
+          "id": "tt13875494:3:13",
+          "released": "2026-03-23T05:00:00.000Z",
+          "episode": 13,
+          "description": "After Baxter, a veteran stuntman, disappears following a risky stunt, his girlfriend, Laura, calls Colter to investigate a B-movie set, uncovering shady producers and a trail that leads into a dangerous underground world."
+        },
+        {
+          "name": "The Field Trip",
+          "season": 3,
+          "number": 14,
+          "firstAired": "2026-03-30T05:00:00.000Z",
+          "tvdb_id": 11652211,
+          "rating": "0",
+          "overview": "When a young boy disappears during a school field trip at the aquarium, Colter must navigate a volatile father’s desperation to find his son.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/14/w780.jpg",
+          "id": "tt13875494:3:14",
+          "released": "2026-03-30T05:00:00.000Z",
+          "episode": 14,
+          "description": "When a young boy disappears during a school field trip at the aquarium, Colter must navigate a volatile father’s desperation to find his son."
+        },
+        {
+          "name": "No Good Deed",
+          "season": 3,
+          "number": 15,
+          "firstAired": "2026-04-06T05:00:00.000Z",
+          "tvdb_id": 11661403,
+          "rating": "0",
+          "overview": "Randy enlists Colter’s help when one of his closest friends vanishes while under house arrest.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/15/w780.jpg",
+          "id": "tt13875494:3:15",
+          "released": "2026-04-06T05:00:00.000Z",
+          "episode": 15,
+          "description": "Randy enlists Colter’s help when one of his closest friends vanishes while under house arrest."
+        },
+        {
+          "name": "Struck",
+          "season": 3,
+          "number": 16,
+          "firstAired": "2026-04-13T05:00:00.000Z",
+          "tvdb_id": 11675913,
+          "rating": "0",
+          "overview": "A pregnant wife reaches out to Colter to find her missing husband.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/16/w780.jpg",
+          "id": "tt13875494:3:16",
+          "released": "2026-04-13T05:00:00.000Z",
+          "episode": 16,
+          "description": "A pregnant wife reaches out to Colter to find her missing husband."
+        },
+        {
+          "name": "Daughters",
+          "season": 3,
+          "number": 17,
+          "firstAired": "2026-04-20T05:00:00.000Z",
+          "tvdb_id": 11688255,
+          "rating": "0",
+          "overview": "Colter is hired to find a teen girl who went missing from a friend’s house during a tragic triple homicide.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/17/w780.jpg",
+          "id": "tt13875494:3:17",
+          "released": "2026-04-20T05:00:00.000Z",
+          "episode": 17,
+          "description": "Colter is hired to find a teen girl who went missing from a friend’s house during a tragic triple homicide."
+        },
+        {
+          "name": "Alaskan Wild",
+          "season": 3,
+          "number": 18,
+          "firstAired": "2026-04-27T05:00:00.000Z",
+          "tvdb_id": 11701817,
+          "rating": "0",
+          "overview": "While searching for answers about his father, Colter is pulled into a tense case involving a teenage boy’s missing parents, uncovering a dangerous situation far more complicated than it first appears.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/18/w780.jpg",
+          "id": "tt13875494:3:18",
+          "released": "2026-04-27T05:00:00.000Z",
+          "episode": 18,
+          "description": "While searching for answers about his father, Colter is pulled into a tense case involving a teenage boy’s missing parents, uncovering a dangerous situation far more complicated than it first appears."
+        },
+        {
+          "name": "Chain of Custody",
+          "season": 3,
+          "number": 19,
+          "firstAired": "2026-05-04T05:00:00.000Z",
+          "tvdb_id": 11701818,
+          "rating": "0",
+          "overview": "Reenie hires Colter to locate the star witness of her and Maxine’s lawsuit against a corrupt real estate developer on the eve of trial.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/19/w780.jpg",
+          "id": "tt13875494:3:19",
+          "released": "2026-05-04T05:00:00.000Z",
+          "episode": 19,
+          "description": "Reenie hires Colter to locate the star witness of her and Maxine’s lawsuit against a corrupt real estate developer on the eve of trial."
+        },
+        {
+          "name": "Reclamation",
+          "season": 3,
+          "number": 20,
+          "firstAired": "2026-05-11T05:00:00.000Z",
+          "tvdb_id": 11701819,
+          "rating": "0",
+          "overview": "Colter’s search for a woman who went missing from a rehab facility takes an unexpected turn when he runs into Billie, uncovering a possible link between each of their cases.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/20/w780.jpg",
+          "id": "tt13875494:3:20",
+          "released": "2026-05-11T05:00:00.000Z",
+          "episode": 20,
+          "description": "Colter’s search for a woman who went missing from a rehab facility takes an unexpected turn when he runs into Billie, uncovering a possible link between each of their cases."
+        },
+        {
+          "name": "Chrono Stasis (1)",
+          "season": 3,
+          "number": 21,
+          "firstAired": "2026-05-18T05:00:00.000Z",
+          "tvdb_id": 11708499,
+          "rating": "0",
+          "overview": "Colter and Russell unite in a personal mission to uncover their father’s mysterious work.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/21/w780.jpg",
+          "id": "tt13875494:3:21",
+          "released": "2026-05-18T05:00:00.000Z",
+          "episode": 21,
+          "description": "Colter and Russell unite in a personal mission to uncover their father’s mysterious work."
+        },
+        {
+          "name": "The Best Ones (2)",
+          "season": 3,
+          "number": 22,
+          "firstAired": "2026-05-25T05:00:00.000Z",
+          "tvdb_id": 11708500,
+          "rating": "0",
+          "overview": "Colter and Russell search for a victim of a nefarious research project.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/3/22/w780.jpg",
+          "id": "tt13875494:3:22",
+          "released": "2026-05-25T05:00:00.000Z",
+          "episode": 22,
+          "description": "Colter and Russell search for a victim of a nefarious research project."
+        },
+        {
+          "name": "Safe Harbor",
+          "season": 4,
+          "number": 1,
+          "firstAired": "2026-10-05T05:00:00.000Z",
+          "tvdb_id": 11902020,
+          "rating": "0",
+          "overview": "Colter’s search for a teenage boy’s missing father leads him to a dangerous criminal operation at the Port of Los Angeles.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/1/w780.jpg",
+          "id": "tt13875494:4:1",
+          "released": "2026-10-05T05:00:00.000Z",
+          "episode": 1,
+          "description": "Colter’s search for a teenage boy’s missing father leads him to a dangerous criminal operation at the Port of Los Angeles."
+        },
+        {
+          "name": "Switchback",
+          "season": 4,
+          "number": 2,
+          "firstAired": "2026-10-12T05:00:00.000Z",
+          "tvdb_id": 11928699,
+          "rating": "0",
+          "overview": "When a mother and daughter vanish while hiking the Pacific Divide Trail, Colter races to find them after discovering they were being stalked.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/2/w780.jpg",
+          "id": "tt13875494:4:2",
+          "released": "2026-10-12T05:00:00.000Z",
+          "episode": 2,
+          "description": "When a mother and daughter vanish while hiking the Pacific Divide Trail, Colter races to find them after discovering they were being stalked."
+        },
+        {
+          "name": "Original Parts",
+          "season": 4,
+          "number": 3,
+          "firstAired": "2026-10-19T05:00:00.000Z",
+          "tvdb_id": 11991994,
+          "rating": "0",
+          "overview": "Colter gets hired to track down a woman who disappeared after an argument with her husband in a deserted Texas town. Meanwhile, an unexpected reunion with an old friend, Adam Shevlin, forces Reenie to revisit her past.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/3/w780.jpg",
+          "id": "tt13875494:4:3",
+          "released": "2026-10-19T05:00:00.000Z",
+          "episode": 3,
+          "description": "Colter gets hired to track down a woman who disappeared after an argument with her husband in a deserted Texas town. Meanwhile, an unexpected reunion with an old friend, Adam Shevlin, forces Reenie to revisit her past."
+        },
+        {
+          "name": "Purification",
+          "season": 4,
+          "number": 4,
+          "firstAired": "2026-10-26T05:00:00.000Z",
+          "tvdb_id": 11991995,
+          "rating": "0",
+          "overview": "When a woman disappears after helping a terrified teenage runaway, Colter uncovers a disturbing case of abuse and embarks on a desperate search to save them both.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/4/w780.jpg",
+          "id": "tt13875494:4:4",
+          "released": "2026-10-26T05:00:00.000Z",
+          "episode": 4,
+          "description": "When a woman disappears after helping a terrified teenage runaway, Colter uncovers a disturbing case of abuse and embarks on a desperate search to save them both."
+        },
+        {
+          "name": "Need to Know",
+          "season": 4,
+          "number": 5,
+          "firstAired": "2026-11-02T05:00:00.000Z",
+          "tvdb_id": 11991996,
+          "rating": "0",
+          "overview": "After a military contractor's wife and daughter are kidnapped, Colter discovers Russell is investigating a related lead. The Shaw brothers join forces to uncover a high-stakes cover-up.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/5/w780.jpg",
+          "id": "tt13875494:4:5",
+          "released": "2026-11-02T05:00:00.000Z",
+          "episode": 5,
+          "description": "After a military contractor's wife and daughter are kidnapped, Colter discovers Russell is investigating a related lead. The Shaw brothers join forces to uncover a high-stakes cover-up."
+        },
+        {
+          "name": "Blind Spot",
+          "season": 4,
+          "number": 6,
+          "firstAired": "2026-11-16T05:00:00.000Z",
+          "tvdb_id": 12027904,
+          "rating": "0",
+          "overview": "When Reenie enlists Colter’s help to locate her mentor’s estranged daughter, the search uncovers a dangerous conspiracy.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/6/w780.jpg",
+          "id": "tt13875494:4:6",
+          "released": "2026-11-16T05:00:00.000Z",
+          "episode": 6,
+          "description": "When Reenie enlists Colter’s help to locate her mentor’s estranged daughter, the search uncovers a dangerous conspiracy."
+        },
+        {
+          "name": "That's the Job",
+          "season": 4,
+          "number": 7,
+          "firstAired": "2026-11-23T05:00:00.000Z",
+          "tvdb_id": 12027905,
+          "rating": "0",
+          "overview": "When Colter is hired to locate the owner of a small South Carolina Inn, the search puts him at odds with rival tracker Luke, whose reckless methods and questionable morals have put innocent lives at risk.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/7/w780.jpg",
+          "id": "tt13875494:4:7",
+          "released": "2026-11-23T05:00:00.000Z",
+          "episode": 7,
+          "description": "When Colter is hired to locate the owner of a small South Carolina Inn, the search puts him at odds with rival tracker Luke, whose reckless methods and questionable morals have put innocent lives at risk."
+        },
+        {
+          "name": "Hide and Seek",
+          "season": 4,
+          "number": 8,
+          "firstAired": "2026-11-30T05:00:00.000Z",
+          "tvdb_id": 12052122,
+          "rating": "0",
+          "overview": "When two children and their au pair vanish from a wealthy Maryland family’s home, Colter races against the clock to find them. Meanwhile, Reenie calls in a family favor while investigating the circumstances surrounding the death of Mel’s mother.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/8/w780.jpg",
+          "id": "tt13875494:4:8",
+          "released": "2026-11-30T05:00:00.000Z",
+          "episode": 8,
+          "description": "When two children and their au pair vanish from a wealthy Maryland family’s home, Colter races against the clock to find them. Meanwhile, Reenie calls in a family favor while investigating the circumstances surrounding the death of Mel’s mother."
+        },
+        {
+          "name": "The Retreat",
+          "season": 4,
+          "number": 9,
+          "firstAired": "2026-12-07T05:00:00.000Z",
+          "tvdb_id": 12052123,
+          "rating": "0",
+          "overview": "When a corporate wilderness retreat takes a dangerous turn in the Sierra Nevada Mountains, Colter reunites with search-and-rescue expert Roger McLaren to search for the missing employees. Meanwhile, Reenie reconnects with her estranged sister Charlotte and confronts lingering questions about Adam.",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/9/w780.jpg",
+          "id": "tt13875494:4:9",
+          "released": "2026-12-07T05:00:00.000Z",
+          "episode": 9,
+          "description": "When a corporate wilderness retreat takes a dangerous turn in the Sierra Nevada Mountains, Colter reunites with search-and-rescue expert Roger McLaren to search for the missing employees. Meanwhile, Reenie reconnects with her estranged sister Charlotte and confronts lingering questions about Adam."
+        },
+        {
+          "name": "Kill Switch",
+          "season": 4,
+          "number": 10,
+          "firstAired": "2027-01-18T05:00:00.000Z",
+          "tvdb_id": 12072304,
+          "rating": "0",
+          "overview": "",
+          "thumbnail": "https://episodes.metahub.space/tt13875494/4/10/w780.jpg",
+          "id": "tt13875494:4:10",
+          "released": "2027-01-18T05:00:00.000Z",
+          "episode": 10
+        }
+      ],
+      "trailerStreams": [
+        {
+          "title": "Tracker",
+          "ytId": "Hw6RlFyPbNM"
+        }
+      ],
+      "links": [
+        {
+          "name": "Resmî platform",
+          "category": "Platform",
+          "url": "https://www.disneyplus.com/tr-tr"
+        }
+      ],
+      "behaviorHints": {
+        "defaultVideoId": null,
+        "hasScheduledVideos": true
+      },
+      "posterShape": "poster"
+    }
+  ]
+}

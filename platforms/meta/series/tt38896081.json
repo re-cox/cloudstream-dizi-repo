@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "id": "tt38896081",
+    "imdb_id": "tt38896081",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/hhsoEvFlf8R4ivCWEsusaovmkMG.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt38896081/img",
+    "background": "https://image.tmdb.org/t/p/w1280/6kLHb8RIxJrKaawzp4Sm0cy4jaY.jpg",
+    "moviedb_id": 305062,
+    "name": "Karma",
+    "description": "30’lu yaşların sonunda olan ve aynı evi paylaşan iki yakın arkadaş Erman ve Ozan’ın hayatları, dışarıdan bakıldığında düzenli ve sıradan görünür. Fakat yaşadıkları apartman ve çevresindeki insanlar yüzünden her günleri hiç ummadıkları bir kaosa dönüşür. “Karma”, sakin tavırları ve çözüm odaklı bakışlarıyla bu kaosun üstesinden gelen iki arkadaşın hikayesini anlatıyor.",
+    "genres": [
+      "Komedi"
+    ],
+    "releaseInfo": "2025",
+    "status": "Continuing",
+    "trailers": [],
+    "cast": [
+      "Anıl Çelik",
+      "Serkan Dağlı",
+      "Selin Türkmen"
+    ],
+    "credits_cast": [
+      {
+        "character": "Erman",
+        "name": "Anıl Çelik",
+        "profile_path": "/xALa3e9oRiwOWODoAEjyUzN78V1.jpg",
+        "id": 2072075
+      },
+      {
+        "character": "Ozan",
+        "name": "Serkan Dağlı",
+        "profile_path": "/9uRDAaqq29lqGRXwFksDj09Q4sk.jpg",
+        "id": 3606496
+      },
+      {
+        "character": "Cansu",
+        "name": "Selin Türkmen",
+        "profile_path": "/zv3SMqxYZ9OG2amqJv2nASgkcAl.jpg",
+        "id": 3993774
+      },
+      {
+        "character": "İpek",
+        "name": "Öznur Serçeler",
+        "profile_path": "/cW7R6D12Gltl07YdQT8gg5SjRaS.jpg",
+        "id": 1760504
+      },
+      {
+        "character": "Tolga",
+        "name": "Fatih Altun",
+        "profile_path": null,
+        "id": 6475933
+      }
+    ],
+    "credits_crew": [],
+    "director": [],
+    "videos": [
+      {
+        "id": "tt38896081:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2025-11-07T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/1/w780.jpg",
+        "moviedb_id": 6662613
+      },
+      {
+        "id": "tt38896081:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2025-11-14T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/2/w780.jpg",
+        "moviedb_id": 6663914
+      },
+      {
+        "id": "tt38896081:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2025-11-21T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/3/w780.jpg",
+        "moviedb_id": 6663915
+      },
+      {
+        "id": "tt38896081:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2025-11-28T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/4/w780.jpg",
+        "moviedb_id": 6719622
+      },
+      {
+        "id": "tt38896081:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2025-12-05T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/5/w780.jpg",
+        "moviedb_id": 6719623
+      },
+      {
+        "id": "tt38896081:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2025-12-12T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/6/w780.jpg",
+        "moviedb_id": 6759191
+      },
+      {
+        "id": "tt38896081:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2025-12-26T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/7/w780.jpg",
+        "moviedb_id": 6772404
+      },
+      {
+        "id": "tt38896081:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2025-12-26T00:00:01.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/8/w780.jpg",
+        "moviedb_id": 6772406
+      },
+      {
+        "id": "tt38896081:1:9",
+        "title": "Episode 9",
+        "season": 1,
+        "episode": 9,
+        "number": 9,
+        "released": "2025-12-26T00:00:02.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/1/9/w780.jpg",
+        "moviedb_id": 6772407
+      },
+      {
+        "id": "tt38896081:2:1",
+        "title": "Episode 1",
+        "season": 2,
+        "episode": 1,
+        "number": 1,
+        "released": "2026-10-09T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/1/w780.jpg",
+        "moviedb_id": 7930993
+      },
+      {
+        "id": "tt38896081:2:2",
+        "title": "Episode 2",
+        "season": 2,
+        "episode": 2,
+        "number": 2,
+        "released": "2026-10-16T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/2/w780.jpg",
+        "moviedb_id": 7959003
+      },
+      {
+        "id": "tt38896081:2:3",
+        "title": "Episode 3",
+        "season": 2,
+        "episode": 3,
+        "number": 3,
+        "released": "2026-10-23T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/3/w780.jpg",
+        "moviedb_id": 7998206
+      },
+      {
+        "id": "tt38896081:2:4",
+        "title": "Episode 4",
+        "season": 2,
+        "episode": 4,
+        "number": 4,
+        "released": "2026-10-30T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/4/w780.jpg",
+        "moviedb_id": 8050270
+      },
+      {
+        "id": "tt38896081:2:5",
+        "title": "Episode 5",
+        "season": 2,
+        "episode": 5,
+        "number": 5,
+        "released": "2026-11-06T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/5/w780.jpg",
+        "moviedb_id": 8082464
+      },
+      {
+        "id": "tt38896081:2:6",
+        "title": "Episode 6",
+        "season": 2,
+        "episode": 6,
+        "number": 6,
+        "released": "2026-11-13T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/6/w780.jpg",
+        "moviedb_id": 8141813
+      },
+      {
+        "id": "tt38896081:2:7",
+        "title": "Episode 7",
+        "season": 2,
+        "episode": 7,
+        "number": 7,
+        "released": "2026-11-20T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/7/w780.jpg",
+        "moviedb_id": 8157387
+      }
+    ],
+    "imdbRating": "5.2",
+    "country": "Turkey",
+    "slug": "series/karma-38896081",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

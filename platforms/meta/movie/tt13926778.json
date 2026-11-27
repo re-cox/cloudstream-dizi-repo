@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "id": "tt13926778",
+    "imdb_id": "tt13926778",
+    "type": "movie",
+    "poster": "https://image.tmdb.org/t/p/w500/b6a3HjO3jG3n09wu4Gy1ZMj2Aqu.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt13926778/img",
+    "background": "https://image.tmdb.org/t/p/w1280/bzH0oMHvN3xov8BYTkv3WLpjT6b.jpg",
+    "moviedb_id": 811273,
+    "name": "Nusaybin Cinleri",
+    "description": "“Nusaybin Cinleri” din, batıl ve tarihin aynı anda yaşandığı Nusaybin Gırnavaz’da, gürül gürül çağlayan derenin ardındaki rüzgârlı tepede; imamlar, papazlar ve köylülerin anlattığı ortak bir masal.",
+    "genres": [
+      "Belgesel"
+    ],
+    "releaseInfo": "2021",
+    "trailers": [],
+    "cast": [],
+    "credits_cast": [],
+    "credits_crew": [],
+    "director": [],
+    "imdbRating": "4.4",
+    "runtime": "45 min",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "movie/nusaybin-cinleri-13926778",
+    "behaviorHints": {
+      "defaultVideoId": "tt13926778",
+      "hasScheduledVideos": false
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}

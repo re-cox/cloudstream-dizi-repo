@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "tt35512499",
+    "imdb_id": "tt35512499",
+    "type": "movie",
+    "poster": "https://image.tmdb.org/t/p/w500/sqtFKaktHBb52pR3jygsjDAPJ1o.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt35512499/img",
+    "background": "https://image.tmdb.org/t/p/w1280/7cHPvy3aF1mDMX1zqmZRt8YE7Vr.jpg",
+    "moviedb_id": 1316427,
+    "name": "7 Dogs",
+    "description": "Orta Doğu'ya yayılması planlanan son derece tehlikeli yeni bir uyuşturucuyu durdurmak için güçlerini birleştirmek zorunda kalan iki düşman, kendilerini dünyanın farklı şehirlerine uzanan ölümcül bir operasyonun içinde bulur.",
+    "genres": [
+      "Aksiyon",
+      "Komedi"
+    ],
+    "releaseInfo": "2026",
+    "runtime": "123 min",
+    "trailers": [
+      {
+        "source": "Kki2D_5l5bM",
+        "type": "Trailer"
+      }
+    ],
+    "cast": [
+      "Ahmad Ezz",
+      "Karim Abdel Aziz",
+      "Monica Bellucci"
+    ],
+    "credits_cast": [
+      {
+        "character": "Khaled Al-Azzazi",
+        "name": "Ahmad Ezz",
+        "profile_path": "/mgQhox7AbzVsQ8xeTZvkK5Gvkd4.jpg",
+        "id": 232318
+      },
+      {
+        "character": "Ghali Abu Daoud",
+        "name": "Karim Abdel Aziz",
+        "profile_path": "/2BOyYiFfU1nCPjehs2RCCTmXIxu.jpg",
+        "id": 140869
+      },
+      {
+        "character": "Giulia",
+        "name": "Monica Bellucci",
+        "profile_path": "/7g3k3u2gZpE7XU8GRYwHDuN1jlM.jpg",
+        "id": 28782
+      },
+      {
+        "character": "General Nasser",
+        "name": "Nasser Al Qasabi",
+        "profile_path": "/hNo0lzvLp323QjomlcS3Dw6rSbA.jpg",
+        "id": 1674946
+      },
+      {
+        "character": "General Sabri",
+        "name": "Sayed Ragab",
+        "profile_path": "/r6zPbQX4Rj4Y1ynk5Ym4kfdYBpq.jpg",
+        "id": 1186525
+      },
+      {
+        "character": "",
+        "name": "Tara Emad",
+        "profile_path": "/oNS3ui8NT6VWPIDERi2igvN82Tf.jpg",
+        "id": 1622832
+      },
+      {
+        "character": "Roman Marks",
+        "name": "Giancarlo Esposito",
+        "profile_path": "/MJOo4QZgMAb3y8QzOUDVFQusQZ.jpg",
+        "id": 4808
+      },
+      {
+        "character": "",
+        "name": "Max Huang",
+        "profile_path": "/pHntB82hNVVKZtTAUgUKr2KE1Zt.jpg",
+        "id": 1358974
+      },
+      {
+        "character": "Johar",
+        "name": "Salman Khan",
+        "profile_path": "/gxKwCCcs777HzsXRpdGsBV87pXn.jpg",
+        "id": 42802
+      },
+      {
+        "character": "Ranjeet",
+        "name": "Sanjay Dutt",
+        "profile_path": "/70viNBvKHpX1kMZcfIwULqWnfdM.jpg",
+        "id": 85881
+      }
+    ],
+    "credits_crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Adil El Arbi",
+        "profile_path": "/hpl12TXFDUjzomftx7zST3M2aLg.jpg",
+        "id": 1399841
+      },
+      {
+        "department": "Directing",
+        "job": "Director",
+        "name": "Bilall Fallah",
+        "profile_path": "/thwiN6FPRkCtzrP7PrmrwaEIFtv.jpg",
+        "id": 1399842
+      },
+      {
+        "department": "Production",
+        "job": "Producer",
+        "name": "Ivan Atkinson",
+        "profile_path": "/1s67aojq4gdlUTQHN0NPBxe6bNM.jpg",
+        "id": 2037427
+      }
+    ],
+    "director": [
+      "Adil El Arbi",
+      "Bilall Fallah"
+    ],
+    "imdbRating": "5.5",
+    "language": "Arabic, English",
+    "country": "Saudi Arabia, Egypt",
+    "slug": "movie/7-dogs-35512499",
+    "behaviorHints": {
+      "defaultVideoId": "tt35512499",
+      "hasScheduledVideos": false
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ]
+  }
+}

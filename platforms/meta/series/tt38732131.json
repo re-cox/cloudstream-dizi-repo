@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "id": "tt38732131",
+    "imdb_id": "tt38732131",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/5UCLCdz8CMTnrKrERAWUkhZhySQ.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt38732131/img",
+    "background": "https://image.tmdb.org/t/p/w1280/rMvfkMMITQXIMm44epyRaGwMaNw.jpg",
+    "moviedb_id": 320754,
+    "name": "Organize İşler",
+    "description": "Ucunda hazine olan gizemli harita gün yüzüne çıkınca, bu “mesleği” geride bırakmaya niyetli organize suç duayeni, son bir vurguna imza atmaya karar verir.",
+    "genres": [
+      "Komedi",
+      "Suç",
+      "Aksiyon & Macera"
+    ],
+    "releaseInfo": "2026",
+    "status": "Continuing",
+    "trailers": [
+      {
+        "source": "bCxYPFYb_zU",
+        "type": "Trailer"
+      }
+    ],
+    "cast": [
+      "Yılmaz Erdoğan",
+      "Kıvanç Tatlıtuğ",
+      "Ezgi Mola"
+    ],
+    "credits_cast": [
+      {
+        "character": "Asım Noyan",
+        "name": "Yılmaz Erdoğan",
+        "profile_path": "/nl7WulHPoP6bw4phMwp0VuuJgyL.jpg",
+        "id": 99314
+      },
+      {
+        "character": "Sarı Saruhan",
+        "name": "Kıvanç Tatlıtuğ",
+        "profile_path": "/rs7Z3PKa82UhKGQLrBNAy0JAWV5.jpg",
+        "id": 1078769
+      },
+      {
+        "character": "Lerzan Berrak",
+        "name": "Ezgi Mola",
+        "profile_path": "/dXZJOJr8bpUaCyUEBpNKs8e1Utx.jpg",
+        "id": 1255742
+      },
+      {
+        "character": "Nazlı Noyan",
+        "name": "Bensu Soral",
+        "profile_path": "/ti3PfqOgXmbJIQtwQl1yH5i1WnU.jpg",
+        "id": 1584271
+      },
+      {
+        "character": "Arıza Rıza",
+        "name": "Rıza Kocaoğlu",
+        "profile_path": "/b0Bp9W1VIaVzCzzUCMwBc7fe005.jpg",
+        "id": 145735
+      },
+      {
+        "character": "",
+        "name": "Kubilay Aka",
+        "profile_path": "/mSk2nqlDcdEJDbWKdSUk3B2GpWV.jpg",
+        "id": 1930511
+      },
+      {
+        "character": "",
+        "name": "Burcu Özberk",
+        "profile_path": "/wDhKUUR7pRzgVolACed0YnSozbL.jpg",
+        "id": 1522700
+      },
+      {
+        "character": "",
+        "name": "Uraz Kaygılaroğlu",
+        "profile_path": "/7rdov56gMxgsBhOMeqdwv1cgOiW.jpg",
+        "id": 1258831
+      },
+      {
+        "character": "",
+        "name": "Demet Akbağ",
+        "profile_path": "/eGuozRn0wfZlzxVBlLigT0yI8Zh.jpg",
+        "id": 59754
+      },
+      {
+        "character": "",
+        "name": "Şükran Ovalı",
+        "profile_path": "/2mq5fq3GEoqGWjSvNjTl7nZ7eL3.jpg",
+        "id": 1042721
+      }
+    ],
+    "credits_crew": [],
+    "director": [],
+    "videos": [
+      {
+        "id": "tt38732131:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2026-10-16T00:00:00.000Z",
+        "overview": "Asım and his gang get their hands on a mysterious map believed to lead to a Karun treasure — but is the relic real or just an old piece of leather?",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/1/w780.jpg",
+        "moviedb_id": 7190408
+      },
+      {
+        "id": "tt38732131:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2026-10-16T00:00:01.000Z",
+        "overview": "Still unsure about the validity of the map, Asım decides to recruit the expertise of Sado — the chaotic leader of the rule-breaking Gebeş family.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/2/w780.jpg",
+        "moviedb_id": 7843644
+      },
+      {
+        "id": "tt38732131:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2026-10-16T00:00:02.000Z",
+        "overview": "The chase for a prized bird begins, when Asım's best chance at some quick cash takes flight. Nefise Balamar and Asım strike a deal for the coveted map.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/3/w780.jpg",
+        "moviedb_id": 7843645
+      },
+      {
+        "id": "tt38732131:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2026-10-16T00:00:03.000Z",
+        "overview": "Saruhan traps Asım in a water tank as punishment, but Sampiyon makes a well-timed appearance. A kidnapped cryptologist reveals the myth behind the map.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/4/w780.jpg",
+        "moviedb_id": 7843646
+      },
+      {
+        "id": "tt38732131:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2026-10-16T00:00:04.000Z",
+        "overview": "Asım's delicate state encourages Nazlı to finally make amends with her father. Nefise finds out that having a copy of the map is of no use to her.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/5/w780.jpg",
+        "moviedb_id": 7843648
+      },
+      {
+        "id": "tt38732131:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2026-10-16T00:00:05.000Z",
+        "overview": "Saruhan and Asım come face to face again as negotiations for the map get underway, but when Nazlı is kidnapped the stakes are suddenly much higher.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/6/w780.jpg",
+        "moviedb_id": 7843649
+      },
+      {
+        "id": "tt38732131:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2026-10-16T00:00:06.000Z",
+        "overview": "A riddle is decoded and suddenly the map is seen through a new light. While the gang celebrates Nazlı is unable to see eye to eye with her father's ambitions.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/7/w780.jpg",
+        "moviedb_id": 7843650
+      },
+      {
+        "id": "tt38732131:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2026-10-16T00:00:07.000Z",
+        "overview": "An unlikely allyship forms as Asım and Saruhan outrun their rivals and follow the map's clues across Istanbul, in search of the Karun treasure.",
+        "thumbnail": "https://episodes.metahub.space/tt38732131/1/8/w780.jpg",
+        "moviedb_id": 7843652
+      }
+    ],
+    "imdbRating": "2.6",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "series/money-trap-38732131",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ]
+  }
+}

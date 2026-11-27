@@ -6,6 +6,11 @@ on:
     paths-ignore:
       - "domains.json"
       - "README.md"
+      - "platforms/**"
+      - "scripts/test_platform_catalogs.py"
+      - "scripts/update_platform_catalogs.py"
+      - ".github/workflows/platform-catalogs.yml"
+      - ".github/workflows/validate.yml"
   workflow_dispatch:
 
 permissions:

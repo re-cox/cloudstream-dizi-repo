@@ -20,6 +20,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - run: pip install beautifulsoup4==4.14.2
       - name: Test domain tracking
         run: python -m unittest discover -s scripts -v
       - name: Verify generated providers are current

@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "imdb_id": "tt23112594",
+    "name": "VisionQuest",
+    "popularities": {
+      "trakt": 1759,
+      "moviedb": 144.4468,
+      "stremio": 4.814893333333333,
+      "stremio_lib": 0
+    },
+    "type": "series",
+    "cast": [
+      "Paul Bettany",
+      "James Spader",
+      "Ruaridh Mollica"
+    ],
+    "country": "United States, United Kingdom",
+    "description": "Başına konulan ödül yüzünden Vision, hayatta kalabilmek için kendi doğasıyla yüzleşmeli ve Ultron’un etkisine direnmelidir.",
+    "genre": [
+      "Action"
+    ],
+    "imdbRating": "7.8",
+    "released": "2026-10-13T00:00:00.000Z",
+    "slug": "series/visionquest-23112594",
+    "year": "2026",
+    "moviedb_id": 213375,
+    "poster": "https://image.tmdb.org/t/p/w500/vNAE76jPwWeIOl9UrbtuL3SssaW.jpg",
+    "trailers": [
+      {
+        "source": "sXKnmgmbkoE",
+        "type": "Trailer"
+      },
+      {
+        "source": "pM9HZ8Ovjdw",
+        "type": "Trailer"
+      },
+      {
+        "source": "oSVTAUKyrL8",
+        "type": "Trailer"
+      }
+    ],
+    "runtime": "54 min",
+    "status": "Ended",
+    "tvdb_id": 426606,
+    "director": [],
+    "writer": [],
+    "background": "https://image.tmdb.org/t/p/w1280/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+    "logo": "https://images.metahub.space/logo/medium/tt23112594/img",
+    "popularity": 4.814893333333333,
+    "id": "tt23112594",
+    "genres": [
+      "Bilim Kurgu & Fantazi",
+      "Dram"
+    ],
+    "releaseInfo": "2026",
+    "videos": [
+      {
+        "name": "No Strings",
+        "season": 1,
+        "number": 1,
+        "firstAired": "2026-10-14T05:00:00.000Z",
+        "tvdb_id": 9493851,
+        "rating": "0",
+        "overview": "Vision is living in Edinburgh, working at a local bar. His peaceful existence is interrupted when a bounty is placed on his head. Meanwhile, a mysterious grifter named Tommy Shepherd is troubled by disturbing memories of Westview.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/1/w780.jpg",
+        "id": "tt23112594:1:1",
+        "released": "2026-10-14T05:00:00.000Z",
+        "episode": 1,
+        "description": "Vision is living in Edinburgh, working at a local bar. His peaceful existence is interrupted when a bounty is placed on his head. Meanwhile, a mysterious grifter named Tommy Shepherd is troubled by disturbing memories of Westview."
+      },
+      {
+        "name": "Theseus",
+        "season": 1,
+        "number": 2,
+        "firstAired": "2026-10-14T05:00:00.000Z",
+        "tvdb_id": 12023758,
+        "rating": "0",
+        "overview": "Vision, who is still being hunted by a mysterious force, learns of Tommy's existence and begins to question if this boy is truly his son. Vision returns to the remains of the bar in Edinburgh, and comes face to face with his unknown assailant.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/2/w780.jpg",
+        "id": "tt23112594:1:2",
+        "released": "2026-10-14T05:00:00.000Z",
+        "episode": 2,
+        "description": "Vision, who is still being hunted by a mysterious force, learns of Tommy's existence and begins to question if this boy is truly his son. Vision returns to the remains of the bar in Edinburgh, and comes face to face with his unknown assailant."
+      },
+      {
+        "name": "Reboot",
+        "season": 1,
+        "number": 3,
+        "firstAired": "2026-10-21T05:00:00.000Z",
+        "tvdb_id": 12023759,
+        "rating": "0",
+        "overview": "Vision and Tommy Shepherd join forces in order to survive while a terrifying killer strikes again.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/3/w780.jpg",
+        "id": "tt23112594:1:3",
+        "released": "2026-10-21T05:00:00.000Z",
+        "episode": 3,
+        "description": "Vision and Tommy Shepherd join forces in order to survive while a terrifying killer strikes again."
+      },
+      {
+        "name": "Malware",
+        "season": 1,
+        "number": 4,
+        "firstAired": "2026-10-21T05:00:00.000Z",
+        "tvdb_id": 12023760,
+        "rating": "0",
+        "overview": "As Vision confronts a new enemy, Ultron and Tommy Shepherd come face to face.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/4/w780.jpg",
+        "id": "tt23112594:1:4",
+        "released": "2026-10-21T05:00:00.000Z",
+        "episode": 4,
+        "description": "As Vision confronts a new enemy, Ultron and Tommy Shepherd come face to face."
+      },
+      {
+        "name": "Firewall",
+        "season": 1,
+        "number": 5,
+        "firstAired": "2026-10-28T05:00:00.000Z",
+        "tvdb_id": 12023761,
+        "rating": "0",
+        "overview": "Ultron and Jocasta join forces; Lisa comes to Vision's aid to help him evade capture.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/5/w780.jpg",
+        "id": "tt23112594:1:5",
+        "released": "2026-10-28T05:00:00.000Z",
+        "episode": 5,
+        "description": "Ultron and Jocasta join forces; Lisa comes to Vision's aid to help him evade capture."
+      },
+      {
+        "name": "Deadlock",
+        "season": 1,
+        "number": 6,
+        "firstAired": "2026-10-28T05:00:00.000Z",
+        "tvdb_id": 12023762,
+        "rating": "0",
+        "overview": "Vision and Paladin form an uneasy alliance as Thomas finally learns the truth about his past.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/6/w780.jpg",
+        "id": "tt23112594:1:6",
+        "released": "2026-10-28T05:00:00.000Z",
+        "episode": 6,
+        "description": "Vision and Paladin form an uneasy alliance as Thomas finally learns the truth about his past."
+      },
+      {
+        "name": "Immolation",
+        "season": 1,
+        "number": 7,
+        "firstAired": "2026-11-04T05:00:00.000Z",
+        "tvdb_id": 12023763,
+        "rating": "0",
+        "overview": "Vision and Ultron's twisted relationship comes undone.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/7/w780.jpg",
+        "id": "tt23112594:1:7",
+        "released": "2026-11-04T05:00:00.000Z",
+        "episode": 7,
+        "description": "Vision and Ultron's twisted relationship comes undone."
+      },
+      {
+        "name": "Forever",
+        "season": 1,
+        "number": 8,
+        "firstAired": "2026-11-11T05:00:00.000Z",
+        "tvdb_id": 12023764,
+        "rating": "0",
+        "overview": "Vision’s quest to embrace his true identity comes to a close.",
+        "thumbnail": "https://episodes.metahub.space/tt23112594/1/8/w780.jpg",
+        "id": "tt23112594:1:8",
+        "released": "2026-11-11T05:00:00.000Z",
+        "episode": 8,
+        "description": "Vision’s quest to embrace his true identity comes to a close."
+      }
+    ],
+    "trailerStreams": [
+      {
+        "title": "VisionQuest",
+        "ytId": "sXKnmgmbkoE"
+      },
+      {
+        "title": "VisionQuest",
+        "ytId": "pM9HZ8Ovjdw"
+      },
+      {
+        "title": "VisionQuest",
+        "ytId": "oSVTAUKyrL8"
+      }
+    ],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.disneyplus.com/tr-tr"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster"
+  }
+}

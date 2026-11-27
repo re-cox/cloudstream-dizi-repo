@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "id": "tt32857277",
+    "imdb_id": "tt32857277",
+    "type": "series",
+    "poster": "https://image.tmdb.org/t/p/w500/y3tfIQqUNJLSxQGQURbN34icVrM.jpg",
+    "logo": "https://live.metahub.space/logo/medium/tt32857277/img",
+    "background": "https://image.tmdb.org/t/p/w1280/wTY1HsZGB0WZFB4grcIcA7bm1bw.jpg",
+    "moviedb_id": 242599,
+    "name": "Tolgshow Çılgın Sezon",
+    "description": "“Arkadaşım” uzun bir aradan sonra sahnelere dönüyor! Hem de eskisinden bile neşeli, enerjik ve hazırcevap bir şekilde… Bu sezonda da “Yönetmen”in istekleriyle kılıktan kılığa, şekilden şekile girecek “Arkadaşım”ı zor ama eğlenceli anlar bekliyor.",
+    "genres": [
+      "Komedi",
+      "Talk"
+    ],
+    "releaseInfo": "2023",
+    "status": "Continuing",
+    "runtime": "45 min",
+    "trailers": [],
+    "cast": [
+      "Tolga Çevik"
+    ],
+    "credits_cast": [
+      {
+        "character": "Arkadaşım",
+        "name": "Tolga Çevik",
+        "profile_path": "/btsEAsTYeMk5YSFy0br0u4y4GcL.jpg",
+        "id": 106623
+      }
+    ],
+    "credits_crew": [],
+    "director": [],
+    "videos": [
+      {
+        "id": "tt32857277:1:1",
+        "title": "Episode 1",
+        "season": 1,
+        "episode": 1,
+        "number": 1,
+        "released": "2023-12-31T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/1/w780.jpg",
+        "moviedb_id": 5037179
+      },
+      {
+        "id": "tt32857277:1:2",
+        "title": "Episode 2",
+        "season": 1,
+        "episode": 2,
+        "number": 2,
+        "released": "2024-01-12T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/2/w780.jpg",
+        "moviedb_id": 5049234
+      },
+      {
+        "id": "tt32857277:1:3",
+        "title": "Episode 3",
+        "season": 1,
+        "episode": 3,
+        "number": 3,
+        "released": "2024-01-19T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/3/w780.jpg",
+        "moviedb_id": 5049235
+      },
+      {
+        "id": "tt32857277:1:4",
+        "title": "Episode 4",
+        "season": 1,
+        "episode": 4,
+        "number": 4,
+        "released": "2024-01-26T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/4/w780.jpg",
+        "moviedb_id": 5049236
+      },
+      {
+        "id": "tt32857277:1:5",
+        "title": "Episode 5",
+        "season": 1,
+        "episode": 5,
+        "number": 5,
+        "released": "2024-02-02T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/5/w780.jpg",
+        "moviedb_id": 5049237
+      },
+      {
+        "id": "tt32857277:1:6",
+        "title": "Episode 6",
+        "season": 1,
+        "episode": 6,
+        "number": 6,
+        "released": "2024-02-09T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/6/w780.jpg",
+        "moviedb_id": 5135098
+      },
+      {
+        "id": "tt32857277:1:7",
+        "title": "Episode 7",
+        "season": 1,
+        "episode": 7,
+        "number": 7,
+        "released": "2024-02-16T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/7/w780.jpg",
+        "moviedb_id": 5135099
+      },
+      {
+        "id": "tt32857277:1:8",
+        "title": "Episode 8",
+        "season": 1,
+        "episode": 8,
+        "number": 8,
+        "released": "2024-02-23T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/8/w780.jpg",
+        "moviedb_id": 5135101
+      },
+      {
+        "id": "tt32857277:1:9",
+        "title": "Episode 9",
+        "season": 1,
+        "episode": 9,
+        "number": 9,
+        "released": "2024-03-01T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/9/w780.jpg",
+        "moviedb_id": 5153897
+      },
+      {
+        "id": "tt32857277:1:10",
+        "title": "Episode 10",
+        "season": 1,
+        "episode": 10,
+        "number": 10,
+        "released": "2024-03-08T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/10/w780.jpg",
+        "moviedb_id": 5199808
+      },
+      {
+        "id": "tt32857277:1:11",
+        "title": "Episode 11",
+        "season": 1,
+        "episode": 11,
+        "number": 11,
+        "released": "2024-11-22T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/11/w780.jpg",
+        "moviedb_id": 5845603
+      },
+      {
+        "id": "tt32857277:1:12",
+        "title": "Episode 12",
+        "season": 1,
+        "episode": 12,
+        "number": 12,
+        "released": "2024-11-29T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/12/w780.jpg",
+        "moviedb_id": 5845604
+      },
+      {
+        "id": "tt32857277:1:13",
+        "title": "Episode 13",
+        "season": 1,
+        "episode": 13,
+        "number": 13,
+        "released": "2024-12-06T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/13/w780.jpg",
+        "moviedb_id": 5845605
+      },
+      {
+        "id": "tt32857277:1:14",
+        "title": "Episode 14",
+        "season": 1,
+        "episode": 14,
+        "number": 14,
+        "released": "2024-12-13T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/14/w780.jpg",
+        "moviedb_id": 5845607
+      },
+      {
+        "id": "tt32857277:1:15",
+        "title": "Episode 15",
+        "season": 1,
+        "episode": 15,
+        "number": 15,
+        "released": "2024-12-20T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/15/w780.jpg",
+        "moviedb_id": 5845608
+      },
+      {
+        "id": "tt32857277:1:16",
+        "title": "Episode 16",
+        "season": 1,
+        "episode": 16,
+        "number": 16,
+        "released": "2024-12-27T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/16/w780.jpg",
+        "moviedb_id": 5867936
+      },
+      {
+        "id": "tt32857277:1:17",
+        "title": "Episode 17",
+        "season": 1,
+        "episode": 17,
+        "number": 17,
+        "released": "2024-12-31T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/17/w780.jpg",
+        "moviedb_id": 5876094
+      },
+      {
+        "id": "tt32857277:1:18",
+        "title": "Episode 18",
+        "season": 1,
+        "episode": 18,
+        "number": 18,
+        "released": "2025-01-10T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/18/w780.jpg",
+        "moviedb_id": 5889317
+      },
+      {
+        "id": "tt32857277:1:19",
+        "title": "Episode 19",
+        "season": 1,
+        "episode": 19,
+        "number": 19,
+        "released": "2025-01-17T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/19/w780.jpg",
+        "moviedb_id": 5968189
+      },
+      {
+        "id": "tt32857277:1:20",
+        "title": "Episode 20",
+        "season": 1,
+        "episode": 20,
+        "number": 20,
+        "released": "2025-01-31T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt32857277/1/20/w780.jpg",
+        "moviedb_id": 5968190
+      }
+    ],
+    "imdbRating": "8.5",
+    "language": "Turkish",
+    "country": "Turkey",
+    "slug": "series/tolgshow-the-crazy-season-32857277",
+    "behaviorHints": {
+      "defaultVideoId": null,
+      "hasScheduledVideos": true
+    },
+    "posterShape": "poster",
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.exxen.com/tr/"
+      }
+    ]
+  }
+}
