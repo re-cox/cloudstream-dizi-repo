@@ -19,7 +19,6 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'platforms'
 TMDB_KEY = os.environ.get('TMDB_API_KEY', '439c478a771f35c05022f9feabcca01c')
-BASE = 'https://raw.githubusercontent.com/re-cox/cloudstream-dizi-repo/main/platforms'
 SHELVES = [
     ('netflix', 'Netflix · Gündemdekiler', 'https://www.netflix.com/tr/'),
     ('exxen', 'Exxen · Öne Çıkanlar', 'https://www.exxen.com/tr/'),
@@ -43,7 +42,10 @@ def fetch(url, headers=None):
                     if not url.startswith('https://www.netflix.com/'):
                         raise
                     data = exc.partial
-                return data.decode('utf-8')
+                text = data.decode('utf-8')
+                if url.startswith('https://www.netflix.com/'):
+                    parse_netflix(text)  # Retry truncated GraphQL hydration, never publish partial identities.
+                return text
         except Exception:
             if attempt == 2:
                 raise
