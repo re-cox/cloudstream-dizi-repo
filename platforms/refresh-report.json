@@ -4,23 +4,18 @@
     "netflix": {
       "source": "https://www.netflix.com/tr/",
       "sourceCount": 10,
-      "published": 7,
+      "published": 9,
       "excluded": [],
       "unresolved": [
         {
-          "title": "Sex/Life",
-          "reason": "ambiguous or unmatched title: Sex/Life"
-        },
-        {
-          "title": "Aile Konutu No: 47 - AK47",
-          "reason": "ambiguous or unmatched title: Aile Konutu No: 47 - AK47"
-        },
-        {
-          "title": "The Body",
-          "reason": "ambiguous or unmatched title: The Body"
+          "title": "WWE Survivor Series",
+          "reason": "ambiguous or unmatched title: WWE Survivor Series"
         }
       ],
-      "status": "updated"
+      "status": "updated",
+      "deliveryCountry": "TR",
+      "regionGuard": true,
+      "sourceSnapshot": "2026-11-27T06:37:45Z"
     },
     "exxen": {
       "source": "https://www.exxen.com/tr/",
