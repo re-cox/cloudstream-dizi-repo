@@ -1,6 +1,6 @@
 {
   "id": "com.recox.platforms.tr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "ALEN · Platform Gündemi",
   "description": "Resmî Türkiye sayfalarından Netflix, Exxen ve Disney+ keşif bantları",
   "resources": [
@@ -27,14 +27,14 @@
       "name": "Netflix · Gündemdekiler"
     },
     {
-      "id": "exxen",
-      "type": "series",
-      "name": "Exxen · Öne Çıkanlar"
-    },
-    {
       "id": "disney",
       "type": "series",
       "name": "Disney+ · Türkiye’de Bugünün Top 10 Dizileri"
+    },
+    {
+      "id": "exxen",
+      "type": "series",
+      "name": "Exxen · Öne Çıkanlar"
     }
   ],
   "behaviorHints": {

@@ -21,8 +21,8 @@ OUT = ROOT / 'platforms'
 TMDB_KEY = os.environ.get('TMDB_API_KEY', '439c478a771f35c05022f9feabcca01c')
 SHELVES = [
     ('netflix', 'Netflix · Gündemdekiler', 'https://www.netflix.com/tr/'),
-    ('exxen', 'Exxen · Öne Çıkanlar', 'https://www.exxen.com/tr/'),
     ('disney', 'Disney+ · Türkiye’de Bugünün Top 10 Dizileri', 'https://www.disneyplus.com/tr-tr'),
+    ('exxen', 'Exxen · Öne Çıkanlar', 'https://www.exxen.com/tr/'),
 ]
 # Public website application key, sent by Exxen's unauthenticated landing page.
 EXXEN_HEADERS = {'ApiKey': 'b45c9feb837f452294f5ce6abdfd240c', 'LangCode': 'tr',
@@ -243,7 +243,7 @@ def refresh():
         except Exception as exc:
             report['shelves'][slug] = {'status': 'retained', 'reason': str(exc)}
     write_json(OUT / 'refresh-report.json', report)
-    write_json(OUT / 'manifest.json', {'id': 'com.recox.platforms.tr', 'version': '1.0.0',
+    write_json(OUT / 'manifest.json', {'id': 'com.recox.platforms.tr', 'version': '1.0.1',
         'name': 'ALEN · Platform Gündemi', 'description': 'Resmî Türkiye sayfalarından Netflix, Exxen ve Disney+ keşif bantları',
         'resources': ['catalog', {'name': 'meta', 'types': ['movie', 'series'], 'idPrefixes': ['tt']}], 'types': ['movie', 'series'],
         'catalogs': [{'id': slug, 'type': 'series', 'name': title} for slug, title, _ in SHELVES],
