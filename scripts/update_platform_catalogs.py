@@ -133,7 +133,7 @@ def tmdb(path, **params):
     return get_json('https://api.themoviedb.org/3/' + path + '?' + urllib.parse.urlencode({'api_key': TMDB_KEY, 'language': 'tr-TR', **params}))
 
 
-def resolve(item, cache):
+def resolve(item):
     key = f"{item.get('type', 'multi')}:{item['sourceId']}:{item['title']}"
     kind = item.get('type', 'multi')
     matches = tmdb('search/' + kind, query=item['title'], include_adult='false')['results']
@@ -205,7 +205,6 @@ def resolve(item, cache):
 
 def refresh():
     OUT.mkdir(exist_ok=True)
-    cache = {}
     report = {'updatedAt': dt.datetime.now(dt.timezone.utc).isoformat(), 'shelves': {}}
     for slug, title, url in SHELVES:
         try:
@@ -217,7 +216,7 @@ def refresh():
                 item['sourceUrl'] = url
                 item['platform'] = slug
                 try:
-                    key, record = resolve(item, cache)
+                    key, record = resolve(item)
                     if 'excluded' in record:
                         exclusions.append(item['title'])
                         continue
@@ -232,7 +231,8 @@ def refresh():
                 if meta['id'].startswith('tmdb:'):
                     continue  # Native Nuvio resolves canonical TMDB IDs through its metadata service.
                 write_json(OUT / 'meta' / meta['type'] / (meta['id'] + '.json'), {'meta': meta})
-            write_json(OUT / 'catalog' / 'series' / (slug + '.json'), {'metas': metas})
+            preview_fields = {'id', 'type', 'name', 'poster', 'posterShape', 'background', 'description', 'genres', 'releaseInfo', 'imdbRating'}
+            write_json(OUT / 'catalog' / 'series' / (slug + '.json'), {'metas': [{k: v for k, v in m.items() if k in preview_fields} for m in metas]})
             report['shelves'][slug] = {'source': url, 'sourceCount': len(raw), 'published': len(metas),
                                       'excluded': exclusions, 'unresolved': unresolved, 'status': 'updated'}
         except Exception as exc:

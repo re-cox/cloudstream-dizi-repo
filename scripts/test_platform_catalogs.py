@@ -26,12 +26,12 @@ class PlatformCatalogTests(unittest.TestCase):
                       for n in (1, 2)]
         with patch('update_platform_catalogs.tmdb', return_value={'results': candidates}):
             with self.assertRaisesRegex(ValueError, 'ambiguous'):
-                resolve({'title': 'Same', 'sourceId': 's', 'type': 'tv'}, {})
+                resolve({'title': 'Same', 'sourceId': 's', 'type': 'tv'})
 
     def test_asian_series_preference(self):
         with patch('update_platform_catalogs.tmdb', return_value={'results': [
                 {'id': 1, 'name': 'Korean title', 'origin_country': ['KR']}]}):
-            _, record = resolve({'title': 'English title', 'sourceId': 's', 'type': 'tv'}, {})
+            _, record = resolve({'title': 'English title', 'sourceId': 's', 'type': 'tv'})
             self.assertIn('excluded', record)
 
     def test_catalogs_have_unique_canonical_ids_posters_and_correct_order(self):

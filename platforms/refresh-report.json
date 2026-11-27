@@ -1,18 +1,9 @@
 {
-  "updatedAt": "2026-11-27T06:39:52.113634+00:00",
+  "updatedAt": "2026-11-27T06:43:03.131587+00:00",
   "shelves": {
     "netflix": {
-      "source": "https://www.netflix.com/tr/",
-      "sourceCount": 10,
-      "published": 9,
-      "excluded": [],
-      "unresolved": [
-        {
-          "title": "WWE Survivor Series",
-          "reason": "ambiguous or unmatched title: WWE Survivor Series"
-        }
-      ],
-      "status": "updated"
+      "status": "retained",
+      "reason": "unterminated string literal (detected at line 1); perhaps you escaped the end quote? (<unknown>, line 1)"
     },
     "exxen": {
       "source": "https://www.exxen.com/tr/",
