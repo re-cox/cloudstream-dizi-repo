@@ -12,6 +12,10 @@ class PlatformCatalogTests(unittest.TestCase):
         <button data-uia="top-10-element-2"><div>B</div><span>2</span></button></div><button>Unrelated</button>'''
         self.assertEqual([i['title'] for i in parse_netflix(text)], ['A', 'B'])
 
+    def test_netflix_rejects_different_country_delivery(self):
+        with self.assertRaisesRegex(ValueError, 'non-Turkey'):
+            parse_netflix('<script>{"requestCountry":{"id":"US"}}</script>')
+
     def test_disney_only_reads_series_top10_not_movie_top10(self):
         def section(label, title):
             return {'children': [{'_type': 'Text', 'children': label}, {'_type': 'TopRankedCard', '_id': title,

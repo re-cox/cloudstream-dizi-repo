@@ -64,6 +64,9 @@ def write_json(path, data):
 
 
 def parse_netflix(text):
+    country = re.search(r'"requestCountry"\s*:\s*\{[^{}]*"id"\s*:\s*"([A-Z]{2})"', text)
+    if country and country[1] != 'TR':
+        raise ValueError('Netflix returned a non-Turkey region; retained Turkish shelf')
     soup = BeautifulSoup(text, 'html.parser')
     section = soup.select_one('[data-uia="nmhp-top-10"]')
     if not section:
