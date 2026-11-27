@@ -238,7 +238,7 @@ test('DiziPal current HTML search and hyphen episode URLs are supported', async 
   let requested=false;
   const {context}=provider('dizipal',(url)=>{
     if(url.startsWith(base+'/arama?')){requested=true;return '<a class="card-link" href="'+base+'/dizi/breaking-bad"><img alt="Breaking Bad"></a>';}
-  });
+  }, {DiziPal:{currentUrl:base}});
   await context.resolveLiveDomain();
   const matches=await context.searchSite(base,'Breaking Bad');
   assert.equal(requested,true);
