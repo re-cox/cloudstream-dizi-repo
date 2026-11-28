@@ -30,7 +30,7 @@
       {
         "character": "Ozan",
         "name": "Serkan Dağlı",
-        "profile_path": null,
+        "profile_path": "/9uRDAaqq29lqGRXwFksDj09Q4sk.jpg",
         "id": 3606496
       },
       {
@@ -208,6 +208,28 @@
         "overview": "",
         "thumbnail": "https://episodes.metahub.space/tt38896081/2/5/w780.jpg",
         "moviedb_id": 8082464
+      },
+      {
+        "id": "tt38896081:2:6",
+        "title": "Episode 6",
+        "season": 2,
+        "episode": 6,
+        "number": 6,
+        "released": "2026-11-13T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/6/w780.jpg",
+        "moviedb_id": 8141813
+      },
+      {
+        "id": "tt38896081:2:7",
+        "title": "Episode 7",
+        "season": 2,
+        "episode": 7,
+        "number": 7,
+        "released": "2026-11-20T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt38896081/2/7/w780.jpg",
+        "moviedb_id": 8157387
       }
     ],
     "imdbRating": "5.2",

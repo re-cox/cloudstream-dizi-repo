@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "imdb_id": "tt37267166",
+    "name": "Notre Dame'ın Kamburu, Paris'in Ruhu",
+    "popularities": {
+      "trakt": 165,
+      "moviedb": 3.6108
+    },
+    "type": "movie",
+    "cast": [
+      "Vincent Cassel",
+      "Benjamin Voisin",
+      "Jean-François Richet"
+    ],
+    "country": "France",
+    "description": "1830'da Paris kolera salgını tehdidi altındayken üzerinde tıbbi deneyler yapılması için peşine düşülen kambur bir adam, kendini siyasi kargaşa ve imkânsız bir aşk arasında bulur.",
+    "director": [
+      "Jean-François Richet"
+    ],
+    "genre": [
+      "Drama"
+    ],
+    "imdbRating": "",
+    "released": "2026-11-27T00:00:00.000Z",
+    "slug": "movie/the-hunchback-soul-of-paris-37267166",
+    "writer": [
+      "Éric Besnard",
+      "Edgar Marie"
+    ],
+    "year": "2026",
+    "moviedb_id": 1480665,
+    "poster": "https://image.tmdb.org/t/p/w500/1ehMW3tG11vfyfjMmYR580Jd6fg.jpg",
+    "runtime": "106 min",
+    "trailers": [
+      {
+        "source": "eBfPTW1YaAQ",
+        "type": "Trailer"
+      }
+    ],
+    "logo": "https://images.metahub.space/logo/medium/tt37267166/img",
+    "background": "https://image.tmdb.org/t/p/w1280/fILFJb7okqkNdzAataH4CxywwZX.jpg",
+    "id": "tt37267166",
+    "genres": [
+      "Dram"
+    ],
+    "releaseInfo": "2026",
+    "trailerStreams": [
+      {
+        "title": "The Hunchback, Soul of Paris",
+        "ytId": "eBfPTW1YaAQ"
+      }
+    ],
+    "links": [
+      {
+        "name": "Resmî platform",
+        "category": "Platform",
+        "url": "https://www.netflix.com/tr/"
+      }
+    ],
+    "behaviorHints": {
+      "defaultVideoId": "tt37267166",
+      "hasScheduledVideos": false
+    },
+    "posterShape": "poster"
+  }
+}

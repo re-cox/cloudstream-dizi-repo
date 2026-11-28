@@ -343,6 +343,17 @@
         "overview": "",
         "thumbnail": "https://episodes.metahub.space/tt39222526/2/7/w780.jpg",
         "moviedb_id": 8120594
+      },
+      {
+        "id": "tt39222526:2:8",
+        "title": "Episode 8",
+        "season": 2,
+        "episode": 8,
+        "number": 8,
+        "released": "2026-11-25T00:00:00.000Z",
+        "overview": "",
+        "thumbnail": "https://episodes.metahub.space/tt39222526/2/8/w780.jpg",
+        "moviedb_id": 8171859
       }
     ],
     "imdbRating": "7.2",

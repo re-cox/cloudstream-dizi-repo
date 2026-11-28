@@ -18,7 +18,7 @@
     "imdbRating": "8.2",
     "imdb_id": "tt1196946",
     "name": "The Mentalist",
-    "popularity": 71.30808666666667,
+    "popularity": 52.1282,
     "poster": "https://image.tmdb.org/t/p/w500/k0kMdO52LpC5JWgd0uWEH7gqcCe.jpg",
     "released": "2008-09-23T00:00:00.000Z",
     "runtime": "43 min",
@@ -40,7 +40,7 @@
       "EJD": 0,
       "moviedb": 1563.846,
       "trakt": 1289,
-      "stremio": 71.30808666666667,
+      "stremio": 52.1282,
       "stremio_lib": 0
     },
     "moviedb_id": 5920,

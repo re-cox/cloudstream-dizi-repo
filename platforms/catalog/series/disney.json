@@ -29,6 +29,23 @@
       ]
     },
     {
+      "name": "Percy Jackson and The Olympians",
+      "type": "series",
+      "description": "Percy Jackson tehlikeli bir maceraya atılır. Zeus'un İlk Şimşeğini geri getirmek ve topyekûn bir savaşı engellemek için Amerika'yı boydan boya kat etmesi, bu esnada da peşindeki canavarlardan kurtulması ve kurnazlığıyla tanrıları alt etmesi gerekmektedir. Görev arkadaşları Annabeth ve Kıvırcık'ın da yardımıyla Percy'nin yolculuğu onu, aradığı cevaplara yaklaştıracaktır: Kendini yabancı hissettiği bir dünyaya nasıl uyum sağlayacağına ve aslen kim olduğunun cevabını bulmaya.",
+      "imdbRating": "7.0",
+      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+      "background": "https://image.tmdb.org/t/p/w1280/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
+      "id": "tt12324366",
+      "genres": [
+        "Aksiyon & Macera",
+        "Bilim Kurgu & Fantazi",
+        "Dram",
+        "Aile"
+      ],
+      "releaseInfo": "2023",
+      "posterShape": "poster"
+    },
+    {
       "id": "tt39333720",
       "type": "series",
       "poster": "https://image.tmdb.org/t/p/w500/tNU9FZWQ9vtobH6G4HS9USVGEP4.jpg",
@@ -39,22 +56,7 @@
         "Dram"
       ],
       "releaseInfo": "2026",
-      "imdbRating": "6.4",
-      "posterShape": "poster"
-    },
-    {
-      "id": "tt44632465",
-      "type": "series",
-      "poster": "https://image.tmdb.org/t/p/w500/iMKB5gIUumT6V1GvJd3HbIB0XjI.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/of64wZ6WYVdverh1YSeV0fXufdY.jpg",
-      "name": "Anne Yarısı",
-      "description": "8 yıl önce Almanya'da yaşanan büyük bir kaybın ardından yolları küçük bir çocuğun etrafında kesişen Ali ve Zeynep'in duygusal hikayesini anlatıyor",
-      "genres": [
-        "Dram",
-        "Pembe Dizi"
-      ],
-      "releaseInfo": "2026",
-      "imdbRating": "4.9",
+      "imdbRating": "5.6",
       "posterShape": "poster"
     },
     {
@@ -73,20 +75,18 @@
       "posterShape": "poster"
     },
     {
-      "name": "Percy Jackson and The Olympians",
+      "id": "tt44632465",
       "type": "series",
-      "description": "Percy Jackson tehlikeli bir maceraya atılır. Zeus'un İlk Şimşeğini geri getirmek ve topyekûn bir savaşı engellemek için Amerika'yı boydan boya kat etmesi, bu esnada da peşindeki canavarlardan kurtulması ve kurnazlığıyla tanrıları alt etmesi gerekmektedir. Görev arkadaşları Annabeth ve Kıvırcık'ın da yardımıyla Percy'nin yolculuğu onu, aradığı cevaplara yaklaştıracaktır: Kendini yabancı hissettiği bir dünyaya nasıl uyum sağlayacağına ve aslen kim olduğunun cevabını bulmaya.",
-      "imdbRating": "7.0",
-      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
-      "id": "tt12324366",
+      "poster": "https://image.tmdb.org/t/p/w500/iMKB5gIUumT6V1GvJd3HbIB0XjI.jpg",
+      "background": "https://image.tmdb.org/t/p/w1280/of64wZ6WYVdverh1YSeV0fXufdY.jpg",
+      "name": "Anne Yarısı",
+      "description": "8 yıl önce Almanya'da yaşanan büyük bir kaybın ardından yolları küçük bir çocuğun etrafında kesişen Ali ve Zeynep'in duygusal hikayesini anlatıyor",
       "genres": [
-        "Aksiyon & Macera",
-        "Bilim Kurgu & Fantazi",
         "Dram",
-        "Aile"
+        "Pembe Dizi"
       ],
-      "releaseInfo": "2023",
+      "releaseInfo": "2026",
+      "imdbRating": "4.9",
       "posterShape": "poster"
     },
     {
@@ -105,18 +105,17 @@
       "posterShape": "poster"
     },
     {
-      "name": "Tracker",
+      "id": "tt38413198",
       "type": "series",
-      "description": "Bir hayatta kalma uzmanı, ödül avcısı olarak ülkeyi dolaşırken bir yanda dağılmış ailesiyle uğraşır.",
-      "imdbRating": "7.2",
-      "poster": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
-      "background": "https://image.tmdb.org/t/p/w1280/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
-      "id": "tt13875494",
+      "poster": "https://image.tmdb.org/t/p/w500/kpGNC7yOcHRUN7wQ40ePre9ZybH.jpg",
+      "background": "https://image.tmdb.org/t/p/w1280/z5CT05RSHbR1CTDfSFDOykGjsIC.jpg",
+      "name": "Halef: Köklerin Çağrısı",
+      "description": "Doğduğu toprakların ona biçtiği kadere meydan okuyarak başarılı bir cerrah olan Serhat, sevdiği kadın Melek’le ailesinden gizlice evlenir. Ancak kısa süre sonra, Urfa’ya dönmek zorunda kalır ve yöredeki iki köklü aile arasındaki kan davası nedeniyle Yıldız’la da imam nikahı kıymaya zorlanır.\n\nBir cerrahken ağaya dönüşen Serhat’ın yalnızca gücü değil, aşkı da büyük bir sınavdan geçecektir. Melek’in konağa gelişiyle birlikte Serhat, iki kadının ailesi ve geçmişlerinden gelen sırlarla yüzleşmek zorunda kalır. Çünkü bu konakta hiç kimse masum değildir. Herkesin sakladığı bir geçmişi, gömdüğü bir sırrı vardır...",
       "genres": [
-        "Dram",
-        "Suç"
+        "Dram"
       ],
-      "releaseInfo": "2024",
+      "releaseInfo": "2025",
+      "imdbRating": "4.6",
       "posterShape": "poster"
     }
   ]
